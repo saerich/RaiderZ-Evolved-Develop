@@ -61,6 +61,7 @@ mono_crash.*
 [Dd]ebugMDd/
 [Dd]ebugMDW/
 [Dd]ebugMD_ImportCML2/
+[Dd]ebugMD_Import/
 [Dd]ebugPublic/
 [Dd]ebug_profile/
 [Dd]ebug_publish/
@@ -72,6 +73,7 @@ mono_crash.*
 [Rr]eleaseMDd/
 [Rr]eleaseMDW/
 [Rr]eleaseMD_ImportCML2/
+[Rr]eleaseMD_Import/
 [Rr]eleases/
 [Rr]elease_profile/
 [Rr]elease_publish/
@@ -151,6 +153,7 @@ StyleCopReport.xml
 *.pidb
 *.svclog
 *.scc
+*.exp
 
 # Chutzpah Test files
 _Chutzpah*
