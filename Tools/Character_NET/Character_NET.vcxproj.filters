@@ -1,0 +1,825 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Forms">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Base">
+      <UniqueIdentifier>{b53466f9-180f-4ad9-89b1-1d8cbce2c38e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="item">
+      <UniqueIdentifier>{d6fcee8c-04ce-400c-968c-726ee7874901}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="info">
+      <UniqueIdentifier>{53f872b9-22d8-4d7e-a31a-f224a4d038b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="XmlSerializable">
+      <UniqueIdentifier>{56dc0be7-109a-4eba-8e95-f5af43bc71ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Save">
+      <UniqueIdentifier>{3d8e6748-9cec-4e12-88d8-6de0dbfc5b86}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Controller">
+      <UniqueIdentifier>{80e0c68c-047f-4ca4-96af-76a6db660547}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="renderer">
+      <UniqueIdentifier>{d1a81931-0ff2-4f4d-aacf-c9a4e6e8a4f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tab">
+      <UniqueIdentifier>{c3b314d8-2079-4475-acb8-9d632f400107}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="effect">
+      <UniqueIdentifier>{b011d939-5588-416b-ab4c-320ceb47cef9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="reflectiveProperty">
+      <UniqueIdentifier>{2d880e62-2bcf-4fde-9ae2-6634655efe07}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Validator">
+      <UniqueIdentifier>{2fc630aa-ebeb-4dda-a215-1755170726f7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AnimationBlendInputForm.h">
+      <Filter>Forms</Filter>
+    </ClInclude>
+    <ClInclude Include="AnimationBlendTable.h">
+      <Filter>Forms</Filter>
+    </ClInclude>
+    <ClInclude Include="AnimationEvent.h">
+      <Filter>Forms</Filter>
+    </ClInclude>
+    <ClInclude Include="AnimationEventTabPage.h">
+      <Filter>Forms</Filter>
+    </ClInclude>
+    <ClInclude Include="AnimationHitSoundTabPage.h">
+      <Filter>Forms</Filter>
+    </ClInclude>
+    <ClInclude Include="AnimationLinkTestTabPage.h">
+      <Filter>Forms</Filter>
+    </ClInclude>
+    <ClInclude Include="AnimationSelectEditForm.h">
+      <Filter>Forms</Filter>
+    </ClInclude>
+    <ClInclude Include="AnimationTabPage.h">
+      <Filter>Forms</Filter>
+    </ClInclude>
+    <ClInclude Include="ColorPickerDlg.h">
+      <Filter>Forms</Filter>
+    </ClInclude>
+    <ClInclude Include="DereferenceTalentIDViewer.h">
+      <Filter>Forms</Filter>
+    </ClInclude>
+    <ClInclude Include="EditAnimation.h">
+      <Filter>Forms</Filter>
+    </ClInclude>
+    <ClInclude Include="EditItemList.h">
+      <Filter>Forms</Filter>
+    </ClInclude>
+    <ClInclude Include="EditText_One.h">
+      <Filter>Forms</Filter>
+    </ClInclude>
+    <ClInclude Include="EffectSelectForm.h">
+      <Filter>Forms</Filter>
+    </ClInclude>
+    <ClInclude Include="EventTabPage.h">
+      <Filter>Forms</Filter>
+    </ClInclude>
+    <ClInclude Include="Form1.h">
+      <Filter>Forms</Filter>
+    </ClInclude>
+    <ClInclude Include="frmMyValue.h">
+      <Filter>Forms</Filter>
+    </ClInclude>
+    <ClInclude Include="Global.h">
+      <Filter>Forms</Filter>
+    </ClInclude>
+    <ClInclude Include="HelpForm.h">
+      <Filter>Forms</Filter>
+    </ClInclude>
+    <ClInclude Include="ItemTabPage.h">
+      <Filter>Forms</Filter>
+    </ClInclude>
+    <ClInclude Include="MeshInfoTabPage.h">
+      <Filter>Forms</Filter>
+    </ClInclude>
+    <ClInclude Include="ModelInfoTabPage.h">
+      <Filter>Forms</Filter>
+    </ClInclude>
+    <ClInclude Include="ModelTabPage.h">
+      <Filter>Forms</Filter>
+    </ClInclude>
+    <ClInclude Include="NPCAnimationInfoSetting.h">
+      <Filter>Forms</Filter>
+    </ClInclude>
+    <ClInclude Include="NPCListTabPage.h">
+      <Filter>Forms</Filter>
+    </ClInclude>
+    <ClInclude Include="OverlayAnimationInputForm.h">
+      <Filter>Forms</Filter>
+    </ClInclude>
+    <ClInclude Include="OverlayAnimationTable.h">
+      <Filter>Forms</Filter>
+    </ClInclude>
+    <ClInclude Include="OverlayAnimationTestTabPage.h">
+      <Filter>Forms</Filter>
+    </ClInclude>
+    <ClInclude Include="PCTalentTreeView.h">
+      <Filter>Forms</Filter>
+    </ClInclude>
+    <ClInclude Include="ProgressBarForm.h">
+      <Filter>Forms</Filter>
+    </ClInclude>
+    <ClInclude Include="ReActionAnimationInputForm.h">
+      <Filter>Forms</Filter>
+    </ClInclude>
+    <ClInclude Include="ReActionAnimationTable.h">
+      <Filter>Forms</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Forms</Filter>
+    </ClInclude>
+    <ClInclude Include="SearchCustomEffectInfoName.h">
+      <Filter>Forms</Filter>
+    </ClInclude>
+    <ClInclude Include="TalentEffectBase.h">
+      <Filter>Forms</Filter>
+    </ClInclude>
+    <ClInclude Include="TalentTabPage.h">
+      <Filter>Forms</Filter>
+    </ClInclude>
+    <ClInclude Include="TAnimationBlendInfo.h">
+      <Filter>Forms</Filter>
+    </ClInclude>
+    <ClInclude Include="TAnimationInfoMgr.h">
+      <Filter>Forms</Filter>
+    </ClInclude>
+    <ClInclude Include="TCalcTalentHitEffectDir.h">
+      <Filter>Forms</Filter>
+    </ClInclude>
+    <ClInclude Include="TDecalEffect.h">
+      <Filter>Forms</Filter>
+    </ClInclude>
+    <ClInclude Include="TInitLoadingWindow.h">
+      <Filter>Forms</Filter>
+    </ClInclude>
+    <ClInclude Include="TMeshHitEffectInfo.h">
+      <Filter>Forms</Filter>
+    </ClInclude>
+    <ClInclude Include="TMeshHitEffectInfoViewer.h">
+      <Filter>Forms</Filter>
+    </ClInclude>
+    <ClInclude Include="TTalentHitEffectDirTest.h">
+      <Filter>Forms</Filter>
+    </ClInclude>
+    <ClInclude Include="CCmdBuffer.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="CDocument.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="MainApp.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="ReflectiveProperty.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="TActorMgr.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="TAnimationBlendTable.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="TAnimationEventHandler.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="TAnimationHelper.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="TAnimationResourceController.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="TBaseAnimationTC.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="TCharacter.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="TClipboard.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="TCloth.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="TConst.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="TDef.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="TEquipItems.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="TEquipment.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="TFaceAnimationTC.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="THelper.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="TMagicArea.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="TMenu.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="TMeshColInfoBoxEditor.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="TMeshColInfoViewer.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="TMtrl.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="TNaming.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="TNormalAnimation.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="TNPC.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="ToolConfig.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="TOverlayAnimationTC.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="TPartsHitInfoViewer.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="TPlayMotion.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="TProjectile.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="TRealSound.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="TRealSoundLoader.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="TStrings.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="TSwordTrailEffectController.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="TSwordTrailSampling.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="TTalentActAnimationTime.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="TTalentAnimation.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="TTalentEffectViewer.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="TTalentEvent.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="TTalentEventViewer.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="TTalentHelper.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="TTransformControllerManager.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="TItem.h">
+      <Filter>item</Filter>
+    </ClInclude>
+    <ClInclude Include="TItemData.h">
+      <Filter>item</Filter>
+    </ClInclude>
+    <ClInclude Include="TBuffInfo.h">
+      <Filter>info</Filter>
+    </ClInclude>
+    <ClInclude Include="TEffectInfoMgr.h">
+      <Filter>info</Filter>
+    </ClInclude>
+    <ClInclude Include="THitAreaRenderer.h">
+      <Filter>info</Filter>
+    </ClInclude>
+    <ClInclude Include="TMeshAniInfo.h">
+      <Filter>info</Filter>
+    </ClInclude>
+    <ClInclude Include="TMeshColInfo.h">
+      <Filter>info</Filter>
+    </ClInclude>
+    <ClInclude Include="TMeshHitInfo.h">
+      <Filter>info</Filter>
+    </ClInclude>
+    <ClInclude Include="TMeshInfo.h">
+      <Filter>info</Filter>
+    </ClInclude>
+    <ClInclude Include="TNPCInfo.h">
+      <Filter>info</Filter>
+    </ClInclude>
+    <ClInclude Include="TOverlayAnimationInfo.h">
+      <Filter>info</Filter>
+    </ClInclude>
+    <ClInclude Include="TReActionAnimationInfo.h">
+      <Filter>info</Filter>
+    </ClInclude>
+    <ClInclude Include="TTalentEffectMgr.h">
+      <Filter>info</Filter>
+    </ClInclude>
+    <ClInclude Include="TTalentEventMgr.h">
+      <Filter>info</Filter>
+    </ClInclude>
+    <ClInclude Include="TTalentInfo.h">
+      <Filter>info</Filter>
+    </ClInclude>
+    <ClInclude Include="Xmlseral.h">
+      <Filter>XmlSerializable</Filter>
+    </ClInclude>
+    <ClInclude Include="Xmlseral_Talent.h">
+      <Filter>XmlSerializable</Filter>
+    </ClInclude>
+    <ClInclude Include="SaveNotifier.h">
+      <Filter>Save</Filter>
+    </ClInclude>
+    <ClInclude Include="TFrameSliderController.h">
+      <Filter>Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="TMeshHitTabController.h">
+      <Filter>Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="TTalentEffectTabController.h">
+      <Filter>Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="TTalentEventController.h">
+      <Filter>Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="TTalentHitTabController.h">
+      <Filter>Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="TTabAnimation.h">
+      <Filter>Tab</Filter>
+    </ClInclude>
+    <ClInclude Include="TTabItem.h">
+      <Filter>Tab</Filter>
+    </ClInclude>
+    <ClInclude Include="TTabModel.h">
+      <Filter>Tab</Filter>
+    </ClInclude>
+    <ClInclude Include="TTabModelInfo.h">
+      <Filter>Tab</Filter>
+    </ClInclude>
+    <ClInclude Include="TCameraEffect.h">
+      <Filter>effect</Filter>
+    </ClInclude>
+    <ClInclude Include="TEffect.h">
+      <Filter>effect</Filter>
+    </ClInclude>
+    <ClInclude Include="TEffectCharacterToolInvoker.h">
+      <Filter>effect</Filter>
+    </ClInclude>
+    <ClInclude Include="TEffectCharacterToolSinglyInvoker.h">
+      <Filter>effect</Filter>
+    </ClInclude>
+    <ClInclude Include="TEffectManager.h">
+      <Filter>effect</Filter>
+    </ClInclude>
+    <ClInclude Include="TEffectPostEffect.h">
+      <Filter>effect</Filter>
+    </ClInclude>
+    <ClInclude Include="TNoiseFadeEffect.h">
+      <Filter>effect</Filter>
+    </ClInclude>
+    <ClInclude Include="TSelfIlluminationEffect.h">
+      <Filter>effect</Filter>
+    </ClInclude>
+    <ClInclude Include="TTalentEffectHitCapsule.h">
+      <Filter>effect</Filter>
+    </ClInclude>
+    <ClInclude Include="TWeaponEffect.h">
+      <Filter>effect</Filter>
+    </ClInclude>
+    <ClInclude Include="reflectiveProperty\ClothReflectivePropertyForm.h">
+      <Filter>reflectiveProperty</Filter>
+    </ClInclude>
+    <ClInclude Include="reflectiveProperty\ReflectiveRClothInfo.h">
+      <Filter>reflectiveProperty</Filter>
+    </ClInclude>
+    <ClInclude Include="TFileNameSampling.h">
+      <Filter>Validator</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AnimationBlendTable.cpp">
+      <Filter>Forms</Filter>
+    </ClCompile>
+    <ClCompile Include="AnimationEvent.cpp">
+      <Filter>Forms</Filter>
+    </ClCompile>
+    <ClCompile Include="AnimationEventTabPage.cpp">
+      <Filter>Forms</Filter>
+    </ClCompile>
+    <ClCompile Include="AnimationLinkTestTabPage.cpp">
+      <Filter>Forms</Filter>
+    </ClCompile>
+    <ClCompile Include="AnimationTabPage.cpp">
+      <Filter>Forms</Filter>
+    </ClCompile>
+    <ClCompile Include="DereferenceTalentIDViewer.cpp">
+      <Filter>Forms</Filter>
+    </ClCompile>
+    <ClCompile Include="EffectSelectForm.cpp">
+      <Filter>Forms</Filter>
+    </ClCompile>
+    <ClCompile Include="EventTabPage.cpp">
+      <Filter>Forms</Filter>
+    </ClCompile>
+    <ClCompile Include="Form1.cpp">
+      <Filter>Forms</Filter>
+    </ClCompile>
+    <ClCompile Include="ItemTabPage.cpp">
+      <Filter>Forms</Filter>
+    </ClCompile>
+    <ClCompile Include="ModelInfoTabPage.cpp">
+      <Filter>Forms</Filter>
+    </ClCompile>
+    <ClCompile Include="ModelTabPage.cpp">
+      <Filter>Forms</Filter>
+    </ClCompile>
+    <ClCompile Include="NPCAnimationInfoSetting.cpp">
+      <Filter>Forms</Filter>
+    </ClCompile>
+    <ClCompile Include="NPCListTabPage.cpp">
+      <Filter>Forms</Filter>
+    </ClCompile>
+    <ClCompile Include="OverlayAnimationInputForm.cpp">
+      <Filter>Forms</Filter>
+    </ClCompile>
+    <ClCompile Include="OverlayAnimationTable.cpp">
+      <Filter>Forms</Filter>
+    </ClCompile>
+    <ClCompile Include="OverlayAnimationTestTabPage.cpp">
+      <Filter>Forms</Filter>
+    </ClCompile>
+    <ClCompile Include="PCTalentTreeView.cpp">
+      <Filter>Forms</Filter>
+    </ClCompile>
+    <ClCompile Include="ProgressBarForm.cpp">
+      <Filter>Forms</Filter>
+    </ClCompile>
+    <ClCompile Include="ReActionAnimationInputForm.cpp">
+      <Filter>Forms</Filter>
+    </ClCompile>
+    <ClCompile Include="ReActionAnimationTable.cpp">
+      <Filter>Forms</Filter>
+    </ClCompile>
+    <ClCompile Include="SearchCustomEffectInfoName.cpp">
+      <Filter>Forms</Filter>
+    </ClCompile>
+    <ClCompile Include="TalentEffectBase.cpp">
+      <Filter>Forms</Filter>
+    </ClCompile>
+    <ClCompile Include="TalentTabPage.cpp">
+      <Filter>Forms</Filter>
+    </ClCompile>
+    <ClCompile Include="TInitLoadingWindow.cpp">
+      <Filter>Forms</Filter>
+    </ClCompile>
+    <ClCompile Include="MainApp.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="TActorMgr.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="TAnimationBlendTable.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="TAnimationEventHandler.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="TAnimationHelper.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="TAnimationResourceController.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="TBaseAnimationTC.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="TCamera.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="TCharacter.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="TClipboard.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="TCloth.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="TConst.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="TDef.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="TEquipItems.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="TEquipment.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="TFaceAnimationTC.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="TMagicArea.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="TMenu.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="TMeshColInfoBoxEditor.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="TMeshColInfoViewer.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="TMtrl.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="TNaming.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="TNormalAnimation.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="TNPC.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="ToolConfig.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="TOverlayAnimationTC.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="TPartsHitInfoViewer.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="TPlayMotion.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="TProjectile.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="TRealSound.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="TRealSoundLoader.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="TStrings.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="TSwordTrailEffectController.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="TSwordTrailSampling.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="TTalentActAnimationTime.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="TTalentAnimation.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="TTalentEffectViewer.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="TTalentEvent.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="TTalentEventViewer.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="TTalentHelper.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="TTransformControllerManager.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="TItem.cpp">
+      <Filter>item</Filter>
+    </ClCompile>
+    <ClCompile Include="TItemData.cpp">
+      <Filter>item</Filter>
+    </ClCompile>
+    <ClCompile Include="TBuffInfo.cpp">
+      <Filter>info</Filter>
+    </ClCompile>
+    <ClCompile Include="TEffectInfoMgr.cpp">
+      <Filter>info</Filter>
+    </ClCompile>
+    <ClCompile Include="THitAreaRenderer.cpp">
+      <Filter>info</Filter>
+    </ClCompile>
+    <ClCompile Include="TMeshAniInfo.cpp">
+      <Filter>info</Filter>
+    </ClCompile>
+    <ClCompile Include="TMeshColInfo.cpp">
+      <Filter>info</Filter>
+    </ClCompile>
+    <ClCompile Include="TMeshHitInfo.cpp">
+      <Filter>info</Filter>
+    </ClCompile>
+    <ClCompile Include="TMeshInfo.cpp">
+      <Filter>info</Filter>
+    </ClCompile>
+    <ClCompile Include="TNPCInfo.cpp">
+      <Filter>info</Filter>
+    </ClCompile>
+    <ClCompile Include="TOverlayAnimationInfo.cpp">
+      <Filter>info</Filter>
+    </ClCompile>
+    <ClCompile Include="TReActionAnimationInfo.cpp">
+      <Filter>info</Filter>
+    </ClCompile>
+    <ClCompile Include="TTalentEffectMgr.cpp">
+      <Filter>info</Filter>
+    </ClCompile>
+    <ClCompile Include="TTalentEventMgr.cpp">
+      <Filter>info</Filter>
+    </ClCompile>
+    <ClCompile Include="TTalentInfo.cpp">
+      <Filter>info</Filter>
+    </ClCompile>
+    <ClCompile Include="AnimationBlendInputForm.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="AnimationHitSoundTabPage.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="AnimationSelectEditForm.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="AssemblyInfo.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Character_NET.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="EditText_One.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="MeshInfoTabPage.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="TAnimationBlendInfo.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="TAnimationInfoMgr.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="TCalcTalentHitEffectDir.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="TDecalEffect.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="TMeshHitEffectInfo.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="TMeshHitEffectInfoViewer.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="TTalentHitEffectDirTest.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="SaveNotifier.cpp">
+      <Filter>Save</Filter>
+    </ClCompile>
+    <ClCompile Include="TFrameSliderController.cpp">
+      <Filter>Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="TMeshHitTabController.cpp">
+      <Filter>Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="TTalentEffectTabController.cpp">
+      <Filter>Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="TTalentEventController.cpp">
+      <Filter>Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="TTalentHitTabController.cpp">
+      <Filter>Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="TTabAnimation.cpp">
+      <Filter>Tab</Filter>
+    </ClCompile>
+    <ClCompile Include="TTabItem.cpp">
+      <Filter>Tab</Filter>
+    </ClCompile>
+    <ClCompile Include="TTabModel.cpp">
+      <Filter>Tab</Filter>
+    </ClCompile>
+    <ClCompile Include="TTabModelInfo.cpp">
+      <Filter>Tab</Filter>
+    </ClCompile>
+    <ClCompile Include="TCameraEffect.cpp">
+      <Filter>effect</Filter>
+    </ClCompile>
+    <ClCompile Include="TEffect.cpp">
+      <Filter>effect</Filter>
+    </ClCompile>
+    <ClCompile Include="TEffectCharacterToolInvoker.cpp">
+      <Filter>effect</Filter>
+    </ClCompile>
+    <ClCompile Include="TEffectCharacterToolSinglyInvoker.cpp">
+      <Filter>effect</Filter>
+    </ClCompile>
+    <ClCompile Include="TEffectManager.cpp">
+      <Filter>effect</Filter>
+    </ClCompile>
+    <ClCompile Include="TEffectPostEffect.cpp">
+      <Filter>effect</Filter>
+    </ClCompile>
+    <ClCompile Include="TNoiseFadeEffect.cpp">
+      <Filter>effect</Filter>
+    </ClCompile>
+    <ClCompile Include="TSelfIlluminationEffect.cpp">
+      <Filter>effect</Filter>
+    </ClCompile>
+    <ClCompile Include="TTalentEffectHitCapsule.cpp">
+      <Filter>effect</Filter>
+    </ClCompile>
+    <ClCompile Include="TWeaponEffect.cpp">
+      <Filter>effect</Filter>
+    </ClCompile>
+    <ClCompile Include="reflectiveProperty\ClothReflectivePropertyForm.cpp">
+      <Filter>reflectiveProperty</Filter>
+    </ClCompile>
+    <ClCompile Include="reflectiveProperty\ReflectiveRClothInfo.cpp">
+      <Filter>reflectiveProperty</Filter>
+    </ClCompile>
+    <ClCompile Include="TFileNameSampling.cpp">
+      <Filter>Validator</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="app.ico">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="icon2.ico">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="icon4.ico">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="icon5.ico">
+      <Filter>리소스 파일</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="app.rc">
+      <Filter>리소스 파일</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="TCamera.h">
+      <Filter>Base</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,1286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="DebugMD|Win32">
+      <Configuration>DebugMD</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug_birdkr|Win32">
+      <Configuration>Debug_birdkr</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug_praptor|Win32">
+      <Configuration>Debug_praptor</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug_pyo|Win32">
+      <Configuration>Debug_pyo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug_vld|Win32">
+      <Configuration>Debug_vld</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseMD|Win32">
+      <Configuration>ReleaseMD</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="UnitTest_DBDebug|Win32">
+      <Configuration>UnitTest_DBDebug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="UnitTest_DB|Win32">
+      <Configuration>UnitTest_DB</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{6605504F-C883-4FE0-ABB7-744DAD6BF69D}</ProjectGuid>
+    <RootNamespace>GameServer</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_praptor|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugMD|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_pyo|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='UnitTest_DBDebug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_birdkr|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_vld|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='UnitTest_DB|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseMD|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug_praptor|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugMD|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug_pyo|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='UnitTest_DBDebug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug_birdkr|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug_vld|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='UnitTest_DB|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseMD|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>16.0.30028.132</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseMD|Win32'">
+    <OutDir>../../../Game/Runtime/Dev/GameServer\</OutDir>
+    <IntDir>Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='UnitTest_DB|Win32'">
+    <OutDir>../../../Game/Runtime/Dev/GameServer\</OutDir>
+    <IntDir>UnitTest_DB\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_vld|Win32'">
+    <OutDir>../../../Game/Runtime/Dev/GameServer\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_birdkr|Win32'">
+    <OutDir>$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='UnitTest_DBDebug|Win32'">
+    <OutDir>../../../Game/Runtime/Dev/GameServer\</OutDir>
+    <IntDir>Debug\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_pyo|Win32'">
+    <OutDir>../../../Game/Runtime/Dev/GameServer\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugMD|Win32'">
+    <OutDir>../../../Game/Runtime/Dev/GameServer\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_praptor|Win32'">
+    <OutDir>$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseMD|Win32'">
+    <ClCompile>
+      <AdditionalOptions>/MP %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>MaxSpeed</Optimization>
+      <AdditionalIncludeDirectories>../framework;../main;../../../mdk/CML2;../../../mdk/MiNet/include;../../../crl/include;../../../CSCommon/Include;../../../../sdk/tinyxml/include;../../../../sdk/lua51/include;../../../../sdk/UnitTest++/v1.4/src;../../../mdk/MAI2;../../../mdk/RealSpace3;../../../mdk/MPathFinder;../../../mdk/MCollision;../../ServerCommon;../../ServerCommonUnitTest;../../../mdk/MAsyncDatabase;../../ServerResourceValidator;../../../mdk/MTest/include;../../../../sdk/gtest/gmock-1.4.0/include;../../../../sdk/gtest/gtest-1.4.0/include;../../../../sdk/tbb/2.2/include;../../Pmang;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_RCOLLISION;_UNITTEST;VUTPP_UNITTEST++;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/LTCG %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>MSVCRT.lib;user32.lib;comctl32.lib;lua5.1.lib;UnitTest++.vsnet2008MD.lib;gmock_MD.lib;tbb.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)GameServer_unittest.exe</OutputFile>
+      <AdditionalLibraryDirectories>../../../../sdk/tinyxml/lib;../../../../sdk/lua51/lib/vc8;../../../../sdk/zlib/lib;../../../RCollision/lib;../../../MPathFinder/lib;../../../../sdk/UnitTest++/v1.4/lib;../../../mdk/MCollision/lib;../../../../sdk/gtest/gmock-1.4.0/lib;../../../../sdk/tbb/2.2/ia32/vc9/lib;../../Pmang/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>Libcmt.lib;MSVCRT.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(TargetDir)GameServer_unittest.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='UnitTest_DB|Win32'">
+    <PreBuildEvent>
+      <Command />
+    </PreBuildEvent>
+    <ClCompile>
+      <AdditionalOptions>/MP %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>MaxSpeed</Optimization>
+      <AdditionalIncludeDirectories>../framework;../main;../../../mdk/CML2;../../../mdk/MiNet/include;../../../crl/include;../../../CSCommon\include;../../../../sdk/tinyxml/include;../../../../sdk/lua51/include;../../../../sdk/UnitTest++/v1.4/src;../../../mdk/MAI2;../../../mdk/RealSpace3;../../../mdk/MPathFinder;../../../mdk/MCollision;../../ServerCommon;../../ServerCommonUnitTest;../../../mdk/MAsyncDatabase;../../ServerResourceValidator;../../../mdk/MTest/include;../../../../sdk/gtest/gmock-1.4.0/include;../../../../sdk/gtest/gtest-1.4.0/include;../../../../sdk/tbb/2.2/include;../../Pmang;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_RCOLLISION;_UNITTEST;_DBTEST;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/LTCG %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>MSVCRT.lib;user32.lib;comctl32.lib;lua5.1.lib;UnitTest++.vsnet2008MD.lib;MCollisionMD.lib;gmock_MD.lib;tbb.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)GameServer_DbTest.exe</OutputFile>
+      <AdditionalLibraryDirectories>../../../../sdk/tinyxml/lib;../../../../sdk/lua51/lib/vc8;../../../../sdk/zlib/lib;../../../RCollision/lib;../../../MPathFinder/lib;../../../../sdk/UnitTest++/v1.4/lib;../../../../sdk/vld/;../../../mdk/MCollision/lib;../../../../sdk/gtest/gmock-1.4.0/lib;../../../../sdk/tbb/2.2/ia32/vc9/lib;../../Pmang/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>Libcmt.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(TargetDir)GameServer_DbTest.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command />
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_vld|Win32'">
+    <ClCompile>
+      <AdditionalOptions>/MP %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>../framework;../main;../../../mdk/CML2;../../../mdk/MiNet/include;../../../crl/include;../../../CSCommon/Include;../../../../sdk/tinyxml/include;../../../../sdk/lua51/include;../../../../sdk/UnitTest++/v1.4/src;../../../mdk/MAI2;../../../mdk/RealSpace3;../../../mdk/MPathFinder;../../../mdk/MCollision;../../ServerCommon;../../../MDK/MAsyncDatabase;../../ServerResourceValidator;../../../mdk/MTest/include;../../../../sdk/gtest/gmock-1.4.0/include;../../../../sdk/gtest/gtest-1.4.0/include;../../../../sdk/tbb/2.2/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_RCOLLISION;VLD_CHECK_LEAK;_UNITTEST;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>Libcmtd.lib;user32.lib;comctl32.lib;lua5.1.lib;zlib.lib;UnitTest++.vsnet2008MTd_NoException.lib;MCollision_d.lib;gmock_MDd.lib;tbb_debug.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ShowProgress>NotSet</ShowProgress>
+      <OutputFile>$(OutDir)GameServer__unittestd.exe</OutputFile>
+      <AdditionalLibraryDirectories>../../../../sdk/tinyxml/lib;../../../../sdk/lua51/lib/vc8;../../../../sdk/zlib/lib;../../../RCollision/lib;../../../../sdk/vld/;../../../../sdk/UnitTest++/v1.4/lib;../../../mdk/MCollision/lib;../../../../sdk/gtest/gmock-1.4.0/lib;../../../../sdk/tbb/2.2/ia32/vc9/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>Nafxcwd.lib;Libcmtd.lib;libcd;libcpd;msvcrt;msvcrtd.lib;msvcprtd.lib;libcmt;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)GameServer_unittestd.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_birdkr|Win32'">
+    <ClCompile>
+      <AdditionalOptions>/MP %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>../framework;../main;../../../mdk/CML2;../../../crl/include;../../../mdk/MiNet/include;../../../CSCommon/Include;../../../../sdk/tinyxml/include;../../../../sdk/lua51/include;../../../../sdk/UnitTest++/v1.4/src;../../../mdk/MAI2;../../../mdk/RealSpace3;../../../mdk/MPathFinder;../../../mdk/MCollision;../../ServerCommon;../../../mdk/MAsyncDatabase;../../ServerResourceValidator;../../../mdk/MiNet/test;../../../mdk/MTest/include;../../../../sdk/tbb/2.2/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_RCOLLISION;_UNITTEST;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>msvcrtd.lib;user32.lib;comctl32.lib;lua5.1.lib;zlib.lib;UnitTest++.vsnet2008MDd.lib;gmock_MDd.lib;tbb_debug.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ShowProgress>NotSet</ShowProgress>
+      <OutputFile>$(OutDir)GameServer_unittestd.exe</OutputFile>
+      <AdditionalLibraryDirectories>../../../../sdk/tinyxml/lib;../../../../sdk/lua51/lib/vc8;../../../../sdk/zlib/lib;../../../../sdk/vld/;../../../../sdk/UnitTest++/v1.4/lib;../../../mdk/MCollision/lib;../framework/lib;../../../../sdk/gtest/gmock-1.4.0/lib;../../../../sdk/tbb/2.2/ia32/vc9/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>libcmtd;libcmt;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)GameServer_unittestd.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command />
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='UnitTest_DBDebug|Win32'">
+    <PreBuildEvent>
+      <Command />
+    </PreBuildEvent>
+    <ClCompile>
+      <AdditionalOptions>/MP %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>../framework;../main;../../../mdk/CML2;../../../mdk/MiNet/include;../../../crl/include;../../../CSCommon/Include;../../../../sdk/tinyxml/include;../../../../sdk/lua51/include;../../../../sdk/UnitTest++/v1.4/src;../../../mdk/MAI2;../../../mdk/RealSpace3;../../../mdk/MPathFinder;../../../mdk/MCollision;../../ServerCommon;../../ServerCommonUnitTest;../../../mdk/MAsyncDatabase;../../ServerResourceValidator;../../../mdk/MTest/include;../../../../sdk/gtest/gmock-1.4.0/include;../../../../sdk/gtest/gtest-1.4.0/include;../../../../sdk/tbb/2.2/include;../../Pmang;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_RCOLLISION;_UNITTEST;_DBTEST;_UNITTEST;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>msvcrtd.lib;user32.lib;comctl32.lib;lua5.1.lib;zlib.lib;UnitTest++.vsnet2008MDd_NoException.lib;MCollision_d.lib;gmock_MD.lib;tbb_debug.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)GameServer_DbTestd.exe</OutputFile>
+      <AdditionalLibraryDirectories>../../../../sdk/tinyxml/lib;../../../../sdk/lua51/lib/vc8;../../../../sdk/zlib/lib;../../../RCollision/lib;../../../MPathFinder/lib;../../../../sdk/UnitTest++/v1.4/lib;../../../../sdk/vld/;../../../mdk/MCollision/lib;../../../../sdk/gtest/gmock-1.4.0/lib;../../../../sdk/tbb/2.2/ia32/vc9/lib;../../Pmang/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>libcmtd;libcmt;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(TargetDir)GameServer_DbTestd.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences />
+      <EnableCOMDATFolding />
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command />
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_pyo|Win32'">
+    <ClCompile>
+      <AdditionalOptions>/MP %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>../framework;../main;../../../mdk/CML2;../../../crl/include;../../../mdk/MiNet/include;../../../CSCommon/Include;../../../../sdk/tinyxml/include;../../../../sdk/lua51/include;../../../../sdk/UnitTest++/v1.4/src;../../../mdk/MAI2;../../../mdk/RealSpace3;../../../mdk/MPathFinder;../../../mdk/MCollision;../../ServerCommon;../../../mdk/MAsyncDatabase;../../ServerResourceValidator;../../../mdk/MTest/include;../../../../sdk/gtest/gmock-1.4.0/include;../../../../sdk/gtest/gtest-1.4.0/include;../../../../sdk/tbb/2.2/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_RCOLLISION;_UNITTEST;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>Libcmtd.lib;user32.lib;comctl32.lib;lua5.1.lib;zlib.lib;UnitTest++.vsnet2008MTd_NoException.lib;MCollision_d.lib;gmock_MDd.lib;tbb_debug.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)GameServer_unittestd.exe</OutputFile>
+      <AdditionalLibraryDirectories>../../../../sdk/tinyxml/lib;../../../../sdk/lua51/lib/vc8;../../../../sdk/zlib/lib;../../../../sdk/vld/;../../../../sdk/UnitTest++/v1.4/lib;../../../mdk/MCollision/lib;../../../../sdk/gtest/gmock-1.4.0/lib;../../../../sdk/tbb/2.2/ia32/vc9/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>Nafxcwd.lib;Libcmtd.lib;libcd;libcpd;msvcrt;libcmt;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)GameServer_unittestd.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugMD|Win32'">
+    <ClCompile>
+      <AdditionalOptions>/MP %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>../framework;../main;../../../mdk/CML2;../../../crl/include;../../../mdk/MiNet/include;../../../CSCommon/Include;../../../../sdk/tinyxml/include;../../../../sdk/lua51/include;../../../../sdk/UnitTest++/v1.4/src;../../../../sdk/gtest/gmock-1.4.0/include;../../../../sdk/gtest/gtest-1.4.0/include;../../../mdk/MAI2;../../../mdk/RealSpace3;../../../mdk/MPathFinder;../../../mdk/MCollision;../../ServerCommon;../../ServerCommonUnitTest;../../../mdk/MAsyncDatabase;../../ServerResourceValidator;../../../mdk/MiNet/test;../../../mdk/MTest/include;../../../../sdk/tbb/2.2/include;../../Pmang;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_RCOLLISION;_UNITTEST;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>msvcrtd.lib;user32.lib;comctl32.lib;lua5.1.lib;zlib.lib;UnitTest++.vsnet2008MDd.lib;gmock_MDd.lib;tbb_debug.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ShowProgress>NotSet</ShowProgress>
+      <OutputFile>$(OutDir)GameServer_unittestd.exe</OutputFile>
+      <AdditionalLibraryDirectories>../../../../sdk/tinyxml/lib;../../../../sdk/lua51/lib/vc8;../../../../sdk/zlib/lib;../../../../sdk/vld/;../../../../sdk/UnitTest++/v1.4/lib;../../../mdk/MCollision/lib;../framework/lib;../../../../sdk/gtest/gmock-1.4.0/lib;../../../../sdk/tbb/2.2/ia32/vc9/lib;../../Pmang/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>libcmtd;libcmt;MSVCRT.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)GameServer_unittestd.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command />
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_praptor|Win32'">
+    <ClCompile>
+      <AdditionalOptions>/MP %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>../framework;../main;../../../mdk/CML2;../../../crl/include;../../../mdk/MiNet/include;../../../CSCommon/Include;../../../../sdk/tinyxml/include;../../../../sdk/lua51/include;../../../../sdk/UnitTest++/v1.4/src;../../../mdk/MAI2;../../../mdk/RealSpace3;../../../mdk/MPathFinder;../../../mdk/MCollision;../../ServerCommon;../../../mdk/MAsyncDatabase;../../ServerResourceValidator;../../../mdk/MiNet/test;../../../mdk/MTest/include;../../../../sdk/gtest/gmock-1.4.0/include;../../../../sdk/gtest/gtest-1.4.0/include;../../../../sdk/tbb/2.2/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_RCOLLISION;_UNITTEST;VUTPP_UNITTEST++;_PRAPTOR;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>Libcmtd.lib;user32.lib;comctl32.lib;lua5.1.lib;zlib.lib;UnitTest++.vsnet2008MTd_NoException.lib;MCollision_d.lib;gmock_MDd.lib;tbb_debug.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ShowProgress>NotSet</ShowProgress>
+      <OutputFile>$(OutDir)GameServer_unittestd.exe</OutputFile>
+      <AdditionalLibraryDirectories>../../../../sdk/tinyxml/lib;../../../../sdk/lua51/lib/vc8;../../../../sdk/zlib/lib;../../../../sdk/vld/;../../../../sdk/UnitTest++/v1.4/lib;../../../mdk/MCollision/lib;../../../../sdk/gtest/gmock-1.4.0/lib;../../../../sdk/tbb/2.2/ia32/vc9/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>Nafxcwd.lib;Libcmtd.lib;libcd;libcpd;msvcrt;libcmt;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)GameServer_unittestd.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="CmdProfile_ActionMove.cpp" />
+    <ClCompile Include="CmdProfile_Equipitem.cpp" />
+    <ClCompile Include="CmdProfile_TriggerSensorInteractionReq.cpp" />
+    <ClCompile Include="CmdProfile_UseTalent.cpp" />
+    <ClCompile Include="DBTestAccount.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_pyo|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="DBTestCharacter.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_pyo|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="DBTestCharacterItemSet.cpp" />
+    <ClCompile Include="DBTestCharactorLog.cpp" />
+    <ClCompile Include="DBTestCharInsert.cpp" />
+    <ClCompile Include="DBTestCharStorage.cpp" />
+    <ClCompile Include="DBTestConnection.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_pyo|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="DBTestCraft.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_pyo|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="DBTestCraftFixture.cpp" />
+    <ClCompile Include="DBTestCraftInsert.cpp" />
+    <ClCompile Include="DBTestCraftLog.cpp" />
+    <ClCompile Include="DBTestCraftUpdate.cpp" />
+    <ClCompile Include="DBTestCutscene.cpp" />
+    <ClCompile Include="DBTestDBManager.cpp" />
+    <ClCompile Include="DBTestEffectRemainTimes.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_pyo|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="DBTestEmblem.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_pyo|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="DBTestFaction.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_pyo|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="DBTestFieldValueTypeBool.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_pyo|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="DBTestFieldValueTypeByte.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_pyo|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="DBTestFieldValueTypeInt64.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_pyo|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="DBTestFieldValueTypeLong.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_pyo|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="DBTestFieldValueTypeNull.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_pyo|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="DBTestFieldValueTypeShort.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_pyo|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="DBTestFieldValueTypeString.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_pyo|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="DBTestFieldValueTypeTimestamp.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_pyo|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="DBTestFieldValueTypeWString.cpp" />
+    <ClCompile Include="DBTestGDBTask.cpp" />
+    <ClCompile Include="DBTestGMQeust.cpp" />
+    <ClCompile Include="DBTestGuild.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_pyo|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="DBTestGuildLog.cpp" />
+    <ClCompile Include="DBTestGuildStorage.cpp" />
+    <ClCompile Include="DBTestHelper_Craft.cpp" />
+    <ClCompile Include="DBTestHelper_Quest.cpp" />
+    <ClCompile Include="DBTestHelper_ServerStatus.cpp" />
+    <ClCompile Include="DBTestInven.cpp" />
+    <ClCompile Include="DBTestItem.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_pyo|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="DBTestItemBuy.cpp" />
+    <ClCompile Include="DBTestItemBuyLog.cpp" />
+    <ClCompile Include="DBTestItemDelete.cpp" />
+    <ClCompile Include="DBTestItemDeleteLog.cpp" />
+    <ClCompile Include="DBTestItemEnchant.cpp" />
+    <ClCompile Include="DBTestItemEnchantLog.cpp" />
+    <ClCompile Include="DBTestItemEquipment.cpp" />
+    <ClCompile Include="DBTestItemInsert.cpp" />
+    <ClCompile Include="DBTestItemInsertLog.cpp" />
+    <ClCompile Include="DBTestItemLearnTalent.cpp" />
+    <ClCompile Include="DBTestItemLog.cpp" />
+    <ClCompile Include="DBTestItemLoot.cpp" />
+    <ClCompile Include="DBTestItemMerge.cpp" />
+    <ClCompile Include="DBTestItemMergeLog.cpp" />
+    <ClCompile Include="DBTestItemMoveLog.cpp" />
+    <ClCompile Include="DBTestItemRepair.cpp" />
+    <ClCompile Include="DBTestItemSell.cpp" />
+    <ClCompile Include="DBTestItemSlot.cpp" />
+    <ClCompile Include="DBTestItemSplit.cpp" />
+    <ClCompile Include="DBTestLoginInfo.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_pyo|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="DBTestLogServerMonitor.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_pyo|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="DBTestMail.cpp" />
+    <ClCompile Include="DBTestMailCheckRcvr.cpp" />
+    <ClCompile Include="DBTestMailGetItem.cpp" />
+    <ClCompile Include="DBTestMailGetMoney.cpp" />
+    <ClCompile Include="DBTestMailLog.cpp" />
+    <ClCompile Include="DBTestMailSend.cpp" />
+    <ClCompile Include="DBTestMoneyLog.cpp" />
+    <ClCompile Include="DBTestNPCKilledLog.cpp" />
+    <ClCompile Include="DBTestNpcShopLog.cpp" />
+    <ClCompile Include="DBTestPalette.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_pyo|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="DBTestPartyLog.cpp" />
+    <ClCompile Include="DBTestQuest.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_pyo|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="DBTestQuestAccept.cpp" />
+    <ClCompile Include="DBTestQuestAcceptItem.cpp" />
+    <ClCompile Include="DBTestQuestComplete.cpp" />
+    <ClCompile Include="DBTestQuestDone.cpp" />
+    <ClCompile Include="DBTestQuestFail.cpp" />
+    <ClCompile Include="DBTestQuestGiveUp.cpp" />
+    <ClCompile Include="DBTestQuestItemLog.cpp" />
+    <ClCompile Include="DBTestQuestList.cpp" />
+    <ClCompile Include="DBTestQuestLog.cpp" />
+    <ClCompile Include="DBTestQuestObject.cpp" />
+    <ClCompile Include="DBTestQuestPvPReward.cpp" />
+    <ClCompile Include="DBTestRecipe.cpp" />
+    <ClCompile Include="DBTestSample.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_pyo|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="DBTestServerStatus.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_pyo|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="DBTestStringSplitFunction.cpp" />
+    <ClCompile Include="DBTestSync.cpp" />
+    <ClCompile Include="DBTestTalent.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_pyo|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="DBTestTalentLog.cpp" />
+    <ClCompile Include="DBTestTrade.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_pyo|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="DBTestTradeLog.cpp" />
+    <ClCompile Include="DBTestTrade_Item.cpp" />
+    <ClCompile Include="DBTestTransaction.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_pyo|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="DBTestWorld.cpp" />
+    <ClCompile Include="DBTestXPLog.cpp" />
+    <ClCompile Include="FBaseAppNetClient.cpp" />
+    <ClCompile Include="FBaseAppServerFacade.cpp" />
+    <ClCompile Include="FBaseCombat.cpp" />
+    <ClCompile Include="FBaseFieldInfo.cpp" />
+    <ClCompile Include="FBaseFieldMgr.cpp" />
+    <ClCompile Include="FBaseGame.cpp" />
+    <ClCompile Include="FBaseMail.cpp" />
+    <ClCompile Include="FBaseMasterServerFacade.cpp" />
+    <ClCompile Include="FBaseMockLink.cpp" />
+    <ClCompile Include="FBaseNetClient.cpp" />
+    <ClCompile Include="FBaseNPC.cpp" />
+    <ClCompile Include="FBasePlayer.cpp" />
+    <ClCompile Include="FBaseScriptCallback.cpp" />
+    <ClCompile Include="FBaseScriptGlue.cpp" />
+    <ClCompile Include="FBaseTalent.cpp" />
+    <ClCompile Include="FForCommandTest.cpp" />
+    <ClCompile Include="GCommonFixture.cpp" />
+    <ClCompile Include="GTestForward.cpp" />
+    <ClCompile Include="GUnitTestRunner.cpp" />
+    <ClCompile Include="GUnitTestStage1.cpp" />
+    <ClCompile Include="GUnitTestStage2.cpp" />
+    <ClCompile Include="GUnitTestStage3.cpp" />
+    <ClCompile Include="GUnitTestStage4.cpp" />
+    <ClCompile Include="GUnitTestStageDB.cpp" />
+    <ClCompile Include="GUnitTestTimeElapsedReporter.cpp" />
+    <ClCompile Include="GUTHelper.cpp" />
+    <ClCompile Include="GUTHelper_Actor.cpp" />
+    <ClCompile Include="GUTHelper_Buff.cpp" />
+    <ClCompile Include="GUTHelper_CmdHandler.cpp" />
+    <ClCompile Include="GUTHelper_Condition.cpp" />
+    <ClCompile Include="GUTHelper_Dialog.cpp" />
+    <ClCompile Include="GUTHelper_Duel.cpp" />
+    <ClCompile Include="GUTHelper_Etc.cpp" />
+    <ClCompile Include="GUTHelper_Faction.cpp" />
+    <ClCompile Include="GUTHelper_Field.cpp" />
+    <ClCompile Include="GUTHelper_Focus.cpp" />
+    <ClCompile Include="GUTHelper_Interaction.cpp" />
+    <ClCompile Include="GUTHelper_Item.cpp" />
+    <ClCompile Include="GUTHelper_Login.cpp" />
+    <ClCompile Include="GUTHelper_Loot.cpp" />
+    <ClCompile Include="GUTHelper_MasterServer.cpp" />
+    <ClCompile Include="GUTHelper_Network.cpp" />
+    <ClCompile Include="GUTHelper_NPC.cpp" />
+    <ClCompile Include="GUTHelper_NPCShop.cpp" />
+    <ClCompile Include="GUTHelper_Party.cpp" />
+    <ClCompile Include="GUTHelper_Player.cpp" />
+    <ClCompile Include="GUTHelper_Quest.cpp" />
+    <ClCompile Include="GUTHelper_QuestPVP.cpp" />
+    <ClCompile Include="GUTHelper_Talent.cpp" />
+    <ClCompile Include="GUTHelper_Trade.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="MockAppNetClient.cpp" />
+    <ClCompile Include="MockAppServerFacade.cpp" />
+    <ClCompile Include="MockDBManager.cpp" />
+    <ClCompile Include="MockDBTask.cpp" />
+    <ClCompile Include="MockDuel.cpp" />
+    <ClCompile Include="MockField.cpp" />
+    <ClCompile Include="MockLink.cpp" />
+    <ClCompile Include="MockMasterNetClient.cpp" />
+    <ClCompile Include="MockMasterServerFacade.cpp" />
+    <ClCompile Include="MockNetServer.cpp" />
+    <ClCompile Include="MockServer.cpp" />
+    <ClCompile Include="NetworkMockServer.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='DebugMD|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug_birdkr|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug_praptor|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug_pyo|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug_vld|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='ReleaseMD|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='UnitTest_DBDebug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='UnitTest_DB|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="TestActorHateTracker.cpp" />
+    <ClCompile Include="TestActor_Invisibility.cpp" />
+    <ClCompile Include="TestAFK.cpp" />
+    <ClCompile Include="TestAI.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_pyo|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="TestAIEvent.cpp" />
+    <ClCompile Include="TestAsyncTask.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_pyo|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="TestAsyncTask_Logout.cpp" />
+    <ClCompile Include="TestAsyncTask_MoveGameServer.cpp" />
+    <ClCompile Include="TestAsyncTask_MoveLoginServer.cpp" />
+    <ClCompile Include="TestAttackDamageCalculator.cpp" />
+    <ClCompile Include="TestAutoPartyMgr.cpp" />
+    <ClCompile Include="TestBasicAttributeCalculator.cpp" />
+    <ClCompile Include="TestBattleArena.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_pyo|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="TestBattleArena_Packet.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_pyo|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="TestBehaviorPeace.cpp" />
+    <ClCompile Include="TestBuff.cpp" />
+    <ClCompile Include="TestBuffEntity.cpp" />
+    <ClCompile Include="TestBuff_Effect.cpp" />
+    <ClCompile Include="TestBuff_EquipmentChanger.cpp" />
+    <ClCompile Include="TestBuff_Event.cpp" />
+    <ClCompile Include="TestBuff_ExtraAttrib.cpp" />
+    <ClCompile Include="TestBuff_PaletteChanger.cpp" />
+    <ClCompile Include="TestBuff_Releaser.cpp" />
+    <ClCompile Include="TestBuff_Stack.cpp" />
+    <ClCompile Include="TestCalc.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_pyo|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="TestCalculator.cpp" />
+    <ClCompile Include="TestCalculator_Faction.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_pyo|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="TestCalculator_StateFactor.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_pyo|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="TestCallCounter.cpp" />
+    <ClCompile Include="TestCapsuleAttack.cpp" />
+    <ClCompile Include="TestChallengerQuest.cpp" />
+    <ClCompile Include="TestChannel.cpp" />
+    <ClCompile Include="TestChannel_MasterServer.cpp" />
+    <ClCompile Include="testCharacterDBCache_XP.cpp" />
+    <ClCompile Include="TestCharHelper.cpp" />
+    <ClCompile Include="TestChat.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_pyo|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="TestChatChannelRouter.cpp" />
+    <ClCompile Include="TestCheatChecker.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_pyo|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="TestChrInfo.cpp" />
+    <ClCompile Include="TestCmdHandler_MoveServer.cpp" />
+    <ClCompile Include="TestCML.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_pyo|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="TestCollision.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_pyo|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="TestColt.cpp" />
+    <ClCompile Include="TestColtActionInstMgr.cpp" />
+    <ClCompile Include="TestColtChecker.cpp" />
+    <ClCompile Include="TestColtRunner.cpp" />
+    <ClCompile Include="TestCombat.cpp" />
+    <ClCompile Include="TestCombatCalc.cpp" />
+    <ClCompile Include="TestCombatCombat.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_pyo|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="TestCombatMonitorPort.cpp" />
+    <ClCompile Include="TestCommandLine.cpp" />
+    <ClCompile Include="TestCondition.cpp" />
+    <ClCompile Include="TestCraft.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_pyo|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="TestCraftLogCache.cpp" />
+    <ClCompile Include="TestCutscene.cpp" />
+    <ClCompile Include="TestDBCacheCharacter.cpp" />
+    <ClCompile Include="TestDBCacheCharacter_Money.cpp" />
+    <ClCompile Include="TestDBCacheDBTaskCharDecMoney.cpp" />
+    <ClCompile Include="TestDBCacheDBTaskCharIncMoney.cpp" />
+    <ClCompile Include="TestDBCacheDBTaskCharLevelUp.cpp" />
+    <ClCompile Include="TestDBCacheDBTaskCharUpdateXP.cpp" />
+    <ClCompile Include="TestDBCacheDBTaskCraft.cpp" />
+    <ClCompile Include="TestDBCacheDBTaskItemDecDura.cpp" />
+    <ClCompile Include="TestDBCacheDBTaskItemDecStackAmt.cpp" />
+    <ClCompile Include="TestDBCacheDBTaskItemIncStackAmt.cpp" />
+    <ClCompile Include="TestDBCacheDBTaskItemLearnTalent.cpp" />
+    <ClCompile Include="TestDBCacheDBTaskItemMerge.cpp" />
+    <ClCompile Include="TestDBCacheDBTaskItemSwapSlot.cpp" />
+    <ClCompile Include="TestDBCacheDBTaskLoot.cpp" />
+    <ClCompile Include="TestDBCacheDBTaskQuestDone.cpp" />
+    <ClCompile Include="TestDBCacheDBTaskQuestGiveup.cpp" />
+    <ClCompile Include="TestDBCacheDBTaskTrade.cpp" />
+    <ClCompile Include="TestDBCacheFixture.cpp" />
+    <ClCompile Include="TestDBCacheFlushTaskPoster.cpp" />
+    <ClCompile Include="TestDBCacheFlushTaskPoster_Rollback.cpp" />
+    <ClCompile Include="TestDBCacheItemDBTaskItemLootUpdate.cpp" />
+    <ClCompile Include="TestDBCacheItemDelete.cpp" />
+    <ClCompile Include="TestDBCacheItemEquip.cpp" />
+    <ClCompile Include="TestDBCacheItemUnquip.cpp" />
+    <ClCompile Include="TestDBCacheNCPShopDBTaskRepair.cpp" />
+    <ClCompile Include="TestDBCacheNPCShopDBTaskItemBuy.cpp" />
+    <ClCompile Include="TestDBCacheNPCShopDBTaskItemSell.cpp" />
+    <ClCompile Include="TestDBCacheObject.cpp" />
+    <ClCompile Include="TestDBCacheRegulatorFlush.cpp" />
+    <ClCompile Include="TestDBCacheSystem.cpp" />
+    <ClCompile Include="TestDBCacheSystem_Character.cpp" />
+    <ClCompile Include="TestDBCacheSystem_Release.cpp" />
+    <ClCompile Include="TestDBTaskCacheFlush_FailQueryJustSkip.cpp" />
+    <ClCompile Include="TestDBTaskCacheFlush_OnEndCompleted.cpp" />
+    <ClCompile Include="TestDBTaskCounter.cpp" />
+    <ClCompile Include="TestDBThread.cpp" />
+    <ClCompile Include="TestDeadMotionFactorImpactor.cpp" />
+    <ClCompile Include="TestDebugReporter.cpp" />
+    <ClCompile Include="TestDefenseFactorCalculator.cpp" />
+    <ClCompile Include="TestDialogSystem.cpp" />
+    <ClCompile Include="TestDropItems.cpp" />
+    <ClCompile Include="TestDropSilver.cpp" />
+    <ClCompile Include="TestDropSouls.cpp" />
+    <ClCompile Include="TestDsnFactory.cpp" />
+    <ClCompile Include="TestDuel.cpp" />
+    <ClCompile Include="TestEffecteeTargetSelector.cpp" />
+    <ClCompile Include="TestEmblem.cpp" />
+    <ClCompile Include="TestEnchant.cpp" />
+    <ClCompile Include="TestEnemyFinder.cpp" />
+    <ClCompile Include="TestEntity.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_pyo|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="TestEntityActor.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_pyo|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="TestEntityActor_Event.cpp" />
+    <ClCompile Include="TestEntityMgr.cpp" />
+    <ClCompile Include="TestEntityNPC.cpp" />
+    <ClCompile Include="TestEntityPlayer.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_pyo|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="TestEntityPlayerDBAsyncMonitor.cpp" />
+    <ClCompile Include="TestEntityPlayer_Exp.cpp" />
+    <ClCompile Include="TestEntitySelector.cpp" />
+    <ClCompile Include="TestEnumValue.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_pyo|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="TestEnvManager.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_pyo|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="TestEquipmentLimit.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_pyo|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="TestEquipmentSlot.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_pyo|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="TestExpCalculator.cpp" />
+    <ClCompile Include="TestExpSystem.cpp" />
+    <ClCompile Include="TestFaction.cpp" />
+    <ClCompile Include="TestFactionSystem.cpp" />
+    <ClCompile Include="TestFatigue.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_pyo|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="TestField.cpp" />
+    <ClCompile Include="TestFieldAttrGrid.cpp" />
+    <ClCompile Include="TestFieldCreation_OnCommand.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_pyo|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="TestFieldFactory.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_pyo|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="TestFieldGrid.cpp" />
+    <ClCompile Include="TestFieldGridRouter.cpp" />
+    <ClCompile Include="TestFieldInfoHelper.cpp" />
+    <ClCompile Include="TestFieldLoadingComplete.cpp" />
+    <ClCompile Include="TestFieldPvP.cpp" />
+    <ClCompile Include="TestFieldSystem.cpp" />
+    <ClCompile Include="TestField_Dynamic.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_pyo|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="TestField_Dynamic_Leave.cpp" />
+    <ClCompile Include="TestFilePath.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_pyo|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="TestFirstStrike.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_pyo|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="TestFocus.cpp" />
+    <ClCompile Include="TestFocus_Advent.cpp" />
+    <ClCompile Include="TestFocus_Berserk.cpp" />
+    <ClCompile Include="TestFocus_Counter.cpp" />
+    <ClCompile Include="TestFocus_Enlighten.cpp" />
+    <ClCompile Include="TestFocus_Precision.cpp" />
+    <ClCompile Include="TestFocus_Sneak.cpp" />
+    <ClCompile Include="TestFSM.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_pyo|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="TestGameStarter.cpp" />
+    <ClCompile Include="TestGatheringApply.cpp" />
+    <ClCompile Include="TestGatheringChecker.cpp" />
+    <ClCompile Include="TestGMExpoHandler.cpp" />
+    <ClCompile Include="TestGuildSystem.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_pyo|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="TestHateTable.cpp" />
+    <ClCompile Include="TestHelper.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_pyo|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="TestHitCapsuleIndexMgr.cpp" />
+    <ClCompile Include="TestImmuneHandler.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_pyo|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="TestIndexedIDMap.cpp" />
+    <ClCompile Include="TestInn.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_pyo|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="TestItemActableChecker.cpp" />
+    <ClCompile Include="TestItemAdder.cpp" />
+    <ClCompile Include="TestItemAdderInsertItemCache.cpp" />
+    <ClCompile Include="TestItemContainer.cpp" />
+    <ClCompile Include="TestItemConvertPrefixedString.cpp" />
+    <ClCompile Include="TestItemDBCache.cpp" />
+    <ClCompile Include="TestItemDBCache_Dura.cpp" />
+    <ClCompile Include="TestItemDBCache_StackAmt.cpp" />
+    <ClCompile Include="TestItemDeleteLogCache.cpp" />
+    <ClCompile Include="TestItemDurabilityUpdater.cpp" />
+    <ClCompile Include="TestItemDyer.cpp" />
+    <ClCompile Include="TestItemEquiper.cpp" />
+    <ClCompile Include="TestItemEquiper_Equip.cpp" />
+    <ClCompile Include="TestItemExpirer.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_pyo|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="TestItemHelper.cpp" />
+    <ClCompile Include="TestItemHolder.cpp" />
+    <ClCompile Include="TestItemLootLogCache.cpp" />
+    <ClCompile Include="TestItemMergeLogCache.cpp" />
+    <ClCompile Include="TestItemMoveData.cpp" />
+    <ClCompile Include="TestItemMover.cpp" />
+    <ClCompile Include="TestItemPeriod.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_pyo|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="TestItemRemover.cpp" />
+    <ClCompile Include="TestItemRemoverDeleteItemCache.cpp" />
+    <ClCompile Include="TestItemSellLogCache.cpp" />
+    <ClCompile Include="TestItemSorter.cpp" />
+    <ClCompile Include="TestItemStateSelector.cpp" />
+    <ClCompile Include="TestItemUnequiper.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_pyo|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="TestItemUser.cpp" />
+    <ClCompile Include="TestJob.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_pyo|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="TestJobMgr.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_pyo|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="TestJobMove.cpp" />
+    <ClCompile Include="TestJobRoam.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_pyo|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="TestJob_Instant.cpp" />
+    <ClCompile Include="TestJob_Patrol.cpp" />
+    <ClCompile Include="TestJob_Speak.cpp" />
+    <ClCompile Include="TestLevelTable.cpp" />
+    <ClCompile Include="TestLogin.cpp" />
+    <ClCompile Include="TestLoginLogic_Duplicated.cpp" />
+    <ClCompile Include="TestLogoutRemainEffectTime.cpp" />
+    <ClCompile Include="TestLootSystem.cpp" />
+    <ClCompile Include="TestLootSystemForMasterServer.cpp" />
+    <ClCompile Include="TestLuaErrorLogger.cpp" />
+    <ClCompile Include="TestLuaThisEnchanter.cpp" />
+    <ClCompile Include="TestMail.cpp" />
+    <ClCompile Include="TestMailCommand.cpp" />
+    <ClCompile Include="TestMailDBTask_GetList.cpp" />
+    <ClCompile Include="TestMailItemPutDowner.cpp" />
+    <ClCompile Include="TestMailItemPutUper.cpp" />
+    <ClCompile Include="TestMailItemTaker.cpp" />
+    <ClCompile Include="TestMailMoneyTaker.cpp" />
+    <ClCompile Include="TestMailSystem.cpp" />
+    <ClCompile Include="TestManageCharacters.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_pyo|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="TestManagedFieldInfoMgr.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_pyo|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="TestMap.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_pyo|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="TestMasterServerFacade.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_pyo|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="TestMasterServer_OnCommand.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_pyo|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="TestMath.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_pyo|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="TestModValueType.cpp" />
+    <ClCompile Include="TestMoneyLogCache.cpp" />
+    <ClCompile Include="TestMotionFactor.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_pyo|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="TestMotionFactorHelper.cpp" />
+    <ClCompile Include="TestMoveGameServer.cpp" />
+    <ClCompile Include="TestMoveLoginServer.cpp" />
+    <ClCompile Include="TestMoveServerRouter.cpp" />
+    <ClCompile Include="TestMoveStrategy.cpp" />
+    <ClCompile Include="TestNameStringChecker.cpp" />
+    <ClCompile Include="TestNPC.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_pyo|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="TestNPCAssist.cpp" />
+    <ClCompile Include="TestNPCBParts.cpp" />
+    <ClCompile Include="TestNPCChangeMode.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_pyo|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="TestNPCCombatAnticheat.cpp" />
+    <ClCompile Include="TestNPCIconSelector.cpp" />
+    <ClCompile Include="TestNPCIconSender.cpp" />
+    <ClCompile Include="TestNPCIEApplier.cpp" />
+    <ClCompile Include="TestNPCIEChecker.cpp" />
+    <ClCompile Include="TestNPCInfo.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_pyo|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="TestNPCInfoHelper.cpp" />
+    <ClCompile Include="TestNPCInteractor.cpp" />
+    <ClCompile Include="TestNPCKillLogBuilder.cpp" />
+    <ClCompile Include="TestNPCMinion.cpp" />
+    <ClCompile Include="TestNPCMove.cpp" />
+    <ClCompile Include="TestNPCRewarder.cpp" />
+    <ClCompile Include="TestNPCRewardOwner.cpp" />
+    <ClCompile Include="TestNPCSession.cpp" />
+    <ClCompile Include="TestNPCShopBuyer.cpp" />
+    <ClCompile Include="TestNPCShopRepairer.cpp" />
+    <ClCompile Include="TestNPCShopSeller.cpp" />
+    <ClCompile Include="TestNPCShopShower.cpp" />
+    <ClCompile Include="TestNPCStress.cpp" />
+    <ClCompile Include="TestNPCXPTable.cpp" />
+    <ClCompile Include="TestObjectPool.cpp" />
+    <ClCompile Include="TestOnCommand_ActionMove.cpp" />
+    <ClCompile Include="TestOptions.cpp" />
+    <ClCompile Include="TestPalette.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_pyo|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="TestParty.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_pyo|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="TestPartyCommand.cpp" />
+    <ClCompile Include="TestPartyDuel.cpp" />
+    <ClCompile Include="TestPartySystem.cpp" />
+    <ClCompile Include="TestPathFinding.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_pyo|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="TestPickingZTable.cpp" />
+    <ClCompile Include="TestPlayerAcceptor.cpp" />
+    <ClCompile Include="TestPlayerCoolTimeChecker.cpp" />
+    <ClCompile Include="TestPlayerDBCache.cpp" />
+    <ClCompile Include="TestPlayerDBCacheMgr.cpp" />
+    <ClCompile Include="TestPlayerEnemyInfoSender.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_pyo|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="TestPlayerFalling.cpp" />
+    <ClCompile Include="TestPlayerGameData.cpp" />
+    <ClCompile Include="TestPlayerGameStart_AutoRebirther.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_pyo|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="TestPlayerGameStart_FieldGater.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_pyo|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="TestPlayerGameStart_State.cpp" />
+    <ClCompile Include="TestPlayerLevelUpdater.cpp" />
+    <ClCompile Include="TestPlayerLogoutDBExecuter.cpp" />
+    <ClCompile Include="TestPlayerMailBox.cpp" />
+    <ClCompile Include="TestPlayerMailboxDBMailUID.cpp" />
+    <ClCompile Include="TestPlayerMailReserver.cpp" />
+    <ClCompile Include="TestPlayerObject.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_pyo|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="TestPlayerObjectManager.cpp" />
+    <ClCompile Include="TestPlayerQuest.cpp" />
+    <ClCompile Include="TestPlayerRebirth.cpp" />
+    <ClCompile Include="TestPlayerRide.cpp" />
+    <ClCompile Include="TestPlayerSensorCacheUpdater.cpp" />
+    <ClCompile Include="TestPlayerSpawnedNPC.cpp" />
+    <ClCompile Include="TestPlayerSystem.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_pyo|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="TestPlayerTDCacheInfoBuilder.cpp" />
+    <ClCompile Include="TestPmangDsnFactory.cpp" />
+    <ClCompile Include="TestProxyChannel.cpp" />
+    <ClCompile Include="TestProxyChatChannelManager.cpp" />
+    <ClCompile Include="TestProxyField.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_pyo|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="TestProxyParty.cpp" />
+    <ClCompile Include="TestProxyPlayer.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_pyo|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="TestQObjInteractor.cpp" />
+    <ClCompile Include="TestQObjUpdater.cpp" />
+    <ClCompile Include="TestQPKillRewarder.cpp" />
+    <ClCompile Include="TestQPKillRewardOwner.cpp" />
+    <ClCompile Include="TestQPNPCPosSender.cpp" />
+    <ClCompile Include="TestQPTeamCountSender.cpp" />
+    <ClCompile Include="TestQPvPRewardItemLogCache.cpp" />
+    <ClCompile Include="TestQuestCanceler.cpp" />
+    <ClCompile Include="TestQuestGiver.cpp" />
+    <ClCompile Include="TestQuestItemLogCache.cpp" />
+    <ClCompile Include="TestQuestPVP.cpp" />
+    <ClCompile Include="TestQuestRewarder.cpp" />
+    <ClCompile Include="TestQuestSharer.cpp" />
+    <ClCompile Include="TestQuestVarUpdater.cpp" />
+    <ClCompile Include="TestRebirthSystem.cpp" />
+    <ClCompile Include="TestRegenUpdater.cpp" />
+    <ClCompile Include="TestRelationSelector.cpp" />
+    <ClCompile Include="TestReloader.cpp" />
+    <ClCompile Include="TestReserveCmd.cpp" />
+    <ClCompile Include="TestReserveCmdManager.cpp" />
+    <ClCompile Include="TestRoaming.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_pyo|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="TestRotate.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_pyo|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="TestSample.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_pyo|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="TestScriptCallback_Buff.cpp" />
+    <ClCompile Include="TestScriptCallback_Field.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_pyo|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="TestScriptCallback_NPC.cpp" />
+    <ClCompile Include="TestScriptCallback_Quest.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_pyo|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="TestScriptFunction_Actor.cpp" />
+    <ClCompile Include="TestScriptFunction_Field.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_pyo|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="TestScriptFunction_NPC.cpp" />
+    <ClCompile Include="TestScriptFunction_NPCSession.cpp" />
+    <ClCompile Include="TestScriptFunction_Player.cpp" />
+    <ClCompile Include="TestScriptFunction_Quest.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_pyo|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="TestScriptFunction_Utility.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_pyo|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="TestScriptGlues.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_pyo|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="TestScriptHandler.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_pyo|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="TestScriptNullObject.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_pyo|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="TestSectorRouteLimiter.cpp" />
+    <ClCompile Include="TestSensor.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_pyo|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="TestSensorInteraction.cpp" />
+    <ClCompile Include="TestServableChecker.cpp" />
+    <ClCompile Include="TestServerModeChanger.cpp" />
+    <ClCompile Include="TestServerResourceValidator.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_pyo|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="TestServerStatusUpdater.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_pyo|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="TestSit.cpp" />
+    <ClCompile Include="TestSoul.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_pyo|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="TestSpawn.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_pyo|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="TestStorageSystem.cpp" />
+    <ClCompile Include="TestStrings.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_pyo|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="TestSwim.cpp" />
+    <ClCompile Include="TestSyncingCacheList.cpp" />
+    <ClCompile Include="TestTalent.cpp" />
+    <ClCompile Include="TestTalentDrain.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_pyo|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="TestTalentEffector.cpp" />
+    <ClCompile Include="TestTalentHitCommandFactory.cpp" />
+    <ClCompile Include="TestTalentHitter.cpp" />
+    <ClCompile Include="TestTalentInfo.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_pyo|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="TestTalentMode.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_pyo|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="TestTalent_Casting.cpp" />
+    <ClCompile Include="TestTalent_Command.cpp" />
+    <ClCompile Include="TestTalent_Cooltime.cpp" />
+    <ClCompile Include="TestTalent_ExtraActive.cpp" />
+    <ClCompile Include="TestTalent_Grapple.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_pyo|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="TestTalent_Guard.cpp" />
+    <ClCompile Include="TestTalent_Hit.cpp" />
+    <ClCompile Include="TestTalent_Item.cpp" />
+    <ClCompile Include="TestTalent_Moving.cpp" />
+    <ClCompile Include="TestTalent_Passive.cpp" />
+    <ClCompile Include="TestTalent_Projectile.cpp" />
+    <ClCompile Include="TestTalent_Swallow.cpp" />
+    <ClCompile Include="TestTask_Idle.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_pyo|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="TestTestUtil.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_pyo|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="TestThreadTask.cpp" />
+    <ClCompile Include="TestThreadTaskMgr.cpp" />
+    <ClCompile Include="TestTickRegulator.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_pyo|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="TestTimeType.cpp" />
+    <ClCompile Include="TestTradeAcceptor.cpp" />
+    <ClCompile Include="TestTradeCanceler.cpp" />
+    <ClCompile Include="TestTradeChecker.cpp" />
+    <ClCompile Include="TestTradeConfirmer.cpp" />
+    <ClCompile Include="TestTradeExchanger.cpp" />
+    <ClCompile Include="TestTradeExchangerForDBTask.cpp" />
+    <ClCompile Include="TestTradeItemPutDowner.cpp" />
+    <ClCompile Include="TestTradeItemPutUper.cpp" />
+    <ClCompile Include="TestTradeMarket.cpp" />
+    <ClCompile Include="TestTradeRequester.cpp" />
+    <ClCompile Include="TestTradeSilverPutUper.cpp" />
+    <ClCompile Include="TestTraining.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_pyo|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="TestUseCostMgr.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_pyo|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="TestVector.cpp" />
+    <ClCompile Include="TestWaitFor.cpp" />
+    <ClCompile Include="TestWarpInfoChecker.cpp" />
+    <ClCompile Include="TestWarpInfoCollector.cpp" />
+    <ClCompile Include="TestWeather.cpp" />
+    <ClCompile Include="TestWLua.cpp" />
+    <ClCompile Include="TestWLua_Table.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_pyo|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="TestWorld.cpp" />
+    <ClCompile Include="TestXPLogCache.cpp" />
+    <ClCompile Include="UnitTestDB.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_pyo|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DBTestCraftFixture.h" />
+    <ClInclude Include="DBTestHelper_Craft.h" />
+    <ClInclude Include="DBTestHelper_Quest.h" />
+    <ClInclude Include="DBTestHelper_ServerStatus.h" />
+    <ClInclude Include="DBTestSwapItem.h" />
+    <ClInclude Include="FBaseAppNetClient.h" />
+    <ClInclude Include="FBaseAppServerFacade.h" />
+    <ClInclude Include="FBaseCombat.h" />
+    <ClInclude Include="FBaseFieldInfo.h" />
+    <ClInclude Include="FBaseFieldMgr.h" />
+    <ClInclude Include="FBaseGame.h" />
+    <ClInclude Include="FBaseItem.h" />
+    <ClInclude Include="FBaseMail.h" />
+    <ClInclude Include="FBaseMasterServerFacade.h" />
+    <ClInclude Include="FBaseMockLink.h" />
+    <ClInclude Include="FBaseNetClient.h" />
+    <ClInclude Include="FBaseNPC.h" />
+    <ClInclude Include="FBasePlayer.h" />
+    <ClInclude Include="FBaseScriptCallback.h" />
+    <ClInclude Include="FBaseScriptGlue.h" />
+    <ClInclude Include="FBaseTalent.h" />
+    <ClInclude Include="FForCommandTest.h" />
+    <ClInclude Include="FNotStandAlone.h" />
+    <ClInclude Include="GCommonFixture.h" />
+    <ClInclude Include="GTestForward.h" />
+    <ClInclude Include="GTestWrapper.h" />
+    <ClInclude Include="GUnitTestRunner.h" />
+    <ClInclude Include="GUnitTestStage1.h" />
+    <ClInclude Include="GUnitTestStage2.h" />
+    <ClInclude Include="GUnitTestStage3.h" />
+    <ClInclude Include="GUnitTestStage4.h" />
+    <ClInclude Include="GUnitTestStageDB.h" />
+    <ClInclude Include="GUnitTestTimeElapsedReporter.h" />
+    <ClInclude Include="GUnitTestUtil.h" />
+    <ClInclude Include="GUTHelper.h" />
+    <ClInclude Include="GUTHelper_Actor.h" />
+    <ClInclude Include="GUTHelper_Buff.h" />
+    <ClInclude Include="GUTHelper_CmdHandler.h" />
+    <ClInclude Include="GUTHelper_Condition.h" />
+    <ClInclude Include="GUTHelper_Dialog.h" />
+    <ClInclude Include="GUTHelper_Duel.h" />
+    <ClInclude Include="GUTHelper_Etc.h" />
+    <ClInclude Include="GUTHelper_Faction.h" />
+    <ClInclude Include="GUTHelper_Field.h" />
+    <ClInclude Include="GUTHelper_Focus.h" />
+    <ClInclude Include="GUTHelper_Interaction.h" />
+    <ClInclude Include="GUTHelper_Item.h" />
+    <ClInclude Include="GUTHelper_Login.h" />
+    <ClInclude Include="GUTHelper_Loot.h" />
+    <ClInclude Include="GUTHelper_MasterServer.h" />
+    <ClInclude Include="GUTHelper_Network.h" />
+    <ClInclude Include="GUTHelper_NPC.h" />
+    <ClInclude Include="GUTHelper_NPCShop.h" />
+    <ClInclude Include="GUTHelper_Party.h" />
+    <ClInclude Include="GUTHelper_Player.h" />
+    <ClInclude Include="GUTHelper_Quest.h" />
+    <ClInclude Include="GUTHelper_QuestPVP.h" />
+    <ClInclude Include="GUTHelper_Talent.h" />
+    <ClInclude Include="GUTHelper_Trade.h" />
+    <ClInclude Include="MockAppNetClient.h" />
+    <ClInclude Include="MockAppServerFacade.h" />
+    <CustomBuild Include="MockDBManager.h" />
+    <ClInclude Include="MockDBTask.h" />
+    <ClInclude Include="MockDuel.h" />
+    <ClInclude Include="MockEntityActor.h" />
+    <ClInclude Include="MockEntityNPC.h" />
+    <ClInclude Include="MockEntityPlayer.h" />
+    <ClInclude Include="MockField.h" />
+    <ClInclude Include="MockFieldEnteringMgr.h" />
+    <ClInclude Include="MockItemSystem.h" />
+    <ClInclude Include="MockJobMgr.h" />
+    <ClInclude Include="MockJobTask.h" />
+    <ClInclude Include="MockLink.h" />
+    <ClInclude Include="MockMasterNetClient.h" />
+    <ClInclude Include="MockMasterServerFacade.h" />
+    <ClInclude Include="MockNetServer.h" />
+    <ClInclude Include="MockParty.h" />
+    <ClInclude Include="MockPartySystem.h" />
+    <ClInclude Include="MockPathFinder.h" />
+    <ClInclude Include="MockPlayerObject.h" />
+    <ClInclude Include="MockServer.h" />
+    <ClInclude Include="NetworkMockServer.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="TestCallCounter.h" />
+    <ClInclude Include="TestCombatCalculator.h" />
+    <ClInclude Include="TestDBCacheFixture.h" />
+    <ClInclude Include="TestItemManager.h" />
+    <ClInclude Include="TestLogin.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CodeCoverages.inc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="GameServer.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

@@ -1,0 +1,647 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="logic">
+      <UniqueIdentifier>{2239b1f0-c6be-47e4-b0f1-60ec3696b2c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="logic\item">
+      <UniqueIdentifier>{a3a7db34-074d-41b8-8c28-fa43304abf0b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="logic\talent">
+      <UniqueIdentifier>{b2ec97ed-ba25-4a1a-b8ad-3b6c6818655a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="logic\talent\effector">
+      <UniqueIdentifier>{c5b2e1d5-2493-4b6a-aa7b-fb017b58838c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="logic\field">
+      <UniqueIdentifier>{a70c7f28-8f05-4ff5-9374-26b0697c023e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="logic\character">
+      <UniqueIdentifier>{86ccb849-f2ad-4114-8906-ca55bdbb1df0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="logic\quest">
+      <UniqueIdentifier>{d5fa61ec-5f4c-45d5-a7be-9cf9468a63f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="logic\effectinfo">
+      <UniqueIdentifier>{106ac3d5-ebab-481b-9366-39511de1b9e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="logic\buff">
+      <UniqueIdentifier>{3ede9154-0046-420d-a813-ce8f8d3c53d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="logic\faction">
+      <UniqueIdentifier>{8dbc3c88-a451-471e-be15-cf3c9e2d0fc5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="logic\recipe">
+      <UniqueIdentifier>{0093a3f8-31c2-480c-8d01-4e0cc7e46723}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="logic\mesh">
+      <UniqueIdentifier>{e4fc2864-8a83-4567-a5d4-b169c70a63ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="logic\party">
+      <UniqueIdentifier>{7d74cfb9-365b-405e-99e4-2da15b1a19ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="logic\condition">
+      <UniqueIdentifier>{184e92a9-ab16-4e48-8d50-7fd94b6734a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="logic\npcshop">
+      <UniqueIdentifier>{c2190077-ffcf-4b07-81ae-b51e063c6231}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="logic\msg">
+      <UniqueIdentifier>{8f648737-c337-4e7d-b6f0-69e2a37c511b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="logic\define">
+      <UniqueIdentifier>{adee02c9-3b45-41a3-a0dd-faedaf2a1a36}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="logic\inn">
+      <UniqueIdentifier>{2f4ff31f-7e83-479a-a428-7799be6d2a56}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="logic\emblem">
+      <UniqueIdentifier>{200c834e-7679-4faf-9988-31d5af9bc8e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="logic\string_filter">
+      <UniqueIdentifier>{e9d375dc-8769-49ce-8f9b-ce5797658a07}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="logic\TradeMarket">
+      <UniqueIdentifier>{cfc8106b-df30-4899-812a-523f498d8148}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="packet">
+      <UniqueIdentifier>{7408a816-8d64-4908-ab45-96376aacf6a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core">
+      <UniqueIdentifier>{ad820db9-e62c-4f32-8c50-fe07b805192b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="locale">
+      <UniqueIdentifier>{440dc6f5-b82e-4aeb-8caa-d547b619cddd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="locale\FormatString">
+      <UniqueIdentifier>{bee0032d-61f1-4cd3-b8ce-0b0689635fd3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="locale\FormatString\FSHelper">
+      <UniqueIdentifier>{72eb7a32-493f-44ee-9054-7e00694ed427}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="helper">
+      <UniqueIdentifier>{08348965-b150-4a47-9785-b7f76ce29d6c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GoogleMockUtil">
+      <UniqueIdentifier>{3652d0bb-3a5c-4bbe-86ba-3e6eb28a518c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="localization">
+      <UniqueIdentifier>{d380f08f-bf6f-4341-b766-a9893e789edb}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\CSBasicAttributeCalculator.cpp">
+      <Filter>logic</Filter>
+    </ClCompile>
+    <ClCompile Include="source\CSGuild.cpp">
+      <Filter>logic</Filter>
+    </ClCompile>
+    <ClCompile Include="source\CSInfo.cpp">
+      <Filter>logic</Filter>
+    </ClCompile>
+    <ClCompile Include="source\CSInfoMgr.cpp">
+      <Filter>logic</Filter>
+    </ClCompile>
+    <ClCompile Include="source\CSModifier.cpp">
+      <Filter>logic</Filter>
+    </ClCompile>
+    <ClCompile Include="source\CSStrings.cpp">
+      <Filter>logic</Filter>
+    </ClCompile>
+    <ClCompile Include="source\CSItemData.cpp">
+      <Filter>logic\item</Filter>
+    </ClCompile>
+    <ClCompile Include="source\CSItemHelper.cpp">
+      <Filter>logic\item</Filter>
+    </ClCompile>
+    <ClCompile Include="source\CSItemManager.cpp">
+      <Filter>logic\item</Filter>
+    </ClCompile>
+    <ClCompile Include="source\CSCommonParser.cpp">
+      <Filter>logic\talent</Filter>
+    </ClCompile>
+    <ClCompile Include="source\CSHitCapsuleIndexMgr.cpp">
+      <Filter>logic\talent</Filter>
+    </ClCompile>
+    <ClCompile Include="source\CSHitInfoLoader.cpp">
+      <Filter>logic\talent</Filter>
+    </ClCompile>
+    <ClCompile Include="source\CSHitInfoSaver.cpp">
+      <Filter>logic\talent</Filter>
+    </ClCompile>
+    <ClCompile Include="source\CSMotionFactorHelper.cpp">
+      <Filter>logic\talent</Filter>
+    </ClCompile>
+    <ClCompile Include="source\CSMotionFactorInfo.cpp">
+      <Filter>logic\talent</Filter>
+    </ClCompile>
+    <ClCompile Include="source\CSTalentInfo.cpp">
+      <Filter>logic\talent</Filter>
+    </ClCompile>
+    <ClCompile Include="source\CSTalentInfoExtParser.cpp">
+      <Filter>logic\talent</Filter>
+    </ClCompile>
+    <ClCompile Include="source\CSTalentInfoHelper.cpp">
+      <Filter>logic\talent</Filter>
+    </ClCompile>
+    <ClCompile Include="source\CSTalentInfoLoader.cpp">
+      <Filter>logic\talent</Filter>
+    </ClCompile>
+    <ClCompile Include="source\CSTalentInfoMgr.cpp">
+      <Filter>logic\talent</Filter>
+    </ClCompile>
+    <ClCompile Include="source\CSTalentInfoParser.cpp">
+      <Filter>logic\talent</Filter>
+    </ClCompile>
+    <ClCompile Include="source\CSTalentPosInfoLoader.cpp">
+      <Filter>logic\talent</Filter>
+    </ClCompile>
+    <ClCompile Include="source\CSTalentPosInfoSaver.cpp">
+      <Filter>logic\talent</Filter>
+    </ClCompile>
+    <ClCompile Include="source\CSModEffector.cpp">
+      <Filter>logic\talent\effector</Filter>
+    </ClCompile>
+    <ClCompile Include="source\CSFieldInfo.cpp">
+      <Filter>logic\field</Filter>
+    </ClCompile>
+    <ClCompile Include="source\CSFieldInfoHelper.cpp">
+      <Filter>logic\field</Filter>
+    </ClCompile>
+    <ClCompile Include="source\CSCharHelper.cpp">
+      <Filter>logic\character</Filter>
+    </ClCompile>
+    <ClCompile Include="source\CSChrInfo.cpp">
+      <Filter>logic\character</Filter>
+    </ClCompile>
+    <ClCompile Include="source\CSNPCInfoHelper.cpp">
+      <Filter>logic\character</Filter>
+    </ClCompile>
+    <ClCompile Include="source\CSQObjectiveInfo.cpp">
+      <Filter>logic\quest</Filter>
+    </ClCompile>
+    <ClCompile Include="source\CSQuestInfo.cpp">
+      <Filter>logic\quest</Filter>
+    </ClCompile>
+    <ClCompile Include="source\CSQuestInfoMgr.cpp">
+      <Filter>logic\quest</Filter>
+    </ClCompile>
+    <ClCompile Include="source\CSEffectInfo.cpp">
+      <Filter>logic\effectinfo</Filter>
+    </ClCompile>
+    <ClCompile Include="source\CSBuffInfo.cpp">
+      <Filter>logic\buff</Filter>
+    </ClCompile>
+    <ClCompile Include="source\CSFactionCalculator.cpp">
+      <Filter>logic\faction</Filter>
+    </ClCompile>
+    <ClCompile Include="source\CSFactionInfo.cpp">
+      <Filter>logic\faction</Filter>
+    </ClCompile>
+    <ClCompile Include="source\CSRecipeInfo.cpp">
+      <Filter>logic\recipe</Filter>
+    </ClCompile>
+    <ClCompile Include="source\CSRecipeInfoMgr.cpp">
+      <Filter>logic\recipe</Filter>
+    </ClCompile>
+    <ClCompile Include="source\CSMeshInfo.cpp">
+      <Filter>logic\mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="source\CSMeshInfoLoader.cpp">
+      <Filter>logic\mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="source\CSMeshInfoSaver.cpp">
+      <Filter>logic\mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="source\CSPartyMember.cpp">
+      <Filter>logic\party</Filter>
+    </ClCompile>
+    <ClCompile Include="source\CSConditionInfo.cpp">
+      <Filter>logic\condition</Filter>
+    </ClCompile>
+    <ClCompile Include="source\CSConditionsInfo.cpp">
+      <Filter>logic\condition</Filter>
+    </ClCompile>
+    <ClCompile Include="source\CSConditionsInfoMgr.cpp">
+      <Filter>logic\condition</Filter>
+    </ClCompile>
+    <ClCompile Include="source\CSNPCShopCalculator.cpp">
+      <Filter>logic\npcshop</Filter>
+    </ClCompile>
+    <ClCompile Include="source\CSMsgCommandFacade.cpp">
+      <Filter>logic\msg</Filter>
+    </ClCompile>
+    <ClCompile Include="source\CSMsgHandler.cpp">
+      <Filter>logic\msg</Filter>
+    </ClCompile>
+    <ClCompile Include="source\CSInnInfo.cpp">
+      <Filter>logic\inn</Filter>
+    </ClCompile>
+    <ClCompile Include="source\CSInnInfoMgr.cpp">
+      <Filter>logic\inn</Filter>
+    </ClCompile>
+    <ClCompile Include="source\CSEmblemInfo.cpp">
+      <Filter>logic\emblem</Filter>
+    </ClCompile>
+    <ClCompile Include="source\CSEmblemInfoMgr.cpp">
+      <Filter>logic\emblem</Filter>
+    </ClCompile>
+    <ClCompile Include="source\CSGameWordsFilter.cpp">
+      <Filter>logic\string_filter</Filter>
+    </ClCompile>
+    <ClCompile Include="source\CSNameStringChecker.cpp">
+      <Filter>logic\string_filter</Filter>
+    </ClCompile>
+    <ClCompile Include="source\CSNameWordFilter.cpp">
+      <Filter>logic\string_filter</Filter>
+    </ClCompile>
+    <ClCompile Include="source\CSStringFilter.cpp">
+      <Filter>logic\string_filter</Filter>
+    </ClCompile>
+    <ClCompile Include="source\CCommandTable.cpp">
+      <Filter>packet</Filter>
+    </ClCompile>
+    <ClCompile Include="source\CCommandTable_App.cpp">
+      <Filter>packet</Filter>
+    </ClCompile>
+    <ClCompile Include="source\CCommandTable_Log.cpp">
+      <Filter>packet</Filter>
+    </ClCompile>
+    <ClCompile Include="source\CCommandTable_Login.cpp">
+      <Filter>packet</Filter>
+    </ClCompile>
+    <ClCompile Include="source\CCommandTable_Master.cpp">
+      <Filter>packet</Filter>
+    </ClCompile>
+    <ClCompile Include="source\CCommandTable_WorldLocator.cpp">
+      <Filter>packet</Filter>
+    </ClCompile>
+    <ClCompile Include="source\CAppHelper.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="source\CSBaseValidator.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="source\CSLuaCallbackLogger.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="source\CSValidateLogger.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="source\CLangInfo.cpp">
+      <Filter>locale</Filter>
+    </ClCompile>
+    <ClCompile Include="source\CStringNode.cpp">
+      <Filter>locale</Filter>
+    </ClCompile>
+    <ClCompile Include="source\CStringResMgr.cpp">
+      <Filter>locale</Filter>
+    </ClCompile>
+    <ClCompile Include="source\CSFormatString.cpp">
+      <Filter>locale\FormatString</Filter>
+    </ClCompile>
+    <ClCompile Include="source\CSFormatStringParameter.cpp">
+      <Filter>locale\FormatString\FSHelper</Filter>
+    </ClCompile>
+    <ClCompile Include="source\FSContext.cpp">
+      <Filter>locale\FormatString\FSHelper</Filter>
+    </ClCompile>
+    <ClCompile Include="source\FSFsm.cpp">
+      <Filter>locale\FormatString\FSHelper</Filter>
+    </ClCompile>
+    <ClCompile Include="source\CSHelper.cpp">
+      <Filter>helper</Filter>
+    </ClCompile>
+    <ClCompile Include="source\CSMsgCommandHelper.cpp">
+      <Filter>helper</Filter>
+    </ClCompile>
+    <ClCompile Include="source\CSGoogleMockListener.cpp">
+      <Filter>GoogleMockUtil</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\CSBasicAttributeCalculator.h">
+      <Filter>logic</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CSGuild.h">
+      <Filter>logic</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CSInfo.h">
+      <Filter>logic</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CSInfoMgr.h">
+      <Filter>logic</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CSModifier.h">
+      <Filter>logic</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CSSoul.h">
+      <Filter>logic</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CSStrings.h">
+      <Filter>logic</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CSTriggerInfo.h">
+      <Filter>logic</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CSItemData.h">
+      <Filter>logic\item</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CSItemHelper.h">
+      <Filter>logic\item</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CSItemManager.h">
+      <Filter>logic\item</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CSCommonParser.h">
+      <Filter>logic\talent</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CSHitCapsuleIndexMgr.h">
+      <Filter>logic\talent</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CSHitInfoLoader.h">
+      <Filter>logic\talent</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CSHitInfoSaver.h">
+      <Filter>logic\talent</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CSMotionFactorHelper.h">
+      <Filter>logic\talent</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CSMotionFactorInfo.h">
+      <Filter>logic\talent</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CSPalette.h">
+      <Filter>logic\talent</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CSSocialMotion.h">
+      <Filter>logic\talent</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CSTalentDef.h">
+      <Filter>logic\talent</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CSTalentInfo.h">
+      <Filter>logic\talent</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CSTalentInfoDef.h">
+      <Filter>logic\talent</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CSTalentInfoDef_Hit.h">
+      <Filter>logic\talent</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CSTalentInfoEnum.h">
+      <Filter>logic\talent</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CSTalentInfoExtParser.h">
+      <Filter>logic\talent</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CSTalentInfoHelper.h">
+      <Filter>logic\talent</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CSTalentInfoLoader.h">
+      <Filter>logic\talent</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CSTalentInfoMgr.h">
+      <Filter>logic\talent</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CSTalentInfoParser.h">
+      <Filter>logic\talent</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CSTalentPosInfoLoader.h">
+      <Filter>logic\talent</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CSTalentPosInfoSaver.h">
+      <Filter>logic\talent</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CSModEffector.h">
+      <Filter>logic\talent\effector</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CSFieldInfo.h">
+      <Filter>logic\field</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CSFieldInfoHelper.h">
+      <Filter>logic\field</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CSWorldInfo.h">
+      <Filter>logic\field</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CSCharHelper.h">
+      <Filter>logic\character</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CSChrInfo.h">
+      <Filter>logic\character</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CSIndexedIDMap.h">
+      <Filter>logic\character</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CSNPCInfoHelper.h">
+      <Filter>logic\character</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CSQObjectiveInfo.h">
+      <Filter>logic\quest</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CSQuestInfo.h">
+      <Filter>logic\quest</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CSQuestInfoMgr.h">
+      <Filter>logic\quest</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CSEffectInfo.h">
+      <Filter>logic\effectinfo</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CSBuffInfo.h">
+      <Filter>logic\buff</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CSBuffInfoDef.h">
+      <Filter>logic\buff</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CSFactionCalculator.h">
+      <Filter>logic\faction</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CSFactionInfo.h">
+      <Filter>logic\faction</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CSRecipeInfo.h">
+      <Filter>logic\recipe</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CSRecipeInfoMgr.h">
+      <Filter>logic\recipe</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CSMeshInfo.h">
+      <Filter>logic\mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CSMeshInfoLoader.h">
+      <Filter>logic\mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CSMeshInfoSaver.h">
+      <Filter>logic\mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CSPartyMember.h">
+      <Filter>logic\party</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CSConditionInfo.h">
+      <Filter>logic\condition</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CSConditionsInfo.h">
+      <Filter>logic\condition</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CSConditionsInfoMgr.h">
+      <Filter>logic\condition</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CSNPCShopCalculator.h">
+      <Filter>logic\npcshop</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CSMsgCommandFacade.h">
+      <Filter>logic\msg</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CSMsgHandler.h">
+      <Filter>logic\msg</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CSDef.h">
+      <Filter>logic\define</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CSDef_Dialog.h">
+      <Filter>logic\define</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CSDef_Fatigue.h">
+      <Filter>logic\define</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CSDef_Interaction.h">
+      <Filter>logic\define</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CSDef_Loot.h">
+      <Filter>logic\define</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CSDef_Party.h">
+      <Filter>logic\define</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CSDef_Quest.h">
+      <Filter>logic\define</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CSDef_QuestPVP.h">
+      <Filter>logic\define</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CSDef_Rebirth.h">
+      <Filter>logic\define</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CSInnInfo.h">
+      <Filter>logic\inn</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CSInnInfoMgr.h">
+      <Filter>logic\inn</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CSEmblemInfo.h">
+      <Filter>logic\emblem</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CSEmblemInfoMgr.h">
+      <Filter>logic\emblem</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CSGameWordsFilter.h">
+      <Filter>logic\string_filter</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CSNameStringChecker.h">
+      <Filter>logic\string_filter</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CSNameWordFilter.h">
+      <Filter>logic\string_filter</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CSStringFilter.h">
+      <Filter>logic\string_filter</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CTradeMarketConstant.h">
+      <Filter>logic\TradeMarket</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CTradeMarketDefine.h">
+      <Filter>logic\TradeMarket</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CCommandResultTable.h">
+      <Filter>packet</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CCommandTable.h">
+      <Filter>packet</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CCommandTable_App.h">
+      <Filter>packet</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CCommandTable_Log.h">
+      <Filter>packet</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CCommandTable_Login.h">
+      <Filter>packet</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CCommandTable_Master.h">
+      <Filter>packet</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CCommandTable_WorldLocator.h">
+      <Filter>packet</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CSNet.h">
+      <Filter>packet</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CTransData.h">
+      <Filter>packet</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CTransData_Log.h">
+      <Filter>packet</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CTransData_Login.h">
+      <Filter>packet</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CAppHelper.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CSBaseValidator.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CSLogListener.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CSLuaCallbackLogger.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CSValidateLogger.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CLangInfo.h">
+      <Filter>locale</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CStringNode.h">
+      <Filter>locale</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CStringRes.h">
+      <Filter>locale</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CStringResMgr.h">
+      <Filter>locale</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CSFormatString.h">
+      <Filter>locale\FormatString</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CSFormatStringParameter.h">
+      <Filter>locale\FormatString\FSHelper</Filter>
+    </ClInclude>
+    <ClInclude Include="include\FSContext.h">
+      <Filter>locale\FormatString\FSHelper</Filter>
+    </ClInclude>
+    <ClInclude Include="include\FSFsm.h">
+      <Filter>locale\FormatString\FSHelper</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CSHelper.h">
+      <Filter>helper</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CSMsgCommandHelper.h">
+      <Filter>helper</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CSGoogleMockListener.h">
+      <Filter>GoogleMockUtil</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CSCommonLib.h" />
+    <ClInclude Include="include\CSTypes.h" />
+  </ItemGroup>
+</Project>

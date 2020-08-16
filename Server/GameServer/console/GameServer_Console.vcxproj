@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="DebugMD|Win32">
+      <Configuration>DebugMD</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug_duck|Win32">
+      <Configuration>Debug_duck</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug_vld|Win32">
+      <Configuration>Debug_vld</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseMD|Win32">
+      <Configuration>ReleaseMD</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_duck|Win32">
+      <Configuration>Release_duck</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_profile|Win32">
+      <Configuration>Release_profile</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>GameServer_console</ProjectName>
+    <ProjectGuid>{583DE813-5968-4D18-9393-58D746C281EC}</ProjectGuid>
+    <RootNamespace>GameServer</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_profile|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_duck|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_duck|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugMD|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_vld|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseMD|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release_profile|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release_duck|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug_duck|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugMD|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug_vld|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseMD|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>16.0.30028.132</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseMD|Win32'">
+    <OutDir>../../../Game/Runtime/Dev/GameServer\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <PreBuildEventUseInBuild>false</PreBuildEventUseInBuild>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_vld|Win32'">
+    <OutDir>../../../Game/Runtime/Dev/GameServer\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugMD|Win32'">
+    <OutDir>../../../Game/Runtime/Dev/GameServer\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+    <PreBuildEventUseInBuild>false</PreBuildEventUseInBuild>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_duck|Win32'">
+    <OutDir>../../../Runtime/Dev/GameServer\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_duck|Win32'">
+    <OutDir>../../../Runtime/Dev/GameServer\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_profile|Win32'">
+    <OutDir>../../../Game/Runtime/Dev/GameServer\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <PreBuildEventUseInBuild>false</PreBuildEventUseInBuild>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseMD|Win32'">
+    <PreBuildEvent>
+      <Command>"../../../Game/Runtime/Dev/Utils/SVNRevisionGenerator" ../../../</Command>
+    </PreBuildEvent>
+    <ClCompile>
+      <AdditionalOptions>/MP
+
+ %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_RCOLLISION;_PUBLISH;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <AdditionalIncludeDirectories>../framework;../main;../../../mdk/CML2;../../../mdk/MiNet/include;../../../CSCommon/Include;../../../../sdk/tinyxml/include;../../../../sdk/lua51/include;../../../../sdk/UnitTest++/v1.5/src;../../../mdk/MAI2;../../../mdk/RealSpace3;../../../mdk/MPathFinder;../../../mdk/MCollision;../../ServerCommon;../../../mdk/MAsyncDatabase;../../ServerResourceValidator;../../../mdk/MTest/include;../../../../sdk/tbb/2.2/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>msvcrt.lib;lua5.1.lib;UnitTest++.vsnet2015MD.lib;tbb.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)GameServerConsole_r.exe</OutputFile>
+      <AdditionalLibraryDirectories>../../../../sdk/tinyxml/lib;../../../../sdk/lua51/lib/vc8;../../../../sdk/zlib/lib;../../../RCollision/lib;../../../../sdk/UnitTest++/v1.5/lib;../../../mdk/MCollision/lib;../../../../sdk/tbb/2.2/ia32/vc9/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>libcmt;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)GameServerConsole_r.pdb</ProgramDatabaseFile>
+      <SubSystem>Console</SubSystem>
+      <LargeAddressAware />
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_vld|Win32'">
+    <PreBuildEvent>
+      <Command>"../../../Game/Runtime/Dev/Utils/SVNRevisionGenerator" ../../../</Command>
+    </PreBuildEvent>
+    <ClCompile>
+      <AdditionalOptions>/MP %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>../framework;../main;../../../mdk/CML2;../../../mdk/MiNet/include;../../../CSCommon/Include;../../../../sdk/tinyxml/include;../../../../sdk/lua51/include;../../../../sdk/UnitTest++/v1.4/src;../../../mdk/MAI2;../../../mdk/RealSpace3;../../../mdk/MPathFinder;../../../mdk/MCollision;../../ServerCommon;../../../mdk/MAsyncDatabase;../../ServerResourceValidator;../../../mdk/MTest/include;../../../../sdk/tbb/2.2/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_RCOLLISION;VLD_CHECK_LEAK;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>msvcrtd.lib;lua51.lib;zlib.lib;UnitTest++.vsnet2008MDd.lib;tbb_debug.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ShowProgress>NotSet</ShowProgress>
+      <OutputFile>$(OutDir)GameServerConsole_D.exe</OutputFile>
+      <AdditionalLibraryDirectories>../../../../sdk/tinyxml/lib;../../../../sdk/lua51/lib/vc8;../../../../sdk/zlib/lib;../../../../sdk/vld/;../../../../sdk/UnitTest++/v1.4/lib;../../../mdk/MCollision/lib;../../../../sdk/tbb/2.2/ia32/vc9/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>libcmtd;libcmt;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)GameServerConsole_d.pdb</ProgramDatabaseFile>
+      <SubSystem>Console</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy ..\..\..\mdk\cml2\lib\cml2_d.dll ..\..\..\Game\Runtime\Dev\GameServer
+copy ..\..\..\mdk\MiNet\lib\MiNet_d.dll ..\..\..\Game\Runtime\Dev\GameServer
+copy ..\..\..\mdk\MAsyncDatabase\lib\MAsyncDatabase_d.dll ..\..\..\Game\Runtime\Dev\GameServer
+copy ..\..\..\CSCommon\lib\CSCommon_d.dll ..\..\..\Game\Runtime\Dev\GameServer
+copy ..\..\ServerCommon\lib\ServerCommon_d.dll ..\..\..\Game\Runtime\Dev\GameServer
+copy ..\framework\lib\GameServer_framework_d.dll ..\..\..\Game\Runtime\Dev\GameServer
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugMD|Win32'">
+    <PreBuildEvent>
+      <Command>"../../../Game/Runtime/Dev/Utils/SVNRevisionGenerator" ../../../</Command>
+    </PreBuildEvent>
+    <ClCompile>
+      <AdditionalOptions>/MP %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>../framework;../main;../../../mdk/CML2;../../../mdk/MiNet/include;../../../CSCommon/Include;../../../../sdk/tinyxml/include;../../../../sdk/lua51/include;../../../../sdk/UnitTest++/v1.5/src;../../../mdk/MAI2;../../../mdk/RealSpace3;../../../mdk/MPathFinder;../../../mdk/MCollision;../../ServerCommon;../../../mdk/MAsyncDatabase;../../ServerResourceValidator;../../../mdk/MTest/include;../../../../sdk/tbb/2.2/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_RCOLLISION;_USE_PROFILER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>msvcrtd.lib;lua51.lib;zlib.lib;UnitTest++.vsnet2015MDd.lib;tbb_debug.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ShowProgress>NotSet</ShowProgress>
+      <OutputFile>$(OutDir)GameServerConsole_D.exe</OutputFile>
+      <AdditionalLibraryDirectories>../../../../sdk/tinyxml/lib;../../../../sdk/lua51/lib/vc8;../../../../sdk/zlib/lib;../../../../sdk/vld/;../../../../sdk/UnitTest++/v1.5/lib;../../../mdk/MCollision/lib;../../../../sdk/tbb/2.2/ia32/vc9/lib;../../Pmang/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>libcmtd;libcmt;MSVCRT.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)GameServerConsole_d.pdb</ProgramDatabaseFile>
+      <SubSystem>Console</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command />
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_duck|Win32'">
+    <PreBuildEvent>
+      <Command>"../../../Game/Runtime/Dev/Utils/SVNRevisionGenerator" ../../../</Command>
+    </PreBuildEvent>
+    <ClCompile>
+      <AdditionalOptions>/MP %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>../framework;../main;../../../mdk/CML2;../../../mdk/MiNet/include;../../../CSCommon/Include;../../../../sdk/tinyxml/include;../../../../sdk/lua51/include;../../../../sdk/UnitTest++/v1.4/src;../../../mdk/MAI2;../../../mdk/RealSpace3;../../../mdk/MPathFinder;../../../mdk/MCollision;../../ServerCommon;../../../mdk/MAsyncDatabase;../../ServerResourceValidator;../../../mdk/MTest/include;../../../../sdk/tbb/2.2/include;../../Pmang;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_RCOLLISION;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>msvcrtd.lib;lua51.lib;zlib.lib;UnitTest++.vsnet2008MDd.lib;tbb_debug.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ShowProgress>NotSet</ShowProgress>
+      <OutputFile>$(OutDir)GameServerConsole_D.exe</OutputFile>
+      <AdditionalLibraryDirectories>../../../../sdk/tinyxml/lib;../../../../sdk/lua51/lib/vc8;../../../../sdk/zlib/lib;../../../../sdk/vld/;../../../../sdk/UnitTest++/v1.4/lib;../../../mdk/MCollision/lib;../../../../sdk/tbb/2.2/ia32/vc9/lib;../../Pmang/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>libcmtd;libcmt;MSVCRT.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)GameServerConsole_d.pdb</ProgramDatabaseFile>
+      <SubSystem>Console</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command />
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_duck|Win32'">
+    <PreBuildEvent>
+      <Command>"../../../Game/Runtime/Dev/Utils/SVNRevisionGenerator" ../../../</Command>
+    </PreBuildEvent>
+    <ClCompile>
+      <AdditionalOptions>/MP
+
+ %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>../framework;../main;../../../mdk/CML2;../../../mdk/MiNet/include;../../../CSCommon/Include;../../../../sdk/tinyxml/include;../../../../sdk/lua51/include;../../../../sdk/UnitTest++/v1.4/src;../../../mdk/MAI2;../../../mdk/RealSpace3;../../../mdk/MPathFinder;../../../mdk/MCollision;../../ServerCommon;../../../mdk/MAsyncDatabase;../../ServerResourceValidator;../../../mdk/MTest/include;../../../../sdk/tbb/2.2/include;../../Pmang;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_RCOLLISION;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>msvcrt.lib;lua5.1.lib;UnitTest++.vsnet2008MD.lib;tbb.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)GameServerConsole_r.exe</OutputFile>
+      <AdditionalLibraryDirectories>../../../../sdk/tinyxml/lib;../../../../sdk/lua51/lib/vc8;../../../../sdk/zlib/lib;../../../RCollision/lib;../../../../sdk/UnitTest++/v1.4/lib;../../../mdk/MCollision/lib;../../../../sdk/tbb/2.2/ia32/vc9/lib;../../Pmang/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>libcmt;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)GameServerConsole_r.pdb</ProgramDatabaseFile>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_profile|Win32'">
+    <PreBuildEvent>
+      <Command>"../../../Game/Runtime/Dev/Utils/SVNRevisionGenerator" ../../../</Command>
+    </PreBuildEvent>
+    <ClCompile>
+      <AdditionalOptions>/MP
+
+ %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>../framework;../main;../../../mdk/CML2;../../../mdk/MiNet/include;../../../CSCommon/Include;../../../../sdk/tinyxml/include;../../../../sdk/lua51/include;../../../../sdk/UnitTest++/v1.5/src;../../../mdk/MAI2;../../../mdk/RealSpace3;../../../mdk/MPathFinder;../../../mdk/MCollision;../../ServerCommon;../../../mdk/MAsyncDatabase;../../ServerResourceValidator;../../../mdk/MTest/include;../../../../sdk/tbb/2.2/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_RCOLLISION;_PUBLISH;_USE_PROFILER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>msvcrt.lib;lua5.1.lib;UnitTest++.vsnet2015MD.lib;tbb.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)GameServerConsole_r.exe</OutputFile>
+      <AdditionalLibraryDirectories>../../../../sdk/tinyxml/lib;../../../../sdk/lua51/lib/vc8;../../../../sdk/zlib/lib;../../../RCollision/lib;../../../../sdk/UnitTest++/v1.5/lib;../../../mdk/MCollision/lib;../../../../sdk/tbb/2.2/ia32/vc9/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>libcmt;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)GameServerConsole_r.pdb</ProgramDatabaseFile>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="GCmdHandler_App.cpp" />
+    <ClCompile Include="GConsole.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='DebugMD|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug_duck|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug_vld|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='ReleaseMD|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release_duck|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release_profile|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GCmdHandler_App.h" />
+    <ClInclude Include="GConsole.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="SVNRevision.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\CSCommon\CSCommon.vcxproj">
+      <Project>{7dcc03b9-dd72-4803-aee2-1f2be6ce60c2}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\mdk\cml2\cml2.vcxproj">
+      <Project>{8d451493-65c2-49c3-adae-acb17e6b0650}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\mdk\MAI2\MAI2.vcxproj">
+      <Project>{39d180f0-ca6c-4478-9c72-ba211b728286}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\mdk\MAsyncDatabase\MAsyncDatabase.vcxproj">
+      <Project>{7d02f7ca-3e37-4e44-b7bb-b1910770191c}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\mdk\MCollision\MCollision.vcxproj">
+      <Project>{97861011-05bd-450a-a221-db5f7a2f4b7b}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\mdk\MiNet\MiNet.vcxproj">
+      <Project>{595010c3-5427-4453-9f44-5adb4edddb28}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\mdk\MPathFinder\MPathFinder.vcxproj">
+      <Project>{7ed97bba-e770-4144-b656-c837fb08d1e7}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\mdk\MTest\MTest.vcxproj">
+      <Project>{249d9b5b-bc66-4d30-ab85-f936f737d3ca}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ServerCommon\ServerCommon.vcxproj">
+      <Project>{7820a4c8-b56a-40ed-9b44-86e215a93681}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ServerResourceValidator\ServerResourceValidator.vcxproj">
+      <Project>{af9cdbf5-d791-4e4c-8015-3da8b16e0cdd}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\framework\GameServer_Framework.vcxproj">
+      <Project>{fd7398cf-9b51-43d3-b17d-eb65088133ff}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\main\GameServer_Lib.vcxproj">
+      <Project>{ab477007-cf99-47f8-b81f-9a02ccbe7849}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="GameServer.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

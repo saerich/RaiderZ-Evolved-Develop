@@ -1,0 +1,9 @@
+@echo off
+
+SET root_path=%CD%
+SET target_path=.
+
+: ¼­ºê¹öÀü¿¡ Ä¿¹Ô
+svn add %target_path%\Game\Runtime\Data\\Field\map\* --force
+svn commit -m "FieldNPCs xml Ä¿¹Ô" %target_path%\Game\Runtime\Data\\Field\map\*
+

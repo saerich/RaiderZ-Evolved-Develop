@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="DebugMD|Win32">
+      <Configuration>DebugMD</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseMD|Win32">
+      <Configuration>ReleaseMD</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_publish|Win32">
+      <Configuration>Release_publish</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{D941F880-92A7-4D28-8449-E1E9EE1C558F}</ProjectGuid>
+    <RootNamespace>GameServer</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_publish|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseMD|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugMD|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release_publish|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseMD|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugMD|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>16.0.30028.132</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugMD|Win32'">
+    <OutDir>../../../Game/Runtime/Dev/LoginServer\</OutDir>
+    <IntDir>Debug\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseMD|Win32'">
+    <OutDir>../../../Game/Runtime/Dev/LoginServer\</OutDir>
+    <IntDir>Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_publish|Win32'">
+    <OutDir>../../../Game/Runtime/Dev/LoginServer\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugMD|Win32'">
+    <ClCompile>
+      <AdditionalOptions>/MP %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>../main;../../../mdk/MTest/include;../../../mdk/CML2;../../../crl/include;../../../mdk/MiNet/include;../../../CSCommon/Include;../../../../sdk/tinyxml/include;../../../../sdk/lua51/include;../../ServerCommon;../../ServerCommonUnitTest;../../../mdk/MAsyncDatabase;../../../../sdk/UnitTest++/v1.4/src;../../Pmang;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CONSOLE;_UNITTEST;VUTPP_UNITTEST++;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>msvcrtd.lib;user32.lib;comctl32.lib;lua5.1.lib;zlib.lib;UnitTest++.vsnet2008MDd_NoException.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ShowProgress>NotSet</ShowProgress>
+      <OutputFile>$(OutDir)LoginServer_unittestd.exe</OutputFile>
+      <AdditionalLibraryDirectories>../../../../sdk/tinyxml/lib;../../../../sdk/lua51/lib/vc8;../../../../sdk/zlib/lib;../../../../sdk/vld/;../../../../sdk/UnitTest++/v1.4/lib;../../Pmang/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>libcmt;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)LoginServer_unittestd.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseMD|Win32'">
+    <ClCompile>
+      <AdditionalOptions>/MP %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>MaxSpeed</Optimization>
+      <AdditionalIncludeDirectories>../main;../../../mdk/CML2;../../../crl/include;../../../mdk/MTest/include;../../../mdk/MiNet/include;../../../CSCommon/Include;../../../../sdk/tinyxml/include;../../../../sdk/lua51/include;../../../../sdk/UnitTest++/v1.4/src;../../../mdk/MAI2;../../../mdk/RealSpace3;../../../mdk/MPathFinder;../../../mdk/MCollision;../../ServerCommon;../../ServerCommonUnitTest;../../../mdk/MAsyncDatabase;../../ServerResourceValidator;../../Pmang;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_RCOLLISION;_UNITTEST;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/LTCG %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>MSVCRT.lib;user32.lib;comctl32.lib;lua5.1.lib;UnitTest++.vsnet2008MD.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)LoginServer_unittest.exe</OutputFile>
+      <AdditionalLibraryDirectories>../../../../sdk/tinyxml/lib;../../../../sdk/lua51/lib/vc8;../../../../sdk/zlib/lib;../../../RCollision/lib;../../../MPathFinder/lib;../../../../sdk/UnitTest++/v1.4/lib;../../../mdk/MCollision/lib;../../Pmang/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>Libcmt.lib;libc;libcp;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)LoginServer_unittest.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_publish|Win32'">
+    <ClCompile>
+      <AdditionalOptions>/MP %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>../main;../../../mdk/CML2;../../../crl/include;../../../mdk/MTest/include;../../../mdk/MiNet/include;../../../CSCommon/Include;../../../../sdk/tinyxml/include;../../../../sdk/lua51/include;../../../../sdk/UnitTest++/v1.4/src;../../../mdk/MAI2;../../../mdk/RealSpace3;../../../mdk/MPathFinder;../../../mdk/MDatabase;../../../mdk/MCollision;../../ServerCommon;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_RCOLLISION;_PUBLISH;_UNITTEST;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>MSVCRT.lib;user32.lib;comctl32.lib;lua5.1.lib;UnitTest++.vsnet2008MD.lib;MCollision.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>Runtime/LoginServer_unittest.exe</OutputFile>
+      <AdditionalLibraryDirectories>../../../../sdk/tinyxml/lib;../../../../sdk/lua51/lib/vc8;../../../../sdk/zlib/lib;../../../RCollision/lib;../../../../sdk/UnitTest++/v1.4/lib;../../../mdk/MCollision/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>Libcmt.lib;libc;libcp;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)LoginServer_unittest.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="FBaseMasterClient.cpp" />
+    <ClCompile Include="FBasePlayer.cpp" />
+    <ClCompile Include="LFixtureHelper.cpp" />
+    <ClCompile Include="LTestHelper.cpp" />
+    <ClCompile Include="LTestHelper_CmdHandler.cpp" />
+    <ClCompile Include="LUnitTestRunner.cpp" />
+    <ClCompile Include="LUnitTestStage1.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="MockLink.cpp" />
+    <ClCompile Include="MockMasterNetClient.cpp" />
+    <ClCompile Include="MockNetServer.cpp" />
+    <ClCompile Include="MockPlayerObject.cpp" />
+    <ClCompile Include="MockServer.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='DebugMD|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='ReleaseMD|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release_publish|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="TestAuthenticator.cpp" />
+    <ClCompile Include="TestClientConnectionKeeper.cpp" />
+    <ClCompile Include="TestCmdHandler_MoveServer.cpp" />
+    <ClCompile Include="TestCmdRouter_MoveServer.cpp" />
+    <ClCompile Include="TestCreateCharacter.cpp" />
+    <ClCompile Include="TestDBManager.cpp" />
+    <ClCompile Include="TestMoveServerLogicFromGameServer.cpp" />
+    <ClCompile Include="TestNameStringChecker.cpp" />
+    <ClCompile Include="TestNetworkCardMgr.cpp" />
+    <ClCompile Include="TestPlayerAcceptManager.cpp" />
+    <ClCompile Include="TestPlayerLogic.cpp" />
+    <ClCompile Include="TestPlayerLogin.cpp" />
+    <ClCompile Include="TestPlayerLoginGameServerProcManager.cpp" />
+    <ClCompile Include="TestPlayerLoginGameServerRetryer.cpp" />
+    <ClCompile Include="TestSelectCharacter.cpp" />
+    <ClCompile Include="TestServableChecker.cpp" />
+    <ClCompile Include="TestServerStatusUpdater.cpp" />
+    <ClCompile Include="TestTimeoutWatcher.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="FBaseMasterClient.h" />
+    <ClInclude Include="FBasePlayer.h" />
+    <ClInclude Include="LFixtureHelper.h" />
+    <ClInclude Include="LTestHelper.h" />
+    <ClInclude Include="LTestHelper_CmdHandler.h" />
+    <ClInclude Include="LTestWrapper.h" />
+    <ClInclude Include="LUnitTestRunner.h" />
+    <ClInclude Include="LUnitTestStage1.h" />
+    <ClInclude Include="LUnitTestUtil.h" />
+    <ClInclude Include="MockDBManager.h" />
+    <ClInclude Include="MockLink.h" />
+    <ClInclude Include="MockMasterNetClient.h" />
+    <ClInclude Include="MockNetServer.h" />
+    <ClInclude Include="MockPlayerObject.h" />
+    <ClInclude Include="MockServer.h" />
+    <ClInclude Include="stdafx.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CodeCoverages.inc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="GameServer.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

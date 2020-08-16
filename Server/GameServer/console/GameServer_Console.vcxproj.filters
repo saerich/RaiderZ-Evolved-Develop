@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="resource">
+      <UniqueIdentifier>{29822642-694e-4fff-8891-a418f8d37346}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="command_app">
+      <UniqueIdentifier>{73e9b531-a2ae-48c3-a8e2-cc439198d8d7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="GCmdHandler_App.cpp">
+      <Filter>command_app</Filter>
+    </ClCompile>
+    <ClCompile Include="GConsole.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="stdafx.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GCmdHandler_App.h">
+      <Filter>command_app</Filter>
+    </ClInclude>
+    <ClInclude Include="GConsole.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="SVNRevision.h" />
+  </ItemGroup>
+</Project>

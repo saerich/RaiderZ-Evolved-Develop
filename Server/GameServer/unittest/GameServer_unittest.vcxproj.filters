@@ -1,0 +1,2159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="UnitTests">
+      <UniqueIdentifier>{74f37340-b931-4382-9aea-6c8e514dcbfa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UnitTests\tests">
+      <UniqueIdentifier>{320f9c81-c130-4c63-8d20-3c131750bb8f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UnitTests\tests\focus">
+      <UniqueIdentifier>{a4524dd7-b5cd-4b35-bb9c-a1e65408816a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UnitTests\tests\actor">
+      <UniqueIdentifier>{99f6b328-dc8b-47de-b4cf-aa23541b47f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UnitTests\tests\helper">
+      <UniqueIdentifier>{5b42b0d5-76a7-4ecc-8694-4928f76fdfef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UnitTests\tests\talent">
+      <UniqueIdentifier>{19c1becf-b8ea-4b8e-a019-05e98dd6b59c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UnitTests\tests\talent\buff">
+      <UniqueIdentifier>{63d608cf-6a5b-4f69-b832-d447b06010b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UnitTests\tests\global">
+      <UniqueIdentifier>{093fb6b3-3f59-4ea8-ac7e-3d3cf8ce74a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UnitTests\tests\job">
+      <UniqueIdentifier>{cf83848c-296f-454a-a0a7-b25124f9bf5d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UnitTests\tests\job\task">
+      <UniqueIdentifier>{b1129906-b2d7-4e35-81df-b7e528011350}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UnitTests\tests\combat">
+      <UniqueIdentifier>{a771d621-8a23-4f76-b240-305912d3a2cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UnitTests\tests\script">
+      <UniqueIdentifier>{5751a4ed-b29c-4d9a-b6da-f0368d6d68b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UnitTests\tests\calculator">
+      <UniqueIdentifier>{4acfd14b-21db-48ee-994e-2d26e268d854}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UnitTests\tests\npc">
+      <UniqueIdentifier>{2f5b8985-87fb-4c98-9e16-c08a65f8ea6d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UnitTests\tests\validator">
+      <UniqueIdentifier>{ad1d55de-d5cd-49bd-8b76-ba74ff38a2f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UnitTests\tests\field">
+      <UniqueIdentifier>{58d892a9-d1a6-4a93-bccd-b83cd0aa9e2c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UnitTests\tests\item">
+      <UniqueIdentifier>{8c8e4386-c2bf-433d-870b-aed42cdf0bde}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UnitTests\tests\pvp">
+      <UniqueIdentifier>{ff7685d0-d35c-4284-aaec-dc77674b2e58}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UnitTests\tests\MasterServer">
+      <UniqueIdentifier>{a30d71d7-bd04-4fc0-8e73-98c04abedc71}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UnitTests\tests\ai">
+      <UniqueIdentifier>{8eba7d88-99e2-4799-aade-804654e33f91}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UnitTests\tests\CSCommon">
+      <UniqueIdentifier>{22c837dc-d798-4233-a3f2-af80d45b66a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UnitTests\tests\CSCommon\cml">
+      <UniqueIdentifier>{51beca12-4aa3-4d10-812b-453103964137}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UnitTests\tests\Login">
+      <UniqueIdentifier>{873fc69d-c55c-40ba-abcf-4618d78d557b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UnitTests\tests\faction">
+      <UniqueIdentifier>{1969d504-0658-45a1-a7bb-25ad19de5da6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UnitTests\tests\loot">
+      <UniqueIdentifier>{d26e178d-88f3-49e9-b9a7-3c4bff88277f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UnitTests\tests\test">
+      <UniqueIdentifier>{d029b506-8f9b-412f-b9f9-d82b1cee8f5f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UnitTests\tests\party">
+      <UniqueIdentifier>{ffa3be59-1fa1-4818-837c-90d4c7111e8a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UnitTests\tests\party\player">
+      <UniqueIdentifier>{b88b6be4-abf1-4585-817f-39d3d2fba859}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UnitTests\tests\OnCommand">
+      <UniqueIdentifier>{2c1c8172-fcde-44c5-a81a-97c43104f861}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UnitTests\tests\interaction">
+      <UniqueIdentifier>{7de552f5-19c3-424f-83db-24b37727ac14}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UnitTests\tests\PathFinding">
+      <UniqueIdentifier>{edba2788-6e72-4e93-b782-5556d6fd5858}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UnitTests\tests\ServerMonitor">
+      <UniqueIdentifier>{cef9c016-79e2-4ef8-9fdd-1abafdded74b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UnitTests\tests\MoveServer">
+      <UniqueIdentifier>{f702ea12-d146-45b5-9bcb-430bb5ef4ec4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UnitTests\tests\ChatChannel">
+      <UniqueIdentifier>{9e4b873e-54c8-49e5-bd8f-7f7d8ffe0fb7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UnitTests\tests\TestCalc">
+      <UniqueIdentifier>{7ca63787-19df-4842-919b-9d2b599bc8c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UnitTests\tests\ThreadTask">
+      <UniqueIdentifier>{fb5f6825-7f7e-4433-ae37-964584550f68}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UnitTests\tests\gathering">
+      <UniqueIdentifier>{b817914c-9b22-4282-856c-5e06789857e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UnitTests\tests\DB">
+      <UniqueIdentifier>{f8535bd4-5c7e-4c43-8423-8c694c7c600e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UnitTests\tests\DB\Cache">
+      <UniqueIdentifier>{cf93c59a-3c88-4c6e-b6a1-4d3e0d8655ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UnitTests\tests\DB\Cache\Character">
+      <UniqueIdentifier>{29b3d7b6-9fdf-487f-9224-d063e4074767}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UnitTests\tests\DB\Cache\DBCacheFlush">
+      <UniqueIdentifier>{9a207b1d-2441-400a-9cdd-cf80ca89916a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UnitTests\tests\DB\Cache\Item">
+      <UniqueIdentifier>{3c5eb1e6-c340-45a6-8871-a0c1c1f19b00}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UnitTests\tests\DB\Cache\system">
+      <UniqueIdentifier>{d6a6e5ca-7934-4abd-b6da-39d70a0469aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UnitTests\tests\DB\Cache\NPCShop">
+      <UniqueIdentifier>{c30a9bcc-2660-4b77-95df-e7245ab60a9d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UnitTests\tests\DB\Cache\Craft">
+      <UniqueIdentifier>{431bb4a2-6fa0-4616-bcc4-e2f3ba004bb7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UnitTests\tests\DB\Cache\Trade">
+      <UniqueIdentifier>{6a8f085b-a49c-4375-86d0-61b5bba49847}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UnitTests\tests\DB\Cache\Loot">
+      <UniqueIdentifier>{85735bb8-a1bf-44ac-9096-b75ea0f1e2f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UnitTests\tests\DB\Cache\Quest">
+      <UniqueIdentifier>{5bf7fa59-d5bd-4b28-89cd-3f29a0a10bb0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UnitTests\tests\DB\DSN">
+      <UniqueIdentifier>{0d33ca3c-20e0-472e-bfa3-17bfff5232f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UnitTests\tests\DB\LOG">
+      <UniqueIdentifier>{23e1b2de-42b8-488e-9b40-e0b692ac716f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UnitTests\tests\EntityPlayer">
+      <UniqueIdentifier>{85d55fa8-1ab1-43fe-a97d-e495c66c60e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UnitTests\tests\MotionFactor">
+      <UniqueIdentifier>{8c5a1592-6cd2-4fa3-ba2e-a288ed344650}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UnitTests\tests\reward">
+      <UniqueIdentifier>{ced62341-1d0a-44d7-bf67-9458be095a72}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UnitTests\tests\reservecmd">
+      <UniqueIdentifier>{79510d19-d477-4a9b-8fae-d6629d230304}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UnitTests\tests\NPCShop">
+      <UniqueIdentifier>{911ac7d1-6bfc-403b-a42b-0d61b85fc312}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UnitTests\tests\Trade">
+      <UniqueIdentifier>{8a4a6799-d786-4a52-9704-17911763f536}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UnitTests\tests\logout">
+      <UniqueIdentifier>{e84a5dda-a620-45b9-a405-bfa329d0ec47}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UnitTests\tests\AppServer">
+      <UniqueIdentifier>{84959503-1db0-4ab2-810d-55279e501287}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UnitTests\tests\AsyncTask">
+      <UniqueIdentifier>{eb1838fe-d20b-4590-b3e3-7c7064774655}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UnitTests\tests\TimeCalculator">
+      <UniqueIdentifier>{6d15cf79-89d4-4bc0-8049-f3ff9d0ef70e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UnitTests\tests\Quest">
+      <UniqueIdentifier>{fa7d7a47-edc1-4a6f-ae80-080844429abf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UnitTests\tests\Mail">
+      <UniqueIdentifier>{e644731c-3f62-4a89-9f0c-cbb5bd4dde8a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UnitTests\tests\questpvp">
+      <UniqueIdentifier>{03e3c1eb-82b9-451b-bccd-e3522051cc99}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UnitTests\tests\LogCache">
+      <UniqueIdentifier>{74d49482-afc7-4148-8940-4f00227f2b85}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UnitTests\tests\gm">
+      <UniqueIdentifier>{904f2207-c53e-439e-a77f-6a336c2201d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UnitTests\tests\TradeMarket">
+      <UniqueIdentifier>{88e066a0-b3da-4d41-8118-797db243d74f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DBUnitTest">
+      <UniqueIdentifier>{7752dc0d-b6b8-480c-808f-dcad7bbbeb4f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DBUnitTest\Procedure">
+      <UniqueIdentifier>{db45be42-d706-4887-93ec-acd1cd552750}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DBUnitTest\Procedure\ITEM">
+      <UniqueIdentifier>{09e2d627-9882-4f41-9e2d-85bf3195a529}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DBUnitTest\Procedure\ITEM\SWAP">
+      <UniqueIdentifier>{07053eb3-ae01-407d-a9f3-5273061abcc3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DBUnitTest\Procedure\ITEM\NPC_SHOP">
+      <UniqueIdentifier>{1c176277-b534-4d37-9b4f-fbf47b55bad5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DBUnitTest\Procedure\Quest">
+      <UniqueIdentifier>{9352799d-b0af-4f89-b9d1-1733016d972b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DBUnitTest\Procedure\Quest\Helper">
+      <UniqueIdentifier>{a5de5496-8c4a-4969-9b68-fc1f2e046335}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DBUnitTest\Procedure\Craft">
+      <UniqueIdentifier>{3f8c781b-99d0-4130-aa66-0e3b27da734f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DBUnitTest\Procedure\Craft\Helper">
+      <UniqueIdentifier>{66574cf7-0ee2-4879-915f-0eecb5fed68f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DBUnitTest\Procedure\ServerStatus">
+      <UniqueIdentifier>{bc83274b-d91f-47d7-913e-2da596e023ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DBUnitTest\Procedure\Character">
+      <UniqueIdentifier>{37f05283-7d55-49ef-8fe5-d9253a7350e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DBUnitTest\Procedure\Trade">
+      <UniqueIdentifier>{34bce3e9-34f1-4c0e-9f65-8ea27177dcac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DBUnitTest\Procedure\GUILD">
+      <UniqueIdentifier>{f4636385-a7bd-4a2a-9da8-8870e31bb392}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DBUnitTest\Procedure\TALENT">
+      <UniqueIdentifier>{4260ecfc-9f55-4fa0-8644-982d2452875f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DBUnitTest\Procedure\MAIL">
+      <UniqueIdentifier>{0fac84fa-3b8f-4aad-89fe-b536b5f468f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DBUnitTest\Procedure\GM">
+      <UniqueIdentifier>{c2e5be3a-8ab5-4c4d-9f13-ad83daf29582}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DBUnitTest\Procedure\LOG">
+      <UniqueIdentifier>{b2cd202c-147c-4bf6-95f9-826a14cf21e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DBUnitTest\Procedure\WORLD">
+      <UniqueIdentifier>{360cfe20-52a4-4ed8-8114-e9ad67245ce8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DBUnitTest\MDatabaseLib">
+      <UniqueIdentifier>{8e60ec5e-74d5-4b49-b0c5-83c135e3e882}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="mock">
+      <UniqueIdentifier>{ea6713fb-ea06-4194-88ab-88127fb46ce8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fixture">
+      <UniqueIdentifier>{3a8baa36-fcc6-4065-9177-36687de0befc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="helper">
+      <UniqueIdentifier>{e6e48386-bdb6-4617-90c9-218cdd384a3a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="runner">
+      <UniqueIdentifier>{31631642-fbdd-48a6-904c-bc3571dae9dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CmdHandler Profile">
+      <UniqueIdentifier>{24d28389-91cb-4ad7-b3e5-dbd14410af42}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="TestActorHateTracker.cpp">
+      <Filter>UnitTests\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="TestAFK.cpp">
+      <Filter>UnitTests\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="TestBehaviorPeace.cpp">
+      <Filter>UnitTests\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="TestBuffEntity.cpp">
+      <Filter>UnitTests\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="TestCapsuleAttack.cpp">
+      <Filter>UnitTests\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="TestChallengerQuest.cpp">
+      <Filter>UnitTests\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="TestChat.cpp">
+      <Filter>UnitTests\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="TestCheatChecker.cpp">
+      <Filter>UnitTests\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="TestCML.cpp">
+      <Filter>UnitTests\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="TestCollision.cpp">
+      <Filter>UnitTests\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="TestColt.cpp">
+      <Filter>UnitTests\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="TestColtActionInstMgr.cpp">
+      <Filter>UnitTests\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="TestColtChecker.cpp">
+      <Filter>UnitTests\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="TestColtRunner.cpp">
+      <Filter>UnitTests\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="TestCombatCombat.cpp">
+      <Filter>UnitTests\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="TestCombatMonitorPort.cpp">
+      <Filter>UnitTests\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="TestCondition.cpp">
+      <Filter>UnitTests\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="TestCraft.cpp">
+      <Filter>UnitTests\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="TestCutscene.cpp">
+      <Filter>UnitTests\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="TestDialogSystem.cpp">
+      <Filter>UnitTests\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="TestDuel.cpp">
+      <Filter>UnitTests\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="TestEmblem.cpp">
+      <Filter>UnitTests\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="TestEnchant.cpp">
+      <Filter>UnitTests\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="TestEntity.cpp">
+      <Filter>UnitTests\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="TestEntityPlayerDBAsyncMonitor.cpp">
+      <Filter>UnitTests\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="TestEnumValue.cpp">
+      <Filter>UnitTests\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="TestEnvManager.cpp">
+      <Filter>UnitTests\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="TestExpSystem.cpp">
+      <Filter>UnitTests\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="TestFatigue.cpp">
+      <Filter>UnitTests\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="TestFilePath.cpp">
+      <Filter>UnitTests\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="TestFirstStrike.cpp">
+      <Filter>UnitTests\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="TestFSM.cpp">
+      <Filter>UnitTests\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="TestGuildSystem.cpp">
+      <Filter>UnitTests\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="TestHateTable.cpp">
+      <Filter>UnitTests\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="TestHelper.cpp">
+      <Filter>UnitTests\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="TestInn.cpp">
+      <Filter>UnitTests\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="TestManageCharacters.cpp">
+      <Filter>UnitTests\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="TestMap.cpp">
+      <Filter>UnitTests\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="TestMath.cpp">
+      <Filter>UnitTests\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="TestNameStringChecker.cpp">
+      <Filter>UnitTests\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="TestNPC.cpp">
+      <Filter>UnitTests\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="TestNPCCombatAnticheat.cpp">
+      <Filter>UnitTests\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="TestNPCInfo.cpp">
+      <Filter>UnitTests\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="TestNPCStress.cpp">
+      <Filter>UnitTests\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="TestObjectPool.cpp">
+      <Filter>UnitTests\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="TestOptions.cpp">
+      <Filter>UnitTests\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="TestPalette.cpp">
+      <Filter>UnitTests\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="TestPartyDuel.cpp">
+      <Filter>UnitTests\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="TestPlayerEnemyInfoSender.cpp">
+      <Filter>UnitTests\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="TestPlayerGameStart_AutoRebirther.cpp">
+      <Filter>UnitTests\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="TestPlayerGameStart_FieldGater.cpp">
+      <Filter>UnitTests\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="TestPlayerRide.cpp">
+      <Filter>UnitTests\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="TestPlayerSpawnedNPC.cpp">
+      <Filter>UnitTests\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="TestPlayerSystem.cpp">
+      <Filter>UnitTests\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="TestRebirthSystem.cpp">
+      <Filter>UnitTests\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="TestReloader.cpp">
+      <Filter>UnitTests\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="TestRoaming.cpp">
+      <Filter>UnitTests\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="TestRotate.cpp">
+      <Filter>UnitTests\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="TestSample.cpp">
+      <Filter>UnitTests\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="TestServerModeChanger.cpp">
+      <Filter>UnitTests\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="TestSit.cpp">
+      <Filter>UnitTests\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="TestSoul.cpp">
+      <Filter>UnitTests\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="TestStorageSystem.cpp">
+      <Filter>UnitTests\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="TestStrings.cpp">
+      <Filter>UnitTests\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="TestTraining.cpp">
+      <Filter>UnitTests\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="TestFocus.cpp">
+      <Filter>UnitTests\tests\focus</Filter>
+    </ClCompile>
+    <ClCompile Include="TestFocus_Advent.cpp">
+      <Filter>UnitTests\tests\focus</Filter>
+    </ClCompile>
+    <ClCompile Include="TestFocus_Berserk.cpp">
+      <Filter>UnitTests\tests\focus</Filter>
+    </ClCompile>
+    <ClCompile Include="TestFocus_Counter.cpp">
+      <Filter>UnitTests\tests\focus</Filter>
+    </ClCompile>
+    <ClCompile Include="TestFocus_Enlighten.cpp">
+      <Filter>UnitTests\tests\focus</Filter>
+    </ClCompile>
+    <ClCompile Include="TestFocus_Precision.cpp">
+      <Filter>UnitTests\tests\focus</Filter>
+    </ClCompile>
+    <ClCompile Include="TestFocus_Sneak.cpp">
+      <Filter>UnitTests\tests\focus</Filter>
+    </ClCompile>
+    <ClCompile Include="TestEntityActor.cpp">
+      <Filter>UnitTests\tests\actor</Filter>
+    </ClCompile>
+    <ClCompile Include="TestEntityActor_Event.cpp">
+      <Filter>UnitTests\tests\actor</Filter>
+    </ClCompile>
+    <ClCompile Include="TestUseCostMgr.cpp">
+      <Filter>UnitTests\tests\actor</Filter>
+    </ClCompile>
+    <ClCompile Include="TestTestUtil.cpp">
+      <Filter>UnitTests\tests\helper</Filter>
+    </ClCompile>
+    <ClCompile Include="TestDeadMotionFactorImpactor.cpp">
+      <Filter>UnitTests\tests\talent</Filter>
+    </ClCompile>
+    <ClCompile Include="TestEffecteeTargetSelector.cpp">
+      <Filter>UnitTests\tests\talent</Filter>
+    </ClCompile>
+    <ClCompile Include="TestNPCChangeMode.cpp">
+      <Filter>UnitTests\tests\talent</Filter>
+    </ClCompile>
+    <ClCompile Include="TestPlayerCoolTimeChecker.cpp">
+      <Filter>UnitTests\tests\talent</Filter>
+    </ClCompile>
+    <ClCompile Include="TestTalent.cpp">
+      <Filter>UnitTests\tests\talent</Filter>
+    </ClCompile>
+    <ClCompile Include="TestTalent_Casting.cpp">
+      <Filter>UnitTests\tests\talent</Filter>
+    </ClCompile>
+    <ClCompile Include="TestTalent_Command.cpp">
+      <Filter>UnitTests\tests\talent</Filter>
+    </ClCompile>
+    <ClCompile Include="TestTalent_Cooltime.cpp">
+      <Filter>UnitTests\tests\talent</Filter>
+    </ClCompile>
+    <ClCompile Include="TestTalent_ExtraActive.cpp">
+      <Filter>UnitTests\tests\talent</Filter>
+    </ClCompile>
+    <ClCompile Include="TestTalent_Grapple.cpp">
+      <Filter>UnitTests\tests\talent</Filter>
+    </ClCompile>
+    <ClCompile Include="TestTalent_Guard.cpp">
+      <Filter>UnitTests\tests\talent</Filter>
+    </ClCompile>
+    <ClCompile Include="TestTalent_Hit.cpp">
+      <Filter>UnitTests\tests\talent</Filter>
+    </ClCompile>
+    <ClCompile Include="TestTalent_Item.cpp">
+      <Filter>UnitTests\tests\talent</Filter>
+    </ClCompile>
+    <ClCompile Include="TestTalent_Moving.cpp">
+      <Filter>UnitTests\tests\talent</Filter>
+    </ClCompile>
+    <ClCompile Include="TestTalent_Passive.cpp">
+      <Filter>UnitTests\tests\talent</Filter>
+    </ClCompile>
+    <ClCompile Include="TestTalent_Projectile.cpp">
+      <Filter>UnitTests\tests\talent</Filter>
+    </ClCompile>
+    <ClCompile Include="TestTalent_Swallow.cpp">
+      <Filter>UnitTests\tests\talent</Filter>
+    </ClCompile>
+    <ClCompile Include="TestTalentDrain.cpp">
+      <Filter>UnitTests\tests\talent</Filter>
+    </ClCompile>
+    <ClCompile Include="TestTalentEffector.cpp">
+      <Filter>UnitTests\tests\talent</Filter>
+    </ClCompile>
+    <ClCompile Include="TestTalentHitCommandFactory.cpp">
+      <Filter>UnitTests\tests\talent</Filter>
+    </ClCompile>
+    <ClCompile Include="TestTalentHitter.cpp">
+      <Filter>UnitTests\tests\talent</Filter>
+    </ClCompile>
+    <ClCompile Include="TestTalentInfo.cpp">
+      <Filter>UnitTests\tests\talent</Filter>
+    </ClCompile>
+    <ClCompile Include="TestTalentMode.cpp">
+      <Filter>UnitTests\tests\talent</Filter>
+    </ClCompile>
+    <ClCompile Include="TestBuff.cpp">
+      <Filter>UnitTests\tests\talent\buff</Filter>
+    </ClCompile>
+    <ClCompile Include="TestBuff_Effect.cpp">
+      <Filter>UnitTests\tests\talent\buff</Filter>
+    </ClCompile>
+    <ClCompile Include="TestBuff_EquipmentChanger.cpp">
+      <Filter>UnitTests\tests\talent\buff</Filter>
+    </ClCompile>
+    <ClCompile Include="TestBuff_Event.cpp">
+      <Filter>UnitTests\tests\talent\buff</Filter>
+    </ClCompile>
+    <ClCompile Include="TestBuff_ExtraAttrib.cpp">
+      <Filter>UnitTests\tests\talent\buff</Filter>
+    </ClCompile>
+    <ClCompile Include="TestBuff_PaletteChanger.cpp">
+      <Filter>UnitTests\tests\talent\buff</Filter>
+    </ClCompile>
+    <ClCompile Include="TestBuff_Releaser.cpp">
+      <Filter>UnitTests\tests\talent\buff</Filter>
+    </ClCompile>
+    <ClCompile Include="TestBuff_Stack.cpp">
+      <Filter>UnitTests\tests\talent\buff</Filter>
+    </ClCompile>
+    <ClCompile Include="TestTickRegulator.cpp">
+      <Filter>UnitTests\tests\global</Filter>
+    </ClCompile>
+    <ClCompile Include="TestJob.cpp">
+      <Filter>UnitTests\tests\job</Filter>
+    </ClCompile>
+    <ClCompile Include="TestJob_Instant.cpp">
+      <Filter>UnitTests\tests\job</Filter>
+    </ClCompile>
+    <ClCompile Include="TestJob_Patrol.cpp">
+      <Filter>UnitTests\tests\job</Filter>
+    </ClCompile>
+    <ClCompile Include="TestJob_Speak.cpp">
+      <Filter>UnitTests\tests\job</Filter>
+    </ClCompile>
+    <ClCompile Include="TestJobMgr.cpp">
+      <Filter>UnitTests\tests\job</Filter>
+    </ClCompile>
+    <ClCompile Include="TestJobMove.cpp">
+      <Filter>UnitTests\tests\job</Filter>
+    </ClCompile>
+    <ClCompile Include="TestJobRoam.cpp">
+      <Filter>UnitTests\tests\job</Filter>
+    </ClCompile>
+    <ClCompile Include="TestTask_Idle.cpp">
+      <Filter>UnitTests\tests\job\task</Filter>
+    </ClCompile>
+    <ClCompile Include="TestHitCapsuleIndexMgr.cpp">
+      <Filter>UnitTests\tests\combat</Filter>
+    </ClCompile>
+    <ClCompile Include="TestImmuneHandler.cpp">
+      <Filter>UnitTests\tests\combat</Filter>
+    </ClCompile>
+    <ClCompile Include="TestRegenUpdater.cpp">
+      <Filter>UnitTests\tests\combat</Filter>
+    </ClCompile>
+    <ClCompile Include="TestLuaThisEnchanter.cpp">
+      <Filter>UnitTests\tests\script</Filter>
+    </ClCompile>
+    <ClCompile Include="TestScriptCallback_Buff.cpp">
+      <Filter>UnitTests\tests\script</Filter>
+    </ClCompile>
+    <ClCompile Include="TestScriptCallback_Field.cpp">
+      <Filter>UnitTests\tests\script</Filter>
+    </ClCompile>
+    <ClCompile Include="TestScriptCallback_NPC.cpp">
+      <Filter>UnitTests\tests\script</Filter>
+    </ClCompile>
+    <ClCompile Include="TestScriptCallback_Quest.cpp">
+      <Filter>UnitTests\tests\script</Filter>
+    </ClCompile>
+    <ClCompile Include="TestScriptFunction_Actor.cpp">
+      <Filter>UnitTests\tests\script</Filter>
+    </ClCompile>
+    <ClCompile Include="TestScriptFunction_Field.cpp">
+      <Filter>UnitTests\tests\script</Filter>
+    </ClCompile>
+    <ClCompile Include="TestScriptFunction_NPC.cpp">
+      <Filter>UnitTests\tests\script</Filter>
+    </ClCompile>
+    <ClCompile Include="TestScriptFunction_NPCSession.cpp">
+      <Filter>UnitTests\tests\script</Filter>
+    </ClCompile>
+    <ClCompile Include="TestScriptFunction_Player.cpp">
+      <Filter>UnitTests\tests\script</Filter>
+    </ClCompile>
+    <ClCompile Include="TestScriptFunction_Quest.cpp">
+      <Filter>UnitTests\tests\script</Filter>
+    </ClCompile>
+    <ClCompile Include="TestScriptFunction_Utility.cpp">
+      <Filter>UnitTests\tests\script</Filter>
+    </ClCompile>
+    <ClCompile Include="TestScriptGlues.cpp">
+      <Filter>UnitTests\tests\script</Filter>
+    </ClCompile>
+    <ClCompile Include="TestScriptHandler.cpp">
+      <Filter>UnitTests\tests\script</Filter>
+    </ClCompile>
+    <ClCompile Include="TestScriptNullObject.cpp">
+      <Filter>UnitTests\tests\script</Filter>
+    </ClCompile>
+    <ClCompile Include="TestWLua.cpp">
+      <Filter>UnitTests\tests\script</Filter>
+    </ClCompile>
+    <ClCompile Include="TestWLua_Table.cpp">
+      <Filter>UnitTests\tests\script</Filter>
+    </ClCompile>
+    <ClCompile Include="TestAttackDamageCalculator.cpp">
+      <Filter>UnitTests\tests\calculator</Filter>
+    </ClCompile>
+    <ClCompile Include="TestBasicAttributeCalculator.cpp">
+      <Filter>UnitTests\tests\calculator</Filter>
+    </ClCompile>
+    <ClCompile Include="TestCalc.cpp">
+      <Filter>UnitTests\tests\calculator</Filter>
+    </ClCompile>
+    <ClCompile Include="TestCalculator.cpp">
+      <Filter>UnitTests\tests\calculator</Filter>
+    </ClCompile>
+    <ClCompile Include="TestCalculator_Faction.cpp">
+      <Filter>UnitTests\tests\calculator</Filter>
+    </ClCompile>
+    <ClCompile Include="TestCalculator_StateFactor.cpp">
+      <Filter>UnitTests\tests\calculator</Filter>
+    </ClCompile>
+    <ClCompile Include="TestCombatCalc.cpp">
+      <Filter>UnitTests\tests\calculator</Filter>
+    </ClCompile>
+    <ClCompile Include="TestDefenseFactorCalculator.cpp">
+      <Filter>UnitTests\tests\calculator</Filter>
+    </ClCompile>
+    <ClCompile Include="TestExpCalculator.cpp">
+      <Filter>UnitTests\tests\calculator</Filter>
+    </ClCompile>
+    <ClCompile Include="TestLevelTable.cpp">
+      <Filter>UnitTests\tests\calculator</Filter>
+    </ClCompile>
+    <ClCompile Include="TestNPCXPTable.cpp">
+      <Filter>UnitTests\tests\calculator</Filter>
+    </ClCompile>
+    <ClCompile Include="TestEntityNPC.cpp">
+      <Filter>UnitTests\tests\npc</Filter>
+    </ClCompile>
+    <ClCompile Include="TestNPCInfoHelper.cpp">
+      <Filter>UnitTests\tests\npc</Filter>
+    </ClCompile>
+    <ClCompile Include="TestLuaErrorLogger.cpp">
+      <Filter>UnitTests\tests\validator</Filter>
+    </ClCompile>
+    <ClCompile Include="TestServerResourceValidator.cpp">
+      <Filter>UnitTests\tests\validator</Filter>
+    </ClCompile>
+    <ClCompile Include="TestChannel.cpp">
+      <Filter>UnitTests\tests\field</Filter>
+    </ClCompile>
+    <ClCompile Include="TestChannel_MasterServer.cpp">
+      <Filter>UnitTests\tests\field</Filter>
+    </ClCompile>
+    <ClCompile Include="TestEntityMgr.cpp">
+      <Filter>UnitTests\tests\field</Filter>
+    </ClCompile>
+    <ClCompile Include="TestEntitySelector.cpp">
+      <Filter>UnitTests\tests\field</Filter>
+    </ClCompile>
+    <ClCompile Include="TestField.cpp">
+      <Filter>UnitTests\tests\field</Filter>
+    </ClCompile>
+    <ClCompile Include="TestField_Dynamic.cpp">
+      <Filter>UnitTests\tests\field</Filter>
+    </ClCompile>
+    <ClCompile Include="TestField_Dynamic_Leave.cpp">
+      <Filter>UnitTests\tests\field</Filter>
+    </ClCompile>
+    <ClCompile Include="TestFieldAttrGrid.cpp">
+      <Filter>UnitTests\tests\field</Filter>
+    </ClCompile>
+    <ClCompile Include="TestFieldCreation_OnCommand.cpp">
+      <Filter>UnitTests\tests\field</Filter>
+    </ClCompile>
+    <ClCompile Include="TestFieldFactory.cpp">
+      <Filter>UnitTests\tests\field</Filter>
+    </ClCompile>
+    <ClCompile Include="TestFieldGrid.cpp">
+      <Filter>UnitTests\tests\field</Filter>
+    </ClCompile>
+    <ClCompile Include="TestFieldGridRouter.cpp">
+      <Filter>UnitTests\tests\field</Filter>
+    </ClCompile>
+    <ClCompile Include="TestFieldLoadingComplete.cpp">
+      <Filter>UnitTests\tests\field</Filter>
+    </ClCompile>
+    <ClCompile Include="TestFieldSystem.cpp">
+      <Filter>UnitTests\tests\field</Filter>
+    </ClCompile>
+    <ClCompile Include="TestManagedFieldInfoMgr.cpp">
+      <Filter>UnitTests\tests\field</Filter>
+    </ClCompile>
+    <ClCompile Include="TestPickingZTable.cpp">
+      <Filter>UnitTests\tests\field</Filter>
+    </ClCompile>
+    <ClCompile Include="TestSectorRouteLimiter.cpp">
+      <Filter>UnitTests\tests\field</Filter>
+    </ClCompile>
+    <ClCompile Include="TestSensor.cpp">
+      <Filter>UnitTests\tests\field</Filter>
+    </ClCompile>
+    <ClCompile Include="TestSpawn.cpp">
+      <Filter>UnitTests\tests\field</Filter>
+    </ClCompile>
+    <ClCompile Include="TestWarpInfoChecker.cpp">
+      <Filter>UnitTests\tests\field</Filter>
+    </ClCompile>
+    <ClCompile Include="TestWarpInfoCollector.cpp">
+      <Filter>UnitTests\tests\field</Filter>
+    </ClCompile>
+    <ClCompile Include="TestWeather.cpp">
+      <Filter>UnitTests\tests\field</Filter>
+    </ClCompile>
+    <ClCompile Include="TestEquipmentLimit.cpp">
+      <Filter>UnitTests\tests\item</Filter>
+    </ClCompile>
+    <ClCompile Include="TestEquipmentSlot.cpp">
+      <Filter>UnitTests\tests\item</Filter>
+    </ClCompile>
+    <ClCompile Include="TestItemActableChecker.cpp">
+      <Filter>UnitTests\tests\item</Filter>
+    </ClCompile>
+    <ClCompile Include="TestItemAdder.cpp">
+      <Filter>UnitTests\tests\item</Filter>
+    </ClCompile>
+    <ClCompile Include="TestItemContainer.cpp">
+      <Filter>UnitTests\tests\item</Filter>
+    </ClCompile>
+    <ClCompile Include="TestItemConvertPrefixedString.cpp">
+      <Filter>UnitTests\tests\item</Filter>
+    </ClCompile>
+    <ClCompile Include="TestItemDurabilityUpdater.cpp">
+      <Filter>UnitTests\tests\item</Filter>
+    </ClCompile>
+    <ClCompile Include="TestItemDyer.cpp">
+      <Filter>UnitTests\tests\item</Filter>
+    </ClCompile>
+    <ClCompile Include="TestItemEquiper.cpp">
+      <Filter>UnitTests\tests\item</Filter>
+    </ClCompile>
+    <ClCompile Include="TestItemEquiper_Equip.cpp">
+      <Filter>UnitTests\tests\item</Filter>
+    </ClCompile>
+    <ClCompile Include="TestItemExpirer.cpp">
+      <Filter>UnitTests\tests\item</Filter>
+    </ClCompile>
+    <ClCompile Include="TestItemHolder.cpp">
+      <Filter>UnitTests\tests\item</Filter>
+    </ClCompile>
+    <ClCompile Include="TestItemMoveData.cpp">
+      <Filter>UnitTests\tests\item</Filter>
+    </ClCompile>
+    <ClCompile Include="TestItemMover.cpp">
+      <Filter>UnitTests\tests\item</Filter>
+    </ClCompile>
+    <ClCompile Include="TestItemPeriod.cpp">
+      <Filter>UnitTests\tests\item</Filter>
+    </ClCompile>
+    <ClCompile Include="TestItemRemover.cpp">
+      <Filter>UnitTests\tests\item</Filter>
+    </ClCompile>
+    <ClCompile Include="TestItemSorter.cpp">
+      <Filter>UnitTests\tests\item</Filter>
+    </ClCompile>
+    <ClCompile Include="TestItemStateSelector.cpp">
+      <Filter>UnitTests\tests\item</Filter>
+    </ClCompile>
+    <ClCompile Include="TestItemUnequiper.cpp">
+      <Filter>UnitTests\tests\item</Filter>
+    </ClCompile>
+    <ClCompile Include="TestItemUser.cpp">
+      <Filter>UnitTests\tests\item</Filter>
+    </ClCompile>
+    <ClCompile Include="TestBattleArena.cpp">
+      <Filter>UnitTests\tests\pvp</Filter>
+    </ClCompile>
+    <ClCompile Include="TestBattleArena_Packet.cpp">
+      <Filter>UnitTests\tests\pvp</Filter>
+    </ClCompile>
+    <ClCompile Include="TestFieldPvP.cpp">
+      <Filter>UnitTests\tests\pvp</Filter>
+    </ClCompile>
+    <ClCompile Include="TestMasterServer_OnCommand.cpp">
+      <Filter>UnitTests\tests\MasterServer</Filter>
+    </ClCompile>
+    <ClCompile Include="TestMasterServerFacade.cpp">
+      <Filter>UnitTests\tests\MasterServer</Filter>
+    </ClCompile>
+    <ClCompile Include="TestProxyChannel.cpp">
+      <Filter>UnitTests\tests\MasterServer</Filter>
+    </ClCompile>
+    <ClCompile Include="TestProxyField.cpp">
+      <Filter>UnitTests\tests\MasterServer</Filter>
+    </ClCompile>
+    <ClCompile Include="TestProxyParty.cpp">
+      <Filter>UnitTests\tests\MasterServer</Filter>
+    </ClCompile>
+    <ClCompile Include="TestProxyPlayer.cpp">
+      <Filter>UnitTests\tests\MasterServer</Filter>
+    </ClCompile>
+    <ClCompile Include="TestAI.cpp">
+      <Filter>UnitTests\tests\ai</Filter>
+    </ClCompile>
+    <ClCompile Include="TestAIEvent.cpp">
+      <Filter>UnitTests\tests\ai</Filter>
+    </ClCompile>
+    <ClCompile Include="TestEnemyFinder.cpp">
+      <Filter>UnitTests\tests\ai</Filter>
+    </ClCompile>
+    <ClCompile Include="TestCharHelper.cpp">
+      <Filter>UnitTests\tests\CSCommon</Filter>
+    </ClCompile>
+    <ClCompile Include="TestChrInfo.cpp">
+      <Filter>UnitTests\tests\CSCommon</Filter>
+    </ClCompile>
+    <ClCompile Include="TestFieldInfoHelper.cpp">
+      <Filter>UnitTests\tests\CSCommon</Filter>
+    </ClCompile>
+    <ClCompile Include="TestIndexedIDMap.cpp">
+      <Filter>UnitTests\tests\CSCommon</Filter>
+    </ClCompile>
+    <ClCompile Include="TestItemHelper.cpp">
+      <Filter>UnitTests\tests\CSCommon</Filter>
+    </ClCompile>
+    <ClCompile Include="TestCommandLine.cpp">
+      <Filter>UnitTests\tests\CSCommon\cml</Filter>
+    </ClCompile>
+    <ClCompile Include="TestVector.cpp">
+      <Filter>UnitTests\tests\CSCommon\cml</Filter>
+    </ClCompile>
+    <ClCompile Include="TestGameStarter.cpp">
+      <Filter>UnitTests\tests\Login</Filter>
+    </ClCompile>
+    <ClCompile Include="TestLogin.cpp">
+      <Filter>UnitTests\tests\Login</Filter>
+    </ClCompile>
+    <ClCompile Include="TestLoginLogic_Duplicated.cpp">
+      <Filter>UnitTests\tests\Login</Filter>
+    </ClCompile>
+    <ClCompile Include="TestPlayerAcceptor.cpp">
+      <Filter>UnitTests\tests\Login</Filter>
+    </ClCompile>
+    <ClCompile Include="TestPlayerGameStart_State.cpp">
+      <Filter>UnitTests\tests\Login</Filter>
+    </ClCompile>
+    <ClCompile Include="TestFaction.cpp">
+      <Filter>UnitTests\tests\faction</Filter>
+    </ClCompile>
+    <ClCompile Include="TestFactionSystem.cpp">
+      <Filter>UnitTests\tests\faction</Filter>
+    </ClCompile>
+    <ClCompile Include="TestRelationSelector.cpp">
+      <Filter>UnitTests\tests\faction</Filter>
+    </ClCompile>
+    <ClCompile Include="TestDropItems.cpp">
+      <Filter>UnitTests\tests\loot</Filter>
+    </ClCompile>
+    <ClCompile Include="TestDropSilver.cpp">
+      <Filter>UnitTests\tests\loot</Filter>
+    </ClCompile>
+    <ClCompile Include="TestDropSouls.cpp">
+      <Filter>UnitTests\tests\loot</Filter>
+    </ClCompile>
+    <ClCompile Include="TestLootSystem.cpp">
+      <Filter>UnitTests\tests\loot</Filter>
+    </ClCompile>
+    <ClCompile Include="TestLootSystemForMasterServer.cpp">
+      <Filter>UnitTests\tests\loot</Filter>
+    </ClCompile>
+    <ClCompile Include="TestDebugReporter.cpp">
+      <Filter>UnitTests\tests\test</Filter>
+    </ClCompile>
+    <ClCompile Include="TestAutoPartyMgr.cpp">
+      <Filter>UnitTests\tests\party</Filter>
+    </ClCompile>
+    <ClCompile Include="TestParty.cpp">
+      <Filter>UnitTests\tests\party</Filter>
+    </ClCompile>
+    <ClCompile Include="TestPartyCommand.cpp">
+      <Filter>UnitTests\tests\party</Filter>
+    </ClCompile>
+    <ClCompile Include="TestPartySystem.cpp">
+      <Filter>UnitTests\tests\party</Filter>
+    </ClCompile>
+    <ClCompile Include="TestPlayerGameData.cpp">
+      <Filter>UnitTests\tests\party\player</Filter>
+    </ClCompile>
+    <ClCompile Include="TestPlayerLevelUpdater.cpp">
+      <Filter>UnitTests\tests\party\player</Filter>
+    </ClCompile>
+    <ClCompile Include="TestPlayerObject.cpp">
+      <Filter>UnitTests\tests\party\player</Filter>
+    </ClCompile>
+    <ClCompile Include="TestPlayerObjectManager.cpp">
+      <Filter>UnitTests\tests\party\player</Filter>
+    </ClCompile>
+    <ClCompile Include="TestPlayerRebirth.cpp">
+      <Filter>UnitTests\tests\party\player</Filter>
+    </ClCompile>
+    <ClCompile Include="TestPlayerSensorCacheUpdater.cpp">
+      <Filter>UnitTests\tests\party\player</Filter>
+    </ClCompile>
+    <ClCompile Include="TestPlayerTDCacheInfoBuilder.cpp">
+      <Filter>UnitTests\tests\party\player</Filter>
+    </ClCompile>
+    <ClCompile Include="TestOnCommand_ActionMove.cpp">
+      <Filter>UnitTests\tests\OnCommand</Filter>
+    </ClCompile>
+    <ClCompile Include="TestNPCIconSelector.cpp">
+      <Filter>UnitTests\tests\interaction</Filter>
+    </ClCompile>
+    <ClCompile Include="TestNPCIconSender.cpp">
+      <Filter>UnitTests\tests\interaction</Filter>
+    </ClCompile>
+    <ClCompile Include="TestNPCIEApplier.cpp">
+      <Filter>UnitTests\tests\interaction</Filter>
+    </ClCompile>
+    <ClCompile Include="TestNPCIEChecker.cpp">
+      <Filter>UnitTests\tests\interaction</Filter>
+    </ClCompile>
+    <ClCompile Include="TestNPCInteractor.cpp">
+      <Filter>UnitTests\tests\interaction</Filter>
+    </ClCompile>
+    <ClCompile Include="TestSensorInteraction.cpp">
+      <Filter>UnitTests\tests\interaction</Filter>
+    </ClCompile>
+    <ClCompile Include="TestMoveStrategy.cpp">
+      <Filter>UnitTests\tests\PathFinding</Filter>
+    </ClCompile>
+    <ClCompile Include="TestPathFinding.cpp">
+      <Filter>UnitTests\tests\PathFinding</Filter>
+    </ClCompile>
+    <ClCompile Include="TestServableChecker.cpp">
+      <Filter>UnitTests\tests\ServerMonitor</Filter>
+    </ClCompile>
+    <ClCompile Include="TestServerStatusUpdater.cpp">
+      <Filter>UnitTests\tests\ServerMonitor</Filter>
+    </ClCompile>
+    <ClCompile Include="TestAsyncTask_MoveGameServer.cpp">
+      <Filter>UnitTests\tests\MoveServer</Filter>
+    </ClCompile>
+    <ClCompile Include="TestAsyncTask_MoveLoginServer.cpp">
+      <Filter>UnitTests\tests\MoveServer</Filter>
+    </ClCompile>
+    <ClCompile Include="TestCmdHandler_MoveServer.cpp">
+      <Filter>UnitTests\tests\MoveServer</Filter>
+    </ClCompile>
+    <ClCompile Include="TestMoveGameServer.cpp">
+      <Filter>UnitTests\tests\MoveServer</Filter>
+    </ClCompile>
+    <ClCompile Include="TestMoveLoginServer.cpp">
+      <Filter>UnitTests\tests\MoveServer</Filter>
+    </ClCompile>
+    <ClCompile Include="TestMoveServerRouter.cpp">
+      <Filter>UnitTests\tests\MoveServer</Filter>
+    </ClCompile>
+    <ClCompile Include="TestWorld.cpp">
+      <Filter>UnitTests\tests\MoveServer</Filter>
+    </ClCompile>
+    <ClCompile Include="TestChatChannelRouter.cpp">
+      <Filter>UnitTests\tests\ChatChannel</Filter>
+    </ClCompile>
+    <ClCompile Include="TestThreadTask.cpp">
+      <Filter>UnitTests\tests\ThreadTask</Filter>
+    </ClCompile>
+    <ClCompile Include="TestThreadTaskMgr.cpp">
+      <Filter>UnitTests\tests\ThreadTask</Filter>
+    </ClCompile>
+    <ClCompile Include="TestGatheringApply.cpp">
+      <Filter>UnitTests\tests\gathering</Filter>
+    </ClCompile>
+    <ClCompile Include="TestGatheringChecker.cpp">
+      <Filter>UnitTests\tests\gathering</Filter>
+    </ClCompile>
+    <ClCompile Include="TestDBCacheFixture.cpp">
+      <Filter>UnitTests\tests\DB\Cache</Filter>
+    </ClCompile>
+    <ClCompile Include="TestDBCacheObject.cpp">
+      <Filter>UnitTests\tests\DB\Cache</Filter>
+    </ClCompile>
+    <ClCompile Include="TestModValueType.cpp">
+      <Filter>UnitTests\tests\DB\Cache</Filter>
+    </ClCompile>
+    <ClCompile Include="TestPlayerDBCache.cpp">
+      <Filter>UnitTests\tests\DB\Cache</Filter>
+    </ClCompile>
+    <ClCompile Include="TestPlayerDBCacheMgr.cpp">
+      <Filter>UnitTests\tests\DB\Cache</Filter>
+    </ClCompile>
+    <ClCompile Include="TestSyncingCacheList.cpp">
+      <Filter>UnitTests\tests\DB\Cache</Filter>
+    </ClCompile>
+    <ClCompile Include="testCharacterDBCache_XP.cpp">
+      <Filter>UnitTests\tests\DB\Cache\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="TestDBCacheCharacter.cpp">
+      <Filter>UnitTests\tests\DB\Cache\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="TestDBCacheCharacter_Money.cpp">
+      <Filter>UnitTests\tests\DB\Cache\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="TestDBCacheDBTaskCharDecMoney.cpp">
+      <Filter>UnitTests\tests\DB\Cache\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="TestDBCacheDBTaskCharIncMoney.cpp">
+      <Filter>UnitTests\tests\DB\Cache\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="TestDBCacheDBTaskCharLevelUp.cpp">
+      <Filter>UnitTests\tests\DB\Cache\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="TestDBCacheDBTaskCharUpdateXP.cpp">
+      <Filter>UnitTests\tests\DB\Cache\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="TestDBCacheFlushTaskPoster.cpp">
+      <Filter>UnitTests\tests\DB\Cache\DBCacheFlush</Filter>
+    </ClCompile>
+    <ClCompile Include="TestDBCacheFlushTaskPoster_Rollback.cpp">
+      <Filter>UnitTests\tests\DB\Cache\DBCacheFlush</Filter>
+    </ClCompile>
+    <ClCompile Include="TestDBCacheRegulatorFlush.cpp">
+      <Filter>UnitTests\tests\DB\Cache\DBCacheFlush</Filter>
+    </ClCompile>
+    <ClCompile Include="TestDBTaskCacheFlush_FailQueryJustSkip.cpp">
+      <Filter>UnitTests\tests\DB\Cache\DBCacheFlush</Filter>
+    </ClCompile>
+    <ClCompile Include="TestDBTaskCacheFlush_OnEndCompleted.cpp">
+      <Filter>UnitTests\tests\DB\Cache\DBCacheFlush</Filter>
+    </ClCompile>
+    <ClCompile Include="TestDBCacheDBTaskItemDecDura.cpp">
+      <Filter>UnitTests\tests\DB\Cache\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="TestDBCacheDBTaskItemDecStackAmt.cpp">
+      <Filter>UnitTests\tests\DB\Cache\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="TestDBCacheDBTaskItemIncStackAmt.cpp">
+      <Filter>UnitTests\tests\DB\Cache\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="TestDBCacheDBTaskItemLearnTalent.cpp">
+      <Filter>UnitTests\tests\DB\Cache\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="TestDBCacheDBTaskItemMerge.cpp">
+      <Filter>UnitTests\tests\DB\Cache\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="TestDBCacheDBTaskItemSwapSlot.cpp">
+      <Filter>UnitTests\tests\DB\Cache\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="TestDBCacheItemDBTaskItemLootUpdate.cpp">
+      <Filter>UnitTests\tests\DB\Cache\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="TestDBCacheItemDelete.cpp">
+      <Filter>UnitTests\tests\DB\Cache\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="TestDBCacheItemEquip.cpp">
+      <Filter>UnitTests\tests\DB\Cache\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="TestDBCacheItemUnquip.cpp">
+      <Filter>UnitTests\tests\DB\Cache\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="TestItemAdderInsertItemCache.cpp">
+      <Filter>UnitTests\tests\DB\Cache\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="TestItemDBCache.cpp">
+      <Filter>UnitTests\tests\DB\Cache\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="TestItemDBCache_Dura.cpp">
+      <Filter>UnitTests\tests\DB\Cache\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="TestItemDBCache_StackAmt.cpp">
+      <Filter>UnitTests\tests\DB\Cache\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="TestItemRemoverDeleteItemCache.cpp">
+      <Filter>UnitTests\tests\DB\Cache\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="TestDBCacheSystem.cpp">
+      <Filter>UnitTests\tests\DB\Cache\system</Filter>
+    </ClCompile>
+    <ClCompile Include="TestDBCacheSystem_Character.cpp">
+      <Filter>UnitTests\tests\DB\Cache\system</Filter>
+    </ClCompile>
+    <ClCompile Include="TestDBCacheSystem_Release.cpp">
+      <Filter>UnitTests\tests\DB\Cache\system</Filter>
+    </ClCompile>
+    <ClCompile Include="TestDBCacheNCPShopDBTaskRepair.cpp">
+      <Filter>UnitTests\tests\DB\Cache\NPCShop</Filter>
+    </ClCompile>
+    <ClCompile Include="TestDBCacheNPCShopDBTaskItemBuy.cpp">
+      <Filter>UnitTests\tests\DB\Cache\NPCShop</Filter>
+    </ClCompile>
+    <ClCompile Include="TestDBCacheNPCShopDBTaskItemSell.cpp">
+      <Filter>UnitTests\tests\DB\Cache\NPCShop</Filter>
+    </ClCompile>
+    <ClCompile Include="TestDBCacheDBTaskCraft.cpp">
+      <Filter>UnitTests\tests\DB\Cache\Craft</Filter>
+    </ClCompile>
+    <ClCompile Include="TestDBCacheDBTaskTrade.cpp">
+      <Filter>UnitTests\tests\DB\Cache\Trade</Filter>
+    </ClCompile>
+    <ClCompile Include="TestDBCacheDBTaskLoot.cpp">
+      <Filter>UnitTests\tests\DB\Cache\Loot</Filter>
+    </ClCompile>
+    <ClCompile Include="TestDBCacheDBTaskQuestDone.cpp">
+      <Filter>UnitTests\tests\DB\Cache\Quest</Filter>
+    </ClCompile>
+    <ClCompile Include="TestDBCacheDBTaskQuestGiveup.cpp">
+      <Filter>UnitTests\tests\DB\Cache\Quest</Filter>
+    </ClCompile>
+    <ClCompile Include="TestDsnFactory.cpp">
+      <Filter>UnitTests\tests\DB\DSN</Filter>
+    </ClCompile>
+    <ClCompile Include="TestPmangDsnFactory.cpp">
+      <Filter>UnitTests\tests\DB\DSN</Filter>
+    </ClCompile>
+    <ClCompile Include="TestNPCKillLogBuilder.cpp">
+      <Filter>UnitTests\tests\DB\LOG</Filter>
+    </ClCompile>
+    <ClCompile Include="TestEntityPlayer.cpp">
+      <Filter>UnitTests\tests\EntityPlayer</Filter>
+    </ClCompile>
+    <ClCompile Include="TestEntityPlayer_Exp.cpp">
+      <Filter>UnitTests\tests\EntityPlayer</Filter>
+    </ClCompile>
+    <ClCompile Include="TestPlayerFalling.cpp">
+      <Filter>UnitTests\tests\EntityPlayer</Filter>
+    </ClCompile>
+    <ClCompile Include="TestMotionFactor.cpp">
+      <Filter>UnitTests\tests\MotionFactor</Filter>
+    </ClCompile>
+    <ClCompile Include="TestMotionFactorHelper.cpp">
+      <Filter>UnitTests\tests\MotionFactor</Filter>
+    </ClCompile>
+    <ClCompile Include="TestNPCRewarder.cpp">
+      <Filter>UnitTests\tests\reward</Filter>
+    </ClCompile>
+    <ClCompile Include="TestNPCRewardOwner.cpp">
+      <Filter>UnitTests\tests\reward</Filter>
+    </ClCompile>
+    <ClCompile Include="TestReserveCmd.cpp">
+      <Filter>UnitTests\tests\reservecmd</Filter>
+    </ClCompile>
+    <ClCompile Include="TestReserveCmdManager.cpp">
+      <Filter>UnitTests\tests\reservecmd</Filter>
+    </ClCompile>
+    <ClCompile Include="TestNPCShopBuyer.cpp">
+      <Filter>UnitTests\tests\NPCShop</Filter>
+    </ClCompile>
+    <ClCompile Include="TestNPCShopRepairer.cpp">
+      <Filter>UnitTests\tests\NPCShop</Filter>
+    </ClCompile>
+    <ClCompile Include="TestNPCShopSeller.cpp">
+      <Filter>UnitTests\tests\NPCShop</Filter>
+    </ClCompile>
+    <ClCompile Include="TestNPCShopShower.cpp">
+      <Filter>UnitTests\tests\NPCShop</Filter>
+    </ClCompile>
+    <ClCompile Include="TestTradeAcceptor.cpp">
+      <Filter>UnitTests\tests\Trade</Filter>
+    </ClCompile>
+    <ClCompile Include="TestTradeCanceler.cpp">
+      <Filter>UnitTests\tests\Trade</Filter>
+    </ClCompile>
+    <ClCompile Include="TestTradeChecker.cpp">
+      <Filter>UnitTests\tests\Trade</Filter>
+    </ClCompile>
+    <ClCompile Include="TestTradeConfirmer.cpp">
+      <Filter>UnitTests\tests\Trade</Filter>
+    </ClCompile>
+    <ClCompile Include="TestTradeExchanger.cpp">
+      <Filter>UnitTests\tests\Trade</Filter>
+    </ClCompile>
+    <ClCompile Include="TestTradeExchangerForDBTask.cpp">
+      <Filter>UnitTests\tests\Trade</Filter>
+    </ClCompile>
+    <ClCompile Include="TestTradeItemPutDowner.cpp">
+      <Filter>UnitTests\tests\Trade</Filter>
+    </ClCompile>
+    <ClCompile Include="TestTradeItemPutUper.cpp">
+      <Filter>UnitTests\tests\Trade</Filter>
+    </ClCompile>
+    <ClCompile Include="TestTradeRequester.cpp">
+      <Filter>UnitTests\tests\Trade</Filter>
+    </ClCompile>
+    <ClCompile Include="TestTradeSilverPutUper.cpp">
+      <Filter>UnitTests\tests\Trade</Filter>
+    </ClCompile>
+    <ClCompile Include="TestAsyncTask_Logout.cpp">
+      <Filter>UnitTests\tests\logout</Filter>
+    </ClCompile>
+    <ClCompile Include="TestLogoutRemainEffectTime.cpp">
+      <Filter>UnitTests\tests\logout</Filter>
+    </ClCompile>
+    <ClCompile Include="TestPlayerLogoutDBExecuter.cpp">
+      <Filter>UnitTests\tests\logout</Filter>
+    </ClCompile>
+    <ClCompile Include="TestProxyChatChannelManager.cpp">
+      <Filter>UnitTests\tests\AppServer</Filter>
+    </ClCompile>
+    <ClCompile Include="TestAsyncTask.cpp">
+      <Filter>UnitTests\tests\AsyncTask</Filter>
+    </ClCompile>
+    <ClCompile Include="TestTimeType.cpp">
+      <Filter>UnitTests\tests\TimeCalculator</Filter>
+    </ClCompile>
+    <ClCompile Include="TestPlayerQuest.cpp">
+      <Filter>UnitTests\tests\Quest</Filter>
+    </ClCompile>
+    <ClCompile Include="TestQObjInteractor.cpp">
+      <Filter>UnitTests\tests\Quest</Filter>
+    </ClCompile>
+    <ClCompile Include="TestQObjUpdater.cpp">
+      <Filter>UnitTests\tests\Quest</Filter>
+    </ClCompile>
+    <ClCompile Include="TestQuestCanceler.cpp">
+      <Filter>UnitTests\tests\Quest</Filter>
+    </ClCompile>
+    <ClCompile Include="TestQuestGiver.cpp">
+      <Filter>UnitTests\tests\Quest</Filter>
+    </ClCompile>
+    <ClCompile Include="TestQuestRewarder.cpp">
+      <Filter>UnitTests\tests\Quest</Filter>
+    </ClCompile>
+    <ClCompile Include="TestQuestSharer.cpp">
+      <Filter>UnitTests\tests\Quest</Filter>
+    </ClCompile>
+    <ClCompile Include="TestQuestVarUpdater.cpp">
+      <Filter>UnitTests\tests\Quest</Filter>
+    </ClCompile>
+    <ClCompile Include="TestMail.cpp">
+      <Filter>UnitTests\tests\Mail</Filter>
+    </ClCompile>
+    <ClCompile Include="TestMailCommand.cpp">
+      <Filter>UnitTests\tests\Mail</Filter>
+    </ClCompile>
+    <ClCompile Include="TestMailDBTask_GetList.cpp">
+      <Filter>UnitTests\tests\Mail</Filter>
+    </ClCompile>
+    <ClCompile Include="TestMailItemPutDowner.cpp">
+      <Filter>UnitTests\tests\Mail</Filter>
+    </ClCompile>
+    <ClCompile Include="TestMailItemPutUper.cpp">
+      <Filter>UnitTests\tests\Mail</Filter>
+    </ClCompile>
+    <ClCompile Include="TestMailItemTaker.cpp">
+      <Filter>UnitTests\tests\Mail</Filter>
+    </ClCompile>
+    <ClCompile Include="TestMailMoneyTaker.cpp">
+      <Filter>UnitTests\tests\Mail</Filter>
+    </ClCompile>
+    <ClCompile Include="TestMailSystem.cpp">
+      <Filter>UnitTests\tests\Mail</Filter>
+    </ClCompile>
+    <ClCompile Include="TestPlayerMailBox.cpp">
+      <Filter>UnitTests\tests\Mail</Filter>
+    </ClCompile>
+    <ClCompile Include="TestPlayerMailboxDBMailUID.cpp">
+      <Filter>UnitTests\tests\Mail</Filter>
+    </ClCompile>
+    <ClCompile Include="TestPlayerMailReserver.cpp">
+      <Filter>UnitTests\tests\Mail</Filter>
+    </ClCompile>
+    <ClCompile Include="TestQPKillRewarder.cpp">
+      <Filter>UnitTests\tests\questpvp</Filter>
+    </ClCompile>
+    <ClCompile Include="TestQPKillRewardOwner.cpp">
+      <Filter>UnitTests\tests\questpvp</Filter>
+    </ClCompile>
+    <ClCompile Include="TestQPNPCPosSender.cpp">
+      <Filter>UnitTests\tests\questpvp</Filter>
+    </ClCompile>
+    <ClCompile Include="TestQPTeamCountSender.cpp">
+      <Filter>UnitTests\tests\questpvp</Filter>
+    </ClCompile>
+    <ClCompile Include="TestQuestPVP.cpp">
+      <Filter>UnitTests\tests\questpvp</Filter>
+    </ClCompile>
+    <ClCompile Include="TestCraftLogCache.cpp">
+      <Filter>UnitTests\tests\LogCache</Filter>
+    </ClCompile>
+    <ClCompile Include="TestItemDeleteLogCache.cpp">
+      <Filter>UnitTests\tests\LogCache</Filter>
+    </ClCompile>
+    <ClCompile Include="TestItemLootLogCache.cpp">
+      <Filter>UnitTests\tests\LogCache</Filter>
+    </ClCompile>
+    <ClCompile Include="TestItemMergeLogCache.cpp">
+      <Filter>UnitTests\tests\LogCache</Filter>
+    </ClCompile>
+    <ClCompile Include="TestItemSellLogCache.cpp">
+      <Filter>UnitTests\tests\LogCache</Filter>
+    </ClCompile>
+    <ClCompile Include="TestMoneyLogCache.cpp">
+      <Filter>UnitTests\tests\LogCache</Filter>
+    </ClCompile>
+    <ClCompile Include="TestQPvPRewardItemLogCache.cpp">
+      <Filter>UnitTests\tests\LogCache</Filter>
+    </ClCompile>
+    <ClCompile Include="TestQuestItemLogCache.cpp">
+      <Filter>UnitTests\tests\LogCache</Filter>
+    </ClCompile>
+    <ClCompile Include="TestXPLogCache.cpp">
+      <Filter>UnitTests\tests\LogCache</Filter>
+    </ClCompile>
+    <ClCompile Include="TestGMExpoHandler.cpp">
+      <Filter>UnitTests\tests\gm</Filter>
+    </ClCompile>
+    <ClCompile Include="TestTradeMarket.cpp">
+      <Filter>UnitTests\tests\TradeMarket</Filter>
+    </ClCompile>
+    <ClCompile Include="DBTestAccount.cpp">
+      <Filter>DBUnitTest\Procedure</Filter>
+    </ClCompile>
+    <ClCompile Include="DBTestConnection.cpp">
+      <Filter>DBUnitTest\Procedure</Filter>
+    </ClCompile>
+    <ClCompile Include="DBTestCutscene.cpp">
+      <Filter>DBUnitTest\Procedure</Filter>
+    </ClCompile>
+    <ClCompile Include="DBTestDBManager.cpp">
+      <Filter>DBUnitTest\Procedure</Filter>
+    </ClCompile>
+    <ClCompile Include="DBTestEffectRemainTimes.cpp">
+      <Filter>DBUnitTest\Procedure</Filter>
+    </ClCompile>
+    <ClCompile Include="DBTestEmblem.cpp">
+      <Filter>DBUnitTest\Procedure</Filter>
+    </ClCompile>
+    <ClCompile Include="DBTestFaction.cpp">
+      <Filter>DBUnitTest\Procedure</Filter>
+    </ClCompile>
+    <ClCompile Include="DBTestGDBTask.cpp">
+      <Filter>DBUnitTest\Procedure</Filter>
+    </ClCompile>
+    <ClCompile Include="DBTestLoginInfo.cpp">
+      <Filter>DBUnitTest\Procedure</Filter>
+    </ClCompile>
+    <ClCompile Include="DBTestLogServerMonitor.cpp">
+      <Filter>DBUnitTest\Procedure</Filter>
+    </ClCompile>
+    <ClCompile Include="DBTestNPCKilledLog.cpp">
+      <Filter>DBUnitTest\Procedure</Filter>
+    </ClCompile>
+    <ClCompile Include="DBTestPalette.cpp">
+      <Filter>DBUnitTest\Procedure</Filter>
+    </ClCompile>
+    <ClCompile Include="DBTestPartyLog.cpp">
+      <Filter>DBUnitTest\Procedure</Filter>
+    </ClCompile>
+    <ClCompile Include="DBTestRecipe.cpp">
+      <Filter>DBUnitTest\Procedure</Filter>
+    </ClCompile>
+    <ClCompile Include="DBTestSample.cpp">
+      <Filter>DBUnitTest\Procedure</Filter>
+    </ClCompile>
+    <ClCompile Include="DBTestStringSplitFunction.cpp">
+      <Filter>DBUnitTest\Procedure</Filter>
+    </ClCompile>
+    <ClCompile Include="DBTestSync.cpp">
+      <Filter>DBUnitTest\Procedure</Filter>
+    </ClCompile>
+    <ClCompile Include="TestDBTaskCounter.cpp">
+      <Filter>DBUnitTest\Procedure</Filter>
+    </ClCompile>
+    <ClCompile Include="UnitTestDB.cpp">
+      <Filter>DBUnitTest\Procedure</Filter>
+    </ClCompile>
+    <ClCompile Include="DBTestInven.cpp">
+      <Filter>DBUnitTest\Procedure\ITEM</Filter>
+    </ClCompile>
+    <ClCompile Include="DBTestItem.cpp">
+      <Filter>DBUnitTest\Procedure\ITEM</Filter>
+    </ClCompile>
+    <ClCompile Include="DBTestItemDelete.cpp">
+      <Filter>DBUnitTest\Procedure\ITEM</Filter>
+    </ClCompile>
+    <ClCompile Include="DBTestItemEnchant.cpp">
+      <Filter>DBUnitTest\Procedure\ITEM</Filter>
+    </ClCompile>
+    <ClCompile Include="DBTestItemInsert.cpp">
+      <Filter>DBUnitTest\Procedure\ITEM</Filter>
+    </ClCompile>
+    <ClCompile Include="DBTestItemLoot.cpp">
+      <Filter>DBUnitTest\Procedure\ITEM</Filter>
+    </ClCompile>
+    <ClCompile Include="DBTestItemMerge.cpp">
+      <Filter>DBUnitTest\Procedure\ITEM</Filter>
+    </ClCompile>
+    <ClCompile Include="DBTestItemSplit.cpp">
+      <Filter>DBUnitTest\Procedure\ITEM</Filter>
+    </ClCompile>
+    <ClCompile Include="DBTestItemEquipment.cpp">
+      <Filter>DBUnitTest\Procedure\ITEM\SWAP</Filter>
+    </ClCompile>
+    <ClCompile Include="DBTestItemSlot.cpp">
+      <Filter>DBUnitTest\Procedure\ITEM\SWAP</Filter>
+    </ClCompile>
+    <ClCompile Include="DBTestItemBuy.cpp">
+      <Filter>DBUnitTest\Procedure\ITEM\NPC_SHOP</Filter>
+    </ClCompile>
+    <ClCompile Include="DBTestItemRepair.cpp">
+      <Filter>DBUnitTest\Procedure\ITEM\NPC_SHOP</Filter>
+    </ClCompile>
+    <ClCompile Include="DBTestItemSell.cpp">
+      <Filter>DBUnitTest\Procedure\ITEM\NPC_SHOP</Filter>
+    </ClCompile>
+    <ClCompile Include="DBTestQuest.cpp">
+      <Filter>DBUnitTest\Procedure\Quest</Filter>
+    </ClCompile>
+    <ClCompile Include="DBTestQuestAccept.cpp">
+      <Filter>DBUnitTest\Procedure\Quest</Filter>
+    </ClCompile>
+    <ClCompile Include="DBTestQuestComplete.cpp">
+      <Filter>DBUnitTest\Procedure\Quest</Filter>
+    </ClCompile>
+    <ClCompile Include="DBTestQuestDone.cpp">
+      <Filter>DBUnitTest\Procedure\Quest</Filter>
+    </ClCompile>
+    <ClCompile Include="DBTestQuestFail.cpp">
+      <Filter>DBUnitTest\Procedure\Quest</Filter>
+    </ClCompile>
+    <ClCompile Include="DBTestQuestGiveUp.cpp">
+      <Filter>DBUnitTest\Procedure\Quest</Filter>
+    </ClCompile>
+    <ClCompile Include="DBTestQuestList.cpp">
+      <Filter>DBUnitTest\Procedure\Quest</Filter>
+    </ClCompile>
+    <ClCompile Include="DBTestQuestObject.cpp">
+      <Filter>DBUnitTest\Procedure\Quest</Filter>
+    </ClCompile>
+    <ClCompile Include="DBTestQuestPvPReward.cpp">
+      <Filter>DBUnitTest\Procedure\Quest</Filter>
+    </ClCompile>
+    <ClCompile Include="DBTestHelper_Quest.cpp">
+      <Filter>DBUnitTest\Procedure\Quest\Helper</Filter>
+    </ClCompile>
+    <ClCompile Include="DBTestCraft.cpp">
+      <Filter>DBUnitTest\Procedure\Craft</Filter>
+    </ClCompile>
+    <ClCompile Include="DBTestCraftFixture.cpp">
+      <Filter>DBUnitTest\Procedure\Craft</Filter>
+    </ClCompile>
+    <ClCompile Include="DBTestCraftInsert.cpp">
+      <Filter>DBUnitTest\Procedure\Craft</Filter>
+    </ClCompile>
+    <ClCompile Include="DBTestCraftUpdate.cpp">
+      <Filter>DBUnitTest\Procedure\Craft</Filter>
+    </ClCompile>
+    <ClCompile Include="DBTestHelper_Craft.cpp">
+      <Filter>DBUnitTest\Procedure\Craft\Helper</Filter>
+    </ClCompile>
+    <ClCompile Include="DBTestHelper_ServerStatus.cpp">
+      <Filter>DBUnitTest\Procedure\ServerStatus</Filter>
+    </ClCompile>
+    <ClCompile Include="DBTestServerStatus.cpp">
+      <Filter>DBUnitTest\Procedure\ServerStatus</Filter>
+    </ClCompile>
+    <ClCompile Include="DBTestCharacter.cpp">
+      <Filter>DBUnitTest\Procedure\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="DBTestCharacterItemSet.cpp">
+      <Filter>DBUnitTest\Procedure\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="DBTestCharInsert.cpp">
+      <Filter>DBUnitTest\Procedure\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="DBTestCharStorage.cpp">
+      <Filter>DBUnitTest\Procedure\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="DBTestXPLog.cpp">
+      <Filter>DBUnitTest\Procedure\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="DBTestTrade.cpp">
+      <Filter>DBUnitTest\Procedure\Trade</Filter>
+    </ClCompile>
+    <ClCompile Include="DBTestTrade_Item.cpp">
+      <Filter>DBUnitTest\Procedure\Trade</Filter>
+    </ClCompile>
+    <ClCompile Include="DBTestGuild.cpp">
+      <Filter>DBUnitTest\Procedure\GUILD</Filter>
+    </ClCompile>
+    <ClCompile Include="DBTestGuildStorage.cpp">
+      <Filter>DBUnitTest\Procedure\GUILD</Filter>
+    </ClCompile>
+    <ClCompile Include="DBTestItemLearnTalent.cpp">
+      <Filter>DBUnitTest\Procedure\TALENT</Filter>
+    </ClCompile>
+    <ClCompile Include="DBTestTalent.cpp">
+      <Filter>DBUnitTest\Procedure\TALENT</Filter>
+    </ClCompile>
+    <ClCompile Include="DBTestMail.cpp">
+      <Filter>DBUnitTest\Procedure\MAIL</Filter>
+    </ClCompile>
+    <ClCompile Include="DBTestMailCheckRcvr.cpp">
+      <Filter>DBUnitTest\Procedure\MAIL</Filter>
+    </ClCompile>
+    <ClCompile Include="DBTestMailGetItem.cpp">
+      <Filter>DBUnitTest\Procedure\MAIL</Filter>
+    </ClCompile>
+    <ClCompile Include="DBTestMailGetMoney.cpp">
+      <Filter>DBUnitTest\Procedure\MAIL</Filter>
+    </ClCompile>
+    <ClCompile Include="DBTestMailLog.cpp">
+      <Filter>DBUnitTest\Procedure\MAIL</Filter>
+    </ClCompile>
+    <ClCompile Include="DBTestMailSend.cpp">
+      <Filter>DBUnitTest\Procedure\MAIL</Filter>
+    </ClCompile>
+    <ClCompile Include="DBTestGMQeust.cpp">
+      <Filter>DBUnitTest\Procedure\GM</Filter>
+    </ClCompile>
+    <ClCompile Include="DBTestCharactorLog.cpp">
+      <Filter>DBUnitTest\Procedure\LOG</Filter>
+    </ClCompile>
+    <ClCompile Include="DBTestCraftLog.cpp">
+      <Filter>DBUnitTest\Procedure\LOG</Filter>
+    </ClCompile>
+    <ClCompile Include="DBTestGuildLog.cpp">
+      <Filter>DBUnitTest\Procedure\LOG</Filter>
+    </ClCompile>
+    <ClCompile Include="DBTestItemBuyLog.cpp">
+      <Filter>DBUnitTest\Procedure\LOG</Filter>
+    </ClCompile>
+    <ClCompile Include="DBTestItemDeleteLog.cpp">
+      <Filter>DBUnitTest\Procedure\LOG</Filter>
+    </ClCompile>
+    <ClCompile Include="DBTestItemEnchantLog.cpp">
+      <Filter>DBUnitTest\Procedure\LOG</Filter>
+    </ClCompile>
+    <ClCompile Include="DBTestItemInsertLog.cpp">
+      <Filter>DBUnitTest\Procedure\LOG</Filter>
+    </ClCompile>
+    <ClCompile Include="DBTestItemLog.cpp">
+      <Filter>DBUnitTest\Procedure\LOG</Filter>
+    </ClCompile>
+    <ClCompile Include="DBTestItemMergeLog.cpp">
+      <Filter>DBUnitTest\Procedure\LOG</Filter>
+    </ClCompile>
+    <ClCompile Include="DBTestItemMoveLog.cpp">
+      <Filter>DBUnitTest\Procedure\LOG</Filter>
+    </ClCompile>
+    <ClCompile Include="DBTestMoneyLog.cpp">
+      <Filter>DBUnitTest\Procedure\LOG</Filter>
+    </ClCompile>
+    <ClCompile Include="DBTestNpcShopLog.cpp">
+      <Filter>DBUnitTest\Procedure\LOG</Filter>
+    </ClCompile>
+    <ClCompile Include="DBTestQuestAcceptItem.cpp">
+      <Filter>DBUnitTest\Procedure\LOG</Filter>
+    </ClCompile>
+    <ClCompile Include="DBTestQuestItemLog.cpp">
+      <Filter>DBUnitTest\Procedure\LOG</Filter>
+    </ClCompile>
+    <ClCompile Include="DBTestQuestLog.cpp">
+      <Filter>DBUnitTest\Procedure\LOG</Filter>
+    </ClCompile>
+    <ClCompile Include="DBTestTalentLog.cpp">
+      <Filter>DBUnitTest\Procedure\LOG</Filter>
+    </ClCompile>
+    <ClCompile Include="DBTestTradeLog.cpp">
+      <Filter>DBUnitTest\Procedure\LOG</Filter>
+    </ClCompile>
+    <ClCompile Include="DBTestWorld.cpp">
+      <Filter>DBUnitTest\Procedure\WORLD</Filter>
+    </ClCompile>
+    <ClCompile Include="DBTestFieldValueTypeBool.cpp">
+      <Filter>DBUnitTest\MDatabaseLib</Filter>
+    </ClCompile>
+    <ClCompile Include="DBTestFieldValueTypeByte.cpp">
+      <Filter>DBUnitTest\MDatabaseLib</Filter>
+    </ClCompile>
+    <ClCompile Include="DBTestFieldValueTypeInt64.cpp">
+      <Filter>DBUnitTest\MDatabaseLib</Filter>
+    </ClCompile>
+    <ClCompile Include="DBTestFieldValueTypeLong.cpp">
+      <Filter>DBUnitTest\MDatabaseLib</Filter>
+    </ClCompile>
+    <ClCompile Include="DBTestFieldValueTypeNull.cpp">
+      <Filter>DBUnitTest\MDatabaseLib</Filter>
+    </ClCompile>
+    <ClCompile Include="DBTestFieldValueTypeShort.cpp">
+      <Filter>DBUnitTest\MDatabaseLib</Filter>
+    </ClCompile>
+    <ClCompile Include="DBTestFieldValueTypeString.cpp">
+      <Filter>DBUnitTest\MDatabaseLib</Filter>
+    </ClCompile>
+    <ClCompile Include="DBTestFieldValueTypeTimestamp.cpp">
+      <Filter>DBUnitTest\MDatabaseLib</Filter>
+    </ClCompile>
+    <ClCompile Include="DBTestFieldValueTypeWString.cpp">
+      <Filter>DBUnitTest\MDatabaseLib</Filter>
+    </ClCompile>
+    <ClCompile Include="DBTestTransaction.cpp">
+      <Filter>DBUnitTest\MDatabaseLib</Filter>
+    </ClCompile>
+    <ClCompile Include="TestDBThread.cpp">
+      <Filter>DBUnitTest\MDatabaseLib</Filter>
+    </ClCompile>
+    <ClCompile Include="MockAppNetClient.cpp">
+      <Filter>mock</Filter>
+    </ClCompile>
+    <ClCompile Include="MockAppServerFacade.cpp">
+      <Filter>mock</Filter>
+    </ClCompile>
+    <ClCompile Include="MockDBManager.cpp">
+      <Filter>mock</Filter>
+    </ClCompile>
+    <ClCompile Include="MockDBTask.cpp">
+      <Filter>mock</Filter>
+    </ClCompile>
+    <ClCompile Include="MockDuel.cpp">
+      <Filter>mock</Filter>
+    </ClCompile>
+    <ClCompile Include="MockField.cpp">
+      <Filter>mock</Filter>
+    </ClCompile>
+    <ClCompile Include="MockLink.cpp">
+      <Filter>mock</Filter>
+    </ClCompile>
+    <ClCompile Include="MockMasterNetClient.cpp">
+      <Filter>mock</Filter>
+    </ClCompile>
+    <ClCompile Include="MockMasterServerFacade.cpp">
+      <Filter>mock</Filter>
+    </ClCompile>
+    <ClCompile Include="MockNetServer.cpp">
+      <Filter>mock</Filter>
+    </ClCompile>
+    <ClCompile Include="MockServer.cpp">
+      <Filter>mock</Filter>
+    </ClCompile>
+    <ClCompile Include="NetworkMockServer.cpp">
+      <Filter>mock</Filter>
+    </ClCompile>
+    <ClCompile Include="FBaseAppNetClient.cpp">
+      <Filter>Fixture</Filter>
+    </ClCompile>
+    <ClCompile Include="FBaseAppServerFacade.cpp">
+      <Filter>Fixture</Filter>
+    </ClCompile>
+    <ClCompile Include="FBaseCombat.cpp">
+      <Filter>Fixture</Filter>
+    </ClCompile>
+    <ClCompile Include="FBaseFieldInfo.cpp">
+      <Filter>Fixture</Filter>
+    </ClCompile>
+    <ClCompile Include="FBaseFieldMgr.cpp">
+      <Filter>Fixture</Filter>
+    </ClCompile>
+    <ClCompile Include="FBaseGame.cpp">
+      <Filter>Fixture</Filter>
+    </ClCompile>
+    <ClCompile Include="FBaseMail.cpp">
+      <Filter>Fixture</Filter>
+    </ClCompile>
+    <ClCompile Include="FBaseMasterServerFacade.cpp">
+      <Filter>Fixture</Filter>
+    </ClCompile>
+    <ClCompile Include="FBaseMockLink.cpp">
+      <Filter>Fixture</Filter>
+    </ClCompile>
+    <ClCompile Include="FBaseNetClient.cpp">
+      <Filter>Fixture</Filter>
+    </ClCompile>
+    <ClCompile Include="FBaseNPC.cpp">
+      <Filter>Fixture</Filter>
+    </ClCompile>
+    <ClCompile Include="FBasePlayer.cpp">
+      <Filter>Fixture</Filter>
+    </ClCompile>
+    <ClCompile Include="FBaseScriptCallback.cpp">
+      <Filter>Fixture</Filter>
+    </ClCompile>
+    <ClCompile Include="FBaseScriptGlue.cpp">
+      <Filter>Fixture</Filter>
+    </ClCompile>
+    <ClCompile Include="FBaseTalent.cpp">
+      <Filter>Fixture</Filter>
+    </ClCompile>
+    <ClCompile Include="FForCommandTest.cpp">
+      <Filter>Fixture</Filter>
+    </ClCompile>
+    <ClCompile Include="GCommonFixture.cpp">
+      <Filter>helper</Filter>
+    </ClCompile>
+    <ClCompile Include="GTestForward.cpp">
+      <Filter>helper</Filter>
+    </ClCompile>
+    <ClCompile Include="GUTHelper.cpp">
+      <Filter>helper</Filter>
+    </ClCompile>
+    <ClCompile Include="GUTHelper_Actor.cpp">
+      <Filter>helper</Filter>
+    </ClCompile>
+    <ClCompile Include="GUTHelper_Buff.cpp">
+      <Filter>helper</Filter>
+    </ClCompile>
+    <ClCompile Include="GUTHelper_CmdHandler.cpp">
+      <Filter>helper</Filter>
+    </ClCompile>
+    <ClCompile Include="GUTHelper_Condition.cpp">
+      <Filter>helper</Filter>
+    </ClCompile>
+    <ClCompile Include="GUTHelper_Dialog.cpp">
+      <Filter>helper</Filter>
+    </ClCompile>
+    <ClCompile Include="GUTHelper_Duel.cpp">
+      <Filter>helper</Filter>
+    </ClCompile>
+    <ClCompile Include="GUTHelper_Etc.cpp">
+      <Filter>helper</Filter>
+    </ClCompile>
+    <ClCompile Include="GUTHelper_Faction.cpp">
+      <Filter>helper</Filter>
+    </ClCompile>
+    <ClCompile Include="GUTHelper_Field.cpp">
+      <Filter>helper</Filter>
+    </ClCompile>
+    <ClCompile Include="GUTHelper_Focus.cpp">
+      <Filter>helper</Filter>
+    </ClCompile>
+    <ClCompile Include="GUTHelper_Interaction.cpp">
+      <Filter>helper</Filter>
+    </ClCompile>
+    <ClCompile Include="GUTHelper_Item.cpp">
+      <Filter>helper</Filter>
+    </ClCompile>
+    <ClCompile Include="GUTHelper_Login.cpp">
+      <Filter>helper</Filter>
+    </ClCompile>
+    <ClCompile Include="GUTHelper_Loot.cpp">
+      <Filter>helper</Filter>
+    </ClCompile>
+    <ClCompile Include="GUTHelper_MasterServer.cpp">
+      <Filter>helper</Filter>
+    </ClCompile>
+    <ClCompile Include="GUTHelper_Network.cpp">
+      <Filter>helper</Filter>
+    </ClCompile>
+    <ClCompile Include="GUTHelper_NPC.cpp">
+      <Filter>helper</Filter>
+    </ClCompile>
+    <ClCompile Include="GUTHelper_NPCShop.cpp">
+      <Filter>helper</Filter>
+    </ClCompile>
+    <ClCompile Include="GUTHelper_Party.cpp">
+      <Filter>helper</Filter>
+    </ClCompile>
+    <ClCompile Include="GUTHelper_Player.cpp">
+      <Filter>helper</Filter>
+    </ClCompile>
+    <ClCompile Include="GUTHelper_Quest.cpp">
+      <Filter>helper</Filter>
+    </ClCompile>
+    <ClCompile Include="GUTHelper_QuestPVP.cpp">
+      <Filter>helper</Filter>
+    </ClCompile>
+    <ClCompile Include="GUTHelper_Talent.cpp">
+      <Filter>helper</Filter>
+    </ClCompile>
+    <ClCompile Include="GUTHelper_Trade.cpp">
+      <Filter>helper</Filter>
+    </ClCompile>
+    <ClCompile Include="TestCallCounter.cpp">
+      <Filter>helper</Filter>
+    </ClCompile>
+    <ClCompile Include="GUnitTestRunner.cpp">
+      <Filter>runner</Filter>
+    </ClCompile>
+    <ClCompile Include="GUnitTestStage1.cpp">
+      <Filter>runner</Filter>
+    </ClCompile>
+    <ClCompile Include="GUnitTestStage2.cpp">
+      <Filter>runner</Filter>
+    </ClCompile>
+    <ClCompile Include="GUnitTestStage3.cpp">
+      <Filter>runner</Filter>
+    </ClCompile>
+    <ClCompile Include="GUnitTestStage4.cpp">
+      <Filter>runner</Filter>
+    </ClCompile>
+    <ClCompile Include="GUnitTestStageDB.cpp">
+      <Filter>runner</Filter>
+    </ClCompile>
+    <ClCompile Include="GUnitTestTimeElapsedReporter.cpp">
+      <Filter>runner</Filter>
+    </ClCompile>
+    <ClCompile Include="CmdProfile_ActionMove.cpp">
+      <Filter>CmdHandler Profile</Filter>
+    </ClCompile>
+    <ClCompile Include="CmdProfile_Equipitem.cpp">
+      <Filter>CmdHandler Profile</Filter>
+    </ClCompile>
+    <ClCompile Include="CmdProfile_TriggerSensorInteractionReq.cpp">
+      <Filter>CmdHandler Profile</Filter>
+    </ClCompile>
+    <ClCompile Include="CmdProfile_UseTalent.cpp">
+      <Filter>CmdHandler Profile</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="TestActor_Invisibility.cpp" />
+    <ClCompile Include="TestCombat.cpp" />
+    <ClCompile Include="TestNPCAssist.cpp" />
+    <ClCompile Include="TestNPCBParts.cpp" />
+    <ClCompile Include="TestNPCMinion.cpp" />
+    <ClCompile Include="TestNPCMove.cpp" />
+    <ClCompile Include="TestNPCSession.cpp" />
+    <ClCompile Include="TestSwim.cpp" />
+    <ClCompile Include="TestWaitFor.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="TestLogin.h">
+      <Filter>UnitTests\tests\Login</Filter>
+    </ClInclude>
+    <ClInclude Include="TestDBCacheFixture.h">
+      <Filter>UnitTests\tests\DB\Cache</Filter>
+    </ClInclude>
+    <ClInclude Include="DBTestSwapItem.h">
+      <Filter>DBUnitTest\Procedure\ITEM\SWAP</Filter>
+    </ClInclude>
+    <ClInclude Include="DBTestHelper_Quest.h">
+      <Filter>DBUnitTest\Procedure\Quest\Helper</Filter>
+    </ClInclude>
+    <ClInclude Include="DBTestCraftFixture.h">
+      <Filter>DBUnitTest\Procedure\Craft</Filter>
+    </ClInclude>
+    <ClInclude Include="DBTestHelper_Craft.h">
+      <Filter>DBUnitTest\Procedure\Craft\Helper</Filter>
+    </ClInclude>
+    <ClInclude Include="DBTestHelper_ServerStatus.h">
+      <Filter>DBUnitTest\Procedure\ServerStatus</Filter>
+    </ClInclude>
+    <ClInclude Include="MockAppNetClient.h">
+      <Filter>mock</Filter>
+    </ClInclude>
+    <ClInclude Include="MockAppServerFacade.h">
+      <Filter>mock</Filter>
+    </ClInclude>
+    <ClInclude Include="MockDBTask.h">
+      <Filter>mock</Filter>
+    </ClInclude>
+    <ClInclude Include="MockDuel.h">
+      <Filter>mock</Filter>
+    </ClInclude>
+    <ClInclude Include="MockEntityActor.h">
+      <Filter>mock</Filter>
+    </ClInclude>
+    <ClInclude Include="MockEntityNPC.h">
+      <Filter>mock</Filter>
+    </ClInclude>
+    <ClInclude Include="MockEntityPlayer.h">
+      <Filter>mock</Filter>
+    </ClInclude>
+    <ClInclude Include="MockField.h">
+      <Filter>mock</Filter>
+    </ClInclude>
+    <ClInclude Include="MockFieldEnteringMgr.h">
+      <Filter>mock</Filter>
+    </ClInclude>
+    <ClInclude Include="MockItemSystem.h">
+      <Filter>mock</Filter>
+    </ClInclude>
+    <ClInclude Include="MockJobMgr.h">
+      <Filter>mock</Filter>
+    </ClInclude>
+    <ClInclude Include="MockJobTask.h">
+      <Filter>mock</Filter>
+    </ClInclude>
+    <ClInclude Include="MockLink.h">
+      <Filter>mock</Filter>
+    </ClInclude>
+    <ClInclude Include="MockMasterNetClient.h">
+      <Filter>mock</Filter>
+    </ClInclude>
+    <ClInclude Include="MockMasterServerFacade.h">
+      <Filter>mock</Filter>
+    </ClInclude>
+    <ClInclude Include="MockNetServer.h">
+      <Filter>mock</Filter>
+    </ClInclude>
+    <ClInclude Include="MockParty.h">
+      <Filter>mock</Filter>
+    </ClInclude>
+    <ClInclude Include="MockPartySystem.h">
+      <Filter>mock</Filter>
+    </ClInclude>
+    <ClInclude Include="MockPathFinder.h">
+      <Filter>mock</Filter>
+    </ClInclude>
+    <ClInclude Include="MockPlayerObject.h">
+      <Filter>mock</Filter>
+    </ClInclude>
+    <ClInclude Include="MockServer.h">
+      <Filter>mock</Filter>
+    </ClInclude>
+    <ClInclude Include="NetworkMockServer.h">
+      <Filter>mock</Filter>
+    </ClInclude>
+    <ClInclude Include="TestItemManager.h">
+      <Filter>mock</Filter>
+    </ClInclude>
+    <ClInclude Include="FBaseAppNetClient.h">
+      <Filter>Fixture</Filter>
+    </ClInclude>
+    <ClInclude Include="FBaseAppServerFacade.h">
+      <Filter>Fixture</Filter>
+    </ClInclude>
+    <ClInclude Include="FBaseCombat.h">
+      <Filter>Fixture</Filter>
+    </ClInclude>
+    <ClInclude Include="FBaseFieldInfo.h">
+      <Filter>Fixture</Filter>
+    </ClInclude>
+    <ClInclude Include="FBaseFieldMgr.h">
+      <Filter>Fixture</Filter>
+    </ClInclude>
+    <ClInclude Include="FBaseGame.h">
+      <Filter>Fixture</Filter>
+    </ClInclude>
+    <ClInclude Include="FBaseItem.h">
+      <Filter>Fixture</Filter>
+    </ClInclude>
+    <ClInclude Include="FBaseMail.h">
+      <Filter>Fixture</Filter>
+    </ClInclude>
+    <ClInclude Include="FBaseMasterServerFacade.h">
+      <Filter>Fixture</Filter>
+    </ClInclude>
+    <ClInclude Include="FBaseMockLink.h">
+      <Filter>Fixture</Filter>
+    </ClInclude>
+    <ClInclude Include="FBaseNetClient.h">
+      <Filter>Fixture</Filter>
+    </ClInclude>
+    <ClInclude Include="FBaseNPC.h">
+      <Filter>Fixture</Filter>
+    </ClInclude>
+    <ClInclude Include="FBasePlayer.h">
+      <Filter>Fixture</Filter>
+    </ClInclude>
+    <ClInclude Include="FBaseScriptCallback.h">
+      <Filter>Fixture</Filter>
+    </ClInclude>
+    <ClInclude Include="FBaseScriptGlue.h">
+      <Filter>Fixture</Filter>
+    </ClInclude>
+    <ClInclude Include="FBaseTalent.h">
+      <Filter>Fixture</Filter>
+    </ClInclude>
+    <ClInclude Include="FForCommandTest.h">
+      <Filter>Fixture</Filter>
+    </ClInclude>
+    <ClInclude Include="FNotStandAlone.h">
+      <Filter>Fixture</Filter>
+    </ClInclude>
+    <ClInclude Include="GCommonFixture.h">
+      <Filter>helper</Filter>
+    </ClInclude>
+    <ClInclude Include="GTestForward.h">
+      <Filter>helper</Filter>
+    </ClInclude>
+    <ClInclude Include="GTestWrapper.h">
+      <Filter>helper</Filter>
+    </ClInclude>
+    <ClInclude Include="GUnitTestUtil.h">
+      <Filter>helper</Filter>
+    </ClInclude>
+    <ClInclude Include="GUTHelper.h">
+      <Filter>helper</Filter>
+    </ClInclude>
+    <ClInclude Include="GUTHelper_Actor.h">
+      <Filter>helper</Filter>
+    </ClInclude>
+    <ClInclude Include="GUTHelper_Buff.h">
+      <Filter>helper</Filter>
+    </ClInclude>
+    <ClInclude Include="GUTHelper_CmdHandler.h">
+      <Filter>helper</Filter>
+    </ClInclude>
+    <ClInclude Include="GUTHelper_Condition.h">
+      <Filter>helper</Filter>
+    </ClInclude>
+    <ClInclude Include="GUTHelper_Dialog.h">
+      <Filter>helper</Filter>
+    </ClInclude>
+    <ClInclude Include="GUTHelper_Duel.h">
+      <Filter>helper</Filter>
+    </ClInclude>
+    <ClInclude Include="GUTHelper_Etc.h">
+      <Filter>helper</Filter>
+    </ClInclude>
+    <ClInclude Include="GUTHelper_Faction.h">
+      <Filter>helper</Filter>
+    </ClInclude>
+    <ClInclude Include="GUTHelper_Field.h">
+      <Filter>helper</Filter>
+    </ClInclude>
+    <ClInclude Include="GUTHelper_Focus.h">
+      <Filter>helper</Filter>
+    </ClInclude>
+    <ClInclude Include="GUTHelper_Interaction.h">
+      <Filter>helper</Filter>
+    </ClInclude>
+    <ClInclude Include="GUTHelper_Item.h">
+      <Filter>helper</Filter>
+    </ClInclude>
+    <ClInclude Include="GUTHelper_Login.h">
+      <Filter>helper</Filter>
+    </ClInclude>
+    <ClInclude Include="GUTHelper_Loot.h">
+      <Filter>helper</Filter>
+    </ClInclude>
+    <ClInclude Include="GUTHelper_MasterServer.h">
+      <Filter>helper</Filter>
+    </ClInclude>
+    <ClInclude Include="GUTHelper_Network.h">
+      <Filter>helper</Filter>
+    </ClInclude>
+    <ClInclude Include="GUTHelper_NPC.h">
+      <Filter>helper</Filter>
+    </ClInclude>
+    <ClInclude Include="GUTHelper_NPCShop.h">
+      <Filter>helper</Filter>
+    </ClInclude>
+    <ClInclude Include="GUTHelper_Party.h">
+      <Filter>helper</Filter>
+    </ClInclude>
+    <ClInclude Include="GUTHelper_Player.h">
+      <Filter>helper</Filter>
+    </ClInclude>
+    <ClInclude Include="GUTHelper_Quest.h">
+      <Filter>helper</Filter>
+    </ClInclude>
+    <ClInclude Include="GUTHelper_QuestPVP.h">
+      <Filter>helper</Filter>
+    </ClInclude>
+    <ClInclude Include="GUTHelper_Talent.h">
+      <Filter>helper</Filter>
+    </ClInclude>
+    <ClInclude Include="GUTHelper_Trade.h">
+      <Filter>helper</Filter>
+    </ClInclude>
+    <ClInclude Include="TestCallCounter.h">
+      <Filter>helper</Filter>
+    </ClInclude>
+    <ClInclude Include="TestCombatCalculator.h">
+      <Filter>helper</Filter>
+    </ClInclude>
+    <ClInclude Include="GUnitTestRunner.h">
+      <Filter>runner</Filter>
+    </ClInclude>
+    <ClInclude Include="GUnitTestStage1.h">
+      <Filter>runner</Filter>
+    </ClInclude>
+    <ClInclude Include="GUnitTestStage2.h">
+      <Filter>runner</Filter>
+    </ClInclude>
+    <ClInclude Include="GUnitTestStage3.h">
+      <Filter>runner</Filter>
+    </ClInclude>
+    <ClInclude Include="GUnitTestStage4.h">
+      <Filter>runner</Filter>
+    </ClInclude>
+    <ClInclude Include="GUnitTestStageDB.h">
+      <Filter>runner</Filter>
+    </ClInclude>
+    <ClInclude Include="GUnitTestTimeElapsedReporter.h">
+      <Filter>runner</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CodeCoverages.inc" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="MockDBManager.h">
+      <Filter>mock</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

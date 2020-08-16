@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="unittest">
+      <UniqueIdentifier>{88a10a2f-225f-4520-bc89-4168cf938007}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="maiettest">
+      <UniqueIdentifier>{fb73b346-2866-4c9d-a207-a45456071622}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="autotest">
+      <UniqueIdentifier>{28176fde-95f2-4da7-98d5-13eecfc5f32d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\MBaseUnitTest.h">
+      <Filter>unittest</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MInstanceChanger.h">
+      <Filter>unittest</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MUnitTestConfig.h">
+      <Filter>unittest</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MUnitTestReporter.h">
+      <Filter>unittest</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MUnitTestRunner.h">
+      <Filter>unittest</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MMaietTestResult.h">
+      <Filter>maiettest</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MMaietXmlTestReporter.h">
+      <Filter>maiettest</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MAutoTest.h">
+      <Filter>autotest</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MAutoTestInfo.h">
+      <Filter>autotest</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MAutoTestRunner.h">
+      <Filter>autotest</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MTest.h" />
+    <ClInclude Include="include\stdafx.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\MUnitTestConfig.cpp">
+      <Filter>unittest</Filter>
+    </ClCompile>
+    <ClCompile Include="source\MUnitTestReporter.cpp">
+      <Filter>unittest</Filter>
+    </ClCompile>
+    <ClCompile Include="source\MUnitTestRunner.cpp">
+      <Filter>unittest</Filter>
+    </ClCompile>
+    <ClCompile Include="source\MMaietTestResult.cpp">
+      <Filter>maiettest</Filter>
+    </ClCompile>
+    <ClCompile Include="source\MMaietXmlTestReporter.cpp">
+      <Filter>maiettest</Filter>
+    </ClCompile>
+    <ClCompile Include="source\MAutoTest.cpp">
+      <Filter>autotest</Filter>
+    </ClCompile>
+    <ClCompile Include="source\MAutoTestInfo.cpp">
+      <Filter>autotest</Filter>
+    </ClCompile>
+    <ClCompile Include="source\MAutoTestRunner.cpp">
+      <Filter>autotest</Filter>
+    </ClCompile>
+    <ClCompile Include="source\stdafx.cpp" />
+  </ItemGroup>
+</Project>

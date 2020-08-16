@@ -1,0 +1,264 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Tests">
+      <UniqueIdentifier>{bb98c781-b518-4131-91c3-fc6fb2b50102}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tests\Party">
+      <UniqueIdentifier>{b0c3fdc6-35be-4421-a682-95528cf0ad9b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tests\Login">
+      <UniqueIdentifier>{8836c8a8-09dd-4d91-8895-8ad6e102f2cf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tests\MoveServer">
+      <UniqueIdentifier>{fce9d89a-b536-4e7d-bb56-b29b0c837bac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tests\MoveServer\MoveLoginServer">
+      <UniqueIdentifier>{0ea7e9f8-eb0d-4eba-a343-41b4b96361c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tests\Field">
+      <UniqueIdentifier>{6dccb72e-90aa-4b44-b0eb-2881a46e337c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tests\Player">
+      <UniqueIdentifier>{231cdaff-3683-4741-859e-bef7b8ff9b07}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tests\ServerMonitor">
+      <UniqueIdentifier>{3b3611d1-c7fc-4bb7-ae42-63422b2ff460}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tests\Formulas">
+      <UniqueIdentifier>{ff8b1d8b-b68b-4c9e-b2cc-e8034fea811a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tests\Loot">
+      <UniqueIdentifier>{f9b0182d-6a83-4968-a465-0fc86b2b2a42}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tests\Char">
+      <UniqueIdentifier>{abbade06-79b6-40e0-875a-a579bb28ccc1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tests\DuplicationLogin">
+      <UniqueIdentifier>{5e1a7281-b770-4a89-b1f4-8063c90561ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tests\Guild">
+      <UniqueIdentifier>{c6dade7a-e1ae-47a6-a9d4-6d9081da9591}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="runner">
+      <UniqueIdentifier>{4a2f7dd1-ddc3-49a6-9192-6d91a8c1e29b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Mock">
+      <UniqueIdentifier>{3b9fc6ac-c5bd-4a07-88f7-1d3fa821dce5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Helper">
+      <UniqueIdentifier>{df2e0c55-c46a-4fa5-a1aa-a0ab0629f274}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fake">
+      <UniqueIdentifier>{78aa0aa9-999f-43fd-b2a7-9691ef181fe0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="TestReceiveGameServerUIDSelector.cpp">
+      <Filter>Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="TestFixedPartyLogic.cpp">
+      <Filter>Tests\Party</Filter>
+    </ClCompile>
+    <ClCompile Include="TestParty.cpp">
+      <Filter>Tests\Party</Filter>
+    </ClCompile>
+    <ClCompile Include="TestPartyCommand.cpp">
+      <Filter>Tests\Party</Filter>
+    </ClCompile>
+    <ClCompile Include="TestPartyLogic.cpp">
+      <Filter>Tests\Party</Filter>
+    </ClCompile>
+    <ClCompile Include="TestAppServer.cpp">
+      <Filter>Tests\Login</Filter>
+    </ClCompile>
+    <ClCompile Include="TestGameServerInfo.cpp">
+      <Filter>Tests\Login</Filter>
+    </ClCompile>
+    <ClCompile Include="TestGameServerLogin.cpp">
+      <Filter>Tests\Login</Filter>
+    </ClCompile>
+    <ClCompile Include="TestGameServerObject.cpp">
+      <Filter>Tests\Login</Filter>
+    </ClCompile>
+    <ClCompile Include="TestLoginGameServer.cpp">
+      <Filter>Tests\Login</Filter>
+    </ClCompile>
+    <ClCompile Include="TestLoginServerFacade.cpp">
+      <Filter>Tests\Login</Filter>
+    </ClCompile>
+    <ClCompile Include="TestLoginServerInfo.cpp">
+      <Filter>Tests\Login</Filter>
+    </ClCompile>
+    <ClCompile Include="TestLoginServerLogin.cpp">
+      <Filter>Tests\Login</Filter>
+    </ClCompile>
+    <ClCompile Include="TestMoveGameServer.cpp">
+      <Filter>Tests\MoveServer</Filter>
+    </ClCompile>
+    <ClCompile Include="TestMoveServerLogic.cpp">
+      <Filter>Tests\MoveServer</Filter>
+    </ClCompile>
+    <ClCompile Include="TestCmdHandler_MoveServer.cpp">
+      <Filter>Tests\MoveServer\MoveLoginServer</Filter>
+    </ClCompile>
+    <ClCompile Include="TestMoveServerCommandRouter.cpp">
+      <Filter>Tests\MoveServer\MoveLoginServer</Filter>
+    </ClCompile>
+    <ClCompile Include="TestBaseFieldManager.cpp">
+      <Filter>Tests\Field</Filter>
+    </ClCompile>
+    <ClCompile Include="TestChangeChannel.cpp">
+      <Filter>Tests\Field</Filter>
+    </ClCompile>
+    <ClCompile Include="TestChannel.cpp">
+      <Filter>Tests\Field</Filter>
+    </ClCompile>
+    <ClCompile Include="TestChannelBeholder.cpp">
+      <Filter>Tests\Field</Filter>
+    </ClCompile>
+    <ClCompile Include="TestFieldFinder.cpp">
+      <Filter>Tests\Field</Filter>
+    </ClCompile>
+    <ClCompile Include="TestFieldManager.cpp">
+      <Filter>Tests\Field</Filter>
+    </ClCompile>
+    <ClCompile Include="TestGateFieldGroup.cpp">
+      <Filter>Tests\Field</Filter>
+    </ClCompile>
+    <ClCompile Include="TestGateSharedField.cpp">
+      <Filter>Tests\Field</Filter>
+    </ClCompile>
+    <ClCompile Include="TestLoginFieldGuide.cpp">
+      <Filter>Tests\Field</Filter>
+    </ClCompile>
+    <ClCompile Include="TestRequestDeleteField.cpp">
+      <Filter>Tests\Field</Filter>
+    </ClCompile>
+    <ClCompile Include="TestSharedFieldMaster.cpp">
+      <Filter>Tests\Field</Filter>
+    </ClCompile>
+    <ClCompile Include="TestSmartFieldAllocator.cpp">
+      <Filter>Tests\Field</Filter>
+    </ClCompile>
+    <ClCompile Include="TestAddPlayerPmang.cpp">
+      <Filter>Tests\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="TestPlayerLogic.cpp">
+      <Filter>Tests\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="TestPlayerLogic_InWorld.cpp">
+      <Filter>Tests\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="TestPlayerManager.cpp">
+      <Filter>Tests\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="TestPlayerStateChanger.cpp">
+      <Filter>Tests\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="TestServableChecker.cpp">
+      <Filter>Tests\ServerMonitor</Filter>
+    </ClCompile>
+    <ClCompile Include="TestServerStatusUpdater.cpp">
+      <Filter>Tests\ServerMonitor</Filter>
+    </ClCompile>
+    <ClCompile Include="TestFitnessCalculator.cpp">
+      <Filter>Tests\Formulas</Filter>
+    </ClCompile>
+    <ClCompile Include="TestLootLogic.cpp">
+      <Filter>Tests\Loot</Filter>
+    </ClCompile>
+    <ClCompile Include="TestCharLogic.cpp">
+      <Filter>Tests\Char</Filter>
+    </ClCompile>
+    <ClCompile Include="TestDuplicationLoginLogic.cpp">
+      <Filter>Tests\DuplicationLogin</Filter>
+    </ClCompile>
+    <ClCompile Include="TestGuildLogic.cpp">
+      <Filter>Tests\Guild</Filter>
+    </ClCompile>
+    <ClCompile Include="ZUnitTest.cpp">
+      <Filter>runner</Filter>
+    </ClCompile>
+    <ClCompile Include="ZUnitTestRunner.cpp">
+      <Filter>runner</Filter>
+    </ClCompile>
+    <ClCompile Include="ZUnitTestStage1.cpp">
+      <Filter>runner</Filter>
+    </ClCompile>
+    <ClCompile Include="MockDBManager.cpp">
+      <Filter>Mock</Filter>
+    </ClCompile>
+    <ClCompile Include="MockFieldInfoManager.cpp">
+      <Filter>Mock</Filter>
+    </ClCompile>
+    <ClCompile Include="MockLink.cpp">
+      <Filter>Mock</Filter>
+    </ClCompile>
+    <ClCompile Include="MockNetServer.cpp">
+      <Filter>Mock</Filter>
+    </ClCompile>
+    <ClCompile Include="MockServer.cpp">
+      <Filter>Mock</Filter>
+    </ClCompile>
+    <ClCompile Include="MockServerObject.cpp">
+      <Filter>Mock</Filter>
+    </ClCompile>
+    <ClCompile Include="ZFixtureHelper.cpp">
+      <Filter>Helper</Filter>
+    </ClCompile>
+    <ClCompile Include="ZTestHelper.cpp">
+      <Filter>Helper</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="stdafx.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ZTestWrapper.h">
+      <Filter>runner</Filter>
+    </ClInclude>
+    <ClInclude Include="ZUnitTest.h">
+      <Filter>runner</Filter>
+    </ClInclude>
+    <ClInclude Include="ZUnitTestRunner.h">
+      <Filter>runner</Filter>
+    </ClInclude>
+    <ClInclude Include="ZUnitTestStage1.h">
+      <Filter>runner</Filter>
+    </ClInclude>
+    <ClInclude Include="MockDBManager.h">
+      <Filter>Mock</Filter>
+    </ClInclude>
+    <ClInclude Include="MockFieldInfoManager.h">
+      <Filter>Mock</Filter>
+    </ClInclude>
+    <ClInclude Include="MockLink.h">
+      <Filter>Mock</Filter>
+    </ClInclude>
+    <ClInclude Include="MockNetServer.h">
+      <Filter>Mock</Filter>
+    </ClInclude>
+    <ClInclude Include="MockServer.h">
+      <Filter>Mock</Filter>
+    </ClInclude>
+    <ClInclude Include="MockServerObject.h">
+      <Filter>Mock</Filter>
+    </ClInclude>
+    <ClInclude Include="ZFixtureHelper.h">
+      <Filter>Helper</Filter>
+    </ClInclude>
+    <ClInclude Include="ZTestHelper.h">
+      <Filter>Helper</Filter>
+    </ClInclude>
+    <ClInclude Include="ZTestHelper_CmdHandler.h">
+      <Filter>Helper</Filter>
+    </ClInclude>
+    <ClInclude Include="FakeSystem.h">
+      <Filter>Fake</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CodeCoverages.inc" />
+  </ItemGroup>
+</Project>

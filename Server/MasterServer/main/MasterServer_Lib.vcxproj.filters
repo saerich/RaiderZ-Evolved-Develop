@@ -1,0 +1,656 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Framework">
+      <UniqueIdentifier>{1eac304a-1e03-495b-8444-d05fa3704d5f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic">
+      <UniqueIdentifier>{dfad190a-2c65-4451-a577-675c4dff337e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\Field">
+      <UniqueIdentifier>{aebfb1f9-d510-41a2-bafd-40c872a2865a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\Field\Info">
+      <UniqueIdentifier>{aec544aa-9766-4942-97c5-a4b001bce968}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\Field\Instance">
+      <UniqueIdentifier>{4ead2236-73cb-4a06-a5a3-59383c8b1df0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\Field\Instance\Dynamic">
+      <UniqueIdentifier>{a00309e2-1440-4752-bdec-9a1b5eb19935}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\Field\Instance\Shared">
+      <UniqueIdentifier>{09a56f13-54c9-4ab0-9c3b-dde8544c58d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\Field\Util">
+      <UniqueIdentifier>{610ec4a5-de14-4190-bd62-e603cbc43d79}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\Command">
+      <UniqueIdentifier>{407e389f-65c9-4c30-8a8f-bce32c39d587}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\Command\CommandHandler">
+      <UniqueIdentifier>{657fd526-9f54-429e-aa23-e31de660d329}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\Command\Router">
+      <UniqueIdentifier>{f3fab882-7934-4251-9bbd-480cdc19df51}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\ZServer">
+      <UniqueIdentifier>{19612ff7-aa21-45c8-a2ff-4f07644c6db6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\Player">
+      <UniqueIdentifier>{91d3c417-64bd-4971-8db1-832458723e18}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\DB">
+      <UniqueIdentifier>{610bdc39-4e36-4aaa-a8bd-e0938994591c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\Servers">
+      <UniqueIdentifier>{33714206-81d5-4e93-bae6-f87a1507d4b7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\Servers\LoginServer">
+      <UniqueIdentifier>{5c4ef892-b551-411c-9acc-4198c9ad9e2a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\Servers\LoginServer\info">
+      <UniqueIdentifier>{dc0aef56-26c8-41b1-a982-2ccffed7c986}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\Servers\Util">
+      <UniqueIdentifier>{ef1205b4-70b5-4302-96a0-7a456fcacc6a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\Servers\Util\InfoLoader">
+      <UniqueIdentifier>{41c4510e-aa52-4c74-bd23-2f89a3cf7e26}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\Servers\Util\Acceptor">
+      <UniqueIdentifier>{871fbb56-9203-45e0-ace9-a8a606d4867f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\Servers\GameServer">
+      <UniqueIdentifier>{6a7810be-d6ff-4020-ad44-bc8912a4221e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\Servers\GameServer\info">
+      <UniqueIdentifier>{64c2e511-ed91-4e95-941f-1bed62513377}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\Servers\GameServer\object">
+      <UniqueIdentifier>{a19c1724-0242-41d8-b33a-da79e6619da3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\Servers\AppServer">
+      <UniqueIdentifier>{d35e64c1-5f2e-41c9-9d5a-2a0bec39fdf3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\Servers\AppServer\info">
+      <UniqueIdentifier>{74b9790b-3c5c-419f-9614-cff3d2a23a3c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\Servers\AppServer\object">
+      <UniqueIdentifier>{39792dca-701b-45c5-a8fc-816937f53988}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\Party">
+      <UniqueIdentifier>{a2d31db5-d95a-4216-b5ac-e58ed3810767}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\Base">
+      <UniqueIdentifier>{20df7138-760d-4ce9-89e9-4ced4dc166d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\Formulas">
+      <UniqueIdentifier>{c05ac76d-a847-4df5-b978-d57ffc94d2b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\Script">
+      <UniqueIdentifier>{43aab9ed-6995-446c-aa85-704fc0bba908}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\App">
+      <UniqueIdentifier>{e74b9fb6-c00b-43f3-961a-f6dd468c7f74}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\Loot">
+      <UniqueIdentifier>{5f2ac730-d44b-4ab3-b65c-83a92bdb1139}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\Char">
+      <UniqueIdentifier>{e62e7140-d99a-4f54-ab4c-e7fcafc51f1e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\DuplicationLogin">
+      <UniqueIdentifier>{9feb1c6f-7f8c-4f84-a7e7-54961460d505}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\Guild">
+      <UniqueIdentifier>{e0b72bb3-a56c-4250-84d1-ed2cbde11116}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\MoveServer">
+      <UniqueIdentifier>{09478d73-69a5-4a1f-808d-0a56c7ac0332}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ZBaseApplication.cpp">
+      <Filter>Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="ZConfig.cpp">
+      <Filter>Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="ZGlobal.cpp">
+      <Filter>Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="ZMemory.cpp">
+      <Filter>Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="ZSystem.cpp">
+      <Filter>Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="ZReceiveGameServerUIDSelector.cpp">
+      <Filter>Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="ZChannelBeholder.cpp">
+      <Filter>Logic\Field</Filter>
+    </ClCompile>
+    <ClCompile Include="ZFieldLogic.cpp">
+      <Filter>Logic\Field</Filter>
+    </ClCompile>
+    <ClCompile Include="ZFieldInfo.cpp">
+      <Filter>Logic\Field\Info</Filter>
+    </ClCompile>
+    <ClCompile Include="ZFieldInfoManager.cpp">
+      <Filter>Logic\Field\Info</Filter>
+    </ClCompile>
+    <ClCompile Include="ZBaseFieldManager.cpp">
+      <Filter>Logic\Field\Instance</Filter>
+    </ClCompile>
+    <ClCompile Include="ZField.cpp">
+      <Filter>Logic\Field\Instance</Filter>
+    </ClCompile>
+    <ClCompile Include="ZFieldManager.cpp">
+      <Filter>Logic\Field\Instance</Filter>
+    </ClCompile>
+    <ClCompile Include="ZDynamicField.cpp">
+      <Filter>Logic\Field\Instance\Dynamic</Filter>
+    </ClCompile>
+    <ClCompile Include="ZDynamicFieldMaster.cpp">
+      <Filter>Logic\Field\Instance\Dynamic</Filter>
+    </ClCompile>
+    <ClCompile Include="ZSharedField.cpp">
+      <Filter>Logic\Field\Instance\Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="ZSharedFieldMaster.cpp">
+      <Filter>Logic\Field\Instance\Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="ZFieldFinder.cpp">
+      <Filter>Logic\Field\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="ZLoginFieldGuide.cpp">
+      <Filter>Logic\Field\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="ZSmartFieldAllocator.cpp">
+      <Filter>Logic\Field\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="ZCommandCenter.cpp">
+      <Filter>Logic\Command</Filter>
+    </ClCompile>
+    <ClCompile Include="ZCommandLogger.cpp">
+      <Filter>Logic\Command</Filter>
+    </ClCompile>
+    <ClCompile Include="ZCommandTable.cpp">
+      <Filter>Logic\Command</Filter>
+    </ClCompile>
+    <ClCompile Include="ZCmdHandler_Char.cpp">
+      <Filter>Logic\Command\CommandHandler</Filter>
+    </ClCompile>
+    <ClCompile Include="ZCmdHandler_Comm.cpp">
+      <Filter>Logic\Command\CommandHandler</Filter>
+    </ClCompile>
+    <ClCompile Include="ZCmdHandler_Field.cpp">
+      <Filter>Logic\Command\CommandHandler</Filter>
+    </ClCompile>
+    <ClCompile Include="ZCmdHandler_Loot.cpp">
+      <Filter>Logic\Command\CommandHandler</Filter>
+    </ClCompile>
+    <ClCompile Include="ZCmdHandler_MoveServer.cpp">
+      <Filter>Logic\Command\CommandHandler</Filter>
+    </ClCompile>
+    <ClCompile Include="ZCmdHandler_Party.cpp">
+      <Filter>Logic\Command\CommandHandler</Filter>
+    </ClCompile>
+    <ClCompile Include="ZCmdHandlerGroup.cpp">
+      <Filter>Logic\Command\CommandHandler</Filter>
+    </ClCompile>
+    <ClCompile Include="ZAdminCommandRouter.cpp">
+      <Filter>Logic\Command\Router</Filter>
+    </ClCompile>
+    <ClCompile Include="ZFieldCommandRouter.cpp">
+      <Filter>Logic\Command\Router</Filter>
+    </ClCompile>
+    <ClCompile Include="ZGateCommandRouter.cpp">
+      <Filter>Logic\Command\Router</Filter>
+    </ClCompile>
+    <ClCompile Include="ZGMCommandRouter.cpp">
+      <Filter>Logic\Command\Router</Filter>
+    </ClCompile>
+    <ClCompile Include="ZLoginCommandRouter.cpp">
+      <Filter>Logic\Command\Router</Filter>
+    </ClCompile>
+    <ClCompile Include="ZMoveServerCommandRouter.cpp">
+      <Filter>Logic\Command\Router</Filter>
+    </ClCompile>
+    <ClCompile Include="ZPartyCommandRouter.cpp">
+      <Filter>Logic\Command\Router</Filter>
+    </ClCompile>
+    <ClCompile Include="ZPlayerCommandRouter.cpp">
+      <Filter>Logic\Command\Router</Filter>
+    </ClCompile>
+    <ClCompile Include="ZNetServer.cpp">
+      <Filter>Logic\ZServer</Filter>
+    </ClCompile>
+    <ClCompile Include="ZServableChecker.cpp">
+      <Filter>Logic\ZServer</Filter>
+    </ClCompile>
+    <ClCompile Include="ZServer.cpp">
+      <Filter>Logic\ZServer</Filter>
+    </ClCompile>
+    <ClCompile Include="ZServerInfoDumper.cpp">
+      <Filter>Logic\ZServer</Filter>
+    </ClCompile>
+    <ClCompile Include="ZServerManagers.cpp">
+      <Filter>Logic\ZServer</Filter>
+    </ClCompile>
+    <ClCompile Include="ZServerStatusUpdater.cpp">
+      <Filter>Logic\ZServer</Filter>
+    </ClCompile>
+    <ClCompile Include="ZServerSystems.cpp">
+      <Filter>Logic\ZServer</Filter>
+    </ClCompile>
+    <ClCompile Include="ZWorldStatusUpdater.cpp">
+      <Filter>Logic\ZServer</Filter>
+    </ClCompile>
+    <ClCompile Include="ZPlayer.cpp">
+      <Filter>Logic\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="ZPlayerLogic.cpp">
+      <Filter>Logic\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="ZPlayerManager.cpp">
+      <Filter>Logic\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="ZPlayerStateChanger.cpp">
+      <Filter>Logic\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="ZDBManager.cpp">
+      <Filter>Logic\DB</Filter>
+    </ClCompile>
+    <ClCompile Include="ZDBTaskSQL.cpp">
+      <Filter>Logic\DB</Filter>
+    </ClCompile>
+    <ClCompile Include="ZLoginServerFacade.cpp">
+      <Filter>Logic\Servers\LoginServer</Filter>
+    </ClCompile>
+    <ClCompile Include="ZLoginServerInfoManager.cpp">
+      <Filter>Logic\Servers\LoginServer\info</Filter>
+    </ClCompile>
+    <ClCompile Include="ZAppServerInfoLoader.cpp">
+      <Filter>Logic\Servers\Util\InfoLoader</Filter>
+    </ClCompile>
+    <ClCompile Include="ZGameServerInfoLoader.cpp">
+      <Filter>Logic\Servers\Util\InfoLoader</Filter>
+    </ClCompile>
+    <ClCompile Include="ZLoginServerInfoLoader.cpp">
+      <Filter>Logic\Servers\Util\InfoLoader</Filter>
+    </ClCompile>
+    <ClCompile Include="ZAppServerAcceptor.cpp">
+      <Filter>Logic\Servers\Util\Acceptor</Filter>
+    </ClCompile>
+    <ClCompile Include="ZGameServerAcceptor.cpp">
+      <Filter>Logic\Servers\Util\Acceptor</Filter>
+    </ClCompile>
+    <ClCompile Include="ZLoginServerAcceptor.cpp">
+      <Filter>Logic\Servers\Util\Acceptor</Filter>
+    </ClCompile>
+    <ClCompile Include="ZGameServerInfo.cpp">
+      <Filter>Logic\Servers\GameServer\info</Filter>
+    </ClCompile>
+    <ClCompile Include="ZGameServerInfoManager.cpp">
+      <Filter>Logic\Servers\GameServer\info</Filter>
+    </ClCompile>
+    <ClCompile Include="ZGameServerFieldMap.cpp">
+      <Filter>Logic\Servers\GameServer\object</Filter>
+    </ClCompile>
+    <ClCompile Include="ZGameServerObject.cpp">
+      <Filter>Logic\Servers\GameServer\object</Filter>
+    </ClCompile>
+    <ClCompile Include="ZGameServerObjectManager.cpp">
+      <Filter>Logic\Servers\GameServer\object</Filter>
+    </ClCompile>
+    <ClCompile Include="ZGameServerPlayerMap.cpp">
+      <Filter>Logic\Servers\GameServer\object</Filter>
+    </ClCompile>
+    <ClCompile Include="ZAppServerInfoManager.cpp">
+      <Filter>Logic\Servers\AppServer\info</Filter>
+    </ClCompile>
+    <ClCompile Include="ZAppServerObject.cpp">
+      <Filter>Logic\Servers\AppServer\object</Filter>
+    </ClCompile>
+    <ClCompile Include="ZAppServerObjectManager.cpp">
+      <Filter>Logic\Servers\AppServer\object</Filter>
+    </ClCompile>
+    <ClCompile Include="ZFixedPartyInfoManager.cpp">
+      <Filter>Logic\Party</Filter>
+    </ClCompile>
+    <ClCompile Include="ZFixedPartyLogic.cpp">
+      <Filter>Logic\Party</Filter>
+    </ClCompile>
+    <ClCompile Include="ZParty.cpp">
+      <Filter>Logic\Party</Filter>
+    </ClCompile>
+    <ClCompile Include="ZPartyLogic.cpp">
+      <Filter>Logic\Party</Filter>
+    </ClCompile>
+    <ClCompile Include="ZPartyManager.cpp">
+      <Filter>Logic\Party</Filter>
+    </ClCompile>
+    <ClCompile Include="ZPartyMember.cpp">
+      <Filter>Logic\Party</Filter>
+    </ClCompile>
+    <ClCompile Include="ZConst.cpp">
+      <Filter>Logic\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="ZFitnessCalculator.cpp">
+      <Filter>Logic\Formulas</Filter>
+    </ClCompile>
+    <ClCompile Include="ZScriptManager.cpp">
+      <Filter>Logic\Script</Filter>
+    </ClCompile>
+    <ClCompile Include="ZAppLogic.cpp">
+      <Filter>Logic\App</Filter>
+    </ClCompile>
+    <ClCompile Include="ZLootLogic.cpp">
+      <Filter>Logic\Loot</Filter>
+    </ClCompile>
+    <ClCompile Include="ZCharLogic.cpp">
+      <Filter>Logic\Char</Filter>
+    </ClCompile>
+    <ClCompile Include="ZDuplicationLoginLogic.cpp">
+      <Filter>Logic\DuplicationLogin</Filter>
+    </ClCompile>
+    <ClCompile Include="ZDuplicationLoginManager.cpp">
+      <Filter>Logic\DuplicationLogin</Filter>
+    </ClCompile>
+    <ClCompile Include="ZCmdHandler_Guild.cpp">
+      <Filter>Logic\Guild</Filter>
+    </ClCompile>
+    <ClCompile Include="ZGuildLogic.cpp">
+      <Filter>Logic\Guild</Filter>
+    </ClCompile>
+    <ClCompile Include="ZMoveServerLogic.cpp">
+      <Filter>Logic\MoveServer</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ZBaseApplication.h">
+      <Filter>Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="ZConfig.h">
+      <Filter>Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="ZDef.h">
+      <Filter>Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="ZGlobal.h">
+      <Filter>Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="ZMemory.h">
+      <Filter>Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="ZServerInfo.h">
+      <Filter>Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="ZSystem.h">
+      <Filter>Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="ZTypes.h">
+      <Filter>Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="ZReceiveGameServerUIDSelector.h">
+      <Filter>Logic</Filter>
+    </ClInclude>
+    <ClInclude Include="ZChannelBeholder.h">
+      <Filter>Logic\Field</Filter>
+    </ClInclude>
+    <ClInclude Include="ZFieldLogic.h">
+      <Filter>Logic\Field</Filter>
+    </ClInclude>
+    <ClInclude Include="ZFieldInfo.h">
+      <Filter>Logic\Field\Info</Filter>
+    </ClInclude>
+    <ClInclude Include="ZFieldInfoManager.h">
+      <Filter>Logic\Field\Info</Filter>
+    </ClInclude>
+    <ClInclude Include="ZBaseFieldManager.h">
+      <Filter>Logic\Field\Instance</Filter>
+    </ClInclude>
+    <ClInclude Include="ZField.h">
+      <Filter>Logic\Field\Instance</Filter>
+    </ClInclude>
+    <ClInclude Include="ZFieldManager.h">
+      <Filter>Logic\Field\Instance</Filter>
+    </ClInclude>
+    <ClInclude Include="ZDynamicField.h">
+      <Filter>Logic\Field\Instance\Dynamic</Filter>
+    </ClInclude>
+    <ClInclude Include="ZDynamicFieldMaster.h">
+      <Filter>Logic\Field\Instance\Dynamic</Filter>
+    </ClInclude>
+    <ClInclude Include="ZSharedField.h">
+      <Filter>Logic\Field\Instance\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="ZSharedFieldMaster.h">
+      <Filter>Logic\Field\Instance\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="ZFieldFinder.h">
+      <Filter>Logic\Field\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="ZLoginFieldGuide.h">
+      <Filter>Logic\Field\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="ZSmartFieldAllocator.h">
+      <Filter>Logic\Field\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="ZCommandCenter.h">
+      <Filter>Logic\Command</Filter>
+    </ClInclude>
+    <ClInclude Include="ZCommandLogger.h">
+      <Filter>Logic\Command</Filter>
+    </ClInclude>
+    <ClInclude Include="ZCommandTable.h">
+      <Filter>Logic\Command</Filter>
+    </ClInclude>
+    <ClInclude Include="ZCmdHandler_Char.h">
+      <Filter>Logic\Command\CommandHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="ZCmdHandler_Comm.h">
+      <Filter>Logic\Command\CommandHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="ZCmdHandler_Field.h">
+      <Filter>Logic\Command\CommandHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="ZCmdHandler_Loot.h">
+      <Filter>Logic\Command\CommandHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="ZCmdHandler_MoveServer.h">
+      <Filter>Logic\Command\CommandHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="ZCmdHandler_Party.h">
+      <Filter>Logic\Command\CommandHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="ZCmdHandlerGroup.h">
+      <Filter>Logic\Command\CommandHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="ZAdminCommandRouter.h">
+      <Filter>Logic\Command\Router</Filter>
+    </ClInclude>
+    <ClInclude Include="ZFieldCommandRouter.h">
+      <Filter>Logic\Command\Router</Filter>
+    </ClInclude>
+    <ClInclude Include="ZGateCommandRouter.h">
+      <Filter>Logic\Command\Router</Filter>
+    </ClInclude>
+    <ClInclude Include="ZGMCommandRouter.h">
+      <Filter>Logic\Command\Router</Filter>
+    </ClInclude>
+    <ClInclude Include="ZLoginCommandRouter.h">
+      <Filter>Logic\Command\Router</Filter>
+    </ClInclude>
+    <ClInclude Include="ZMoveServerCommandRouter.h">
+      <Filter>Logic\Command\Router</Filter>
+    </ClInclude>
+    <ClInclude Include="ZPartyCommandRouter.h">
+      <Filter>Logic\Command\Router</Filter>
+    </ClInclude>
+    <ClInclude Include="ZPlayerCommandRouter.h">
+      <Filter>Logic\Command\Router</Filter>
+    </ClInclude>
+    <ClInclude Include="ZNetServer.h">
+      <Filter>Logic\ZServer</Filter>
+    </ClInclude>
+    <ClInclude Include="ZServableChecker.h">
+      <Filter>Logic\ZServer</Filter>
+    </ClInclude>
+    <ClInclude Include="ZServer.h">
+      <Filter>Logic\ZServer</Filter>
+    </ClInclude>
+    <ClInclude Include="ZServerInfoDumper.h">
+      <Filter>Logic\ZServer</Filter>
+    </ClInclude>
+    <ClInclude Include="ZServerManagers.h">
+      <Filter>Logic\ZServer</Filter>
+    </ClInclude>
+    <ClInclude Include="ZServerStatusUpdater.h">
+      <Filter>Logic\ZServer</Filter>
+    </ClInclude>
+    <ClInclude Include="ZServerSystems.h">
+      <Filter>Logic\ZServer</Filter>
+    </ClInclude>
+    <ClInclude Include="ZWorldStatusUpdater.h">
+      <Filter>Logic\ZServer</Filter>
+    </ClInclude>
+    <ClInclude Include="ZPlayer.h">
+      <Filter>Logic\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="ZPlayerLogic.h">
+      <Filter>Logic\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="ZPlayerManager.h">
+      <Filter>Logic\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="ZPlayerStateChanger.h">
+      <Filter>Logic\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="ZDBManager.h">
+      <Filter>Logic\DB</Filter>
+    </ClInclude>
+    <ClInclude Include="ZDBTaskSQL.h">
+      <Filter>Logic\DB</Filter>
+    </ClInclude>
+    <ClInclude Include="ZLoginServerFacade.h">
+      <Filter>Logic\Servers\LoginServer</Filter>
+    </ClInclude>
+    <ClInclude Include="ZLoginServerInfo.h">
+      <Filter>Logic\Servers\LoginServer\info</Filter>
+    </ClInclude>
+    <ClInclude Include="ZLoginServerInfoManager.h">
+      <Filter>Logic\Servers\LoginServer\info</Filter>
+    </ClInclude>
+    <ClInclude Include="ZAppServerInfoLoader.h">
+      <Filter>Logic\Servers\Util\InfoLoader</Filter>
+    </ClInclude>
+    <ClInclude Include="ZGameServerInfoLoader.h">
+      <Filter>Logic\Servers\Util\InfoLoader</Filter>
+    </ClInclude>
+    <ClInclude Include="ZLoginServerInfoLoader.h">
+      <Filter>Logic\Servers\Util\InfoLoader</Filter>
+    </ClInclude>
+    <ClInclude Include="ZServerInfoLoaderDef.h">
+      <Filter>Logic\Servers\Util\InfoLoader</Filter>
+    </ClInclude>
+    <ClInclude Include="ZAppServerAcceptor.h">
+      <Filter>Logic\Servers\Util\Acceptor</Filter>
+    </ClInclude>
+    <ClInclude Include="ZGameServerAcceptor.h">
+      <Filter>Logic\Servers\Util\Acceptor</Filter>
+    </ClInclude>
+    <ClInclude Include="ZLoginServerAcceptor.h">
+      <Filter>Logic\Servers\Util\Acceptor</Filter>
+    </ClInclude>
+    <ClInclude Include="ZServerAcceptor.h">
+      <Filter>Logic\Servers\Util\Acceptor</Filter>
+    </ClInclude>
+    <ClInclude Include="ZGameServerInfo.h">
+      <Filter>Logic\Servers\GameServer\info</Filter>
+    </ClInclude>
+    <ClInclude Include="ZGameServerInfoManager.h">
+      <Filter>Logic\Servers\GameServer\info</Filter>
+    </ClInclude>
+    <ClInclude Include="ZGameServerFieldMap.h">
+      <Filter>Logic\Servers\GameServer\object</Filter>
+    </ClInclude>
+    <ClInclude Include="ZGameServerObject.h">
+      <Filter>Logic\Servers\GameServer\object</Filter>
+    </ClInclude>
+    <ClInclude Include="ZGameServerObjectManager.h">
+      <Filter>Logic\Servers\GameServer\object</Filter>
+    </ClInclude>
+    <ClInclude Include="ZGameServerPlayerMap.h">
+      <Filter>Logic\Servers\GameServer\object</Filter>
+    </ClInclude>
+    <ClInclude Include="ZAppServerInfo.h">
+      <Filter>Logic\Servers\AppServer\info</Filter>
+    </ClInclude>
+    <ClInclude Include="ZAppServerInfoManager.h">
+      <Filter>Logic\Servers\AppServer\info</Filter>
+    </ClInclude>
+    <ClInclude Include="ZAppServerObject.h">
+      <Filter>Logic\Servers\AppServer\object</Filter>
+    </ClInclude>
+    <ClInclude Include="ZAppServerObjectManager.h">
+      <Filter>Logic\Servers\AppServer\object</Filter>
+    </ClInclude>
+    <ClInclude Include="ZFixedPartyInfoManager.h">
+      <Filter>Logic\Party</Filter>
+    </ClInclude>
+    <ClInclude Include="ZFixedPartyLogic.h">
+      <Filter>Logic\Party</Filter>
+    </ClInclude>
+    <ClInclude Include="ZParty.h">
+      <Filter>Logic\Party</Filter>
+    </ClInclude>
+    <ClInclude Include="ZPartyLogic.h">
+      <Filter>Logic\Party</Filter>
+    </ClInclude>
+    <ClInclude Include="ZPartyManager.h">
+      <Filter>Logic\Party</Filter>
+    </ClInclude>
+    <ClInclude Include="ZPartyMember.h">
+      <Filter>Logic\Party</Filter>
+    </ClInclude>
+    <ClInclude Include="ZConst.h">
+      <Filter>Logic\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="ZFitnessCalculator.h">
+      <Filter>Logic\Formulas</Filter>
+    </ClInclude>
+    <ClInclude Include="ZScriptManager.h">
+      <Filter>Logic\Script</Filter>
+    </ClInclude>
+    <ClInclude Include="ZAppLogic.h">
+      <Filter>Logic\App</Filter>
+    </ClInclude>
+    <ClInclude Include="ZLootLogic.h">
+      <Filter>Logic\Loot</Filter>
+    </ClInclude>
+    <ClInclude Include="ZCharLogic.h">
+      <Filter>Logic\Char</Filter>
+    </ClInclude>
+    <ClInclude Include="ZDuplicationLoginLogic.h">
+      <Filter>Logic\DuplicationLogin</Filter>
+    </ClInclude>
+    <ClInclude Include="ZDuplicationLoginManager.h">
+      <Filter>Logic\DuplicationLogin</Filter>
+    </ClInclude>
+    <ClInclude Include="ZCmdHandler_Guild.h">
+      <Filter>Logic\Guild</Filter>
+    </ClInclude>
+    <ClInclude Include="ZGuildLogic.h">
+      <Filter>Logic\Guild</Filter>
+    </ClInclude>
+    <ClInclude Include="ZMoveServerLogic.h">
+      <Filter>Logic\MoveServer</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h" />
+  </ItemGroup>
+</Project>

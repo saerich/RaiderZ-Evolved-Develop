@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Tests">
+      <UniqueIdentifier>{79862f29-a2b3-4830-9f68-46b8e2cfa545}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tests\ServerMonitor">
+      <UniqueIdentifier>{d9aa8817-b50f-4696-a678-6dc4721ae58a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tests\Character">
+      <UniqueIdentifier>{03536b42-47be-411f-9922-01d2b697aa84}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tests\ServerCommon">
+      <UniqueIdentifier>{98b24003-0252-4576-baf0-af15f196b4b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tests\Authenticator">
+      <UniqueIdentifier>{055e187e-76d0-45dd-8f08-6780e0613f67}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tests\MoveServer">
+      <UniqueIdentifier>{6aff5f27-02a7-4907-b6f0-c1a71251b857}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tests\Player">
+      <UniqueIdentifier>{76ef42e6-b697-47ba-9261-30e8767190d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="runner">
+      <UniqueIdentifier>{4e7e772c-b210-4c14-999e-616ec7a079ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Mock">
+      <UniqueIdentifier>{c8229b75-5897-4058-839c-ca5413275dfa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Helper">
+      <UniqueIdentifier>{c2d4a024-4e80-4f58-a851-d37d17646fc0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fixture">
+      <UniqueIdentifier>{70bb8875-18f9-40b9-ae14-a4ae52a058d9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="TestClientConnectionKeeper.cpp">
+      <Filter>Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="TestDBManager.cpp">
+      <Filter>Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="TestNameStringChecker.cpp">
+      <Filter>Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="TestPlayerLogin.cpp">
+      <Filter>Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="TestPlayerLoginGameServerProcManager.cpp">
+      <Filter>Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="TestPlayerLoginGameServerRetryer.cpp">
+      <Filter>Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="TestTimeoutWatcher.cpp">
+      <Filter>Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="TestServableChecker.cpp">
+      <Filter>Tests\ServerMonitor</Filter>
+    </ClCompile>
+    <ClCompile Include="TestServerStatusUpdater.cpp">
+      <Filter>Tests\ServerMonitor</Filter>
+    </ClCompile>
+    <ClCompile Include="TestCreateCharacter.cpp">
+      <Filter>Tests\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="TestSelectCharacter.cpp">
+      <Filter>Tests\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="TestNetworkCardMgr.cpp">
+      <Filter>Tests\ServerCommon</Filter>
+    </ClCompile>
+    <ClCompile Include="TestAuthenticator.cpp">
+      <Filter>Tests\Authenticator</Filter>
+    </ClCompile>
+    <ClCompile Include="TestCmdHandler_MoveServer.cpp">
+      <Filter>Tests\MoveServer</Filter>
+    </ClCompile>
+    <ClCompile Include="TestCmdRouter_MoveServer.cpp">
+      <Filter>Tests\MoveServer</Filter>
+    </ClCompile>
+    <ClCompile Include="TestMoveServerLogicFromGameServer.cpp">
+      <Filter>Tests\MoveServer</Filter>
+    </ClCompile>
+    <ClCompile Include="TestPlayerAcceptManager.cpp">
+      <Filter>Tests\MoveServer</Filter>
+    </ClCompile>
+    <ClCompile Include="TestPlayerLogic.cpp">
+      <Filter>Tests\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="LUnitTestRunner.cpp">
+      <Filter>runner</Filter>
+    </ClCompile>
+    <ClCompile Include="LUnitTestStage1.cpp">
+      <Filter>runner</Filter>
+    </ClCompile>
+    <ClCompile Include="MockLink.cpp">
+      <Filter>Mock</Filter>
+    </ClCompile>
+    <ClCompile Include="MockMasterNetClient.cpp">
+      <Filter>Mock</Filter>
+    </ClCompile>
+    <ClCompile Include="MockNetServer.cpp">
+      <Filter>Mock</Filter>
+    </ClCompile>
+    <ClCompile Include="MockPlayerObject.cpp">
+      <Filter>Mock</Filter>
+    </ClCompile>
+    <ClCompile Include="MockServer.cpp">
+      <Filter>Mock</Filter>
+    </ClCompile>
+    <ClCompile Include="LFixtureHelper.cpp">
+      <Filter>Helper</Filter>
+    </ClCompile>
+    <ClCompile Include="LTestHelper.cpp">
+      <Filter>Helper</Filter>
+    </ClCompile>
+    <ClCompile Include="LTestHelper_CmdHandler.cpp">
+      <Filter>Helper</Filter>
+    </ClCompile>
+    <ClCompile Include="FBaseMasterClient.cpp">
+      <Filter>Fixture</Filter>
+    </ClCompile>
+    <ClCompile Include="FBasePlayer.cpp">
+      <Filter>Fixture</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="stdafx.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="LUnitTestRunner.h">
+      <Filter>runner</Filter>
+    </ClInclude>
+    <ClInclude Include="LUnitTestStage1.h">
+      <Filter>runner</Filter>
+    </ClInclude>
+    <ClInclude Include="MockDBManager.h">
+      <Filter>Mock</Filter>
+    </ClInclude>
+    <ClInclude Include="MockLink.h">
+      <Filter>Mock</Filter>
+    </ClInclude>
+    <ClInclude Include="MockMasterNetClient.h">
+      <Filter>Mock</Filter>
+    </ClInclude>
+    <ClInclude Include="MockNetServer.h">
+      <Filter>Mock</Filter>
+    </ClInclude>
+    <ClInclude Include="MockPlayerObject.h">
+      <Filter>Mock</Filter>
+    </ClInclude>
+    <ClInclude Include="MockServer.h">
+      <Filter>Mock</Filter>
+    </ClInclude>
+    <ClInclude Include="LFixtureHelper.h">
+      <Filter>Helper</Filter>
+    </ClInclude>
+    <ClInclude Include="LTestHelper.h">
+      <Filter>Helper</Filter>
+    </ClInclude>
+    <ClInclude Include="LTestHelper_CmdHandler.h">
+      <Filter>Helper</Filter>
+    </ClInclude>
+    <ClInclude Include="LTestWrapper.h">
+      <Filter>Helper</Filter>
+    </ClInclude>
+    <ClInclude Include="LUnitTestUtil.h">
+      <Filter>Helper</Filter>
+    </ClInclude>
+    <ClInclude Include="FBaseMasterClient.h">
+      <Filter>Fixture</Filter>
+    </ClInclude>
+    <ClInclude Include="FBasePlayer.h">
+      <Filter>Fixture</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CodeCoverages.inc" />
+  </ItemGroup>
+</Project>

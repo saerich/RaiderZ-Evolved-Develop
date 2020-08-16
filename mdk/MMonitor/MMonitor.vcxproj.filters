@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx</Extensions>
+    </Filter>
+    <Filter Include="Logic">
+      <UniqueIdentifier>{a7f2bab7-eeb9-4381-8802-cf3c939c7d88}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\MMonitorCommand">
+      <UniqueIdentifier>{ba435bad-ad58-44b0-b230-1b6150cea830}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\MTask">
+      <UniqueIdentifier>{6786d14a-1c7c-4879-9f49-ab66d97e7117}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\MMonitorXML">
+      <UniqueIdentifier>{072c37f2-d894-4c1e-bd19-32efdc1e4c4b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\MMonitorString">
+      <UniqueIdentifier>{6c13a313-03c7-48e0-aae5-6c063feae171}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\MMonitorUtil">
+      <UniqueIdentifier>{e3bed9ba-c783-4a2e-a891-c69a5555bae0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\MMonitorCommunicator">
+      <UniqueIdentifier>{358f16aa-ba80-49f5-9ca7-7ad0ae87a903}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Xml">
+      <UniqueIdentifier>{b15077dc-f00a-4378-acc9-d5fa039ffac5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="include\MMonitor.cpp">
+      <Filter>Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="include\MMonitor_Network.cpp">
+      <Filter>Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="include\MMonitor_Resource.cpp">
+      <Filter>Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="include\MMonitor_Task.cpp">
+      <Filter>Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="include\MMonitorCommand.cpp">
+      <Filter>Logic\MMonitorCommand</Filter>
+    </ClCompile>
+    <ClCompile Include="include\MMonitorProtocol.cpp">
+      <Filter>Logic\MMonitorCommand</Filter>
+    </ClCompile>
+    <ClCompile Include="include\MMonitorProtocolBuilder.cpp">
+      <Filter>Logic\MMonitorCommand</Filter>
+    </ClCompile>
+    <ClCompile Include="include\MMonitorProtocolManager.cpp">
+      <Filter>Logic\MMonitorCommand</Filter>
+    </ClCompile>
+    <ClCompile Include="include\MTask.cpp">
+      <Filter>Logic\MTask</Filter>
+    </ClCompile>
+    <ClCompile Include="include\MTaskManager.cpp">
+      <Filter>Logic\MTask</Filter>
+    </ClCompile>
+    <ClCompile Include="include\MTaskManagerGroup.cpp">
+      <Filter>Logic\MTask</Filter>
+    </ClCompile>
+    <ClCompile Include="include\MMonitorUDPXml.cpp">
+      <Filter>Logic\MMonitorXML</Filter>
+    </ClCompile>
+    <ClCompile Include="include\MMonitorNetInfo.cpp">
+      <Filter>Logic\MMonitorUtil</Filter>
+    </ClCompile>
+    <ClCompile Include="include\MMXml.cpp">
+      <Filter>Xml</Filter>
+    </ClCompile>
+    <ClCompile Include="include\TinyXml\tinystr.cpp">
+      <Filter>Xml</Filter>
+    </ClCompile>
+    <ClCompile Include="include\TinyXml\tinyxml.cpp">
+      <Filter>Xml</Filter>
+    </ClCompile>
+    <ClCompile Include="include\TinyXml\tinyxmlerror.cpp">
+      <Filter>Xml</Filter>
+    </ClCompile>
+    <ClCompile Include="include\TinyXml\tinyxmlparser.cpp">
+      <Filter>Xml</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\MMonitor.h">
+      <Filter>Logic</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MMonitorDefine.h">
+      <Filter>Logic</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MMonitorCommand.h">
+      <Filter>Logic\MMonitorCommand</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MMonitorCommandDefine.h">
+      <Filter>Logic\MMonitorCommand</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MMonitorProtocol.h">
+      <Filter>Logic\MMonitorCommand</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MMonitorProtocolBuilder.h">
+      <Filter>Logic\MMonitorCommand</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MMonitorProtocolManager.h">
+      <Filter>Logic\MMonitorCommand</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MTask.h">
+      <Filter>Logic\MTask</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MTaskManager.h">
+      <Filter>Logic\MTask</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MTaskManagerGroup.h">
+      <Filter>Logic\MTask</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MMonitorUDPXml.h">
+      <Filter>Logic\MMonitorXML</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MMonitorStringDefine.h">
+      <Filter>Logic\MMonitorString</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MMonitorMemPool.h">
+      <Filter>Logic\MMonitorUtil</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MMonitorNetInfo.h">
+      <Filter>Logic\MMonitorUtil</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MMonitorCommunicator.h">
+      <Filter>Logic\MMonitorCommunicator</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MMXml.h">
+      <Filter>Xml</Filter>
+    </ClInclude>
+    <ClInclude Include="include\TinyXml\tinystr.h">
+      <Filter>Xml</Filter>
+    </ClInclude>
+    <ClInclude Include="include\TinyXml\tinyxml.h">
+      <Filter>Xml</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,1 @@
+svnindex.cmd /debug /source=%CD%;%CD%\mdk;Game;%CD%\Tools\CoreToolRS3 /symbols=%CD%\Game\Runtime\Dev\CoreToolRS3;%CD%\Game\Runtime\Dev\CoreToolRS3\plugins;%CD%\mdk\cml2\ReleaseDLL;%CD%\mdk\RealSpace3\ReleaseDLL > !svn_indexindPDBTools.log

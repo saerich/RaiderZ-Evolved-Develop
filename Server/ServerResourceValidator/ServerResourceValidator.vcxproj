@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="DebugDLL|Win32">
+      <Configuration>DebugDLL</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugMD|Win32">
+      <Configuration>DebugMD</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug_praptor|Win32">
+      <Configuration>Debug_praptor</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseMD|Win32">
+      <Configuration>ReleaseMD</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_profile|Win32">
+      <Configuration>Release_profile</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{AF9CDBF5-D791-4E4C-8015-3DA8B16E0CDD}</ProjectGuid>
+    <RootNamespace>ServerResourceValidator</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_profile|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLL|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugMD|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseMD|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_praptor|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release_profile|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLL|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugMD|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseMD|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug_praptor|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>16.0.30028.132</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_praptor|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseMD|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugMD|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLL|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_profile|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_praptor|Win32'">
+    <ClCompile>
+      <AdditionalOptions>/MP %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>../../mdk/cml2;../../mdk/MiNet/include;../../crl/include;../../mdk/MAsyncDatabase;../../CSCommon/include;../ServerCommon;../GameServer/framework;../GameServer/main;../../mdk/MTest/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;_PRAPTOR;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseMD|Win32'">
+    <ClCompile>
+      <AdditionalOptions>/MP %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>MaxSpeed</Optimization>
+      <AdditionalIncludeDirectories>../../mdk/cml2;../../mdk/MiNet/include;../../crl/include;../../mdk/MAsyncDatabase;../../CSCommon/include;../ServerCommon;../GameServer/framework;../GameServer/main;../../mdk/MTest/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugMD|Win32'">
+    <ClCompile>
+      <AdditionalOptions>/MP %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>../../mdk/cml2;../../mdk/MiNet/include;../../crl/include;../../mdk/MAsyncDatabase;../../CSCommon/include;../ServerCommon;../GameServer/framework;../GameServer/main;../../mdk/MTest/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLL|Win32'">
+    <ClCompile>
+      <AdditionalOptions>/MP %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>../../mdk/cml2;../../mdk/MiNet/include;../../crl/include;../../mdk/MAsyncDatabase;../../CSCommon/include;../ServerCommon;../GameServer/framework;../GameServer/main;../../mdk/MTest/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_USRDLL;CML2_IMPORT;CSCOMMON_IMPORT;SCOMMON_IMPORT;GFRAMEWORK_IMPORT;GVALIDATOR_EXPORT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>cml2_d.lib;lua5.1.lib;zlib.lib;UnitTest++.vsnet2008MDd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>lib\$(ProjectName)_d.dll</OutputFile>
+      <AdditionalLibraryDirectories>lib;../../mdk/cml2/lib;../../mdk/MCollision/lib;../../../sdk/lua51/lib/vc8;../../../sdk/UnitTest++/v1.4/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_profile|Win32'">
+    <ClCompile>
+      <AdditionalOptions>/MP %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>../../mdk/cml2;../../mdk/MiNet/include;../../crl/include;../../mdk/MAsyncDatabase;../../CSCommon/include;../ServerCommon;../GameServer/framework;../GameServer/main;../../mdk/MTest/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="GBuffInfoValidator.cpp" />
+    <ClCompile Include="GChallengerQuestInfoValidator.cpp" />
+    <ClCompile Include="GColtValidator.cpp" />
+    <ClCompile Include="GConditionsInfoValidator.cpp" />
+    <ClCompile Include="GCraftInfoValidator.cpp" />
+    <ClCompile Include="GDialogInfoValidator.cpp" />
+    <ClCompile Include="GFieldInfoValidator.cpp" />
+    <ClCompile Include="GItemAddRemoveInfoValidator.cpp" />
+    <ClCompile Include="GItemInfoValidator.cpp" />
+    <ClCompile Include="GLootInfoValidator.cpp" />
+    <ClCompile Include="GNPCInfoValidator.cpp" />
+    <ClCompile Include="GNPCShopInfoValidator.cpp" />
+    <ClCompile Include="GQPEventInfoValidator.cpp" />
+    <ClCompile Include="GQuestInfoValidator.cpp" />
+    <ClCompile Include="GRecipeInfoValidator.cpp" />
+    <ClCompile Include="GRuntimeDBLogger.cpp" />
+    <ClCompile Include="GRuntimeLuaLogger.cpp" />
+    <ClCompile Include="GRuntimeTestLogger.cpp" />
+    <ClCompile Include="GRuntimeValidatingLogger.cpp" />
+    <ClCompile Include="GRuntimeValidatingReporter.cpp" />
+    <ClCompile Include="GRuntimeValidator.cpp" />
+    <ClCompile Include="GServerResourceValidators.cpp" />
+    <ClCompile Include="GServerValidateReporter.cpp" />
+    <ClCompile Include="GSoulBindingInfoValidator.cpp" />
+    <ClCompile Include="GTalentInfoValidator.cpp" />
+    <ClCompile Include="GTrialFieldValidator.cpp" />
+    <ClCompile Include="GValidatorSilo.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='DebugDLL|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='DebugMD|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug_praptor|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='ReleaseMD|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release_profile|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GBuffInfoValidator.h" />
+    <ClInclude Include="GChallengerQuestInfoValidator.h" />
+    <ClInclude Include="GColtValidator.h" />
+    <ClInclude Include="GConditionsInfoValidator.h" />
+    <ClInclude Include="GCraftInfoValidator.h" />
+    <ClInclude Include="GDialogInfoValidator.h" />
+    <ClInclude Include="GFieldInfoValidator.h" />
+    <ClInclude Include="GItemAddRemoveInfoValidator.h" />
+    <ClInclude Include="GItemInfoValidator.h" />
+    <ClInclude Include="GLootInfoValidator.h" />
+    <ClInclude Include="GNPCInfoValidator.h" />
+    <ClInclude Include="GNPCShopInfoValidator.h" />
+    <ClInclude Include="GQPEventInfoValidator.h" />
+    <ClInclude Include="GQuestInfoValidator.h" />
+    <ClInclude Include="GRecipeInfoValidator.h" />
+    <ClInclude Include="GRuntimeDBLogger.h" />
+    <ClInclude Include="GRuntimeLuaLogger.h" />
+    <ClInclude Include="GRuntimeTestLogger.h" />
+    <ClInclude Include="GRuntimeValidatingLogger.h" />
+    <ClInclude Include="GRuntimeValidatingReporter.h" />
+    <ClInclude Include="GRuntimeValidator.h" />
+    <ClInclude Include="GServerResourceValidators.h" />
+    <ClInclude Include="GServerValidateReporter.h" />
+    <ClInclude Include="GSoulBindingInfoValidator.h" />
+    <ClInclude Include="GTalentInfoValidator.h" />
+    <ClInclude Include="GTrialFieldValidator.h" />
+    <ClInclude Include="GValidatorLib.h" />
+    <ClInclude Include="GValidatorSilo.h" />
+    <ClInclude Include="stdafx.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\CSCommon\CSCommon.vcxproj">
+      <Project>{7dcc03b9-dd72-4803-aee2-1f2be6ce60c2}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\mdk\cml2\cml2.vcxproj">
+      <Project>{8d451493-65c2-49c3-adae-acb17e6b0650}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\mdk\MTest\MTest.vcxproj">
+      <Project>{249d9b5b-bc66-4d30-ab85-f936f737d3ca}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\GameServer\framework\GameServer_Framework.vcxproj">
+      <Project>{fd7398cf-9b51-43d3-b17d-eb65088133ff}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\GameServer\main\GameServer_Lib.vcxproj">
+      <Project>{ab477007-cf99-47f8-b81f-9a02ccbe7849}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\ServerCommon\ServerCommon.vcxproj">
+      <Project>{7820a4c8-b56a-40ed-9b44-86e215a93681}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

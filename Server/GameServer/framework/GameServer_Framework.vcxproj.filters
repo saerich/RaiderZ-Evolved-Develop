@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="AsyncTask">
+      <UniqueIdentifier>{6e0d51e9-1ab2-441f-ab5f-c6dd6a54b74f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="base">
+      <UniqueIdentifier>{bf1b38ee-fa9c-4c9d-abb4-435ba1a33a27}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Mesh">
+      <UniqueIdentifier>{14102865-7ce3-460a-9ace-f9e71aa176be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="command">
+      <UniqueIdentifier>{dc272c1a-180d-4fab-becd-5e67902ffeb9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="info">
+      <UniqueIdentifier>{46d9349d-05ea-4c85-8d44-ac820b575343}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="info\CraftInfo">
+      <UniqueIdentifier>{4fd58f8d-e499-4d6c-a352-ffcdadf062f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="NotUsedYet">
+      <UniqueIdentifier>{922b5a02-c99d-40d7-a36b-00ffcb895cc5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ThreadTask">
+      <UniqueIdentifier>{aff2f61f-7d85-44d7-b53e-ae399c500a90}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tracking">
+      <UniqueIdentifier>{52dbfa7a-53c4-4e60-8baf-c0d0e569faf9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="GAsyncTask.cpp">
+      <Filter>AsyncTask</Filter>
+    </ClCompile>
+    <ClCompile Include="GConfig.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="GConfig_Arg.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="GConfig_Lua.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="GConst.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="GFilePath.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="GMath.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="GSystem.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="GActorMeshInfo.cpp">
+      <Filter>Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="GCommandTable.cpp">
+      <Filter>command</Filter>
+    </ClCompile>
+    <ClCompile Include="GCraftInfo.cpp">
+      <Filter>info\CraftInfo</Filter>
+    </ClCompile>
+    <ClCompile Include="GItemHandler.cpp">
+      <Filter>NotUsedYet</Filter>
+    </ClCompile>
+    <ClCompile Include="GPool.cpp">
+      <Filter>NotUsedYet</Filter>
+    </ClCompile>
+    <ClCompile Include="GProcess.cpp">
+      <Filter>NotUsedYet</Filter>
+    </ClCompile>
+    <ClCompile Include="GProcessManager.cpp">
+      <Filter>NotUsedYet</Filter>
+    </ClCompile>
+    <ClCompile Include="GTalentHandler.cpp">
+      <Filter>NotUsedYet</Filter>
+    </ClCompile>
+    <ClCompile Include="GThreadTask.cpp">
+      <Filter>ThreadTask</Filter>
+    </ClCompile>
+    <ClCompile Include="GThreadTaskMgr.cpp">
+      <Filter>ThreadTask</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GAsyncTask.h">
+      <Filter>AsyncTask</Filter>
+    </ClInclude>
+    <ClInclude Include="GAsyncTaskID.h">
+      <Filter>AsyncTask</Filter>
+    </ClInclude>
+    <ClInclude Include="GConfig.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="GConfig_Arg.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="GConfig_Lua.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="GConst.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="GDef.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="GFilePath.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="GMath.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="GState.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="GSystem.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="GActorMeshInfo.h">
+      <Filter>Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="GCommandTable.h">
+      <Filter>command</Filter>
+    </ClInclude>
+    <ClInclude Include="GCraftInfo.h">
+      <Filter>info\CraftInfo</Filter>
+    </ClInclude>
+    <ClInclude Include="GItemHandler.h">
+      <Filter>NotUsedYet</Filter>
+    </ClInclude>
+    <ClInclude Include="GPool.h">
+      <Filter>NotUsedYet</Filter>
+    </ClInclude>
+    <ClInclude Include="GProcess.h">
+      <Filter>NotUsedYet</Filter>
+    </ClInclude>
+    <ClInclude Include="GProcessManager.h">
+      <Filter>NotUsedYet</Filter>
+    </ClInclude>
+    <ClInclude Include="GTalentHandler.h">
+      <Filter>NotUsedYet</Filter>
+    </ClInclude>
+    <ClInclude Include="GThreadTask.h">
+      <Filter>ThreadTask</Filter>
+    </ClInclude>
+    <ClInclude Include="GThreadTaskMgr.h">
+      <Filter>ThreadTask</Filter>
+    </ClInclude>
+    <ClInclude Include="GFrameworkLib.h" />
+    <ClInclude Include="stdafx.h" />
+  </ItemGroup>
+</Project>

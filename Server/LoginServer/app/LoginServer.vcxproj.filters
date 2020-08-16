@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="resource">
+      <UniqueIdentifier>{fdd0bbd6-3c8a-45a8-a1fd-c59faa43908e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="command_app">
+      <UniqueIdentifier>{4023f028-487d-4dd1-8b3d-9e39a65be277}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\LoginServer.ico">
+      <Filter>resource</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="LoginServer.rc">
+      <Filter>resource</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Resource.h">
+      <Filter>resource</Filter>
+    </ClInclude>
+    <ClInclude Include="LCmdHandler_App.h">
+      <Filter>command_app</Filter>
+    </ClInclude>
+    <ClInclude Include="LApplication.h" />
+    <ClInclude Include="stdafx.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="LCmdHandler_App.cpp">
+      <Filter>command_app</Filter>
+    </ClCompile>
+    <ClCompile Include="LApplication.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="stdafx.cpp" />
+  </ItemGroup>
+</Project>

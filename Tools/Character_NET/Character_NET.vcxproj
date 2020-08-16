@@ -1,0 +1,723 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug_duck|Win32">
+      <Configuration>Debug_duck</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B0A4FD90-EDA4-4A19-B045-31510AAB113E}</ProjectGuid>
+    <RootNamespace>Character_NET</RootNamespace>
+    <Keyword>ManagedCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_duck|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <CLRSupport>true</CLRSupport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <CLRSupport>true</CLRSupport>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <CLRSupport>true</CLRSupport>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug_duck|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>16.0.30028.132</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ReferencePath>.\Sano.Utility\bin\Debug;.\Sano.Utility\bin\Release;.\TreeViewMS\bin\Debug;.\TreeViewMS\bin\Release;$(ReferencePath)</ReferencePath>
+    <OutDir>..\..\Game\runtime\Dev\Character_NET\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ReferencePath>.\Sano.Utility\bin\Debug;.\Sano.Utility\bin\Release;.\TreeViewMS\bin\Debug;.\TreeViewMS\bin\Release;$(ReferencePath)</ReferencePath>
+    <OutDir>..\..\Game\runtime\Dev\Character_NET\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_duck|Win32'">
+    <ReferencePath>.\Sano.Utility\bin\Debug;.\Sano.Utility\bin\Release;.\TreeViewMS\bin\Debug;.\TreeViewMS\bin\Release;$(ReferencePath)</ReferencePath>
+    <OutDir>..\..\runtime\Dev\Character_NET\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalOptions>/MP /Zm200 %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>../../mdk/MReflectionProperty/Reflection;../../mdk/MReflectionProperty/ReflectivePropertyForm;../../mdk/cml2;../../crl/include;../../CSCommon/include;../../mdk/RealSpace3;../../mdk/RealSound3;../../../sdk/dx9/include;../../game/GameCommon;../../Server/GameServer;../../mdk/MPhysX;../../../sdk/fmodEx/inc;../../../sdk/PhysX/v2.8.1/SDKs/Physics/include;../../../sdk/PhysX/v2.8.1/SDKs/Physics/include/cloth;../../../sdk/PhysX/v2.8.1/SDKs/Foundation/include;../../../sdk/PhysX/v2.8.1/SDKs/PhysXLoader/include;../../../sdk/PhysX/v2.8.1/SDKs/NxCharacter/include;../../../sdk/PhysX/v2.8.1/SDKs/Cooking/include;../../../sdk/PhysX/v2.8.1/SDKs/Framework/include;../../mdk/MCollision;../ToolsCommon;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;REALSPACE3_IMPORT;CML2_IMPORT;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <ShowIncludes>true</ShowIncludes>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>shlwapi.lib;user32.lib;winmm.lib;shell32.lib;Gdi32.lib;PhysXLoader.lib;NxCharacter.lib;NxCooking.lib;lua5.1.lib</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName)D.exe</OutputFile>
+      <AdditionalLibraryDirectories>../../../sdk/dx9/lib;../../../sdk/speedtree;../../../sdk/vld/;../../../sdk/fmodEx/lib;../../../sdk/PhysX/v2.8.1/SDKs/lib/win32;../../../sdk/lua51/lib/vc8;../../../sdk/zlib/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>libcmt;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AssemblyDebug>true</AssemblyDebug>
+      <SubSystem>Windows</SubSystem>
+      <EntryPointSymbol>?mainCRTStartupStrArray%40%40$$FYMHP$01AP$AAVString%40System%40%40%40Z</EntryPointSymbol>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy  ..\..\mdk\RealSpace3\Lib\RealSpace3_d.dll $(TargetDir)
+copy  ..\..\mdk\cml2\Lib\cml2_d.dll $(TargetDir)
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalOptions>/MP /Zm200 %(AdditionalOptions)</AdditionalOptions>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <AdditionalIncludeDirectories>../../mdk/MReflectionProperty/Reflection;../../mdk/MReflectionProperty/ReflectivePropertyForm;../../mdk/cml2;../../crl/include;../../CSCommon/include;../../mdk/RealSpace3;../../mdk/RealSound3;../../../sdk/dx9/include;../../game/GameCommon;../../Server/GameServer;../../mdk/MPhysX;../../../sdk/fmodEx/inc;../../../sdk/PhysX/v2.8.1/SDKs/Physics/include;../../../sdk/PhysX/v2.8.1/SDKs/Physics/include/cloth;../../../sdk/PhysX/v2.8.1/SDKs/Foundation/include;../../../sdk/PhysX/v2.8.1/SDKs/PhysXLoader/include;../../../sdk/PhysX/v2.8.1/SDKs/NxCharacter/include;../../../sdk/PhysX/v2.8.1/SDKs/Cooking/include;../../../sdk/PhysX/v2.8.1/SDKs/Framework/include;../../mdk/MCollision;../ToolsCommon;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;REALSPACE3_IMPORT;CML2_IMPORT;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>shlwapi.lib;user32.lib;winmm.lib;shell32.lib;Gdi32.lib;PhysXLoader.lib;NxCharacter.lib;NxCooking.lib;lua5.1.lib</AdditionalDependencies>
+      <ShowProgress>NotSet</ShowProgress>
+      <AdditionalLibraryDirectories>../../../sdk/dx9/lib;../../../sdk/speedtree;../../../sdk/vld/;../../../sdk/fmodEx/lib;../../../sdk/PhysX/v2.8.1/SDKs/lib/win32;../../../sdk/lua51/lib/vc8;../../../sdk/zlib/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <LinkTimeCodeGeneration />
+      <EntryPointSymbol>?mainCRTStartupStrArray%40%40$$FYMHP$01AP$AAVString%40System%40%40%40Z</EntryPointSymbol>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy  ..\..\mdk\RealSpace3\Lib\RealSpace3_.dll $(TargetDir)
+copy  ..\..\mdk\cml2\Lib\cml2_.dll $(TargetDir)
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_duck|Win32'">
+    <ClCompile>
+      <AdditionalOptions>/Zm200 /MP %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>../../mdk/MReflectionProperty/Reflection;../../mdk/MReflectionProperty/ReflectivePropertyForm;../../mdk/cml2;../../CSCommon/include;../../mdk/RealSpace3;../../mdk/RealSound3;../../../sdk/dx9/include;../../game/GameCommon;../../Server/GameServer;../../mdk/MPhysX;../../../sdk/fmodEx/inc;../../../sdk/PhysX/v2.8.1/SDKs/Physics/include;../../../sdk/PhysX/v2.8.1/SDKs/Physics/include/cloth;../../../sdk/PhysX/v2.8.1/SDKs/Foundation/include;../../../sdk/PhysX/v2.8.1/SDKs/PhysXLoader/include;../../../sdk/PhysX/v2.8.1/SDKs/NxCharacter/include;../../../sdk/PhysX/v2.8.1/SDKs/Cooking/include;../../../sdk/PhysX/v2.8.1/SDKs/Framework/include;../../mdk/MCollision;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;REALSPACE3_IMPORT;CML2_IMPORT;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>shlwapi.lib;user32.lib;winmm.lib;shell32.lib;Gdi32.lib;PhysXLoader.lib;NxCharacter.lib;NxCooking.lib;lua5.1.lib</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName)D.exe</OutputFile>
+      <AdditionalLibraryDirectories>../../../sdk/dx9/lib;../../../sdk/speedtree;../../../sdk/vld/;../../../sdk/fmodEx/lib;../../../sdk/PhysX/v2.8.1/SDKs/lib/win32;../../../sdk/lua51/lib/vc8;../../../sdk/zlib/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>libcmt;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AssemblyDebug>true</AssemblyDebug>
+      <SubSystem>Windows</SubSystem>
+      <EntryPointSymbol>?mainCRTStartupStrArray%40%40$$FYMHP$01AP$AAVString%40System%40%40%40Z</EntryPointSymbol>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy  ..\..\mdk\RealSpace3\Lib\RealSpace3_d.dll $(TargetDir)
+copy  ..\..\mdk\cml2\Lib\cml2_d.dll $(TargetDir)
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="System.Data">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="System.Xml">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\CSCommon\CSCommon.vcxproj">
+      <Project>{7dcc03b9-dd72-4803-aee2-1f2be6ce60c2}</Project>
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Game\GameCommon\GameCommon.vcxproj">
+      <Project>{7820a4c8-b56a-40ed-9b44-86e215a93681}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\mdk\cml2\cml2.vcxproj">
+      <Project>{8d451493-65c2-49c3-adae-acb17e6b0650}</Project>
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\mdk\MCollision\MCollision.vcxproj">
+      <Project>{97861011-05bd-450a-a221-db5f7a2f4b7b}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\mdk\MiNet\MiNet.vcxproj">
+      <Project>{595010c3-5427-4453-9f44-5adb4edddb28}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\mdk\MReflectionProperty\Reflection\relib.vcxproj">
+      <Project>{3de14f45-2931-4e41-8115-06687e36288f}</Project>
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\mdk\MReflectionProperty\ReflectivePropertyForm\ReflectivePropertyForm.vcxproj">
+      <Project>{0e8a2b9a-c4d9-433f-9168-6d5d85efa23f}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\mdk\RealSound3\RealSound3.vcxproj">
+      <Project>{c49a3dec-c70b-451e-8d7b-f30d93e4e9d2}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\mdk\RealSpace3\RealSpace3.vcxproj">
+      <Project>{7070fa22-c0d4-40f5-beb7-ec09f3a58a51}</Project>
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\ToolsCommon\ToolsCommon.vcxproj">
+      <Project>{73f44aa8-aff6-4036-aeaa-5e4536736e87}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="CharacterToolForms\CharacterToolForms.csproj">
+      <Project>{1e4aa61e-18bf-4a87-b101-7988ad968231}</Project>
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="CharacterToolLib\CharacterToolLib.vcxproj">
+      <Project>{4c0e23c6-2793-49ae-b616-6a0463084b78}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="ControlLibrary\Sano.PersonalProjects.ColorPicker.Controls.csproj">
+      <Project>{d6ec5694-662d-408b-918d-be50ad3d0439}</Project>
+      <Private>false</Private>
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="Sano.Utility\Sano.Utility.csproj">
+      <Project>{f26a8c54-286f-4b34-b77f-620f4846b02f}</Project>
+      <Private>false</Private>
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="TreeViewMS\TreeViewMS.csproj">
+      <Project>{7c2cce0a-a288-4869-a7b7-cc0d18af3b8c}</Project>
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AnimationBlendInputForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="AnimationBlendTable.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="AnimationEvent.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="AnimationEventTabPage.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="AnimationHitSoundTabPage.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="AnimationLinkTestTabPage.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="AnimationSelectEditForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="AnimationTabPage.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="CCmdBuffer.h" />
+    <ClInclude Include="CDocument.h" />
+    <ClInclude Include="ColorPickerDlg.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="DereferenceTalentIDViewer.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="EditAnimation.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="EditItemList.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="EditText_One.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="EffectSelectForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="EventTabPage.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Form1.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmMyValue.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Global.h" />
+    <ClInclude Include="HelpForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="ItemTabPage.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="MainApp.h" />
+    <ClInclude Include="MeshInfoTabPage.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="ModelInfoTabPage.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="ModelTabPage.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="NPCAnimationInfoSetting.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="NPCListTabPage.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="OverlayAnimationInputForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="OverlayAnimationTable.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="OverlayAnimationTestTabPage.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="PCTalentTreeView.h">
+      <FileType>CppControl</FileType>
+    </ClInclude>
+    <ClInclude Include="ProgressBarForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="ReActionAnimationInputForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="ReActionAnimationTable.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="ReflectiveProperty.h" />
+    <ClInclude Include="reflectiveProperty\ClothReflectivePropertyForm.h" />
+    <ClInclude Include="reflectiveProperty\ReflectiveRClothInfo.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="SaveNotifier.h" />
+    <ClInclude Include="SearchCustomEffectInfoName.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="TActorMgr.h" />
+    <ClInclude Include="TalentEffectBase.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="TalentTabPage.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="TAnimationBlendInfo.h" />
+    <ClInclude Include="TAnimationBlendTable.h" />
+    <ClInclude Include="TAnimationEventHandler.h" />
+    <ClInclude Include="TAnimationHelper.h" />
+    <ClInclude Include="TAnimationInfoMgr.h" />
+    <ClInclude Include="TAnimationResourceController.h" />
+    <ClInclude Include="TBaseAnimationTC.h" />
+    <ClInclude Include="TBuffInfo.h" />
+    <ClInclude Include="TCalcTalentHitEffectDir.h" />
+    <CustomBuild Include="TCamera.h" />
+    <ClInclude Include="TCameraEffect.h" />
+    <ClInclude Include="TCharacter.h" />
+    <ClInclude Include="TClipboard.h" />
+    <ClInclude Include="TCloth.h" />
+    <ClInclude Include="TConst.h" />
+    <ClInclude Include="TDecalEffect.h" />
+    <ClInclude Include="TDef.h" />
+    <ClInclude Include="TEffect.h" />
+    <ClInclude Include="TEffectCharacterToolInvoker.h" />
+    <ClInclude Include="TEffectCharacterToolSinglyInvoker.h" />
+    <ClInclude Include="TEffectInfoMgr.h" />
+    <ClInclude Include="TEffectManager.h" />
+    <ClInclude Include="TEffectPostEffect.h" />
+    <ClInclude Include="TEquipItems.h" />
+    <ClInclude Include="TEquipment.h" />
+    <ClInclude Include="TFaceAnimationTC.h" />
+    <ClInclude Include="TFileNameSampling.h" />
+    <ClInclude Include="TFrameSliderController.h" />
+    <ClInclude Include="THelper.h" />
+    <ClInclude Include="THitAreaRenderer.h" />
+    <ClInclude Include="TInitLoadingWindow.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="TItem.h" />
+    <ClInclude Include="TItemData.h" />
+    <ClInclude Include="TMagicArea.h" />
+    <ClInclude Include="TMenu.h" />
+    <ClInclude Include="TMeshAniInfo.h" />
+    <ClInclude Include="TMeshColInfo.h" />
+    <ClInclude Include="TMeshColInfoBoxEditor.h" />
+    <ClInclude Include="TMeshColInfoViewer.h" />
+    <ClInclude Include="TMeshHitEffectInfo.h" />
+    <ClInclude Include="TMeshHitEffectInfoViewer.h" />
+    <ClInclude Include="TMeshHitInfo.h" />
+    <ClInclude Include="TMeshHitTabController.h" />
+    <ClInclude Include="TMeshInfo.h" />
+    <ClInclude Include="TMtrl.h" />
+    <ClInclude Include="TNaming.h" />
+    <ClInclude Include="TNoiseFadeEffect.h" />
+    <ClInclude Include="TNormalAnimation.h" />
+    <ClInclude Include="TNPC.h" />
+    <ClInclude Include="TNPCInfo.h" />
+    <ClInclude Include="ToolConfig.h" />
+    <ClInclude Include="TOverlayAnimationInfo.h" />
+    <ClInclude Include="TOverlayAnimationTC.h" />
+    <ClInclude Include="TPartsHitInfoViewer.h" />
+    <ClInclude Include="TPlayMotion.h" />
+    <ClInclude Include="TProjectile.h" />
+    <ClInclude Include="TReActionAnimationInfo.h" />
+    <ClInclude Include="TRealSound.h" />
+    <ClInclude Include="TRealSoundLoader.h" />
+    <ClInclude Include="TSelfIlluminationEffect.h" />
+    <ClInclude Include="TStrings.h" />
+    <ClInclude Include="TSwordTrailEffectController.h" />
+    <ClInclude Include="TSwordTrailSampling.h" />
+    <ClInclude Include="TTabAnimation.h" />
+    <ClInclude Include="TTabItem.h" />
+    <ClInclude Include="TTabModel.h" />
+    <ClInclude Include="TTabModelInfo.h" />
+    <ClInclude Include="TTalentActAnimationTime.h" />
+    <ClInclude Include="TTalentAnimation.h" />
+    <ClInclude Include="TTalentEffectHitCapsule.h" />
+    <ClInclude Include="TTalentEffectMgr.h" />
+    <ClInclude Include="TTalentEffectTabController.h" />
+    <ClInclude Include="TTalentEffectViewer.h" />
+    <ClInclude Include="TTalentEvent.h" />
+    <ClInclude Include="TTalentEventController.h" />
+    <ClInclude Include="TTalentEventMgr.h" />
+    <ClInclude Include="TTalentEventViewer.h" />
+    <ClInclude Include="TTalentHelper.h" />
+    <ClInclude Include="TTalentHitEffectDirTest.h" />
+    <ClInclude Include="TTalentHitTabController.h" />
+    <ClInclude Include="TTalentInfo.h" />
+    <ClInclude Include="TTransformControllerManager.h" />
+    <ClInclude Include="TWeaponEffect.h" />
+    <ClInclude Include="Xmlseral.h" />
+    <ClInclude Include="Xmlseral_Talent.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AnimationBlendInputForm.cpp" />
+    <ClCompile Include="AnimationBlendTable.cpp" />
+    <ClCompile Include="AnimationEvent.cpp" />
+    <ClCompile Include="AnimationEventTabPage.cpp" />
+    <ClCompile Include="AnimationHitSoundTabPage.cpp" />
+    <ClCompile Include="AnimationLinkTestTabPage.cpp" />
+    <ClCompile Include="AnimationSelectEditForm.cpp" />
+    <ClCompile Include="AnimationTabPage.cpp" />
+    <ClCompile Include="AssemblyInfo.cpp" />
+    <ClCompile Include="Character_NET.cpp" />
+    <ClCompile Include="DereferenceTalentIDViewer.cpp" />
+    <ClCompile Include="EditText_One.cpp" />
+    <ClCompile Include="EffectSelectForm.cpp" />
+    <ClCompile Include="EventTabPage.cpp" />
+    <ClCompile Include="Form1.cpp" />
+    <ClCompile Include="ItemTabPage.cpp" />
+    <ClCompile Include="MainApp.cpp" />
+    <ClCompile Include="MeshInfoTabPage.cpp" />
+    <ClCompile Include="ModelInfoTabPage.cpp" />
+    <ClCompile Include="ModelTabPage.cpp" />
+    <ClCompile Include="NPCAnimationInfoSetting.cpp" />
+    <ClCompile Include="NPCListTabPage.cpp" />
+    <ClCompile Include="OverlayAnimationInputForm.cpp" />
+    <ClCompile Include="OverlayAnimationTable.cpp" />
+    <ClCompile Include="OverlayAnimationTestTabPage.cpp" />
+    <ClCompile Include="PCTalentTreeView.cpp" />
+    <ClCompile Include="ProgressBarForm.cpp" />
+    <ClCompile Include="ReActionAnimationInputForm.cpp" />
+    <ClCompile Include="ReActionAnimationTable.cpp" />
+    <ClCompile Include="reflectiveProperty\ClothReflectivePropertyForm.cpp" />
+    <ClCompile Include="reflectiveProperty\ReflectiveRClothInfo.cpp" />
+    <ClCompile Include="SaveNotifier.cpp" />
+    <ClCompile Include="SearchCustomEffectInfoName.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug_duck|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="TActorMgr.cpp" />
+    <ClCompile Include="TalentEffectBase.cpp" />
+    <ClCompile Include="TalentTabPage.cpp" />
+    <ClCompile Include="TAnimationBlendInfo.cpp" />
+    <ClCompile Include="TAnimationBlendTable.cpp" />
+    <ClCompile Include="TAnimationEventHandler.cpp" />
+    <ClCompile Include="TAnimationHelper.cpp" />
+    <ClCompile Include="TAnimationInfoMgr.cpp" />
+    <ClCompile Include="TAnimationResourceController.cpp" />
+    <ClCompile Include="TBaseAnimationTC.cpp" />
+    <ClCompile Include="TBuffInfo.cpp" />
+    <ClCompile Include="TCalcTalentHitEffectDir.cpp" />
+    <ClCompile Include="TCamera.cpp" />
+    <ClCompile Include="TCameraEffect.cpp" />
+    <ClCompile Include="TCharacter.cpp" />
+    <ClCompile Include="TClipboard.cpp" />
+    <ClCompile Include="TCloth.cpp" />
+    <ClCompile Include="TConst.cpp" />
+    <ClCompile Include="TDecalEffect.cpp" />
+    <ClCompile Include="TDef.cpp" />
+    <ClCompile Include="TEffect.cpp" />
+    <ClCompile Include="TEffectCharacterToolInvoker.cpp" />
+    <ClCompile Include="TEffectCharacterToolSinglyInvoker.cpp" />
+    <ClCompile Include="TEffectInfoMgr.cpp" />
+    <ClCompile Include="TEffectManager.cpp" />
+    <ClCompile Include="TEffectPostEffect.cpp" />
+    <ClCompile Include="TEquipItems.cpp" />
+    <ClCompile Include="TEquipment.cpp" />
+    <ClCompile Include="TFaceAnimationTC.cpp" />
+    <ClCompile Include="TFileNameSampling.cpp" />
+    <ClCompile Include="TFrameSliderController.cpp" />
+    <ClCompile Include="THitAreaRenderer.cpp" />
+    <ClCompile Include="TInitLoadingWindow.cpp" />
+    <ClCompile Include="TItem.cpp" />
+    <ClCompile Include="TItemData.cpp" />
+    <ClCompile Include="TMagicArea.cpp" />
+    <ClCompile Include="TMenu.cpp" />
+    <ClCompile Include="TMeshAniInfo.cpp" />
+    <ClCompile Include="TMeshColInfo.cpp" />
+    <ClCompile Include="TMeshColInfoBoxEditor.cpp" />
+    <ClCompile Include="TMeshColInfoViewer.cpp" />
+    <ClCompile Include="TMeshHitEffectInfo.cpp" />
+    <ClCompile Include="TMeshHitEffectInfoViewer.cpp" />
+    <ClCompile Include="TMeshHitInfo.cpp" />
+    <ClCompile Include="TMeshHitTabController.cpp" />
+    <ClCompile Include="TMeshInfo.cpp" />
+    <ClCompile Include="TMtrl.cpp" />
+    <ClCompile Include="TNaming.cpp" />
+    <ClCompile Include="TNoiseFadeEffect.cpp" />
+    <ClCompile Include="TNormalAnimation.cpp" />
+    <ClCompile Include="TNPC.cpp" />
+    <ClCompile Include="TNPCInfo.cpp" />
+    <ClCompile Include="ToolConfig.cpp" />
+    <ClCompile Include="TOverlayAnimationInfo.cpp" />
+    <ClCompile Include="TOverlayAnimationTC.cpp" />
+    <ClCompile Include="TPartsHitInfoViewer.cpp" />
+    <ClCompile Include="TPlayMotion.cpp" />
+    <ClCompile Include="TProjectile.cpp" />
+    <ClCompile Include="TReActionAnimationInfo.cpp" />
+    <ClCompile Include="TRealSound.cpp" />
+    <ClCompile Include="TRealSoundLoader.cpp" />
+    <ClCompile Include="TSelfIlluminationEffect.cpp" />
+    <ClCompile Include="TStrings.cpp" />
+    <ClCompile Include="TSwordTrailEffectController.cpp" />
+    <ClCompile Include="TSwordTrailSampling.cpp" />
+    <ClCompile Include="TTabAnimation.cpp" />
+    <ClCompile Include="TTabItem.cpp" />
+    <ClCompile Include="TTabModel.cpp" />
+    <ClCompile Include="TTabModelInfo.cpp" />
+    <ClCompile Include="TTalentActAnimationTime.cpp" />
+    <ClCompile Include="TTalentAnimation.cpp" />
+    <ClCompile Include="TTalentEffectHitCapsule.cpp" />
+    <ClCompile Include="TTalentEffectMgr.cpp" />
+    <ClCompile Include="TTalentEffectTabController.cpp" />
+    <ClCompile Include="TTalentEffectViewer.cpp" />
+    <ClCompile Include="TTalentEvent.cpp" />
+    <ClCompile Include="TTalentEventController.cpp" />
+    <ClCompile Include="TTalentEventMgr.cpp" />
+    <ClCompile Include="TTalentEventViewer.cpp" />
+    <ClCompile Include="TTalentHelper.cpp" />
+    <ClCompile Include="TTalentHitEffectDirTest.cpp" />
+    <ClCompile Include="TTalentHitTabController.cpp" />
+    <ClCompile Include="TTalentInfo.cpp" />
+    <ClCompile Include="TTransformControllerManager.cpp" />
+    <ClCompile Include="TWeaponEffect.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="app.ico" />
+    <Image Include="icon2.ico" />
+    <Image Include="icon4.ico" />
+    <Image Include="icon5.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="app.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AnimationBlendInputForm.resx">
+      <DependentUpon>AnimationBlendInputForm.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnimationBlendTable.resx">
+      <DependentUpon>AnimationBlendTable.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnimationEvent.resx">
+      <DependentUpon>AnimationEvent.h</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnimationEventTabPage.resx">
+      <DependentUpon>AnimationEventTabPage.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnimationHitSoundTabPage.resx">
+      <DependentUpon>AnimationHitSoundTabPage.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnimationLinkTestTabPage.resx">
+      <DependentUpon>AnimationLinkTestTabPage.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnimationSelectEditForm.resx">
+      <DependentUpon>AnimationSelectEditForm.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnimationTabPage.resx">
+      <DependentUpon>AnimationTabPage.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ColorPickerDlg.resx">
+      <DependentUpon>ColorPickerDlg.h</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DereferenceTalentIDViewer.resx">
+      <DependentUpon>DereferenceTalentIDViewer.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditAnimation.resx">
+      <DependentUpon>EditAnimation.h</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditItemList.resx">
+      <DependentUpon>EditItemList.h</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditText_One.resx">
+      <DependentUpon>EditText_One.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EffectSelectForm.resx">
+      <DependentUpon>EffectSelectForm.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EventTabPage.resx">
+      <DependentUpon>EventTabPage.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resX">
+      <DependentUpon>Form1.h</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMyValue.resx">
+      <DependentUpon>frmMyValue.h</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HelpForm.resx">
+      <DependentUpon>HelpForm.h</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ItemTabPage.resx">
+      <DependentUpon>ItemTabPage.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MeshInfoTabPage.resx">
+      <DependentUpon>MeshInfoTabPage.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModelInfoTabPage.resx">
+      <DependentUpon>ModelInfoTabPage.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModelTabPage.resx">
+      <DependentUpon>ModelTabPage.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NPCAnimationInfoSetting.resx">
+      <DependentUpon>NPCAnimationInfoSetting.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NPCListTabPage.resx">
+      <DependentUpon>NPCListTabPage.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OverlayAnimationInputForm.resx">
+      <DependentUpon>OverlayAnimationInputForm.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OverlayAnimationTable.resx">
+      <DependentUpon>OverlayAnimationTable.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OverlayAnimationTestTabPage.resx">
+      <DependentUpon>OverlayAnimationTestTabPage.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PCTalentTreeView.resx">
+      <DependentUpon>PCTalentTreeView.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProgressBarForm.resx">
+      <DependentUpon>ProgressBarForm.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReActionAnimationInputForm.resx">
+      <DependentUpon>ReActionAnimationInputForm.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReActionAnimationTable.resx">
+      <DependentUpon>ReActionAnimationTable.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchCustomEffectInfoName.resx">
+      <DependentUpon>SearchCustomEffectInfoName.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TalentEffectBase.resx">
+      <DependentUpon>TalentEffectBase.h</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TalentTabPage.resx">
+      <DependentUpon>TalentTabPage.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TInitLoadingWindow.resx">
+      <DependentUpon>TInitLoadingWindow.h</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="app.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

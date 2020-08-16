@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Manager">
+      <UniqueIdentifier>{acc500bf-2817-4b79-afbb-1c1c4c30e124}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Runtime">
+      <UniqueIdentifier>{fece9af6-42fa-4d24-986b-fc9a9f797f43}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Runtime\Reporter">
+      <UniqueIdentifier>{082e5fbc-7725-42ac-bd23-2a55c635f82d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Runtime\Logger">
+      <UniqueIdentifier>{bb8a183f-6782-4721-8d76-815eccf4d182}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource">
+      <UniqueIdentifier>{25cca409-13ed-49b0-b653-a26287fb79be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource\Reporter">
+      <UniqueIdentifier>{6d9ad65b-952e-4d4a-b7f7-fb527eb5417c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource\Checker">
+      <UniqueIdentifier>{0bf8aec1-5642-44b7-bfb1-fc4ba7c873a2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="GRuntimeValidator.cpp">
+      <Filter>Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="GServerResourceValidators.cpp">
+      <Filter>Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="GValidatorSilo.cpp">
+      <Filter>Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="GRuntimeValidatingReporter.cpp">
+      <Filter>Runtime\Reporter</Filter>
+    </ClCompile>
+    <ClCompile Include="GRuntimeDBLogger.cpp">
+      <Filter>Runtime\Logger</Filter>
+    </ClCompile>
+    <ClCompile Include="GRuntimeLuaLogger.cpp">
+      <Filter>Runtime\Logger</Filter>
+    </ClCompile>
+    <ClCompile Include="GRuntimeTestLogger.cpp">
+      <Filter>Runtime\Logger</Filter>
+    </ClCompile>
+    <ClCompile Include="GRuntimeValidatingLogger.cpp">
+      <Filter>Runtime\Logger</Filter>
+    </ClCompile>
+    <ClCompile Include="GServerValidateReporter.cpp">
+      <Filter>Resource\Reporter</Filter>
+    </ClCompile>
+    <ClCompile Include="GBuffInfoValidator.cpp">
+      <Filter>Resource\Checker</Filter>
+    </ClCompile>
+    <ClCompile Include="GChallengerQuestInfoValidator.cpp">
+      <Filter>Resource\Checker</Filter>
+    </ClCompile>
+    <ClCompile Include="GColtValidator.cpp">
+      <Filter>Resource\Checker</Filter>
+    </ClCompile>
+    <ClCompile Include="GConditionsInfoValidator.cpp">
+      <Filter>Resource\Checker</Filter>
+    </ClCompile>
+    <ClCompile Include="GCraftInfoValidator.cpp">
+      <Filter>Resource\Checker</Filter>
+    </ClCompile>
+    <ClCompile Include="GDialogInfoValidator.cpp">
+      <Filter>Resource\Checker</Filter>
+    </ClCompile>
+    <ClCompile Include="GFieldInfoValidator.cpp">
+      <Filter>Resource\Checker</Filter>
+    </ClCompile>
+    <ClCompile Include="GItemAddRemoveInfoValidator.cpp">
+      <Filter>Resource\Checker</Filter>
+    </ClCompile>
+    <ClCompile Include="GItemInfoValidator.cpp">
+      <Filter>Resource\Checker</Filter>
+    </ClCompile>
+    <ClCompile Include="GLootInfoValidator.cpp">
+      <Filter>Resource\Checker</Filter>
+    </ClCompile>
+    <ClCompile Include="GNPCInfoValidator.cpp">
+      <Filter>Resource\Checker</Filter>
+    </ClCompile>
+    <ClCompile Include="GNPCShopInfoValidator.cpp">
+      <Filter>Resource\Checker</Filter>
+    </ClCompile>
+    <ClCompile Include="GQPEventInfoValidator.cpp">
+      <Filter>Resource\Checker</Filter>
+    </ClCompile>
+    <ClCompile Include="GQuestInfoValidator.cpp">
+      <Filter>Resource\Checker</Filter>
+    </ClCompile>
+    <ClCompile Include="GRecipeInfoValidator.cpp">
+      <Filter>Resource\Checker</Filter>
+    </ClCompile>
+    <ClCompile Include="GSoulBindingInfoValidator.cpp">
+      <Filter>Resource\Checker</Filter>
+    </ClCompile>
+    <ClCompile Include="GTalentInfoValidator.cpp">
+      <Filter>Resource\Checker</Filter>
+    </ClCompile>
+    <ClCompile Include="GTrialFieldValidator.cpp">
+      <Filter>Resource\Checker</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GRuntimeValidator.h">
+      <Filter>Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="GServerResourceValidators.h">
+      <Filter>Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="GValidatorLib.h">
+      <Filter>Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="GValidatorSilo.h">
+      <Filter>Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="GRuntimeValidatingReporter.h">
+      <Filter>Runtime\Reporter</Filter>
+    </ClInclude>
+    <ClInclude Include="GRuntimeDBLogger.h">
+      <Filter>Runtime\Logger</Filter>
+    </ClInclude>
+    <ClInclude Include="GRuntimeLuaLogger.h">
+      <Filter>Runtime\Logger</Filter>
+    </ClInclude>
+    <ClInclude Include="GRuntimeTestLogger.h">
+      <Filter>Runtime\Logger</Filter>
+    </ClInclude>
+    <ClInclude Include="GRuntimeValidatingLogger.h">
+      <Filter>Runtime\Logger</Filter>
+    </ClInclude>
+    <ClInclude Include="GServerValidateReporter.h">
+      <Filter>Resource\Reporter</Filter>
+    </ClInclude>
+    <ClInclude Include="GBuffInfoValidator.h">
+      <Filter>Resource\Checker</Filter>
+    </ClInclude>
+    <ClInclude Include="GChallengerQuestInfoValidator.h">
+      <Filter>Resource\Checker</Filter>
+    </ClInclude>
+    <ClInclude Include="GColtValidator.h">
+      <Filter>Resource\Checker</Filter>
+    </ClInclude>
+    <ClInclude Include="GConditionsInfoValidator.h">
+      <Filter>Resource\Checker</Filter>
+    </ClInclude>
+    <ClInclude Include="GCraftInfoValidator.h">
+      <Filter>Resource\Checker</Filter>
+    </ClInclude>
+    <ClInclude Include="GDialogInfoValidator.h">
+      <Filter>Resource\Checker</Filter>
+    </ClInclude>
+    <ClInclude Include="GFieldInfoValidator.h">
+      <Filter>Resource\Checker</Filter>
+    </ClInclude>
+    <ClInclude Include="GItemAddRemoveInfoValidator.h">
+      <Filter>Resource\Checker</Filter>
+    </ClInclude>
+    <ClInclude Include="GItemInfoValidator.h">
+      <Filter>Resource\Checker</Filter>
+    </ClInclude>
+    <ClInclude Include="GLootInfoValidator.h">
+      <Filter>Resource\Checker</Filter>
+    </ClInclude>
+    <ClInclude Include="GNPCInfoValidator.h">
+      <Filter>Resource\Checker</Filter>
+    </ClInclude>
+    <ClInclude Include="GNPCShopInfoValidator.h">
+      <Filter>Resource\Checker</Filter>
+    </ClInclude>
+    <ClInclude Include="GQPEventInfoValidator.h">
+      <Filter>Resource\Checker</Filter>
+    </ClInclude>
+    <ClInclude Include="GQuestInfoValidator.h">
+      <Filter>Resource\Checker</Filter>
+    </ClInclude>
+    <ClInclude Include="GRecipeInfoValidator.h">
+      <Filter>Resource\Checker</Filter>
+    </ClInclude>
+    <ClInclude Include="GSoulBindingInfoValidator.h">
+      <Filter>Resource\Checker</Filter>
+    </ClInclude>
+    <ClInclude Include="GTalentInfoValidator.h">
+      <Filter>Resource\Checker</Filter>
+    </ClInclude>
+    <ClInclude Include="GTrialFieldValidator.h">
+      <Filter>Resource\Checker</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
