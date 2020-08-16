@@ -55,6 +55,8 @@ mono_crash.*
 
 # Build results
 [Dd]ebug/
+[Dd]ebugW/
+[Dd]ebug_W/
 [Dd]ebugMD/
 [Dd]ebugMD_ImportCML2/
 [Dd]ebugPublic/
@@ -62,6 +64,8 @@ mono_crash.*
 [Dd]ebug_publish/
 [Dd]ebugDLL/
 [Rr]elease/
+[Rr]eleaseW/
+[Rr]elease_W/
 [Rr]eleaseMD/
 [Rr]eleaseMD_ImportCML2/
 [Rr]eleases/
