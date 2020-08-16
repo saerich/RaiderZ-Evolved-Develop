@@ -58,6 +58,8 @@ mono_crash.*
 [Dd]ebugW/
 [Dd]ebug_W/
 [Dd]ebugMD/
+[Dd]ebugMDd/
+[Dd]ebugMDW/
 [Dd]ebugMD_ImportCML2/
 [Dd]ebugPublic/
 [Dd]ebug_profile/
@@ -67,6 +69,8 @@ mono_crash.*
 [Rr]eleaseW/
 [Rr]elease_W/
 [Rr]eleaseMD/
+[Rr]eleaseMDd/
+[Rr]eleaseMDW/
 [Rr]eleaseMD_ImportCML2/
 [Rr]eleases/
 [Rr]elease_profile/
