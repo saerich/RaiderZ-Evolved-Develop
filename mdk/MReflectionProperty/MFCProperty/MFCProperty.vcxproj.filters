@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="MFCProperty">
+      <UniqueIdentifier>{63fc26c1-988a-4051-ac15-a39318738c3e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MFCProperty\PropertyGridProperty">
+      <UniqueIdentifier>{1146aa39-2db7-42b2-b074-84cdbb1943e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="XColorDialog">
+      <UniqueIdentifier>{c1185fff-36b6-4047-b1ab-de01cee18a71}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjectWrapper.cpp">
+      <Filter>MFCProperty</Filter>
+    </ClCompile>
+    <ClCompile Include="ReflectivePropertyGridCtrl.cpp">
+      <Filter>MFCProperty</Filter>
+    </ClCompile>
+    <ClCompile Include="ReflectiveUI.cpp">
+      <Filter>MFCProperty</Filter>
+    </ClCompile>
+    <ClCompile Include="ReflectiveColorPropertyCtrl.cpp">
+      <Filter>MFCProperty\PropertyGridProperty</Filter>
+    </ClCompile>
+    <ClCompile Include="ReflectiveEnumProperty.cpp">
+      <Filter>MFCProperty\PropertyGridProperty</Filter>
+    </ClCompile>
+    <ClCompile Include="ReflectiveFloatProperty.cpp">
+      <Filter>MFCProperty\PropertyGridProperty</Filter>
+    </ClCompile>
+    <ClCompile Include="ReflectiveIntProperty.cpp">
+      <Filter>MFCProperty\PropertyGridProperty</Filter>
+    </ClCompile>
+    <ClCompile Include="ReflectivePropertyGroup.cpp">
+      <Filter>MFCProperty\PropertyGridProperty</Filter>
+    </ClCompile>
+    <ClCompile Include="ReflectiveSlideCtrl.cpp">
+      <Filter>MFCProperty\PropertyGridProperty</Filter>
+    </ClCompile>
+    <ClCompile Include="ReflectiveSlideFloatProperty.cpp">
+      <Filter>MFCProperty\PropertyGridProperty</Filter>
+    </ClCompile>
+    <ClCompile Include="ReflectiveSpinCtrl.cpp">
+      <Filter>MFCProperty\PropertyGridProperty</Filter>
+    </ClCompile>
+    <ClCompile Include="XColorDialog\rgbhsl.cpp">
+      <Filter>XColorDialog</Filter>
+    </ClCompile>
+    <ClCompile Include="XColorDialog\TabCustom.cpp">
+      <Filter>XColorDialog</Filter>
+    </ClCompile>
+    <ClCompile Include="XColorDialog\XBalloonMsg.cpp">
+      <Filter>XColorDialog</Filter>
+    </ClCompile>
+    <ClCompile Include="XColorDialog\XColorSpectrumCtrl.cpp">
+      <Filter>XColorDialog</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Resource.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjectWrapper.h">
+      <Filter>MFCProperty</Filter>
+    </ClInclude>
+    <ClInclude Include="ReflectivePropertyGridCtrl.h">
+      <Filter>MFCProperty</Filter>
+    </ClInclude>
+    <ClInclude Include="ReflectiveUI.h">
+      <Filter>MFCProperty</Filter>
+    </ClInclude>
+    <ClInclude Include="ReflectiveColorPropertyCtrl.h">
+      <Filter>MFCProperty\PropertyGridProperty</Filter>
+    </ClInclude>
+    <ClInclude Include="ReflectiveEnumProperty.h">
+      <Filter>MFCProperty\PropertyGridProperty</Filter>
+    </ClInclude>
+    <ClInclude Include="ReflectiveFloatProperty.h">
+      <Filter>MFCProperty\PropertyGridProperty</Filter>
+    </ClInclude>
+    <ClInclude Include="ReflectiveIntProperty.h">
+      <Filter>MFCProperty\PropertyGridProperty</Filter>
+    </ClInclude>
+    <ClInclude Include="ReflectivePropertyGroup.h">
+      <Filter>MFCProperty\PropertyGridProperty</Filter>
+    </ClInclude>
+    <ClInclude Include="ReflectiveSlideCtrl.h">
+      <Filter>MFCProperty\PropertyGridProperty</Filter>
+    </ClInclude>
+    <ClInclude Include="ReflectiveSlideFloatProperty.h">
+      <Filter>MFCProperty\PropertyGridProperty</Filter>
+    </ClInclude>
+    <ClInclude Include="ReflectiveSpinCtrl.h">
+      <Filter>MFCProperty\PropertyGridProperty</Filter>
+    </ClInclude>
+    <ClInclude Include="XColorDialog\rgbhsl.h">
+      <Filter>XColorDialog</Filter>
+    </ClInclude>
+    <ClInclude Include="XColorDialog\TabCustom.h">
+      <Filter>XColorDialog</Filter>
+    </ClInclude>
+    <ClInclude Include="XColorDialog\XBalloonMsg.h">
+      <Filter>XColorDialog</Filter>
+    </ClInclude>
+    <ClInclude Include="XColorDialog\XColorDialogRes.h">
+      <Filter>XColorDialog</Filter>
+    </ClInclude>
+    <ClInclude Include="XColorDialog\XColorSpectrumCtrl.h">
+      <Filter>XColorDialog</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="MFCProperty.rc">
+      <Filter>리소스 파일</Filter>
+    </ResourceCompile>
+    <ResourceCompile Include="XColorDialog\XColorDialog.rc">
+      <Filter>리소스 파일</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\MFCProperty.rc2">
+      <Filter>리소스 파일</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+</Project>

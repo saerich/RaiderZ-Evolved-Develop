@@ -1,0 +1,1279 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx</Extensions>
+    </Filter>
+    <Filter Include="MFC">
+      <UniqueIdentifier>{79273ce6-3491-47d8-9958-610390bdf876}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MFC\외부 라이브러리">
+      <UniqueIdentifier>{b449ea83-ce07-48d8-a8bb-5602ebb28667}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MFC\외부 라이브러리\CAutoEdit">
+      <UniqueIdentifier>{cad494d0-cac4-4691-9465-5e47336a6405}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MFC\외부 라이브러리\CTipDlg">
+      <UniqueIdentifier>{49a8921f-549d-44c8-87c1-6726cc230e35}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MFC\외부 라이브러리\CNumEdit">
+      <UniqueIdentifier>{905a0bb8-73f1-44e0-8a39-28873db3341c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MFC\외부 라이브러리\CChartCtrl">
+      <UniqueIdentifier>{7e174854-2985-4b28-8501-77123371ae20}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MFC\외부 라이브러리\GridTree">
+      <UniqueIdentifier>{664064a9-e995-42ff-925f-c8203c084be6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MFC\외부 라이브러리\GridTree\GridBtnCell">
+      <UniqueIdentifier>{2c257c6d-6aee-4135-a91a-a16401ad5a26}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MFC\외부 라이브러리\GridTree\GridCtrl">
+      <UniqueIdentifier>{720ee32b-8aa0-4fda-8493-fa34b9f52272}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MFC\외부 라이브러리\GridTree\GridTreeBtnCell">
+      <UniqueIdentifier>{e521b4cb-f0d2-4bef-8441-1d7a8627ceb9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MFC\외부 라이브러리\GridTree\TreeColumn">
+      <UniqueIdentifier>{904d84db-0b3d-43c4-b3fe-6faf0f86c40f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MFC\외부 라이브러리\InstantReload">
+      <UniqueIdentifier>{3d3ba904-39ad-41c6-b899-23c9a0942314}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MFC\Main Frame">
+      <UniqueIdentifier>{84e0a389-c783-4b3d-89be-7176ff9bab0e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MFC\Dialog">
+      <UniqueIdentifier>{71209c41-ea9d-466c-957c-2d7b7f817647}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MFC\Dialog\Input Dialog">
+      <UniqueIdentifier>{889f635b-894e-46a4-9eb9-f75e6a3eb18a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MFC\Dialog\Option">
+      <UniqueIdentifier>{3fd93016-d48e-4836-a1bb-b13adf6d33cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MFC\Helpers">
+      <UniqueIdentifier>{595a61a8-2f40-4fdf-ab18-057e144e882a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MFC\Controls">
+      <UniqueIdentifier>{28813fbf-a7ac-4830-a658-2c0435eb8419}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core">
+      <UniqueIdentifier>{f8cd4ac5-80f4-41c1-85ec-960e1d018ad0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\View">
+      <UniqueIdentifier>{226e9449-235e-47d6-a714-69b11d540b04}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\View\Toolbar">
+      <UniqueIdentifier>{ed83570c-8ee6-45ac-b089-7c3805591136}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\View\Dialog">
+      <UniqueIdentifier>{4025d07a-14d6-4e37-9913-368dd08cd57d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\View\Rollup">
+      <UniqueIdentifier>{8e4aab9a-962b-4675-863e-78e02cf6f36d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\View\General">
+      <UniqueIdentifier>{217abacd-738f-45df-a78c-895b12e2c000}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Model">
+      <UniqueIdentifier>{3f8547c1-fc12-40c0-8dcf-5333675c3b3d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Model\RealSpace">
+      <UniqueIdentifier>{46810f16-6661-48d4-9ad7-2281a9c8c636}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Model\Logic">
+      <UniqueIdentifier>{e1c3a9f4-cf88-449f-a92c-f349e6411b3d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Model\Tool Action">
+      <UniqueIdentifier>{6465ab86-caa3-4256-8b01-8981dd375efd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Model\Collision">
+      <UniqueIdentifier>{07b3cde6-0dfa-492a-b725-d86d9094cd33}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Controller">
+      <UniqueIdentifier>{ba790bdf-50bc-483d-ab85-495502e256b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Controller\Action">
+      <UniqueIdentifier>{31df3e53-775c-477e-b9af-b9ba84ac6069}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Controller\XML">
+      <UniqueIdentifier>{0cf167e4-ffb1-4086-9a8c-5ead62d6b541}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Controller\Mint">
+      <UniqueIdentifier>{cf3b59d3-cef9-4dab-a322-fd0c831f9d88}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Controller\RealSpace">
+      <UniqueIdentifier>{f754e21a-b37f-4319-9c9a-12d5649304f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Controller\Script">
+      <UniqueIdentifier>{ff17fbf0-0184-4881-92ed-1ce3658911e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Controller\MFC Handler">
+      <UniqueIdentifier>{2ccac6f5-fc5c-4663-aef9-c5fbb1828e27}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Workspace">
+      <UniqueIdentifier>{ab6cfe31-5a3d-4e41-8480-765ec928165b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Plugin">
+      <UniqueIdentifier>{bad02a53-4796-4211-97c9-e633d5253fbc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UnitTest">
+      <UniqueIdentifier>{b61e505a-4fad-4ac9-9885-5881817a4160}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DLLMain">
+      <UniqueIdentifier>{8da84b1b-9c2f-4a56-86ad-d8957a237f61}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\bitmap1.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\bitmap2.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\bmp00001.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\bmp00002.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\bmp00003.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\bmp00004.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\bmp00005.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\bmp00006.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\bmp00007.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\bmp00008.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\bmp00009.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\bmp00010.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\bmp00011.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\bmp00012.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\bmp00013.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\bmp00014.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\bmp00015.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\bmp00016.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\bmp00017.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\bmp00018.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\bmp00019.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\bmp00020.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\CoreToolRS3.ico">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\env_weat.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\etc_dev1.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\file_new.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\file_sav.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\folders.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\icon_sound.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\obj_list.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\obj_lock.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\obj_move.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\objtree.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\terrain_.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\Toolbar.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\toolbar_layer.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="CoreToolRS3.rc">
+      <Filter>리소스 파일</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\CoreToolRS3.rc2">
+      <Filter>리소스 파일</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ext_lib\BHTabedReBar.cpp">
+      <Filter>MFC\외부 라이브러리</Filter>
+    </ClCompile>
+    <ClCompile Include="ext_lib\ColourPickerCB.cpp">
+      <Filter>MFC\외부 라이브러리</Filter>
+    </ClCompile>
+    <ClCompile Include="ext_lib\Dib.cpp">
+      <Filter>MFC\외부 라이브러리</Filter>
+    </ClCompile>
+    <ClCompile Include="ext_lib\FooButton.cpp">
+      <Filter>MFC\외부 라이브러리</Filter>
+    </ClCompile>
+    <ClCompile Include="ext_lib\InitDialogBar.cpp">
+      <Filter>MFC\외부 라이브러리</Filter>
+    </ClCompile>
+    <ClCompile Include="ext_lib\MultiSlider.cpp">
+      <Filter>MFC\외부 라이브러리</Filter>
+    </ClCompile>
+    <ClCompile Include="ext_lib\RollupCtrl.cpp">
+      <Filter>MFC\외부 라이브러리</Filter>
+    </ClCompile>
+    <ClCompile Include="ext_lib\ScintillaWnd.cpp">
+      <Filter>MFC\외부 라이브러리</Filter>
+    </ClCompile>
+    <ClCompile Include="ext_lib\Tokenizer.cpp">
+      <Filter>MFC\외부 라이브러리</Filter>
+    </ClCompile>
+    <ClCompile Include="ext_lib\TreeCtrlEx.cpp">
+      <Filter>MFC\외부 라이브러리</Filter>
+    </ClCompile>
+    <ClCompile Include="ext_lib\TreeCtrlExm.cpp">
+      <Filter>MFC\외부 라이브러리</Filter>
+    </ClCompile>
+    <ClCompile Include="ext_lib\WndResizer.cpp">
+      <Filter>MFC\외부 라이브러리</Filter>
+    </ClCompile>
+    <ClCompile Include="ext_lib\XInfoTip.cpp">
+      <Filter>MFC\외부 라이브러리</Filter>
+    </ClCompile>
+    <ClCompile Include="ext_lib\CAutoEdit\AutoEdit.cpp">
+      <Filter>MFC\외부 라이브러리\CAutoEdit</Filter>
+    </ClCompile>
+    <ClCompile Include="ext_lib\CAutoEdit\AutoEditValidator.cpp">
+      <Filter>MFC\외부 라이브러리\CAutoEdit</Filter>
+    </ClCompile>
+    <ClCompile Include="ext_lib\CAutoEdit\InfoWnd.cpp">
+      <Filter>MFC\외부 라이브러리\CAutoEdit</Filter>
+    </ClCompile>
+    <ClCompile Include="ext_lib\CTipDlg\SplitPath.cpp">
+      <Filter>MFC\외부 라이브러리\CTipDlg</Filter>
+    </ClCompile>
+    <ClCompile Include="ext_lib\CTipDlg\TipDlg.cpp">
+      <Filter>MFC\외부 라이브러리\CTipDlg</Filter>
+    </ClCompile>
+    <ClCompile Include="ext_lib\CNumEdit\NumEdit.cpp">
+      <Filter>MFC\외부 라이브러리\CNumEdit</Filter>
+    </ClCompile>
+    <ClCompile Include="ext_lib\CNumEdit\NumSpinCtrl.cpp">
+      <Filter>MFC\외부 라이브러리\CNumEdit</Filter>
+    </ClCompile>
+    <ClCompile Include="ext_lib\CChartCtrl\ChartAxis.cpp">
+      <Filter>MFC\외부 라이브러리\CChartCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="ext_lib\CChartCtrl\ChartAxisLabel.cpp">
+      <Filter>MFC\외부 라이브러리\CChartCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="ext_lib\CChartCtrl\ChartBalloonLabel.cpp">
+      <Filter>MFC\외부 라이브러리\CChartCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="ext_lib\CChartCtrl\ChartBarSerie.cpp">
+      <Filter>MFC\외부 라이브러리\CChartCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="ext_lib\CChartCtrl\ChartCrossHairCursor.cpp">
+      <Filter>MFC\외부 라이브러리\CChartCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="ext_lib\CChartCtrl\ChartCtrl.cpp">
+      <Filter>MFC\외부 라이브러리\CChartCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="ext_lib\CChartCtrl\ChartCursor.cpp">
+      <Filter>MFC\외부 라이브러리\CChartCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="ext_lib\CChartCtrl\ChartDateTimeAxis.cpp">
+      <Filter>MFC\외부 라이브러리\CChartCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="ext_lib\CChartCtrl\ChartDragLineCursor.cpp">
+      <Filter>MFC\외부 라이브러리\CChartCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="ext_lib\CChartCtrl\ChartFont.cpp">
+      <Filter>MFC\외부 라이브러리\CChartCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="ext_lib\CChartCtrl\ChartGradient.cpp">
+      <Filter>MFC\외부 라이브러리\CChartCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="ext_lib\CChartCtrl\ChartGrid.cpp">
+      <Filter>MFC\외부 라이브러리\CChartCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="ext_lib\CChartCtrl\ChartLabel.cpp">
+      <Filter>MFC\외부 라이브러리\CChartCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="ext_lib\CChartCtrl\ChartLegend.cpp">
+      <Filter>MFC\외부 라이브러리\CChartCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="ext_lib\CChartCtrl\ChartLineSerie.cpp">
+      <Filter>MFC\외부 라이브러리\CChartCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="ext_lib\CChartCtrl\ChartLogarithmicAxis.cpp">
+      <Filter>MFC\외부 라이브러리\CChartCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="ext_lib\CChartCtrl\ChartPointsArray.cpp">
+      <Filter>MFC\외부 라이브러리\CChartCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="ext_lib\CChartCtrl\ChartPointsSerie.cpp">
+      <Filter>MFC\외부 라이브러리\CChartCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="ext_lib\CChartCtrl\ChartScrollBar.cpp">
+      <Filter>MFC\외부 라이브러리\CChartCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="ext_lib\CChartCtrl\ChartSerie.cpp">
+      <Filter>MFC\외부 라이브러리\CChartCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="ext_lib\CChartCtrl\ChartStandardAxis.cpp">
+      <Filter>MFC\외부 라이브러리\CChartCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="ext_lib\CChartCtrl\ChartSurfaceSerie.cpp">
+      <Filter>MFC\외부 라이브러리\CChartCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="ext_lib\CChartCtrl\ChartTitle.cpp">
+      <Filter>MFC\외부 라이브러리\CChartCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="ext_lib\GridTree\GridBtnCell_src\BtnDataBase.cpp">
+      <Filter>MFC\외부 라이브러리\GridTree\GridBtnCell</Filter>
+    </ClCompile>
+    <ClCompile Include="ext_lib\GridTree\GridBtnCell_src\GridBtnCell.cpp">
+      <Filter>MFC\외부 라이브러리\GridTree\GridBtnCell</Filter>
+    </ClCompile>
+    <ClCompile Include="ext_lib\GridTree\GridBtnCell_src\GridBtnCellBase.cpp">
+      <Filter>MFC\외부 라이브러리\GridTree\GridBtnCell</Filter>
+    </ClCompile>
+    <ClCompile Include="ext_lib\GridTree\GridBtnCell_src\GridBtnCellCombo.cpp">
+      <Filter>MFC\외부 라이브러리\GridTree\GridBtnCell</Filter>
+    </ClCompile>
+    <ClCompile Include="ext_lib\GridTree\GridBtnCell_src\InPlaceList.cpp">
+      <Filter>MFC\외부 라이브러리\GridTree\GridBtnCell</Filter>
+    </ClCompile>
+    <ClCompile Include="ext_lib\GridTree\GridCtrl_src\GridCell.cpp">
+      <Filter>MFC\외부 라이브러리\GridTree\GridCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="ext_lib\GridTree\GridCtrl_src\GridCellBase.cpp">
+      <Filter>MFC\외부 라이브러리\GridTree\GridCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="ext_lib\GridTree\GridCtrl_src\GridCtrl.cpp">
+      <Filter>MFC\외부 라이브러리\GridTree\GridCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="ext_lib\GridTree\GridCtrl_src\GridDropTarget.cpp">
+      <Filter>MFC\외부 라이브러리\GridTree\GridCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="ext_lib\GridTree\GridCtrl_src\InPlaceEdit.cpp">
+      <Filter>MFC\외부 라이브러리\GridTree\GridCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="ext_lib\GridTree\GridCtrl_src\TitleTip.cpp">
+      <Filter>MFC\외부 라이브러리\GridTree\GridCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="ext_lib\GridTree\GridTreeBtnCell_src\GridTreeBtnCell.cpp">
+      <Filter>MFC\외부 라이브러리\GridTree\GridTreeBtnCell</Filter>
+    </ClCompile>
+    <ClCompile Include="ext_lib\GridTree\TreeColumn_src\GridTreeCell.cpp">
+      <Filter>MFC\외부 라이브러리\GridTree\TreeColumn</Filter>
+    </ClCompile>
+    <ClCompile Include="ext_lib\GridTree\TreeColumn_src\GridTreeCellBase.cpp">
+      <Filter>MFC\외부 라이브러리\GridTree\TreeColumn</Filter>
+    </ClCompile>
+    <ClCompile Include="ext_lib\GridTree\TreeColumn_src\TreeColumn.cpp">
+      <Filter>MFC\외부 라이브러리\GridTree\TreeColumn</Filter>
+    </ClCompile>
+    <ClCompile Include="ext_lib\FileWatcher.cpp">
+      <Filter>MFC\외부 라이브러리\InstantReload</Filter>
+    </ClCompile>
+    <ClCompile Include="CoreToolRS3_Doc.cpp">
+      <Filter>MFC\Main Frame</Filter>
+    </ClCompile>
+    <ClCompile Include="CoreToolRS3_View.cpp">
+      <Filter>MFC\Main Frame</Filter>
+    </ClCompile>
+    <ClCompile Include="MainFrm.cpp">
+      <Filter>MFC\Main Frame</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>MFC\Main Frame</Filter>
+    </ClCompile>
+    <ClCompile Include="VD_DlgClipPlaneHeight.cpp">
+      <Filter>MFC\Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="VD_DlgCommonFileOpen.cpp">
+      <Filter>MFC\Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="VD_DlgCutSceneNewMap.cpp">
+      <Filter>MFC\Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="VD_DlgExportObj.cpp">
+      <Filter>MFC\Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="VD_DlgGrassListOpen.cpp">
+      <Filter>MFC\Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="VD_DlgMapBatchScript.cpp">
+      <Filter>MFC\Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="VD_DlgNewMapTypeSelector.cpp">
+      <Filter>MFC\Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="VD_DlgProfile.cpp">
+      <Filter>MFC\Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="VD_DlgProgress.cpp">
+      <Filter>MFC\Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="VD_DlgShortCut.cpp">
+      <Filter>MFC\Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="VD_DlgXmlListEditor.cpp">
+      <Filter>MFC\Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="VD_WaterEditor.cpp">
+      <Filter>MFC\Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="VD_DlgInputBool.cpp">
+      <Filter>MFC\Dialog\Input Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="VD_DlgInputColorCombo.cpp">
+      <Filter>MFC\Dialog\Input Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="VD_DlgInputColorPicker.cpp">
+      <Filter>MFC\Dialog\Input Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="VD_DlgInputCommon.cpp">
+      <Filter>MFC\Dialog\Input Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="VD_DlgInputEnvSetImport.cpp">
+      <Filter>MFC\Dialog\Input Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="VD_DlgInputMapName.cpp">
+      <Filter>MFC\Dialog\Input Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="VD_DlgInputNpc.cpp">
+      <Filter>MFC\Dialog\Input Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="VD_DlgInputTransform.cpp">
+      <Filter>MFC\Dialog\Input Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="VD_DlgOption.cpp">
+      <Filter>MFC\Dialog\Option</Filter>
+    </ClCompile>
+    <ClCompile Include="VD_DlgOptionSheet.cpp">
+      <Filter>MFC\Dialog\Option</Filter>
+    </ClCompile>
+    <ClCompile Include="VD_OptionPage1.cpp">
+      <Filter>MFC\Dialog\Option</Filter>
+    </ClCompile>
+    <ClCompile Include="VD_OptionPage2.cpp">
+      <Filter>MFC\Dialog\Option</Filter>
+    </ClCompile>
+    <ClCompile Include="V_MFCAnchorSupport.cpp">
+      <Filter>MFC\Helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="V_MFCHelper.cpp">
+      <Filter>MFC\Helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="V_EditCtrl.cpp">
+      <Filter>MFC\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="V_PropertyGridCtrl.cpp">
+      <Filter>MFC\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="V_LogicObjectRenderer.cpp">
+      <Filter>Core\View</Filter>
+    </ClCompile>
+    <ClCompile Include="VL_StatusBar.cpp">
+      <Filter>Core\View\Toolbar</Filter>
+    </ClCompile>
+    <ClCompile Include="VL_ToolBar.cpp">
+      <Filter>Core\View\Toolbar</Filter>
+    </ClCompile>
+    <ClCompile Include="VL_Objects.cpp">
+      <Filter>Core\View\Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="VL_RelaxAll.cpp">
+      <Filter>Core\View\Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="VL_ResourceInfo.cpp">
+      <Filter>Core\View\Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="VL_SceneNodeList.cpp">
+      <Filter>Core\View\Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="VR_CoreToolRS3.cpp">
+      <Filter>Core\View\Rollup</Filter>
+    </ClCompile>
+    <ClCompile Include="VR_EnvWeather.cpp">
+      <Filter>Core\View\Rollup</Filter>
+    </ClCompile>
+    <ClCompile Include="VR_EtcCamera.cpp">
+      <Filter>Core\View\Rollup</Filter>
+    </ClCompile>
+    <ClCompile Include="VR_EtcCollision.cpp">
+      <Filter>Core\View\Rollup</Filter>
+    </ClCompile>
+    <ClCompile Include="VR_EtcDecal.cpp">
+      <Filter>Core\View\Rollup</Filter>
+    </ClCompile>
+    <ClCompile Include="VR_EtcDev.cpp">
+      <Filter>Core\View\Rollup</Filter>
+    </ClCompile>
+    <ClCompile Include="VR_EtcMapView.cpp">
+      <Filter>Core\View\Rollup</Filter>
+    </ClCompile>
+    <ClCompile Include="VR_TerrainAverage.cpp">
+      <Filter>Core\View\Rollup</Filter>
+    </ClCompile>
+    <ClCompile Include="VR_TerrainFlat.cpp">
+      <Filter>Core\View\Rollup</Filter>
+    </ClCompile>
+    <ClCompile Include="VR_TerrainGrass.cpp">
+      <Filter>Core\View\Rollup</Filter>
+    </ClCompile>
+    <ClCompile Include="VR_TerrainHeight.cpp">
+      <Filter>Core\View\Rollup</Filter>
+    </ClCompile>
+    <ClCompile Include="VR_TerrainRelax.cpp">
+      <Filter>Core\View\Rollup</Filter>
+    </ClCompile>
+    <ClCompile Include="VR_TerrainSplat.cpp">
+      <Filter>Core\View\Rollup</Filter>
+    </ClCompile>
+    <ClCompile Include="VR_TerrainUserMaterial.cpp">
+      <Filter>Core\View\Rollup</Filter>
+    </ClCompile>
+    <ClCompile Include="VR_ZoneObjectNew.cpp">
+      <Filter>Core\View\Rollup</Filter>
+    </ClCompile>
+    <ClCompile Include="Gizmo.cpp">
+      <Filter>Core\View\General</Filter>
+    </ClCompile>
+    <ClCompile Include="VG_DefaultLight.cpp">
+      <Filter>Core\View\General</Filter>
+    </ClCompile>
+    <ClCompile Include="VG_Gizmo.cpp">
+      <Filter>Core\View\General</Filter>
+    </ClCompile>
+    <ClCompile Include="VG_LogicObjectRenderer.cpp">
+      <Filter>Core\View\General</Filter>
+    </ClCompile>
+    <ClCompile Include="M_LogicObject_SceneNodes.cpp">
+      <Filter>Core\Model\RealSpace</Filter>
+    </ClCompile>
+    <ClCompile Include="M_ToolActor.cpp">
+      <Filter>Core\Model\RealSpace</Filter>
+    </ClCompile>
+    <ClCompile Include="M_ToolCamera.cpp">
+      <Filter>Core\Model\RealSpace</Filter>
+    </ClCompile>
+    <ClCompile Include="M_ToolDecal.cpp">
+      <Filter>Core\Model\RealSpace</Filter>
+    </ClCompile>
+    <ClCompile Include="M_ToolPointLight.cpp">
+      <Filter>Core\Model\RealSpace</Filter>
+    </ClCompile>
+    <ClCompile Include="M_ToolSceneManager.cpp">
+      <Filter>Core\Model\RealSpace</Filter>
+    </ClCompile>
+    <ClCompile Include="M_ToolSceneNodeInstance.cpp">
+      <Filter>Core\Model\RealSpace</Filter>
+    </ClCompile>
+    <ClCompile Include="M_ToolStaticMeshSceneNode.cpp">
+      <Filter>Core\Model\RealSpace</Filter>
+    </ClCompile>
+    <ClCompile Include="M_ToolTerrain.cpp">
+      <Filter>Core\Model\RealSpace</Filter>
+    </ClCompile>
+    <ClCompile Include="M_Visitors.cpp">
+      <Filter>Core\Model\RealSpace</Filter>
+    </ClCompile>
+    <ClCompile Include="M_LogicObject.cpp">
+      <Filter>Core\Model\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="M_LogicObject_AABBPicking.cpp">
+      <Filter>Core\Model\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="M_LogicObjectCommandBuffer.cpp">
+      <Filter>Core\Model\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="M_ToolLogicObjectManager.cpp">
+      <Filter>Core\Model\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="M_CommandBuffer.cpp">
+      <Filter>Core\Model\Tool Action</Filter>
+    </ClCompile>
+    <ClCompile Include="M_ToolCmdMgr.cpp">
+      <Filter>Core\Model\Tool Action</Filter>
+    </ClCompile>
+    <ClCompile Include="M_XMLDataStructure.cpp">
+      <Filter>Core\Model\Tool Action</Filter>
+    </ClCompile>
+    <ClCompile Include="M_CollisionTree.cpp">
+      <Filter>Core\Model\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="C_ControlMediator.cpp">
+      <Filter>Core\Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="C_ControlMediatorHelperAction.cpp">
+      <Filter>Core\Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="C_ControlMediatorHelperEntityActionImpl_Scene.cpp">
+      <Filter>Core\Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="C_ControlMediatorHelperRender.cpp">
+      <Filter>Core\Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="C_ControlMediatorHelperResource.cpp">
+      <Filter>Core\Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="C_ControlDoActionEtc.cpp">
+      <Filter>Core\Controller\Action</Filter>
+    </ClCompile>
+    <ClCompile Include="C_ControlDoActionObject.cpp">
+      <Filter>Core\Controller\Action</Filter>
+    </ClCompile>
+    <ClCompile Include="C_ControlDoActionTerrain.cpp">
+      <Filter>Core\Controller\Action</Filter>
+    </ClCompile>
+    <ClCompile Include="C_XMLConfig.cpp">
+      <Filter>Core\Controller\XML</Filter>
+    </ClCompile>
+    <ClCompile Include="C_XMLEditInfoFile.cpp">
+      <Filter>Core\Controller\XML</Filter>
+    </ClCompile>
+    <ClCompile Include="C_XMLResourceList.cpp">
+      <Filter>Core\Controller\XML</Filter>
+    </ClCompile>
+    <ClCompile Include="C_XMLUserConfig.cpp">
+      <Filter>Core\Controller\XML</Filter>
+    </ClCompile>
+    <ClCompile Include="C_XMLXConst.cpp">
+      <Filter>Core\Controller\XML</Filter>
+    </ClCompile>
+    <ClCompile Include="C_MintManager.cpp">
+      <Filter>Core\Controller\Mint</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Mint3\Util\Mint4R3.cpp">
+      <Filter>Core\Controller\Mint</Filter>
+    </ClCompile>
+    <ClCompile Include="C_ControlCursor.cpp">
+      <Filter>Core\Controller\RealSpace</Filter>
+    </ClCompile>
+    <ClCompile Include="C_ControlPreviewSceneManager.cpp">
+      <Filter>Core\Controller\RealSpace</Filter>
+    </ClCompile>
+    <ClCompile Include="C_ControlSceneProperty.cpp">
+      <Filter>Core\Controller\RealSpace</Filter>
+    </ClCompile>
+    <ClCompile Include="C_RubyManager.cpp">
+      <Filter>Core\Controller\Script</Filter>
+    </ClCompile>
+    <ClCompile Include="C_RubyTestSet.cpp">
+      <Filter>Core\Controller\Script</Filter>
+    </ClCompile>
+    <ClCompile Include="C_KeyEventHandler.cpp">
+      <Filter>Core\Controller\MFC Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="C_StatusBarHandler.cpp">
+      <Filter>Core\Controller\MFC Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="WS_Scene.cpp">
+      <Filter>Core\Workspace</Filter>
+    </ClCompile>
+    <ClCompile Include="WS_Script.cpp">
+      <Filter>Core\Workspace</Filter>
+    </ClCompile>
+    <ClCompile Include="WS_WorkSpace.cpp">
+      <Filter>Core\Workspace</Filter>
+    </ClCompile>
+    <ClCompile Include="WS_WorkSpaceManager.cpp">
+      <Filter>Core\Workspace</Filter>
+    </ClCompile>
+    <ClCompile Include="CorePlugin.cpp">
+      <Filter>Core\Plugin</Filter>
+    </ClCompile>
+    <ClCompile Include="Test_TerrainEdit.cpp">
+      <Filter>UnitTest</Filter>
+    </ClCompile>
+    <ClCompile Include="Test_ToolSceneManager.cpp">
+      <Filter>UnitTest</Filter>
+    </ClCompile>
+    <ClCompile Include="Test_UnitTestRunner.cpp">
+      <Filter>UnitTest</Filter>
+    </ClCompile>
+    <ClCompile Include="DLL_App.cpp">
+      <Filter>DLLMain</Filter>
+    </ClCompile>
+    <ClCompile Include="DLL_Main.cpp">
+      <Filter>DLLMain</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ext_lib\BHTabedReBar.h">
+      <Filter>MFC\외부 라이브러리</Filter>
+    </ClInclude>
+    <ClInclude Include="ext_lib\ColourPickerCB.h">
+      <Filter>MFC\외부 라이브러리</Filter>
+    </ClInclude>
+    <ClInclude Include="ext_lib\Dib.h">
+      <Filter>MFC\외부 라이브러리</Filter>
+    </ClInclude>
+    <ClInclude Include="ext_lib\FooButton.h">
+      <Filter>MFC\외부 라이브러리</Filter>
+    </ClInclude>
+    <ClInclude Include="ext_lib\InitDialogBar.h">
+      <Filter>MFC\외부 라이브러리</Filter>
+    </ClInclude>
+    <ClInclude Include="ext_lib\MultiSlider.h">
+      <Filter>MFC\외부 라이브러리</Filter>
+    </ClInclude>
+    <ClInclude Include="ext_lib\RollupCtrl.h">
+      <Filter>MFC\외부 라이브러리</Filter>
+    </ClInclude>
+    <ClInclude Include="ext_lib\ScintillaWnd.h">
+      <Filter>MFC\외부 라이브러리</Filter>
+    </ClInclude>
+    <ClInclude Include="ext_lib\Tokenizer.h">
+      <Filter>MFC\외부 라이브러리</Filter>
+    </ClInclude>
+    <ClInclude Include="ext_lib\TreeCtrlEx.h">
+      <Filter>MFC\외부 라이브러리</Filter>
+    </ClInclude>
+    <ClInclude Include="ext_lib\TreeCtrlExm.h">
+      <Filter>MFC\외부 라이브러리</Filter>
+    </ClInclude>
+    <ClInclude Include="ext_lib\WM_USER.h">
+      <Filter>MFC\외부 라이브러리</Filter>
+    </ClInclude>
+    <ClInclude Include="ext_lib\WndResizer.h">
+      <Filter>MFC\외부 라이브러리</Filter>
+    </ClInclude>
+    <ClInclude Include="ext_lib\XInfoTip.h">
+      <Filter>MFC\외부 라이브러리</Filter>
+    </ClInclude>
+    <ClInclude Include="ext_lib\CAutoEdit\AutoEdit.h">
+      <Filter>MFC\외부 라이브러리\CAutoEdit</Filter>
+    </ClInclude>
+    <ClInclude Include="ext_lib\CAutoEdit\AutoEditValidator.h">
+      <Filter>MFC\외부 라이브러리\CAutoEdit</Filter>
+    </ClInclude>
+    <ClInclude Include="ext_lib\CAutoEdit\InfoWnd.h">
+      <Filter>MFC\외부 라이브러리\CAutoEdit</Filter>
+    </ClInclude>
+    <ClInclude Include="ext_lib\CTipDlg\SplitPath.h">
+      <Filter>MFC\외부 라이브러리\CTipDlg</Filter>
+    </ClInclude>
+    <ClInclude Include="ext_lib\CTipDlg\TipDlg.h">
+      <Filter>MFC\외부 라이브러리\CTipDlg</Filter>
+    </ClInclude>
+    <ClInclude Include="ext_lib\CNumEdit\NumEdit.h">
+      <Filter>MFC\외부 라이브러리\CNumEdit</Filter>
+    </ClInclude>
+    <ClInclude Include="ext_lib\CNumEdit\NumSpinCtrl.h">
+      <Filter>MFC\외부 라이브러리\CNumEdit</Filter>
+    </ClInclude>
+    <ClInclude Include="ext_lib\CChartCtrl\ChartAxis.h">
+      <Filter>MFC\외부 라이브러리\CChartCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="ext_lib\CChartCtrl\ChartAxisLabel.h">
+      <Filter>MFC\외부 라이브러리\CChartCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="ext_lib\CChartCtrl\ChartBalloonLabel.h">
+      <Filter>MFC\외부 라이브러리\CChartCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="ext_lib\CChartCtrl\ChartBarSerie.h">
+      <Filter>MFC\외부 라이브러리\CChartCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="ext_lib\CChartCtrl\ChartCrossHairCursor.h">
+      <Filter>MFC\외부 라이브러리\CChartCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="ext_lib\CChartCtrl\ChartCtrl.h">
+      <Filter>MFC\외부 라이브러리\CChartCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="ext_lib\CChartCtrl\ChartCursor.h">
+      <Filter>MFC\외부 라이브러리\CChartCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="ext_lib\CChartCtrl\ChartDateTimeAxis.h">
+      <Filter>MFC\외부 라이브러리\CChartCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="ext_lib\CChartCtrl\ChartDragLineCursor.h">
+      <Filter>MFC\외부 라이브러리\CChartCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="ext_lib\CChartCtrl\ChartFont.h">
+      <Filter>MFC\외부 라이브러리\CChartCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="ext_lib\CChartCtrl\ChartGradient.h">
+      <Filter>MFC\외부 라이브러리\CChartCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="ext_lib\CChartCtrl\ChartGrid.h">
+      <Filter>MFC\외부 라이브러리\CChartCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="ext_lib\CChartCtrl\ChartLabel.h">
+      <Filter>MFC\외부 라이브러리\CChartCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="ext_lib\CChartCtrl\ChartLegend.h">
+      <Filter>MFC\외부 라이브러리\CChartCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="ext_lib\CChartCtrl\ChartLineSerie.h">
+      <Filter>MFC\외부 라이브러리\CChartCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="ext_lib\CChartCtrl\ChartLogarithmicAxis.h">
+      <Filter>MFC\외부 라이브러리\CChartCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="ext_lib\CChartCtrl\ChartMouseListener.h">
+      <Filter>MFC\외부 라이브러리\CChartCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="ext_lib\CChartCtrl\ChartPointsArray.h">
+      <Filter>MFC\외부 라이브러리\CChartCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="ext_lib\CChartCtrl\ChartPointsSerie.h">
+      <Filter>MFC\외부 라이브러리\CChartCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="ext_lib\CChartCtrl\ChartScrollBar.h">
+      <Filter>MFC\외부 라이브러리\CChartCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="ext_lib\CChartCtrl\ChartSerie.h">
+      <Filter>MFC\외부 라이브러리\CChartCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="ext_lib\CChartCtrl\ChartStandardAxis.h">
+      <Filter>MFC\외부 라이브러리\CChartCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="ext_lib\CChartCtrl\ChartString.h">
+      <Filter>MFC\외부 라이브러리\CChartCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="ext_lib\CChartCtrl\ChartSurfaceSerie.h">
+      <Filter>MFC\외부 라이브러리\CChartCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="ext_lib\CChartCtrl\ChartTitle.h">
+      <Filter>MFC\외부 라이브러리\CChartCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="ext_lib\GridTree\GridBtnCell_src\BtnDataBase.h">
+      <Filter>MFC\외부 라이브러리\GridTree\GridBtnCell</Filter>
+    </ClInclude>
+    <ClInclude Include="ext_lib\GridTree\GridBtnCell_src\GridBtnCell.h">
+      <Filter>MFC\외부 라이브러리\GridTree\GridBtnCell</Filter>
+    </ClInclude>
+    <ClInclude Include="ext_lib\GridTree\GridBtnCell_src\GridBtnCellBase.h">
+      <Filter>MFC\외부 라이브러리\GridTree\GridBtnCell</Filter>
+    </ClInclude>
+    <ClInclude Include="ext_lib\GridTree\GridBtnCell_src\GridBtnCellCombo.h">
+      <Filter>MFC\외부 라이브러리\GridTree\GridBtnCell</Filter>
+    </ClInclude>
+    <ClInclude Include="ext_lib\GridTree\GridBtnCell_src\InPlaceList.h">
+      <Filter>MFC\외부 라이브러리\GridTree\GridBtnCell</Filter>
+    </ClInclude>
+    <ClInclude Include="ext_lib\GridTree\GridCtrl_src\CellRange.h">
+      <Filter>MFC\외부 라이브러리\GridTree\GridCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="ext_lib\GridTree\GridCtrl_src\GridCell.h">
+      <Filter>MFC\외부 라이브러리\GridTree\GridCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="ext_lib\GridTree\GridCtrl_src\GridCellBase.h">
+      <Filter>MFC\외부 라이브러리\GridTree\GridCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="ext_lib\GridTree\GridCtrl_src\GridCtrl.h">
+      <Filter>MFC\외부 라이브러리\GridTree\GridCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="ext_lib\GridTree\GridCtrl_src\GridDropTarget.h">
+      <Filter>MFC\외부 라이브러리\GridTree\GridCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="ext_lib\GridTree\GridCtrl_src\InPlaceEdit.h">
+      <Filter>MFC\외부 라이브러리\GridTree\GridCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="ext_lib\GridTree\GridCtrl_src\MemDC.h">
+      <Filter>MFC\외부 라이브러리\GridTree\GridCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="ext_lib\GridTree\GridCtrl_src\TitleTip.h">
+      <Filter>MFC\외부 라이브러리\GridTree\GridCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="ext_lib\GridTree\GridTreeBtnCell_src\GridTreeBtnCell.h">
+      <Filter>MFC\외부 라이브러리\GridTree\GridTreeBtnCell</Filter>
+    </ClInclude>
+    <ClInclude Include="ext_lib\GridTree\TreeColumn_src\GridTreeCell.h">
+      <Filter>MFC\외부 라이브러리\GridTree\TreeColumn</Filter>
+    </ClInclude>
+    <ClInclude Include="ext_lib\GridTree\TreeColumn_src\GridTreeCellBase.h">
+      <Filter>MFC\외부 라이브러리\GridTree\TreeColumn</Filter>
+    </ClInclude>
+    <ClInclude Include="ext_lib\GridTree\TreeColumn_src\TreeColumn.h">
+      <Filter>MFC\외부 라이브러리\GridTree\TreeColumn</Filter>
+    </ClInclude>
+    <ClInclude Include="ext_lib\FileWatcher.h">
+      <Filter>MFC\외부 라이브러리\InstantReload</Filter>
+    </ClInclude>
+    <ClInclude Include="CorePrecompiledHeader.h">
+      <Filter>MFC\Main Frame</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreToolRS3_Doc.h">
+      <Filter>MFC\Main Frame</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreToolRS3_View.h">
+      <Filter>MFC\Main Frame</Filter>
+    </ClInclude>
+    <ClInclude Include="MainFrm.h">
+      <Filter>MFC\Main Frame</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>MFC\Main Frame</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>MFC\Main Frame</Filter>
+    </ClInclude>
+    <ClInclude Include="VD_DlgClipPlaneHeight.h">
+      <Filter>MFC\Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="VD_DlgCommonFileOpen.h">
+      <Filter>MFC\Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="VD_DlgCutSceneNewMap.h">
+      <Filter>MFC\Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="VD_DlgExportObj.h">
+      <Filter>MFC\Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="VD_DlgGrassListOpen.h">
+      <Filter>MFC\Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="VD_DlgMapBatchScript.h">
+      <Filter>MFC\Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="VD_DlgNewMapTypeSelector.h">
+      <Filter>MFC\Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="VD_DlgProfile.h">
+      <Filter>MFC\Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="VD_DlgProgress.h">
+      <Filter>MFC\Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="VD_DlgShortCut.h">
+      <Filter>MFC\Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="VD_DlgXmlListEditor.h">
+      <Filter>MFC\Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="VD_WaterEditor.h">
+      <Filter>MFC\Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="VD_DlgInputBool.h">
+      <Filter>MFC\Dialog\Input Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="VD_DlgInputColorCombo.h">
+      <Filter>MFC\Dialog\Input Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="VD_DlgInputColorPicker.h">
+      <Filter>MFC\Dialog\Input Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="VD_DlgInputCommon.h">
+      <Filter>MFC\Dialog\Input Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="VD_DlgInputEnvSetImport.h">
+      <Filter>MFC\Dialog\Input Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="VD_DlgInputMapName.h">
+      <Filter>MFC\Dialog\Input Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="VD_DlgInputNpc.h">
+      <Filter>MFC\Dialog\Input Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="VD_DlgInputTransform.h">
+      <Filter>MFC\Dialog\Input Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="VD_DlgOption.h">
+      <Filter>MFC\Dialog\Option</Filter>
+    </ClInclude>
+    <ClInclude Include="VD_DlgOptionSheet.h">
+      <Filter>MFC\Dialog\Option</Filter>
+    </ClInclude>
+    <ClInclude Include="VD_OptionPage1.h">
+      <Filter>MFC\Dialog\Option</Filter>
+    </ClInclude>
+    <ClInclude Include="VD_OptionPage2.h">
+      <Filter>MFC\Dialog\Option</Filter>
+    </ClInclude>
+    <ClInclude Include="V_MFCAnchorSupport.h">
+      <Filter>MFC\Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="V_MFCHelper.h">
+      <Filter>MFC\Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="V_EditCtrl.h">
+      <Filter>MFC\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="V_PropertyGridCtrl.h">
+      <Filter>MFC\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreTypes.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="V_LogicObjectRenderer.h">
+      <Filter>Core\View</Filter>
+    </ClInclude>
+    <ClInclude Include="VL_ListenableView.h">
+      <Filter>Core\View</Filter>
+    </ClInclude>
+    <ClInclude Include="VL_StatusBar.h">
+      <Filter>Core\View\Toolbar</Filter>
+    </ClInclude>
+    <ClInclude Include="VL_ToolBar.h">
+      <Filter>Core\View\Toolbar</Filter>
+    </ClInclude>
+    <ClInclude Include="VL_Objects.h">
+      <Filter>Core\View\Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="VL_RelaxAll.h">
+      <Filter>Core\View\Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="VL_ResourceInfo.h">
+      <Filter>Core\View\Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="VL_SceneNodeList.h">
+      <Filter>Core\View\Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="VR_CoreToolRS3.h">
+      <Filter>Core\View\Rollup</Filter>
+    </ClInclude>
+    <ClInclude Include="VR_EnvWeather.h">
+      <Filter>Core\View\Rollup</Filter>
+    </ClInclude>
+    <ClInclude Include="VR_EtcCamera.h">
+      <Filter>Core\View\Rollup</Filter>
+    </ClInclude>
+    <ClInclude Include="VR_EtcCollision.h">
+      <Filter>Core\View\Rollup</Filter>
+    </ClInclude>
+    <ClInclude Include="VR_EtcDecal.h">
+      <Filter>Core\View\Rollup</Filter>
+    </ClInclude>
+    <ClInclude Include="VR_EtcDev.h">
+      <Filter>Core\View\Rollup</Filter>
+    </ClInclude>
+    <ClInclude Include="VR_EtcMapView.h">
+      <Filter>Core\View\Rollup</Filter>
+    </ClInclude>
+    <ClInclude Include="VR_TerrainAverage.h">
+      <Filter>Core\View\Rollup</Filter>
+    </ClInclude>
+    <ClInclude Include="VR_TerrainFlat.h">
+      <Filter>Core\View\Rollup</Filter>
+    </ClInclude>
+    <ClInclude Include="VR_TerrainGrass.h">
+      <Filter>Core\View\Rollup</Filter>
+    </ClInclude>
+    <ClInclude Include="VR_TerrainHeight.h">
+      <Filter>Core\View\Rollup</Filter>
+    </ClInclude>
+    <ClInclude Include="VR_TerrainRelax.h">
+      <Filter>Core\View\Rollup</Filter>
+    </ClInclude>
+    <ClInclude Include="VR_TerrainSplat.h">
+      <Filter>Core\View\Rollup</Filter>
+    </ClInclude>
+    <ClInclude Include="VR_TerrainUserMaterial.h">
+      <Filter>Core\View\Rollup</Filter>
+    </ClInclude>
+    <ClInclude Include="VR_ZoneObjectNew.h">
+      <Filter>Core\View\Rollup</Filter>
+    </ClInclude>
+    <ClInclude Include="Gizmo.h">
+      <Filter>Core\View\General</Filter>
+    </ClInclude>
+    <ClInclude Include="VG_DefaultLight.h">
+      <Filter>Core\View\General</Filter>
+    </ClInclude>
+    <ClInclude Include="VG_Gizmo.h">
+      <Filter>Core\View\General</Filter>
+    </ClInclude>
+    <ClInclude Include="VG_LogicObjectRenderer.h">
+      <Filter>Core\View\General</Filter>
+    </ClInclude>
+    <ClInclude Include="M_LogicObject_SceneNodes.h">
+      <Filter>Core\Model\RealSpace</Filter>
+    </ClInclude>
+    <ClInclude Include="M_ToolActor.h">
+      <Filter>Core\Model\RealSpace</Filter>
+    </ClInclude>
+    <ClInclude Include="M_ToolCamera.h">
+      <Filter>Core\Model\RealSpace</Filter>
+    </ClInclude>
+    <ClInclude Include="M_ToolDecal.h">
+      <Filter>Core\Model\RealSpace</Filter>
+    </ClInclude>
+    <ClInclude Include="M_ToolPointLight.h">
+      <Filter>Core\Model\RealSpace</Filter>
+    </ClInclude>
+    <ClInclude Include="M_ToolSceneManager.h">
+      <Filter>Core\Model\RealSpace</Filter>
+    </ClInclude>
+    <ClInclude Include="M_ToolSceneNodeInstance.h">
+      <Filter>Core\Model\RealSpace</Filter>
+    </ClInclude>
+    <ClInclude Include="M_ToolStaticMeshSceneNode.h">
+      <Filter>Core\Model\RealSpace</Filter>
+    </ClInclude>
+    <ClInclude Include="M_ToolTerrain.h">
+      <Filter>Core\Model\RealSpace</Filter>
+    </ClInclude>
+    <ClInclude Include="M_Visitors.h">
+      <Filter>Core\Model\RealSpace</Filter>
+    </ClInclude>
+    <ClInclude Include="M_LogicObject.h">
+      <Filter>Core\Model\Logic</Filter>
+    </ClInclude>
+    <ClInclude Include="M_LogicObject_AABBPicking.h">
+      <Filter>Core\Model\Logic</Filter>
+    </ClInclude>
+    <ClInclude Include="M_LogicObjectCommandBuffer.h">
+      <Filter>Core\Model\Logic</Filter>
+    </ClInclude>
+    <ClInclude Include="M_ToolLogicObjectManager.h">
+      <Filter>Core\Model\Logic</Filter>
+    </ClInclude>
+    <ClInclude Include="M_CommandBuffer.h">
+      <Filter>Core\Model\Tool Action</Filter>
+    </ClInclude>
+    <ClInclude Include="M_ToolCmdMgr.h">
+      <Filter>Core\Model\Tool Action</Filter>
+    </ClInclude>
+    <ClInclude Include="M_ToolFunctor.h">
+      <Filter>Core\Model\Tool Action</Filter>
+    </ClInclude>
+    <ClInclude Include="M_XMLDataStructure.h">
+      <Filter>Core\Model\Tool Action</Filter>
+    </ClInclude>
+    <ClInclude Include="M_CollisionTree.h">
+      <Filter>Core\Model\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="C_ControlMediator.h">
+      <Filter>Core\Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="C_ControlMediatorHelperAction.h">
+      <Filter>Core\Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="C_ControlMediatorHelperEntityActionImpl_Scene.h">
+      <Filter>Core\Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="C_ControlMediatorHelperRender.h">
+      <Filter>Core\Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="C_ControlMediatorHelperResource.h">
+      <Filter>Core\Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="C_ControlDoAction.h">
+      <Filter>Core\Controller\Action</Filter>
+    </ClInclude>
+    <ClInclude Include="C_XMLConfig.h">
+      <Filter>Core\Controller\XML</Filter>
+    </ClInclude>
+    <ClInclude Include="C_XMLEditInfoFile.h">
+      <Filter>Core\Controller\XML</Filter>
+    </ClInclude>
+    <ClInclude Include="C_XMLResourceList.h">
+      <Filter>Core\Controller\XML</Filter>
+    </ClInclude>
+    <ClInclude Include="C_XMLUserConfig.h">
+      <Filter>Core\Controller\XML</Filter>
+    </ClInclude>
+    <ClInclude Include="C_XMLXConst.h">
+      <Filter>Core\Controller\XML</Filter>
+    </ClInclude>
+    <ClInclude Include="C_MintManager.h">
+      <Filter>Core\Controller\Mint</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Mint3\Util\Mint4R3.h">
+      <Filter>Core\Controller\Mint</Filter>
+    </ClInclude>
+    <ClInclude Include="C_ControlCursor.h">
+      <Filter>Core\Controller\RealSpace</Filter>
+    </ClInclude>
+    <ClInclude Include="C_ControlPreviewSceneManager.h">
+      <Filter>Core\Controller\RealSpace</Filter>
+    </ClInclude>
+    <ClInclude Include="C_ControlSceneProperty.h">
+      <Filter>Core\Controller\RealSpace</Filter>
+    </ClInclude>
+    <ClInclude Include="C_RubyManager.h">
+      <Filter>Core\Controller\Script</Filter>
+    </ClInclude>
+    <ClInclude Include="C_RubyTestSet.h">
+      <Filter>Core\Controller\Script</Filter>
+    </ClInclude>
+    <ClInclude Include="C_KeyEventHandler.h">
+      <Filter>Core\Controller\MFC Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="C_StatusBarHandler.h">
+      <Filter>Core\Controller\MFC Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="WS_Scene.h">
+      <Filter>Core\Workspace</Filter>
+    </ClInclude>
+    <ClInclude Include="WS_Script.h">
+      <Filter>Core\Workspace</Filter>
+    </ClInclude>
+    <ClInclude Include="WS_WorkSpace.h">
+      <Filter>Core\Workspace</Filter>
+    </ClInclude>
+    <ClInclude Include="WS_WorkSpaceManager.h">
+      <Filter>Core\Workspace</Filter>
+    </ClInclude>
+    <ClInclude Include="CorePlugin.h">
+      <Filter>Core\Plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="PluginInterface.h">
+      <Filter>Core\Plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="Test_UnitTestRunner.h">
+      <Filter>UnitTest</Filter>
+    </ClInclude>
+    <ClInclude Include="DLL_App.h">
+      <Filter>DLLMain</Filter>
+    </ClInclude>
+    <ClInclude Include="DLL_Interface.h">
+      <Filter>DLLMain</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+</Project>

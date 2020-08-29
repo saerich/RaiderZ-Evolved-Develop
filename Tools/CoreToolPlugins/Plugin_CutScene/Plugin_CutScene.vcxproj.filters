@@ -1,0 +1,293 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="View">
+      <UniqueIdentifier>{0cc0ff7e-47e0-478a-9740-939dad8298bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugin">
+      <UniqueIdentifier>{42db52c3-bc99-4c75-89b4-61722ec9297c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Model">
+      <UniqueIdentifier>{ef37371c-b071-4615-9001-db971946705e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Workspace">
+      <UniqueIdentifier>{5b62dc25-6ea1-491c-9ab5-66cb41da1d44}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Plugin_CutScene.rc">
+      <Filter>리소스 파일</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\Plugin_CutScene.rc2">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="Plugin_CutScene.def">
+      <Filter>Plugin</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="VD_DlgCutSceneActorType.cpp">
+      <Filter>View</Filter>
+    </ClCompile>
+    <ClCompile Include="VD_DlgCutSceneAniKey.cpp">
+      <Filter>View</Filter>
+    </ClCompile>
+    <ClCompile Include="VD_DlgCutSceneBGMKey.cpp">
+      <Filter>View</Filter>
+    </ClCompile>
+    <ClCompile Include="VD_DlgCutSceneCaptionKey.cpp">
+      <Filter>View</Filter>
+    </ClCompile>
+    <ClCompile Include="VD_DlgCutSceneDOFKey.cpp">
+      <Filter>View</Filter>
+    </ClCompile>
+    <ClCompile Include="VD_DlgCutSceneEditor.cpp">
+      <Filter>View</Filter>
+    </ClCompile>
+    <ClCompile Include="VD_DlgCutSceneEffectKey.cpp">
+      <Filter>View</Filter>
+    </ClCompile>
+    <ClCompile Include="VD_DlgCutSceneEnvKey.cpp">
+      <Filter>View</Filter>
+    </ClCompile>
+    <ClCompile Include="VD_DlgCutSceneFadeKey.cpp">
+      <Filter>View</Filter>
+    </ClCompile>
+    <ClCompile Include="VD_DlgCutSceneLetterBoxKey.cpp">
+      <Filter>View</Filter>
+    </ClCompile>
+    <ClCompile Include="VD_DlgCutSceneMoveKey.cpp">
+      <Filter>View</Filter>
+    </ClCompile>
+    <ClCompile Include="VD_DlgCutSceneMoveVelAverage.cpp">
+      <Filter>View</Filter>
+    </ClCompile>
+    <ClCompile Include="VD_DlgCutSceneTalentKey.cpp">
+      <Filter>View</Filter>
+    </ClCompile>
+    <ClCompile Include="VR_CutSceneObjectList.cpp">
+      <Filter>View</Filter>
+    </ClCompile>
+    <ClCompile Include="Plugin_CutScene.cpp">
+      <Filter>Plugin</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Plugin</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Game\XCutSceneContent.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Game\XCutSceneObject.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Game\XCutSceneObjectController.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Game\XCutSceneObjectControllerAnimation.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Game\XCutSceneObjectControllerBGM.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Game\XCutSceneObjectControllerCaption.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Game\XCutSceneObjectControllerDOF.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Game\XCutSceneObjectControllerEffect.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Game\XCutSceneObjectControllerEnv.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Game\XCutSceneObjectControllerFade.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Game\XCutSceneObjectControllerKeyEvent.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Game\XCutSceneObjectControllerLetterBox.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Game\XCutSceneObjectControllerMove.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Game\XCutSceneObjectControllerTalent.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="WS_CutScene.cpp">
+      <Filter>Workspace</Filter>
+    </ClCompile>
+    <ClCompile Include="WS_CutSceneContentBuilder.cpp">
+      <Filter>Workspace</Filter>
+    </ClCompile>
+    <ClCompile Include="WS_CutSceneLogicObjectBase.cpp">
+      <Filter>Workspace</Filter>
+    </ClCompile>
+    <ClCompile Include="WS_CutSceneLogicObjectEffect.cpp">
+      <Filter>Workspace</Filter>
+    </ClCompile>
+    <ClCompile Include="WS_CutSceneLogicObjectMove.cpp">
+      <Filter>Workspace</Filter>
+    </ClCompile>
+    <ClCompile Include="WS_CutSceneObjectEntity.cpp">
+      <Filter>Workspace</Filter>
+    </ClCompile>
+    <ClCompile Include="WS_CutSceneObjectEntityActor.cpp">
+      <Filter>Workspace</Filter>
+    </ClCompile>
+    <ClCompile Include="WS_CutSceneObjectEntityCamera.cpp">
+      <Filter>Workspace</Filter>
+    </ClCompile>
+    <ClCompile Include="WS_CutSceneObjectEntityEvent.cpp">
+      <Filter>Workspace</Filter>
+    </ClCompile>
+    <ClCompile Include="WS_CutSceneXCutSceneWrapper.cpp">
+      <Filter>Workspace</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="VD_DlgCutSceneActorType.h">
+      <Filter>View</Filter>
+    </ClInclude>
+    <ClInclude Include="VD_DlgCutSceneAniKey.h">
+      <Filter>View</Filter>
+    </ClInclude>
+    <ClInclude Include="VD_DlgCutSceneBGMKey.h">
+      <Filter>View</Filter>
+    </ClInclude>
+    <ClInclude Include="VD_DlgCutSceneCaptionKey.h">
+      <Filter>View</Filter>
+    </ClInclude>
+    <ClInclude Include="VD_DlgCutSceneDOFKey.h">
+      <Filter>View</Filter>
+    </ClInclude>
+    <ClInclude Include="VD_DlgCutSceneEditor.h">
+      <Filter>View</Filter>
+    </ClInclude>
+    <ClInclude Include="VD_DlgCutSceneEffectKey.h">
+      <Filter>View</Filter>
+    </ClInclude>
+    <ClInclude Include="VD_DlgCutSceneEnvKey.h">
+      <Filter>View</Filter>
+    </ClInclude>
+    <ClInclude Include="VD_DlgCutSceneFadeKey.h">
+      <Filter>View</Filter>
+    </ClInclude>
+    <ClInclude Include="VD_DlgCutSceneLetterBoxKey.h">
+      <Filter>View</Filter>
+    </ClInclude>
+    <ClInclude Include="VD_DlgCutSceneMoveKey.h">
+      <Filter>View</Filter>
+    </ClInclude>
+    <ClInclude Include="VD_DlgCutSceneMoveVelAverage.h">
+      <Filter>View</Filter>
+    </ClInclude>
+    <ClInclude Include="VD_DlgCutSceneTalentKey.h">
+      <Filter>View</Filter>
+    </ClInclude>
+    <ClInclude Include="VR_CutSceneObjectList.h">
+      <Filter>View</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreToolCutSceneLib.h">
+      <Filter>Plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="Plugin_CutScene.h">
+      <Filter>Plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Game\XCutSceneContent.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Game\XCutSceneKeyFrameUpdator.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Game\XCutSceneObject.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Game\XCutSceneObjectController.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Game\XCutSceneObjectControllerAnimation.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Game\XCutSceneObjectControllerBGM.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Game\XCutSceneObjectControllerCaption.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Game\XCutSceneObjectControllerDOF.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Game\XCutSceneObjectControllerEffect.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Game\XCutSceneObjectControllerEnv.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Game\XCutSceneObjectControllerFade.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Game\XCutSceneObjectControllerKeyEvent.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Game\XCutSceneObjectControllerLetterBox.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Game\XCutSceneObjectControllerMove.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Game\XCutSceneObjectControllerTalent.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="WS_CutScene.h">
+      <Filter>Workspace</Filter>
+    </ClInclude>
+    <ClInclude Include="WS_CutSceneContentBuilder.h">
+      <Filter>Workspace</Filter>
+    </ClInclude>
+    <ClInclude Include="WS_CutSceneLogicObjectBase.h">
+      <Filter>Workspace</Filter>
+    </ClInclude>
+    <ClInclude Include="WS_CutSceneLogicObjectEffect.h">
+      <Filter>Workspace</Filter>
+    </ClInclude>
+    <ClInclude Include="WS_CutSceneLogicObjectMove.h">
+      <Filter>Workspace</Filter>
+    </ClInclude>
+    <ClInclude Include="WS_CutSceneObjectEntity.h">
+      <Filter>Workspace</Filter>
+    </ClInclude>
+    <ClInclude Include="WS_CutSceneObjectEntityActor.h">
+      <Filter>Workspace</Filter>
+    </ClInclude>
+    <ClInclude Include="WS_CutSceneObjectEntityCamera.h">
+      <Filter>Workspace</Filter>
+    </ClInclude>
+    <ClInclude Include="WS_CutSceneObjectEntityEvent.h">
+      <Filter>Workspace</Filter>
+    </ClInclude>
+    <ClInclude Include="WS_CutSceneXCutSceneWrapper.h">
+      <Filter>Workspace</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\ReadMe.txt" />
+  </ItemGroup>
+</Project>

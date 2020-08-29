@@ -1,0 +1,578 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{EE126751-9D9B-4ED5-97CF-DA0FB37D80DB}</ProjectGuid>
+    <RootNamespace>CoreToolRS3</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>16.0.30028.132</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)../Runtime/Dev/CoreToolRS3\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)../Runtime/Dev/CoreToolRS3\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\Debug/dll.tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>/MP
+/Zm110 %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>.;$(VCInstallDir)atlmfc\src\mfc;ext_lib/DevIL/include;ext_lib/ruby;ext_lib/UnitTest++/src;../../cml2;../../RealSpace3;../../RealSpace3/Dependencies/dx9/include;../../Mint3/Include;../../Mint3/Util;../../MCollision;../../MReflectionProperty/MFCProperty;../../MReflectionProperty/Reflection;../../MReflectionProperty/RS3ReflectProperty;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_NVPERFHUD;_AFXEXT;_USRDLL;CML2_IMPORT;REALSPACE3_IMPORT;CORETOOL_EXPORT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <DisableSpecificWarnings>4819;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0412</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>d3d9.lib;d3dx9.lib;zlib.lib;DevIL.lib;ILU.lib;ILUT.lib;lua5.1.lib;SpeedTreeRT_d.lib;uxtheme.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)CoreTool_d.dll</OutputFile>
+      <AdditionalLibraryDirectories>../../RealSpace3/Dependencies/speedtree;../../RealSpace3/Dependencies/dx9/lib;../../cml2/lib;ext_lib/DevIL/lib;ext_lib/UnitTest++/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ModuleDefinitionFile />
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <NoEntryPoint>false</NoEntryPoint>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command />
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>/MP
+/Zm110 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>.;$(VCInstallDir)atlmfc\src\mfc;ext_lib/DevIL/include;ext_lib/ruby;ext_lib/UnitTest++/src;../../cml2;../../RealSpace3;../../RealSpace3/Dependencies/dx9/include;../../Mint3/Include;../../Mint3/Util;../../MCollision;../../MReflectionProperty/MFCProperty;../../MReflectionProperty/Reflection;../../MReflectionProperty/RS3ReflectProperty;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_NVPERFHUD;_AFXEXT;_USRDLL;CML2_IMPORT;REALSPACE3_IMPORT;CORETOOL_EXPORT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4819;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ShowIncludes>true</ShowIncludes>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0412</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>d3d9.lib;d3dx9.lib;zlib.lib;DevIL.lib;ILU.lib;ILUT.lib;lua5.1.lib;SpeedTreeRT.lib;uxtheme.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)CoreTool.dll</OutputFile>
+      <AdditionalLibraryDirectories>../../RealSpace3/Dependencies/speedtree;../../RealSpace3/Dependencies/dx9/lib;../../cml2/lib;ext_lib/DevIL/lib;ext_lib/UnitTest++/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command />
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Image Include="res\bitmap1.bmp" />
+    <Image Include="res\bitmap2.bmp" />
+    <Image Include="res\bmp00001.bmp" />
+    <Image Include="res\bmp00002.bmp" />
+    <Image Include="res\bmp00003.bmp" />
+    <Image Include="res\bmp00004.bmp" />
+    <Image Include="res\bmp00005.bmp" />
+    <Image Include="res\bmp00006.bmp" />
+    <Image Include="res\bmp00007.bmp" />
+    <Image Include="res\bmp00008.bmp" />
+    <Image Include="res\bmp00009.bmp" />
+    <Image Include="res\bmp00010.bmp" />
+    <Image Include="res\bmp00011.bmp" />
+    <Image Include="res\bmp00012.bmp" />
+    <Image Include="res\bmp00013.bmp" />
+    <Image Include="res\bmp00014.bmp" />
+    <Image Include="res\bmp00015.bmp" />
+    <Image Include="res\bmp00016.bmp" />
+    <Image Include="res\bmp00017.bmp" />
+    <Image Include="res\bmp00018.bmp" />
+    <Image Include="res\bmp00019.bmp" />
+    <Image Include="res\bmp00020.bmp" />
+    <Image Include="res\CoreToolRS3.ico" />
+    <Image Include="res\env_weat.bmp" />
+    <Image Include="res\etc_dev1.bmp" />
+    <Image Include="res\file_new.bmp" />
+    <Image Include="res\file_sav.bmp" />
+    <Image Include="res\folders.bmp" />
+    <Image Include="res\icon_sound.bmp" />
+    <Image Include="res\objtree.bmp" />
+    <Image Include="res\obj_list.bmp" />
+    <Image Include="res\obj_lock.bmp" />
+    <Image Include="res\obj_move.bmp" />
+    <Image Include="res\terrain_.bmp" />
+    <Image Include="res\Toolbar.bmp" />
+    <Image Include="res\toolbar_layer.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="CoreToolRS3.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\CoreToolRS3.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Mint3\Util\Mint4R3.cpp" />
+    <ClCompile Include="CorePlugin.cpp" />
+    <ClCompile Include="CoreToolRS3_Doc.cpp" />
+    <ClCompile Include="CoreToolRS3_View.cpp" />
+    <ClCompile Include="C_ControlCursor.cpp" />
+    <ClCompile Include="C_ControlDoActionEtc.cpp" />
+    <ClCompile Include="C_ControlDoActionObject.cpp" />
+    <ClCompile Include="C_ControlDoActionTerrain.cpp" />
+    <ClCompile Include="C_ControlMediator.cpp" />
+    <ClCompile Include="C_ControlMediatorHelperAction.cpp" />
+    <ClCompile Include="C_ControlMediatorHelperEntityActionImpl_Scene.cpp" />
+    <ClCompile Include="C_ControlMediatorHelperRender.cpp" />
+    <ClCompile Include="C_ControlMediatorHelperResource.cpp" />
+    <ClCompile Include="C_ControlPreviewSceneManager.cpp" />
+    <ClCompile Include="C_ControlSceneProperty.cpp" />
+    <ClCompile Include="C_KeyEventHandler.cpp" />
+    <ClCompile Include="C_MintManager.cpp" />
+    <ClCompile Include="C_RubyManager.cpp" />
+    <ClCompile Include="C_RubyTestSet.cpp" />
+    <ClCompile Include="C_StatusBarHandler.cpp" />
+    <ClCompile Include="C_XMLConfig.cpp" />
+    <ClCompile Include="C_XMLEditInfoFile.cpp" />
+    <ClCompile Include="C_XMLResourceList.cpp" />
+    <ClCompile Include="C_XMLUserConfig.cpp" />
+    <ClCompile Include="C_XMLXConst.cpp" />
+    <ClCompile Include="DLL_App.cpp" />
+    <ClCompile Include="DLL_Main.cpp" />
+    <ClCompile Include="ext_lib\BHTabedReBar.cpp" />
+    <ClCompile Include="ext_lib\CAutoEdit\AutoEdit.cpp" />
+    <ClCompile Include="ext_lib\CAutoEdit\AutoEditValidator.cpp" />
+    <ClCompile Include="ext_lib\CAutoEdit\InfoWnd.cpp" />
+    <ClCompile Include="ext_lib\CChartCtrl\ChartAxis.cpp" />
+    <ClCompile Include="ext_lib\CChartCtrl\ChartAxisLabel.cpp" />
+    <ClCompile Include="ext_lib\CChartCtrl\ChartBalloonLabel.cpp" />
+    <ClCompile Include="ext_lib\CChartCtrl\ChartBarSerie.cpp" />
+    <ClCompile Include="ext_lib\CChartCtrl\ChartCrossHairCursor.cpp" />
+    <ClCompile Include="ext_lib\CChartCtrl\ChartCtrl.cpp" />
+    <ClCompile Include="ext_lib\CChartCtrl\ChartCursor.cpp" />
+    <ClCompile Include="ext_lib\CChartCtrl\ChartDateTimeAxis.cpp" />
+    <ClCompile Include="ext_lib\CChartCtrl\ChartDragLineCursor.cpp" />
+    <ClCompile Include="ext_lib\CChartCtrl\ChartFont.cpp" />
+    <ClCompile Include="ext_lib\CChartCtrl\ChartGradient.cpp" />
+    <ClCompile Include="ext_lib\CChartCtrl\ChartGrid.cpp" />
+    <ClCompile Include="ext_lib\CChartCtrl\ChartLabel.cpp" />
+    <ClCompile Include="ext_lib\CChartCtrl\ChartLegend.cpp" />
+    <ClCompile Include="ext_lib\CChartCtrl\ChartLineSerie.cpp" />
+    <ClCompile Include="ext_lib\CChartCtrl\ChartLogarithmicAxis.cpp" />
+    <ClCompile Include="ext_lib\CChartCtrl\ChartPointsArray.cpp" />
+    <ClCompile Include="ext_lib\CChartCtrl\ChartPointsSerie.cpp" />
+    <ClCompile Include="ext_lib\CChartCtrl\ChartScrollBar.cpp" />
+    <ClCompile Include="ext_lib\CChartCtrl\ChartSerie.cpp" />
+    <ClCompile Include="ext_lib\CChartCtrl\ChartStandardAxis.cpp" />
+    <ClCompile Include="ext_lib\CChartCtrl\ChartSurfaceSerie.cpp" />
+    <ClCompile Include="ext_lib\CChartCtrl\ChartTitle.cpp" />
+    <ClCompile Include="ext_lib\CNumEdit\NumEdit.cpp" />
+    <ClCompile Include="ext_lib\CNumEdit\NumSpinCtrl.cpp" />
+    <ClCompile Include="ext_lib\ColourPickerCB.cpp" />
+    <ClCompile Include="ext_lib\CTipDlg\SplitPath.cpp" />
+    <ClCompile Include="ext_lib\CTipDlg\TipDlg.cpp" />
+    <ClCompile Include="ext_lib\Dib.cpp" />
+    <ClCompile Include="ext_lib\FileWatcher.cpp" />
+    <ClCompile Include="ext_lib\FooButton.cpp" />
+    <ClCompile Include="ext_lib\GridTree\GridBtnCell_src\BtnDataBase.cpp" />
+    <ClCompile Include="ext_lib\GridTree\GridBtnCell_src\GridBtnCell.cpp" />
+    <ClCompile Include="ext_lib\GridTree\GridBtnCell_src\GridBtnCellBase.cpp" />
+    <ClCompile Include="ext_lib\GridTree\GridBtnCell_src\GridBtnCellCombo.cpp" />
+    <ClCompile Include="ext_lib\GridTree\GridBtnCell_src\InPlaceList.cpp" />
+    <ClCompile Include="ext_lib\GridTree\GridCtrl_src\GridCell.cpp" />
+    <ClCompile Include="ext_lib\GridTree\GridCtrl_src\GridCellBase.cpp" />
+    <ClCompile Include="ext_lib\GridTree\GridCtrl_src\GridCtrl.cpp" />
+    <ClCompile Include="ext_lib\GridTree\GridCtrl_src\GridDropTarget.cpp" />
+    <ClCompile Include="ext_lib\GridTree\GridCtrl_src\InPlaceEdit.cpp" />
+    <ClCompile Include="ext_lib\GridTree\GridCtrl_src\TitleTip.cpp" />
+    <ClCompile Include="ext_lib\GridTree\GridTreeBtnCell_src\GridTreeBtnCell.cpp" />
+    <ClCompile Include="ext_lib\GridTree\TreeColumn_src\GridTreeCell.cpp" />
+    <ClCompile Include="ext_lib\GridTree\TreeColumn_src\GridTreeCellBase.cpp" />
+    <ClCompile Include="ext_lib\GridTree\TreeColumn_src\TreeColumn.cpp" />
+    <ClCompile Include="ext_lib\InitDialogBar.cpp" />
+    <ClCompile Include="ext_lib\MultiSlider.cpp" />
+    <ClCompile Include="ext_lib\RollupCtrl.cpp" />
+    <ClCompile Include="ext_lib\ScintillaWnd.cpp" />
+    <ClCompile Include="ext_lib\Tokenizer.cpp" />
+    <ClCompile Include="ext_lib\TreeCtrlEx.cpp" />
+    <ClCompile Include="ext_lib\TreeCtrlExm.cpp" />
+    <ClCompile Include="ext_lib\WndResizer.cpp" />
+    <ClCompile Include="ext_lib\XInfoTip.cpp" />
+    <ClCompile Include="Gizmo.cpp" />
+    <ClCompile Include="MainFrm.cpp" />
+    <ClCompile Include="M_CollisionTree.cpp" />
+    <ClCompile Include="M_CommandBuffer.cpp" />
+    <ClCompile Include="M_LogicObject.cpp" />
+    <ClCompile Include="M_LogicObjectCommandBuffer.cpp" />
+    <ClCompile Include="M_LogicObject_AABBPicking.cpp" />
+    <ClCompile Include="M_LogicObject_SceneNodes.cpp" />
+    <ClCompile Include="M_ToolActor.cpp" />
+    <ClCompile Include="M_ToolCamera.cpp" />
+    <ClCompile Include="M_ToolCmdMgr.cpp" />
+    <ClCompile Include="M_ToolDecal.cpp" />
+    <ClCompile Include="M_ToolLogicObjectManager.cpp" />
+    <ClCompile Include="M_ToolPointLight.cpp" />
+    <ClCompile Include="M_ToolSceneManager.cpp" />
+    <ClCompile Include="M_ToolSceneNodeInstance.cpp" />
+    <ClCompile Include="M_ToolStaticMeshSceneNode.cpp" />
+    <ClCompile Include="M_ToolTerrain.cpp" />
+    <ClCompile Include="M_Visitors.cpp" />
+    <ClCompile Include="M_XMLDataStructure.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Test_TerrainEdit.cpp" />
+    <ClCompile Include="Test_ToolSceneManager.cpp" />
+    <ClCompile Include="Test_UnitTestRunner.cpp" />
+    <ClCompile Include="VD_DlgClipPlaneHeight.cpp" />
+    <ClCompile Include="VD_DlgCommonFileOpen.cpp" />
+    <ClCompile Include="VD_DlgCutSceneNewMap.cpp" />
+    <ClCompile Include="VD_DlgExportObj.cpp" />
+    <ClCompile Include="VD_DlgGrassListOpen.cpp" />
+    <ClCompile Include="VD_DlgInputBool.cpp" />
+    <ClCompile Include="VD_DlgInputColorCombo.cpp" />
+    <ClCompile Include="VD_DlgInputColorPicker.cpp" />
+    <ClCompile Include="VD_DlgInputCommon.cpp" />
+    <ClCompile Include="VD_DlgInputEnvSetImport.cpp" />
+    <ClCompile Include="VD_DlgInputMapName.cpp" />
+    <ClCompile Include="VD_DlgInputNpc.cpp" />
+    <ClCompile Include="VD_DlgInputTransform.cpp" />
+    <ClCompile Include="VD_DlgMapBatchScript.cpp" />
+    <ClCompile Include="VD_DlgNewMapTypeSelector.cpp" />
+    <ClCompile Include="VD_DlgOption.cpp" />
+    <ClCompile Include="VD_DlgOptionSheet.cpp" />
+    <ClCompile Include="VD_DlgProfile.cpp" />
+    <ClCompile Include="VD_DlgProgress.cpp" />
+    <ClCompile Include="VD_DlgShortCut.cpp" />
+    <ClCompile Include="VD_DlgXmlListEditor.cpp" />
+    <ClCompile Include="VD_OptionPage1.cpp" />
+    <ClCompile Include="VD_OptionPage2.cpp" />
+    <ClCompile Include="VD_WaterEditor.cpp" />
+    <ClCompile Include="VG_DefaultLight.cpp" />
+    <ClCompile Include="VG_Gizmo.cpp" />
+    <ClCompile Include="VG_LogicObjectRenderer.cpp" />
+    <ClCompile Include="VL_Objects.cpp" />
+    <ClCompile Include="VL_RelaxAll.cpp" />
+    <ClCompile Include="VL_ResourceInfo.cpp" />
+    <ClCompile Include="VL_SceneNodeList.cpp" />
+    <ClCompile Include="VL_StatusBar.cpp" />
+    <ClCompile Include="VL_ToolBar.cpp" />
+    <ClCompile Include="VR_CoreToolRS3.cpp" />
+    <ClCompile Include="VR_EnvWeather.cpp" />
+    <ClCompile Include="VR_EtcCamera.cpp" />
+    <ClCompile Include="VR_EtcCollision.cpp" />
+    <ClCompile Include="VR_EtcDecal.cpp" />
+    <ClCompile Include="VR_EtcDev.cpp" />
+    <ClCompile Include="VR_EtcMapView.cpp" />
+    <ClCompile Include="VR_TerrainAverage.cpp" />
+    <ClCompile Include="VR_TerrainFlat.cpp" />
+    <ClCompile Include="VR_TerrainGrass.cpp" />
+    <ClCompile Include="VR_TerrainHeight.cpp" />
+    <ClCompile Include="VR_TerrainRelax.cpp" />
+    <ClCompile Include="VR_TerrainSplat.cpp" />
+    <ClCompile Include="VR_TerrainUserMaterial.cpp" />
+    <ClCompile Include="VR_ZoneObjectNew.cpp" />
+    <ClCompile Include="V_EditCtrl.cpp" />
+    <ClCompile Include="V_LogicObjectRenderer.cpp" />
+    <ClCompile Include="V_MFCAnchorSupport.cpp" />
+    <ClCompile Include="V_MFCHelper.cpp" />
+    <ClCompile Include="V_PropertyGridCtrl.cpp" />
+    <ClCompile Include="WS_Scene.cpp" />
+    <ClCompile Include="WS_Script.cpp" />
+    <ClCompile Include="WS_WorkSpace.cpp" />
+    <ClCompile Include="WS_WorkSpaceManager.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Mint3\Util\Mint4R3.h" />
+    <ClInclude Include="CorePlugin.h" />
+    <ClInclude Include="CorePrecompiledHeader.h" />
+    <ClInclude Include="CoreToolRS3_Doc.h" />
+    <ClInclude Include="CoreToolRS3_View.h" />
+    <ClInclude Include="CoreTypes.h" />
+    <ClInclude Include="C_ControlCursor.h" />
+    <ClInclude Include="C_ControlDoAction.h" />
+    <ClInclude Include="C_ControlMediator.h" />
+    <ClInclude Include="C_ControlMediatorHelperAction.h" />
+    <ClInclude Include="C_ControlMediatorHelperEntityActionImpl_Scene.h" />
+    <ClInclude Include="C_ControlMediatorHelperRender.h" />
+    <ClInclude Include="C_ControlMediatorHelperResource.h" />
+    <ClInclude Include="C_ControlPreviewSceneManager.h" />
+    <ClInclude Include="C_ControlSceneProperty.h" />
+    <ClInclude Include="C_KeyEventHandler.h" />
+    <ClInclude Include="C_MintManager.h" />
+    <ClInclude Include="C_RubyManager.h" />
+    <ClInclude Include="C_RubyTestSet.h" />
+    <ClInclude Include="C_StatusBarHandler.h" />
+    <ClInclude Include="C_XMLConfig.h" />
+    <ClInclude Include="C_XMLEditInfoFile.h" />
+    <ClInclude Include="C_XMLResourceList.h" />
+    <ClInclude Include="C_XMLUserConfig.h" />
+    <ClInclude Include="C_XMLXConst.h" />
+    <ClInclude Include="DLL_App.h" />
+    <ClInclude Include="DLL_Interface.h" />
+    <ClInclude Include="ext_lib\BHTabedReBar.h" />
+    <ClInclude Include="ext_lib\CAutoEdit\AutoEdit.h" />
+    <ClInclude Include="ext_lib\CAutoEdit\AutoEditValidator.h" />
+    <ClInclude Include="ext_lib\CAutoEdit\InfoWnd.h" />
+    <ClInclude Include="ext_lib\CChartCtrl\ChartAxis.h" />
+    <ClInclude Include="ext_lib\CChartCtrl\ChartAxisLabel.h" />
+    <ClInclude Include="ext_lib\CChartCtrl\ChartBalloonLabel.h" />
+    <ClInclude Include="ext_lib\CChartCtrl\ChartBarSerie.h" />
+    <ClInclude Include="ext_lib\CChartCtrl\ChartCrossHairCursor.h" />
+    <ClInclude Include="ext_lib\CChartCtrl\ChartCtrl.h" />
+    <ClInclude Include="ext_lib\CChartCtrl\ChartCursor.h" />
+    <ClInclude Include="ext_lib\CChartCtrl\ChartDateTimeAxis.h" />
+    <ClInclude Include="ext_lib\CChartCtrl\ChartDragLineCursor.h" />
+    <ClInclude Include="ext_lib\CChartCtrl\ChartFont.h" />
+    <ClInclude Include="ext_lib\CChartCtrl\ChartGradient.h" />
+    <ClInclude Include="ext_lib\CChartCtrl\ChartGrid.h" />
+    <ClInclude Include="ext_lib\CChartCtrl\ChartLabel.h" />
+    <ClInclude Include="ext_lib\CChartCtrl\ChartLegend.h" />
+    <ClInclude Include="ext_lib\CChartCtrl\ChartLineSerie.h" />
+    <ClInclude Include="ext_lib\CChartCtrl\ChartLogarithmicAxis.h" />
+    <ClInclude Include="ext_lib\CChartCtrl\ChartMouseListener.h" />
+    <ClInclude Include="ext_lib\CChartCtrl\ChartPointsArray.h" />
+    <ClInclude Include="ext_lib\CChartCtrl\ChartPointsSerie.h" />
+    <ClInclude Include="ext_lib\CChartCtrl\ChartScrollBar.h" />
+    <ClInclude Include="ext_lib\CChartCtrl\ChartSerie.h" />
+    <ClInclude Include="ext_lib\CChartCtrl\ChartStandardAxis.h" />
+    <ClInclude Include="ext_lib\CChartCtrl\ChartString.h" />
+    <ClInclude Include="ext_lib\CChartCtrl\ChartSurfaceSerie.h" />
+    <ClInclude Include="ext_lib\CChartCtrl\ChartTitle.h" />
+    <ClInclude Include="ext_lib\CNumEdit\NumEdit.h" />
+    <ClInclude Include="ext_lib\CNumEdit\NumSpinCtrl.h" />
+    <ClInclude Include="ext_lib\ColourPickerCB.h" />
+    <ClInclude Include="ext_lib\CTipDlg\SplitPath.h" />
+    <ClInclude Include="ext_lib\CTipDlg\TipDlg.h" />
+    <ClInclude Include="ext_lib\Dib.h" />
+    <ClInclude Include="ext_lib\FileWatcher.h" />
+    <ClInclude Include="ext_lib\FooButton.h" />
+    <ClInclude Include="ext_lib\GridTree\GridBtnCell_src\BtnDataBase.h" />
+    <ClInclude Include="ext_lib\GridTree\GridBtnCell_src\GridBtnCell.h" />
+    <ClInclude Include="ext_lib\GridTree\GridBtnCell_src\GridBtnCellBase.h" />
+    <ClInclude Include="ext_lib\GridTree\GridBtnCell_src\GridBtnCellCombo.h" />
+    <ClInclude Include="ext_lib\GridTree\GridBtnCell_src\InPlaceList.h" />
+    <ClInclude Include="ext_lib\GridTree\GridCtrl_src\CellRange.h" />
+    <ClInclude Include="ext_lib\GridTree\GridCtrl_src\GridCell.h" />
+    <ClInclude Include="ext_lib\GridTree\GridCtrl_src\GridCellBase.h" />
+    <ClInclude Include="ext_lib\GridTree\GridCtrl_src\GridCtrl.h" />
+    <ClInclude Include="ext_lib\GridTree\GridCtrl_src\GridDropTarget.h" />
+    <ClInclude Include="ext_lib\GridTree\GridCtrl_src\InPlaceEdit.h" />
+    <ClInclude Include="ext_lib\GridTree\GridCtrl_src\MemDC.h" />
+    <ClInclude Include="ext_lib\GridTree\GridCtrl_src\TitleTip.h" />
+    <ClInclude Include="ext_lib\GridTree\GridTreeBtnCell_src\GridTreeBtnCell.h" />
+    <ClInclude Include="ext_lib\GridTree\TreeColumn_src\GridTreeCell.h" />
+    <ClInclude Include="ext_lib\GridTree\TreeColumn_src\GridTreeCellBase.h" />
+    <ClInclude Include="ext_lib\GridTree\TreeColumn_src\TreeColumn.h" />
+    <ClInclude Include="ext_lib\InitDialogBar.h" />
+    <ClInclude Include="ext_lib\MultiSlider.h" />
+    <ClInclude Include="ext_lib\RollupCtrl.h" />
+    <ClInclude Include="ext_lib\ScintillaWnd.h" />
+    <ClInclude Include="ext_lib\Tokenizer.h" />
+    <ClInclude Include="ext_lib\TreeCtrlEx.h" />
+    <ClInclude Include="ext_lib\TreeCtrlExm.h" />
+    <ClInclude Include="ext_lib\WM_USER.h" />
+    <ClInclude Include="ext_lib\WndResizer.h" />
+    <ClInclude Include="ext_lib\XInfoTip.h" />
+    <ClInclude Include="Gizmo.h" />
+    <ClInclude Include="MainFrm.h" />
+    <ClInclude Include="M_CollisionTree.h" />
+    <ClInclude Include="M_CommandBuffer.h" />
+    <ClInclude Include="M_LogicObject.h" />
+    <ClInclude Include="M_LogicObjectCommandBuffer.h" />
+    <ClInclude Include="M_LogicObject_AABBPicking.h" />
+    <ClInclude Include="M_LogicObject_SceneNodes.h" />
+    <ClInclude Include="M_ToolActor.h" />
+    <ClInclude Include="M_ToolCamera.h" />
+    <ClInclude Include="M_ToolCmdMgr.h" />
+    <ClInclude Include="M_ToolDecal.h" />
+    <ClInclude Include="M_ToolFunctor.h" />
+    <ClInclude Include="M_ToolLogicObjectManager.h" />
+    <ClInclude Include="M_ToolPointLight.h" />
+    <ClInclude Include="M_ToolSceneManager.h" />
+    <ClInclude Include="M_ToolSceneNodeInstance.h" />
+    <ClInclude Include="M_ToolStaticMeshSceneNode.h" />
+    <ClInclude Include="M_ToolTerrain.h" />
+    <ClInclude Include="M_Visitors.h" />
+    <ClInclude Include="M_XMLDataStructure.h" />
+    <ClInclude Include="PluginInterface.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="Test_UnitTestRunner.h" />
+    <ClInclude Include="VD_DlgClipPlaneHeight.h" />
+    <ClInclude Include="VD_DlgCommonFileOpen.h" />
+    <ClInclude Include="VD_DlgCutSceneNewMap.h" />
+    <ClInclude Include="VD_DlgExportObj.h" />
+    <ClInclude Include="VD_DlgGrassListOpen.h" />
+    <ClInclude Include="VD_DlgInputBool.h" />
+    <ClInclude Include="VD_DlgInputColorCombo.h" />
+    <ClInclude Include="VD_DlgInputColorPicker.h" />
+    <ClInclude Include="VD_DlgInputCommon.h" />
+    <ClInclude Include="VD_DlgInputEnvSetImport.h" />
+    <ClInclude Include="VD_DlgInputMapName.h" />
+    <ClInclude Include="VD_DlgInputNpc.h" />
+    <ClInclude Include="VD_DlgInputTransform.h" />
+    <ClInclude Include="VD_DlgMapBatchScript.h" />
+    <ClInclude Include="VD_DlgNewMapTypeSelector.h" />
+    <ClInclude Include="VD_DlgOption.h" />
+    <ClInclude Include="VD_DlgOptionSheet.h" />
+    <ClInclude Include="VD_DlgProfile.h" />
+    <ClInclude Include="VD_DlgProgress.h" />
+    <ClInclude Include="VD_DlgShortCut.h" />
+    <ClInclude Include="VD_DlgXmlListEditor.h" />
+    <ClInclude Include="VD_OptionPage1.h" />
+    <ClInclude Include="VD_OptionPage2.h" />
+    <ClInclude Include="VD_WaterEditor.h" />
+    <ClInclude Include="VG_DefaultLight.h" />
+    <ClInclude Include="VG_Gizmo.h" />
+    <ClInclude Include="VG_LogicObjectRenderer.h" />
+    <ClInclude Include="VL_ListenableView.h" />
+    <ClInclude Include="VL_Objects.h" />
+    <ClInclude Include="VL_RelaxAll.h" />
+    <ClInclude Include="VL_ResourceInfo.h" />
+    <ClInclude Include="VL_SceneNodeList.h" />
+    <ClInclude Include="VL_StatusBar.h" />
+    <ClInclude Include="VL_ToolBar.h" />
+    <ClInclude Include="VR_CoreToolRS3.h" />
+    <ClInclude Include="VR_EnvWeather.h" />
+    <ClInclude Include="VR_EtcCamera.h" />
+    <ClInclude Include="VR_EtcCollision.h" />
+    <ClInclude Include="VR_EtcDecal.h" />
+    <ClInclude Include="VR_EtcDev.h" />
+    <ClInclude Include="VR_EtcMapView.h" />
+    <ClInclude Include="VR_TerrainAverage.h" />
+    <ClInclude Include="VR_TerrainFlat.h" />
+    <ClInclude Include="VR_TerrainGrass.h" />
+    <ClInclude Include="VR_TerrainHeight.h" />
+    <ClInclude Include="VR_TerrainRelax.h" />
+    <ClInclude Include="VR_TerrainSplat.h" />
+    <ClInclude Include="VR_TerrainUserMaterial.h" />
+    <ClInclude Include="VR_ZoneObjectNew.h" />
+    <ClInclude Include="V_EditCtrl.h" />
+    <ClInclude Include="V_LogicObjectRenderer.h" />
+    <ClInclude Include="V_MFCAnchorSupport.h" />
+    <ClInclude Include="V_MFCHelper.h" />
+    <ClInclude Include="V_PropertyGridCtrl.h" />
+    <ClInclude Include="WS_Scene.h" />
+    <ClInclude Include="WS_Script.h" />
+    <ClInclude Include="WS_WorkSpace.h" />
+    <ClInclude Include="WS_WorkSpaceManager.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\CSCommon\CSCommon.vcxproj">
+      <Project>{7dcc03b9-dd72-4803-aee2-1f2be6ce60c2}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\cml2\cml2.vcxproj">
+      <Project>{8d451493-65c2-49c3-adae-acb17e6b0650}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\MCollision\MCollision.vcxproj">
+      <Project>{97861011-05bd-450a-a221-db5f7a2f4b7b}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Mint3\Mint.vcxproj">
+      <Project>{20b5465d-8790-43fa-a2a2-ee29f3f0f9bc}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\MPathEngineExporter\MPathEngineExporter.vcxproj">
+      <Project>{690dce86-f101-4af2-8aa4-873a5a887378}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\MPathFinder\MPathFinder.vcxproj">
+      <Project>{7ed97bba-e770-4144-b656-c837fb08d1e7}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\MReflectionProperty\MFCProperty\MFCProperty.vcxproj">
+      <Project>{53f2d752-312f-4002-84d9-009145832cca}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\MReflectionProperty\RS3ReflectProperty\RS3ReflectProperty.vcxproj">
+      <Project>{ada8a51e-6af1-4bb3-a15a-b7f5955c4129}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\RealSpace3\RealSpace3.vcxproj">
+      <Project>{7070fa22-c0d4-40f5-beb7-ec09f3a58a51}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="CoreToolRS3.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

@@ -1,0 +1,266 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Controller">
+      <UniqueIdentifier>{e8117c38-1f7f-4169-a467-3133b83a7b60}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Model">
+      <UniqueIdentifier>{c12cc8e0-21c1-4d66-bd41-86f534ae9964}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Model\Effect">
+      <UniqueIdentifier>{6eb1e793-7f5b-47f6-9e31-7a37a77f6acc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="View">
+      <UniqueIdentifier>{725d1ec5-0de9-4f41-a9b7-d6e163ed9b15}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Workspace">
+      <UniqueIdentifier>{7b7aaa21-e3f6-4f00-a3d0-a6a6c8375c65}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Workspace\Field">
+      <UniqueIdentifier>{daf7ede9-f39a-4668-b26c-daf82676aa41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Workspace\Zone">
+      <UniqueIdentifier>{e21a8bc9-e622-45c8-9aa9-fa349d1ce236}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Workspace\Raiderz Dev">
+      <UniqueIdentifier>{01162da1-be37-4fff-9a47-c0d0708e5cff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugin">
+      <UniqueIdentifier>{65e279c2-68cc-4b81-9c6a-2f85e9f70fc1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MFC">
+      <UniqueIdentifier>{9f50e50d-c8ef-4d2c-a520-5905fd82307b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Plugin_SoulHunt.rc">
+      <Filter>리소스 파일</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\Plugin_SoulHunt.rc2">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="Plugin_SoulHunt.def">
+      <Filter>Plugin</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C_ControlDoActionImpl.cpp">
+      <Filter>Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="C_ControlMediatorHelperActionAddon.cpp">
+      <Filter>Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="C_ControlMediatorHelperRenderAddon.cpp">
+      <Filter>Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="C_ControlMediatorHelperResourceAddon.cpp">
+      <Filter>Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="M_EntityCommandBuffer.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="M_EntityObject.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="M_PathFinder.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="WS_Effect.cpp">
+      <Filter>Model\Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="WS_EffectInvoker.cpp">
+      <Filter>Model\Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="WS_EffectManager.cpp">
+      <Filter>Model\Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="WS_EffectPostEffect.cpp">
+      <Filter>Model\Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Game\GameCommon\XEffectBase.cpp">
+      <Filter>Model\Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Game\GameCommon\XEffectBaseInvoker.cpp">
+      <Filter>Model\Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Game\GameCommon\XEffectInfo.cpp">
+      <Filter>Model\Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Game\GameCommon\XFader.cpp">
+      <Filter>Model\Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Game\GameCommon\XModelEffect.cpp">
+      <Filter>Model\Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Game\GameCommon\XPostEffect.cpp">
+      <Filter>Model\Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="VD_DlgInputSensorWarp.cpp">
+      <Filter>View</Filter>
+    </ClCompile>
+    <ClCompile Include="VD_DlgNewMiniMap.cpp">
+      <Filter>View</Filter>
+    </ClCompile>
+    <ClCompile Include="VL_MapNew.cpp">
+      <Filter>View</Filter>
+    </ClCompile>
+    <ClCompile Include="VR_EntityEnvironment.cpp">
+      <Filter>View</Filter>
+    </ClCompile>
+    <ClCompile Include="VR_EntityMaterial.cpp">
+      <Filter>View</Filter>
+    </ClCompile>
+    <ClCompile Include="VR_EntityObjectList.cpp">
+      <Filter>View</Filter>
+    </ClCompile>
+    <ClCompile Include="VR_EnvFieldInfo.cpp">
+      <Filter>View</Filter>
+    </ClCompile>
+    <ClCompile Include="VR_EtcPathFind.cpp">
+      <Filter>View</Filter>
+    </ClCompile>
+    <ClCompile Include="WS_Field.cpp">
+      <Filter>Workspace\Field</Filter>
+    </ClCompile>
+    <ClCompile Include="WS_Zone.cpp">
+      <Filter>Workspace\Zone</Filter>
+    </ClCompile>
+    <ClCompile Include="WS_RzDev.cpp">
+      <Filter>Workspace\Raiderz Dev</Filter>
+    </ClCompile>
+    <ClCompile Include="CoreEffectInfo.cpp">
+      <Filter>Plugin</Filter>
+    </ClCompile>
+    <ClCompile Include="Plugin_SoulHunt.cpp">
+      <Filter>Plugin</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Plugin</Filter>
+    </ClCompile>
+    <ClCompile Include="LogicObject_ForIconSelect.cpp">
+      <Filter>MFC</Filter>
+    </ClCompile>
+    <ClCompile Include="V_CCoreToolPropertyGridCtrl.cpp">
+      <Filter>MFC</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C_ControlDoActionImpl.h">
+      <Filter>Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="C_ControlMediatorHelperActionAddon.h">
+      <Filter>Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="C_ControlMediatorHelperRenderAddon.h">
+      <Filter>Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="C_ControlMediatorHelperResourceAddon.h">
+      <Filter>Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="C_ControlPopupActionImpl.h">
+      <Filter>Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="M_EntityCommandBuffer.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="M_EntityObject.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="M_PathFinder.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="WS_Effect.h">
+      <Filter>Model\Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="WS_EffectInvoker.h">
+      <Filter>Model\Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="WS_EffectManager.h">
+      <Filter>Model\Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="WS_EffectPostEffect.h">
+      <Filter>Model\Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Game\GameCommon\XEffectBase.h">
+      <Filter>Model\Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Game\GameCommon\XEffectBaseInvoker.h">
+      <Filter>Model\Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Game\GameCommon\XEffectInfo.h">
+      <Filter>Model\Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Game\GameCommon\XFader.h">
+      <Filter>Model\Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Game\GameCommon\XModelEffect.h">
+      <Filter>Model\Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Game\GameCommon\XPostEffect.h">
+      <Filter>Model\Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="VD_DlgInputSensorWarp.h">
+      <Filter>View</Filter>
+    </ClInclude>
+    <ClInclude Include="VD_DlgNewMiniMap.h">
+      <Filter>View</Filter>
+    </ClInclude>
+    <ClInclude Include="VL_MapNew.h">
+      <Filter>View</Filter>
+    </ClInclude>
+    <ClInclude Include="VR_EntityEnvironment.h">
+      <Filter>View</Filter>
+    </ClInclude>
+    <ClInclude Include="VR_EntityMaterial.h">
+      <Filter>View</Filter>
+    </ClInclude>
+    <ClInclude Include="VR_EntityObjectList.h">
+      <Filter>View</Filter>
+    </ClInclude>
+    <ClInclude Include="VR_EnvFieldInfo.h">
+      <Filter>View</Filter>
+    </ClInclude>
+    <ClInclude Include="VR_EtcPathFind.h">
+      <Filter>View</Filter>
+    </ClInclude>
+    <ClInclude Include="WS_Field.h">
+      <Filter>Workspace\Field</Filter>
+    </ClInclude>
+    <ClInclude Include="WS_Zone.h">
+      <Filter>Workspace\Zone</Filter>
+    </ClInclude>
+    <ClInclude Include="WS_RzDev.h">
+      <Filter>Workspace\Raiderz Dev</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreEffectInfo.h">
+      <Filter>Plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreToolSoulHuntLib.h">
+      <Filter>Plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="Plugin_SoulHunt.h">
+      <Filter>Plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="LogicObject_ForIconSelect.h">
+      <Filter>MFC</Filter>
+    </ClInclude>
+    <ClInclude Include="V_CCoreToolPropertyGridCtrl.h">
+      <Filter>MFC</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

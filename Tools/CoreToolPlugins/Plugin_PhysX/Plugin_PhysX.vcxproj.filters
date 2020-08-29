@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="View">
+      <UniqueIdentifier>{1b96e683-205e-40a9-960c-45fa17fe0ef9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugin">
+      <UniqueIdentifier>{1968ac9a-9f04-4c24-8229-00729ef5939c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Model">
+      <UniqueIdentifier>{dbaa2bcf-c9ef-4f7e-93da-b81853277103}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Workspace">
+      <UniqueIdentifier>{30ef7b16-cef6-495f-9c9f-0d7273600e69}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Plugin_PhysX.rc">
+      <Filter>리소스 파일</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\Plugin_PhysX.rc2">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="Plugin_PhysX.def">
+      <Filter>Plugin</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="VR_PhysX.cpp">
+      <Filter>View</Filter>
+    </ClCompile>
+    <ClCompile Include="Plugin_PhysX.cpp">
+      <Filter>Plugin</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Plugin</Filter>
+    </ClCompile>
+    <ClCompile Include="M_PhysXObject.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="WS_PhysX.cpp">
+      <Filter>Workspace</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="VR_PhysX.h">
+      <Filter>View</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreToolPhysXLib.h">
+      <Filter>Plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="Plugin_PhysX.h">
+      <Filter>Plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="M_PhysXContext.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="M_PhysXObject.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="WS_PhysX.h">
+      <Filter>Workspace</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+</Project>

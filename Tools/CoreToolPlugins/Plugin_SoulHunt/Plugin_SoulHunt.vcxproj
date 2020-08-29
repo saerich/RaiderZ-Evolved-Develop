@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug_duck|Win32">
+      <Configuration>Debug_duck</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{1D525AC5-0F9F-431E-B713-D100D5D21856}</ProjectGuid>
+    <RootNamespace>Plugin_SoulHunt</RootNamespace>
+    <Keyword>MFCDLLProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_duck|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug_duck|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>16.0.30028.132</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)../Runtime/Dev/CoreToolRS3/plugins\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)../Runtime/Dev/CoreToolRS3/plugins\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_duck|Win32'">
+    <OutDir>$(SolutionDir)../../Runtime/Dev/CoreToolRS3/plugins\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(VCInstallDir)atlmfc\src\mfc;../../../mdk/Tools/CoreToolRS3;../../../mdk/cml2;../../../mdk/Mint3/include;../../../mdk/Mint3/Util;../../../mdk/MPathFinder;../../../mdk/MPathEngineExporter;../../../mdk/MCollision;../../../mdk/RealSpace3;../../../../sdk/dx9/include;../../../Server/GameServer/framework;../../../Server/ServerCommon;../../../crl/include;../../../CSCommon/include;../../../mdk/MiNet/include;../../../mdk/MReflectionProperty/Reflection;../../../mdk/MReflectionProperty/MFCProperty;../../../mdk/MReflectionProperty/RS3ReflectProperty;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_AFXEXT;_USRDLL;CORETOOL_IMPORT;CORETOOL_SOULHUNT_EXPORT;CML2_IMPORT;REALSPACE3_IMPORT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <DisableSpecificWarnings>4819;4996;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0412</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>d3d9.lib;d3dx9.lib;zlib.lib;DevIL.lib;ILU.lib;ILUT.lib;lua5.1.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)Plugin_Raiderz_d.dll</OutputFile>
+      <AdditionalLibraryDirectories>../../../../sdk/zlib/lib;../../../../sdk/DevIL/lib;../../../../sdk/dx9/lib;../../../../sdk/lua51/lib/vc8;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ModuleDefinitionFile>.\Plugin_SoulHunt.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(TargetDir)/Plugin_Raiderz_d.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>$(VCInstallDir)atlmfc\src\mfc;../../../mdk/Tools/CoreToolRS3;../../../mdk/cml2;../../../mdk/Mint3/include;../../../mdk/Mint3/Util;../../../mdk/MPathFinder;../../../mdk/MPathEngineExporter;../../../mdk/MCollision;../../../mdk/RealSpace3;../../../../sdk/dx9/include;../../../Server/GameServer/framework;../../../Server/ServerCommon;../../../crl/include;../../../CSCommon/include;../../../mdk/MiNet/include;../../../mdk/MReflectionProperty/Reflection;../../../mdk/MReflectionProperty/MFCProperty;../../../mdk/MReflectionProperty/RS3ReflectProperty;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_AFXEXT;_USRDLL;CORETOOL_IMPORT;CORETOOL_SOULHUNT_EXPORT;CML2_IMPORT;REALSPACE3_IMPORT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4819;4996;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0412</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>d3d9.lib;d3dx9.lib;zlib.lib;DevIL.lib;ILU.lib;ILUT.lib;lua5.1.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)Plugin_Raiderz.dll</OutputFile>
+      <AdditionalLibraryDirectories>../../../../sdk/zlib/lib;../../../../sdk/DevIL/lib;../../../../sdk/dx9/lib;../../../../sdk/lua51/lib/vc8;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ModuleDefinitionFile>.\Plugin_SoulHunt.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(TargetDir)/Plugin_Raiderz.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_duck|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(VCInstallDir)atlmfc\src\mfc;../../../mdk/Tools/CoreToolRS3;../../../mdk/cml2;../../../mdk/Mint3/include;../../../mdk/Mint3/Util;../../../mdk/MPathFinder;../../../mdk/MPathEngineExporter;../../../mdk/MCollision;../../../mdk/RealSpace3;../../../../sdk/dx9/include;../../../Server/GameServer/framework;../../../Server/ServerCommon;../../../crl/include;../../../CSCommon/include;../../../mdk/MiNet/include;../../../mdk/MReflectionProperty/Reflection;../../../mdk/MReflectionProperty/MFCProperty;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_AFXEXT;_USRDLL;CORETOOL_IMPORT;CORETOOL_SOULHUNT_EXPORT;CML2_IMPORT;REALSPACE3_IMPORT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <DisableSpecificWarnings>4819;4996;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0412</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>d3d9.lib;d3dx9.lib;zlib.lib;DevIL.lib;ILU.lib;ILUT.lib;lua5.1.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)Plugin_Raiderz_d.dll</OutputFile>
+      <AdditionalLibraryDirectories>../../../../sdk/zlib/lib;../../../../sdk/DevIL/lib;../../../../sdk/dx9/lib;../../../../sdk/lua51/lib/vc8;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ModuleDefinitionFile>.\Plugin_SoulHunt.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(TargetDir)/Plugin_Raiderz_d.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Plugin_SoulHunt.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Plugin_SoulHunt.def" />
+    <None Include="res\Plugin_SoulHunt.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\Game\GameCommon\XEffectBase.cpp" />
+    <ClCompile Include="..\..\..\Game\GameCommon\XEffectBaseInvoker.cpp" />
+    <ClCompile Include="..\..\..\Game\GameCommon\XEffectInfo.cpp" />
+    <ClCompile Include="..\..\..\Game\GameCommon\XFader.cpp" />
+    <ClCompile Include="..\..\..\Game\GameCommon\XModelEffect.cpp" />
+    <ClCompile Include="..\..\..\Game\GameCommon\XPostEffect.cpp" />
+    <ClCompile Include="CoreEffectInfo.cpp" />
+    <ClCompile Include="C_ControlDoActionImpl.cpp" />
+    <ClCompile Include="C_ControlMediatorHelperActionAddon.cpp" />
+    <ClCompile Include="C_ControlMediatorHelperRenderAddon.cpp" />
+    <ClCompile Include="C_ControlMediatorHelperResourceAddon.cpp" />
+    <ClCompile Include="LogicObject_ForIconSelect.cpp" />
+    <ClCompile Include="M_EntityCommandBuffer.cpp" />
+    <ClCompile Include="M_EntityObject.cpp" />
+    <ClCompile Include="M_PathFinder.cpp" />
+    <ClCompile Include="Plugin_SoulHunt.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug_duck|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="VD_DlgInputSensorWarp.cpp" />
+    <ClCompile Include="VD_DlgNewMiniMap.cpp" />
+    <ClCompile Include="VL_MapNew.cpp" />
+    <ClCompile Include="VR_EntityEnvironment.cpp" />
+    <ClCompile Include="VR_EntityMaterial.cpp" />
+    <ClCompile Include="VR_EntityObjectList.cpp" />
+    <ClCompile Include="VR_EnvFieldInfo.cpp" />
+    <ClCompile Include="VR_EtcPathFind.cpp" />
+    <ClCompile Include="V_CCoreToolPropertyGridCtrl.cpp" />
+    <ClCompile Include="WS_Effect.cpp" />
+    <ClCompile Include="WS_EffectInvoker.cpp" />
+    <ClCompile Include="WS_EffectManager.cpp" />
+    <ClCompile Include="WS_EffectPostEffect.cpp" />
+    <ClCompile Include="WS_Field.cpp" />
+    <ClCompile Include="WS_RzDev.cpp" />
+    <ClCompile Include="WS_Zone.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\Game\GameCommon\XEffectBase.h" />
+    <ClInclude Include="..\..\..\Game\GameCommon\XEffectBaseInvoker.h" />
+    <ClInclude Include="..\..\..\Game\GameCommon\XEffectInfo.h" />
+    <ClInclude Include="..\..\..\Game\GameCommon\XFader.h" />
+    <ClInclude Include="..\..\..\Game\GameCommon\XModelEffect.h" />
+    <ClInclude Include="..\..\..\Game\GameCommon\XPostEffect.h" />
+    <ClInclude Include="CoreEffectInfo.h" />
+    <ClInclude Include="CoreToolSoulHuntLib.h" />
+    <ClInclude Include="C_ControlDoActionImpl.h" />
+    <ClInclude Include="C_ControlMediatorHelperActionAddon.h" />
+    <ClInclude Include="C_ControlMediatorHelperRenderAddon.h" />
+    <ClInclude Include="C_ControlMediatorHelperResourceAddon.h" />
+    <ClInclude Include="C_ControlPopupActionImpl.h" />
+    <ClInclude Include="LogicObject_ForIconSelect.h" />
+    <ClInclude Include="M_EntityCommandBuffer.h" />
+    <ClInclude Include="M_EntityObject.h" />
+    <ClInclude Include="M_PathFinder.h" />
+    <ClInclude Include="Plugin_SoulHunt.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="VD_DlgInputSensorWarp.h" />
+    <ClInclude Include="VD_DlgNewMiniMap.h" />
+    <ClInclude Include="VL_MapNew.h" />
+    <ClInclude Include="VR_EntityEnvironment.h" />
+    <ClInclude Include="VR_EntityMaterial.h" />
+    <ClInclude Include="VR_EntityObjectList.h" />
+    <ClInclude Include="VR_EnvFieldInfo.h" />
+    <ClInclude Include="VR_EtcPathFind.h" />
+    <ClInclude Include="V_CCoreToolPropertyGridCtrl.h" />
+    <ClInclude Include="WS_Effect.h" />
+    <ClInclude Include="WS_EffectInvoker.h" />
+    <ClInclude Include="WS_EffectManager.h" />
+    <ClInclude Include="WS_EffectPostEffect.h" />
+    <ClInclude Include="WS_Field.h" />
+    <ClInclude Include="WS_RzDev.h" />
+    <ClInclude Include="WS_Zone.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\CSCommon\CSCommon.vcxproj">
+      <Project>{7dcc03b9-dd72-4803-aee2-1f2be6ce60c2}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\mdk\cml2\cml2.vcxproj">
+      <Project>{8d451493-65c2-49c3-adae-acb17e6b0650}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\mdk\MCollision\MCollision.vcxproj">
+      <Project>{97861011-05bd-450a-a221-db5f7a2f4b7b}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\mdk\MPathEngineExporter\MPathEngineExporter.vcxproj">
+      <Project>{690dce86-f101-4af2-8aa4-873a5a887378}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\mdk\MPathFinder\MPathFinder.vcxproj">
+      <Project>{7ed97bba-e770-4144-b656-c837fb08d1e7}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\mdk\MReflectionProperty\MFCProperty\MFCProperty.vcxproj">
+      <Project>{53f2d752-312f-4002-84d9-009145832cca}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\mdk\MReflectionProperty\RS3ReflectProperty\RS3ReflectProperty.vcxproj">
+      <Project>{ada8a51e-6af1-4bb3-a15a-b7f5955c4129}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\mdk\RealSpace3\RealSpace3.vcxproj">
+      <Project>{7070fa22-c0d4-40f5-beb7-ec09f3a58a51}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\mdk\Tools\CoreToolRS3\CoreToolRS3.vcxproj">
+      <Project>{ee126751-9d9b-4ed5-97cf-da0fb37d80db}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ToolsCommon\ToolsCommon.vcxproj">
+      <Project>{73f44aa8-aff6-4036-aeaa-5e4536736e87}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="Plugin_SoulHunt.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

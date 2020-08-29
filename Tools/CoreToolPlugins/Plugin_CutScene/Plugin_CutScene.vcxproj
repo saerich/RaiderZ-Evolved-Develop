@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug_duck|Win32">
+      <Configuration>Debug_duck</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{CCEE827F-9252-44CE-AA1A-F5D76290056C}</ProjectGuid>
+    <RootNamespace>Plugin_CutScene</RootNamespace>
+    <Keyword>MFCDLLProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_duck|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug_duck|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>16.0.30028.132</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)../Runtime/Dev/CoreToolRS3/plugins\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)../Runtime/Dev/CoreToolRS3/plugins\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_duck|Win32'">
+    <OutDir>$(SolutionDir)../../Runtime/Dev/CoreToolRS3/plugins\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>../../../mdk/Tools/CoreToolRS3;../../../mdk/cml2;../../../mdk/Mint3/include;../../../mdk/Mint3/Util;../../../mdk/MCollision;../../../mdk/RealSpace3;../../../mdk/MReflectionProperty/Reflection;../../../mdk/MReflectionProperty/MFCProperty;../../../mdk/MReflectionProperty/RS3ReflectProperty;../../../../sdk/dx9/include;../Plugin_SoulHunt;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_AFXEXT;_USRDLL;CORETOOL_IMPORT;CORETOOL_SOULHUNT_IMPORT;CORETOOL_CUTSCENE_EXPORT;CML2_IMPORT;REALSPACE3_IMPORT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <DisableSpecificWarnings>4819;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0412</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <OutputFile>$(OutDir)$(ProjectName)_d.dll</OutputFile>
+      <ModuleDefinitionFile>.\Plugin_CutScene.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>../../../mdk/Tools/CoreToolRS3;../../../mdk/cml2;../../../mdk/Mint3/include;../../../mdk/Mint3/Util;../../../mdk/MCollision;../../../mdk/RealSpace3;../../../mdk/MReflectionProperty/Reflection;../../../mdk/MReflectionProperty/MFCProperty;../../../mdk/MReflectionProperty/RS3ReflectProperty;../../../../sdk/dx9/include;../Plugin_SoulHunt;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_AFXEXT;_USRDLL;CORETOOL_IMPORT;CORETOOL_SOULHUNT_IMPORT;CORETOOL_CUTSCENE_EXPORT;CML2_IMPORT;REALSPACE3_IMPORT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4819;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0412</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <ModuleDefinitionFile>.\Plugin_CutScene.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_duck|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>../../../mdk/Tools/CoreToolRS3;../../../mdk/cml2;../../../mdk/Mint3/include;../../../mdk/Mint3/Util;../../../mdk/MCollision;../../../mdk/RealSpace3;../../../../sdk/dx9/include;../Plugin_SoulHunt;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_AFXEXT;_USRDLL;CORETOOL_IMPORT;CORETOOL_SOULHUNT_IMPORT;CORETOOL_CUTSCENE_EXPORT;CML2_IMPORT;REALSPACE3_IMPORT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <DisableSpecificWarnings>4819;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0412</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <OutputFile>$(OutDir)$(ProjectName)_d.dll</OutputFile>
+      <ModuleDefinitionFile>.\Plugin_CutScene.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Plugin_CutScene.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Plugin_CutScene.def" />
+    <None Include="res\Plugin_CutScene.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\Game\XCutSceneContent.cpp" />
+    <ClCompile Include="..\..\..\Game\XCutSceneObject.cpp" />
+    <ClCompile Include="..\..\..\Game\XCutSceneObjectController.cpp" />
+    <ClCompile Include="..\..\..\Game\XCutSceneObjectControllerAnimation.cpp" />
+    <ClCompile Include="..\..\..\Game\XCutSceneObjectControllerBGM.cpp" />
+    <ClCompile Include="..\..\..\Game\XCutSceneObjectControllerCaption.cpp" />
+    <ClCompile Include="..\..\..\Game\XCutSceneObjectControllerDOF.cpp" />
+    <ClCompile Include="..\..\..\Game\XCutSceneObjectControllerEffect.cpp" />
+    <ClCompile Include="..\..\..\Game\XCutSceneObjectControllerEnv.cpp" />
+    <ClCompile Include="..\..\..\Game\XCutSceneObjectControllerFade.cpp" />
+    <ClCompile Include="..\..\..\Game\XCutSceneObjectControllerKeyEvent.cpp" />
+    <ClCompile Include="..\..\..\Game\XCutSceneObjectControllerLetterBox.cpp" />
+    <ClCompile Include="..\..\..\Game\XCutSceneObjectControllerMove.cpp" />
+    <ClCompile Include="..\..\..\Game\XCutSceneObjectControllerTalent.cpp" />
+    <ClCompile Include="Plugin_CutScene.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug_duck|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="VD_DlgCutSceneActorType.cpp" />
+    <ClCompile Include="VD_DlgCutSceneAniKey.cpp" />
+    <ClCompile Include="VD_DlgCutSceneBGMKey.cpp" />
+    <ClCompile Include="VD_DlgCutSceneCaptionKey.cpp" />
+    <ClCompile Include="VD_DlgCutSceneDOFKey.cpp" />
+    <ClCompile Include="VD_DlgCutSceneEditor.cpp" />
+    <ClCompile Include="VD_DlgCutSceneEffectKey.cpp" />
+    <ClCompile Include="VD_DlgCutSceneEnvKey.cpp" />
+    <ClCompile Include="VD_DlgCutSceneFadeKey.cpp" />
+    <ClCompile Include="VD_DlgCutSceneLetterBoxKey.cpp" />
+    <ClCompile Include="VD_DlgCutSceneMoveKey.cpp" />
+    <ClCompile Include="VD_DlgCutSceneMoveVelAverage.cpp" />
+    <ClCompile Include="VD_DlgCutSceneTalentKey.cpp" />
+    <ClCompile Include="VR_CutSceneObjectList.cpp" />
+    <ClCompile Include="WS_CutScene.cpp" />
+    <ClCompile Include="WS_CutSceneContentBuilder.cpp" />
+    <ClCompile Include="WS_CutSceneLogicObjectBase.cpp" />
+    <ClCompile Include="WS_CutSceneLogicObjectEffect.cpp" />
+    <ClCompile Include="WS_CutSceneLogicObjectMove.cpp" />
+    <ClCompile Include="WS_CutSceneObjectEntity.cpp" />
+    <ClCompile Include="WS_CutSceneObjectEntityActor.cpp" />
+    <ClCompile Include="WS_CutSceneObjectEntityCamera.cpp" />
+    <ClCompile Include="WS_CutSceneObjectEntityEvent.cpp" />
+    <ClCompile Include="WS_CutSceneXCutSceneWrapper.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\Game\XCutSceneContent.h" />
+    <ClInclude Include="..\..\..\Game\XCutSceneKeyFrameUpdator.h" />
+    <ClInclude Include="..\..\..\Game\XCutSceneObject.h" />
+    <ClInclude Include="..\..\..\Game\XCutSceneObjectController.h" />
+    <ClInclude Include="..\..\..\Game\XCutSceneObjectControllerAnimation.h" />
+    <ClInclude Include="..\..\..\Game\XCutSceneObjectControllerBGM.h" />
+    <ClInclude Include="..\..\..\Game\XCutSceneObjectControllerCaption.h" />
+    <ClInclude Include="..\..\..\Game\XCutSceneObjectControllerDOF.h" />
+    <ClInclude Include="..\..\..\Game\XCutSceneObjectControllerEffect.h" />
+    <ClInclude Include="..\..\..\Game\XCutSceneObjectControllerEnv.h" />
+    <ClInclude Include="..\..\..\Game\XCutSceneObjectControllerFade.h" />
+    <ClInclude Include="..\..\..\Game\XCutSceneObjectControllerKeyEvent.h" />
+    <ClInclude Include="..\..\..\Game\XCutSceneObjectControllerLetterBox.h" />
+    <ClInclude Include="..\..\..\Game\XCutSceneObjectControllerMove.h" />
+    <ClInclude Include="..\..\..\Game\XCutSceneObjectControllerTalent.h" />
+    <ClInclude Include="CoreToolCutSceneLib.h" />
+    <ClInclude Include="Plugin_CutScene.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="VD_DlgCutSceneActorType.h" />
+    <ClInclude Include="VD_DlgCutSceneAniKey.h" />
+    <ClInclude Include="VD_DlgCutSceneBGMKey.h" />
+    <ClInclude Include="VD_DlgCutSceneCaptionKey.h" />
+    <ClInclude Include="VD_DlgCutSceneDOFKey.h" />
+    <ClInclude Include="VD_DlgCutSceneEditor.h" />
+    <ClInclude Include="VD_DlgCutSceneEffectKey.h" />
+    <ClInclude Include="VD_DlgCutSceneEnvKey.h" />
+    <ClInclude Include="VD_DlgCutSceneFadeKey.h" />
+    <ClInclude Include="VD_DlgCutSceneLetterBoxKey.h" />
+    <ClInclude Include="VD_DlgCutSceneMoveKey.h" />
+    <ClInclude Include="VD_DlgCutSceneMoveVelAverage.h" />
+    <ClInclude Include="VD_DlgCutSceneTalentKey.h" />
+    <ClInclude Include="VR_CutSceneObjectList.h" />
+    <ClInclude Include="WS_CutScene.h" />
+    <ClInclude Include="WS_CutSceneContentBuilder.h" />
+    <ClInclude Include="WS_CutSceneLogicObjectBase.h" />
+    <ClInclude Include="WS_CutSceneLogicObjectEffect.h" />
+    <ClInclude Include="WS_CutSceneLogicObjectMove.h" />
+    <ClInclude Include="WS_CutSceneObjectEntity.h" />
+    <ClInclude Include="WS_CutSceneObjectEntityActor.h" />
+    <ClInclude Include="WS_CutSceneObjectEntityCamera.h" />
+    <ClInclude Include="WS_CutSceneObjectEntityEvent.h" />
+    <ClInclude Include="WS_CutSceneXCutSceneWrapper.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\CSCommon\CSCommon.vcxproj">
+      <Project>{7dcc03b9-dd72-4803-aee2-1f2be6ce60c2}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\mdk\cml2\cml2.vcxproj">
+      <Project>{8d451493-65c2-49c3-adae-acb17e6b0650}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\mdk\MReflectionProperty\MFCProperty\MFCProperty.vcxproj">
+      <Project>{53f2d752-312f-4002-84d9-009145832cca}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\mdk\MReflectionProperty\RS3ReflectProperty\RS3ReflectProperty.vcxproj">
+      <Project>{ada8a51e-6af1-4bb3-a15a-b7f5955c4129}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\mdk\RealSpace3\RealSpace3.vcxproj">
+      <Project>{7070fa22-c0d4-40f5-beb7-ec09f3a58a51}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\mdk\Tools\CoreToolRS3\CoreToolRS3.vcxproj">
+      <Project>{ee126751-9d9b-4ed5-97cf-da0fb37d80db}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\Plugin_SoulHunt\Plugin_SoulHunt.vcxproj">
+      <Project>{1d525ac5-0f9f-431e-b713-d100d5d21856}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="Plugin_CutScene.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
