@@ -7,6 +7,7 @@
 
 #include <list>
 #include <map>
+#include <string>
 
 class CBaseObject;
 class CObjectWrapper;
@@ -31,12 +32,8 @@ protected:
 
 	CReflectivePropertyGroup*		createGridGroup( CReflectivePropertyGridCtrl* pPropCtrl, const char *szGroupName );
 
-	typedef std::map<std::string,CReflectivePropertyGroup*> PROPERTY_GROUP_MAP;
+	typedef std::map<std::string, CReflectivePropertyGroup*> PROPERTY_GROUP_MAP;
 	PROPERTY_GROUP_MAP				m_mapGroup;
 };
-
-
-
-
 
 #endif	// _REFLECTIVE_UI_H

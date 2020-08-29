@@ -26,7 +26,7 @@ BEGIN_MESSAGE_MAP(CReflectiveSpinCtrl, CMFCSpinButtonCtrl)
 	ON_WM_CANCELMODE()
 	ON_WM_MOUSEMOVE()
 	ON_WM_ERASEBKGND()
-	ON_MESSAGE(WM_MOUSELEAVE, &CMFCSpinButtonCtrl::OnMouseLeave)
+	ON_MESSAGE(WM_MOUSELEAVE, OnMouseLeave)
 	ON_WM_CAPTURECHANGED()
 	ON_WM_TIMER()
 END_MESSAGE_MAP()
@@ -81,6 +81,16 @@ void CReflectiveSpinCtrl::OnDraw(CDC* pDC)
 	}
 
 	CMFCVisualManager::GetInstance()->OnDrawSpinButtons(pDC, rectClient, nState, FALSE, this);
+}
+
+LRESULT CReflectiveSpinCtrl::OnMouseLeave(WPARAM wParam, LPARAM lParam)
+{
+	//HWND hWnd = GetSafeHwnd();
+	//if ((hWnd != NULL) && ::IsWindow(hWnd))
+	//	Invalidate();
+
+	__super::OnMouseLeave();
+	return 0;
 }
 
 void CReflectiveSpinCtrl::OnTimer(UINT_PTR nIDEvent)

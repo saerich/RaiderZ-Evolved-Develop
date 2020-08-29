@@ -16,7 +16,7 @@
 
 
 // forward declarations
-struct IDocument;
+struct MyIDocument;
 
 /////////////////////////////////////////////////////////////////////////////
 // CExeApp:
@@ -45,7 +45,7 @@ public:
 	DECLARE_MESSAGE_MAP()
 
 private:
-	IDocument		*pIDoc;
+	MyIDocument *pIDoc;
 
 	void InitDll();
 	void ReleaseDll();		

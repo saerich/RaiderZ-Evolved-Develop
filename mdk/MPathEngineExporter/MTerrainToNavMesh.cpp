@@ -335,16 +335,15 @@ void MExportedTerrain::BuildIndexedForm()
 	for (size_t i=0; i<trivec.size(); i++)
 	{
 		ret = tmpset.insert(STmpDat(trivec[i]));
-		vTmp[i] = &(*(ret.first));
+		vTmp[i] = const_cast<STmpDat*>(&(*(ret.first)));
 	}
 
 	int c=0;
 	for (set<STmpDat, compVector>::iterator i=tmpset.begin(); i!=tmpset.end(); ++i)
 	{
-		(*i).idx = c;
+		const_cast<STmpDat&>((*i)).idx = c;
 		indexVerts.push_back((*i).vec);
 		c++;
-		
 	}
 
 	indexVertsRef.resize(indexVerts.size(), 0);

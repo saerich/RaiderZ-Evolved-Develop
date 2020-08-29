@@ -167,6 +167,12 @@
     <ClInclude Include="RTTIClass.h" />
     <ClInclude Include="TypedProperty.h" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\RealSpace3\RealSpace3.vcxproj">
+      <Project>{7070fa22-c0d4-40f5-beb7-ec09f3a58a51}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

@@ -273,6 +273,10 @@
     <ClInclude Include="stdafx.h" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\cml2\cml2.vcxproj">
+      <Project>{8d451493-65c2-49c3-adae-acb17e6b0650}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
     <ProjectReference Include="..\MCollision\MCollision.vcxproj">
       <Project>{97861011-05bd-450a-a221-db5f7a2f4b7b}</Project>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>

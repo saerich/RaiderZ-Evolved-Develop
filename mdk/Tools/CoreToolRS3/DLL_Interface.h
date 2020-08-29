@@ -32,7 +32,7 @@ struct MyIUnknown
 
 
 //=====================================================
-// *** class IDocument ***
+// *** class MyIDocument ***
 // 
 //-----------------------------------------------------
 // method CreateDocTempl()
@@ -48,9 +48,9 @@ struct MyIUnknown
 //	
 //=====================================================
 
-struct AFX_EXT_CLASS IDocument : public MyIUnknown
+struct AFX_EXT_CLASS MyIDocument : public MyIUnknown
 {
-    IDocument() { TRACE("Entering IDocument ctor %p\n", this); }
+	MyIDocument() { TRACE("Entering MyIDocument ctor %p\n", this); }
     virtual CDocTemplate* CreateDocTempl( CWinApp*, int ) = 0;
     virtual void CreateFrame() = 0;
 

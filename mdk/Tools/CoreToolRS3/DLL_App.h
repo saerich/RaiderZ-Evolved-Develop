@@ -39,7 +39,7 @@ public:
 	virtual ~App();
 	virtual void OnFinalRelease( );
 
-    class XDocument : public IDocument
+    class XDocument : public MyIDocument
     {
 		CMainFrame*			m_pMainFrame_;
 		CCoreToolRS3View*	m_pView_;

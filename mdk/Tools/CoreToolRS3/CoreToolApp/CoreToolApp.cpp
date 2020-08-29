@@ -62,7 +62,8 @@ BOOL CExeApp::InitInstance()
 
 	// 종료시 0xC015000F: 에러 때문에 삽입
 	// http://social.msdn.microsoft.com/Forums/en/vcgeneral/thread/c3feab0f-601b-4ca6-beb2-8d4d615438cc
-	afxAmbientActCtx = FALSE;
+	// Error after project upgrade, no longer used.
+	//afxAmbientActCtx = FALSE;
 
 	// Standard initialization
 	// If you are not using these features and wish to reduce the size
