@@ -7,7 +7,7 @@ namespace rs3 {
 
 RTextSceneNode::RTextSceneNode() : RSceneNode(RRP_2D), m_nBufferSize(0), m_fScale(1.f), m_pFont(NULL), m_szText(NULL), m_dwColor(0xffffffff)
 {
-	SetAABB( RBoundingBox::MBOX_INFINITY ); // 무조건 렌더링 되도록
+	SetAABB( RBoundingBox::BOX_INFINITY ); // 무조건 렌더링 되도록
 }
 
 RTextSceneNode::~RTextSceneNode(void)

@@ -275,7 +275,7 @@ void RActor::Destroy()
 	}
 	
 	m_bUsingActorPassRenderer = true;
-	SetAABB( RBoundingBox::MBOX_INVALID );
+	SetAABB( RBoundingBox::BOX_INVALID );
 
 	m_pAutoAnimation = NULL;
 

@@ -432,7 +432,7 @@
     <ClCompile>
       <AdditionalOptions>/MP %(AdditionalOptions)</AdditionalOptions>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>include;../mdk/cml2;../crl/include;../mdk/MiNet/include;../../sdk/UnitTest++/v1.4/src;../../sdk/gtest/gtest-1.4.0/include;../../sdk/gtest/gmock-1.4.0/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>include;../mdk/cml2;../crl/include;../mdk/MiNet/include;../../sdk/UnitTest++/v1.4/src;../../sdk/gtest/gtest-1.10.0/include;../../sdk/gtest/gmock-1.10.0/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MinimalRebuild>false</MinimalRebuild>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>

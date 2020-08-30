@@ -42,11 +42,11 @@
 
 #ifdef _DEBUG
 // extracted from mfc\src\afxmem.cpp
-static void * operator new(size_t nSize, LPCSTR lpszFileName, int nLine)
+void * operator new(size_t nSize, LPCSTR lpszFileName, int nLine)
 {
 	return ::operator new(nSize, _NORMAL_BLOCK, lpszFileName, nLine);
 }
-static void operator delete(void *pData, LPCSTR /*lpszFileName*/, int /*nLine*/)
+void operator delete(void *pData, LPCSTR /*lpszFileName*/, int /*nLine*/)
 {
 	::operator delete(pData);
 }

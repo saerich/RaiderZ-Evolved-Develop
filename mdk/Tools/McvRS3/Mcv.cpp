@@ -13,12 +13,6 @@
 static char THIS_FILE[] = __FILE__;
 #endif
 
-#ifdef _DEBUG
-#pragma comment ( lib, "UnitTest++.vsnet2008d.lib" )
-#else
-#pragma comment ( lib, "UnitTest++.vsnet2008.lib" )
-#endif
-
 int RunUnitTest()
 {
 	MInitLog();
@@ -30,7 +24,7 @@ int RunUnitTest()
 	RXmlAndStdTestReporter reporter(f);  
 
 	RUnitTestRunner::GetInstance().InitMockEngine();
-	int failure_count = UnitTest::RunAllTests(reporter, UnitTest::Test::GetTestList(), NULL, 0); 
+	int failure_count = UnitTest::RunAllTests();
 	RUnitTestRunner::GetInstance().HaltMockEngine();
 
 	MFinalizeLog();
@@ -95,7 +89,7 @@ BOOL CMcvApp::InitInstance()
 		return FALSE;
 	}
 
-	MInitLog(MLOG_LEVEL_DEBUG, MLOG_FILE|MLOG_DEBUG | MLOG_PROG,CMcvView::McvLog);
+	MInitLog(MLogLevel::MLOG_LEVEL_DEBUG, MLOG_FILE|MLOG_DEBUG | MLOG_PROG,CMcvView::McvLog);
 
 	CoInitialize(NULL);
 

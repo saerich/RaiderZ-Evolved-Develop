@@ -14,6 +14,7 @@
     <ProjectGuid>{EE126751-9D9B-4ED5-97CF-DA0FB37D80DB}</ProjectGuid>
     <RootNamespace>CoreToolRS3</RootNamespace>
     <Keyword>MFCProj</Keyword>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
@@ -65,12 +66,12 @@
       <AdditionalOptions>/MP
 /Zm110 %(AdditionalOptions)</AdditionalOptions>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>.;$(VCInstallDir)atlmfc\src\mfc;ext_lib/DevIL/include;ext_lib/ruby;ext_lib/UnitTest++/src;../../cml2;../../RealSpace3;../../RealSpace3/Dependencies/dx9/include;../../Mint3/Include;../../Mint3/Util;../../MCollision;../../MReflectionProperty/MFCProperty;../../MReflectionProperty/Reflection;../../MReflectionProperty/RS3ReflectProperty;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.;$(VCInstallDir)atlmfc\src\mfc;ext_lib/DevIL/include;ext_lib/ruby;../../../../sdk/UnitTest++/v2.0/src;../../cml2;../../RealSpace3;../../RealSpace3/Dependencies/dx9/include;../../Mint3/Include;../../Mint3/Util;../../MCollision;../../MReflectionProperty/MFCProperty;../../MReflectionProperty/Reflection;../../MReflectionProperty/RS3ReflectProperty;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_NVPERFHUD;_AFXEXT;_USRDLL;CML2_IMPORT;REALSPACE3_IMPORT;CORETOOL_EXPORT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MinimalRebuild>false</MinimalRebuild>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
-      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
       <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
       <PrecompiledHeader>Use</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
@@ -83,9 +84,9 @@
       <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Link>
-      <AdditionalDependencies>d3d9.lib;d3dx9.lib;zlib.lib;DevIL.lib;ILU.lib;ILUT.lib;lua5.1.lib;SpeedTreeRT_d.lib;uxtheme.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>d3d9.lib;d3dx9.lib;zlib.lib;DevIL.lib;ILU.lib;ILUT.lib;lua5.1.lib;SpeedTreeRT_d.lib;uxtheme.lib;UnitTest++vs2019MDd.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <OutputFile>$(OutDir)CoreTool_d.dll</OutputFile>
-      <AdditionalLibraryDirectories>../../RealSpace3/Dependencies/speedtree;../../RealSpace3/Dependencies/dx9/lib;../../cml2/lib;ext_lib/DevIL/lib;ext_lib/UnitTest++/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>../../RealSpace3/Dependencies/speedtree;../../RealSpace3/Dependencies/dx9/lib;../../cml2/lib;ext_lib/DevIL/lib;../../../../sdk/UnitTest++/v2.0/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <ModuleDefinitionFile />
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Windows</SubSystem>
@@ -105,7 +106,7 @@
     <ClCompile>
       <AdditionalOptions>/MP
 /Zm110 %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalIncludeDirectories>.;$(VCInstallDir)atlmfc\src\mfc;ext_lib/DevIL/include;ext_lib/ruby;ext_lib/UnitTest++/src;../../cml2;../../RealSpace3;../../RealSpace3/Dependencies/dx9/include;../../Mint3/Include;../../Mint3/Util;../../MCollision;../../MReflectionProperty/MFCProperty;../../MReflectionProperty/Reflection;../../MReflectionProperty/RS3ReflectProperty;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.;$(VCInstallDir)atlmfc\src\mfc;ext_lib/DevIL/include;ext_lib/ruby;../../../../sdk/UnitTest++/v2.0/src;../../cml2;../../RealSpace3;../../RealSpace3/Dependencies/dx9/include;../../Mint3/Include;../../Mint3/Util;../../MCollision;../../MReflectionProperty/MFCProperty;../../MReflectionProperty/Reflection;../../MReflectionProperty/RS3ReflectProperty;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_NVPERFHUD;_AFXEXT;_USRDLL;CML2_IMPORT;REALSPACE3_IMPORT;CORETOOL_EXPORT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <StringPooling>true</StringPooling>
       <MinimalRebuild>false</MinimalRebuild>
@@ -115,7 +116,7 @@
       <WarningLevel>Level3</WarningLevel>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <DisableSpecificWarnings>4819;%(DisableSpecificWarnings)</DisableSpecificWarnings>
-      <ShowIncludes>true</ShowIncludes>
+      <ShowIncludes>false</ShowIncludes>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -123,9 +124,9 @@
       <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Link>
-      <AdditionalDependencies>d3d9.lib;d3dx9.lib;zlib.lib;DevIL.lib;ILU.lib;ILUT.lib;lua5.1.lib;SpeedTreeRT.lib;uxtheme.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>d3d9.lib;d3dx9.lib;zlib.lib;DevIL.lib;ILU.lib;ILUT.lib;lua5.1.lib;SpeedTreeRT.lib;uxtheme.lib;UnitTest++vs2019MD_Lib_NoException.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <OutputFile>$(OutDir)CoreTool.dll</OutputFile>
-      <AdditionalLibraryDirectories>../../RealSpace3/Dependencies/speedtree;../../RealSpace3/Dependencies/dx9/lib;../../cml2/lib;ext_lib/DevIL/lib;ext_lib/UnitTest++/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>../../RealSpace3/Dependencies/speedtree;../../RealSpace3/Dependencies/dx9/lib;../../cml2/lib;ext_lib/DevIL/lib;../../../../sdk/UnitTest++/v2.0/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Windows</SubSystem>
       <TargetMachine>MachineX86</TargetMachine>

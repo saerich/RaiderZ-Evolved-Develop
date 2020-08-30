@@ -93,7 +93,7 @@
       <Optimization>MaxSpeed</Optimization>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <AdditionalIncludeDirectories>../../../mdk/Tools/CoreToolRS3;../../../mdk/cml2;../../../mdk/Mint3/include;../../../mdk/Mint3/Util;../../../mdk/MCollision;../../../mdk/RealSpace3;../../../../sdk/dx9/include;../../../mdk/MPhysX;../../../mdk/MPhysX/MPhysX4R3;../../../../sdk/PhysX/v2.8.1/SDKs/Physics/include;../../../../sdk/PhysX/v2.8.1/SDKs/Physics/include/cloth;../../../../sdk/PhysX/v2.8.1/SDKs/Foundation/include;../../../../sdk/PhysX/v2.8.1/SDKs/PhysXLoader/include;../../../../sdk/PhysX/v2.8.1/SDKs/NxCharacter/include;../../../../sdk/PhysX/v2.8.1/SDKs/Cooking/include;../../../../sdk/PhysX/v2.8.1/SDKs/Framework/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_AFXEXT;_USRDLL;CORETOOL_IMPORT;CORETOOL_PHYSX_EXPORT;CML2_IMPORT;REALSPACE3_IMPORT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_AFXEXT;_USRDLL;CML2_IMPORT;REALSPACE3_IMPORT;CORETOOL_IMPORT;CORETOOL_PHYSX_EXPORT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <PrecompiledHeader>Use</PrecompiledHeader>

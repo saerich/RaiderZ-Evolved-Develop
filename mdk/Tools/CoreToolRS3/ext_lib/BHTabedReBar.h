@@ -15,7 +15,7 @@
 *********************************************************************/
 
 #pragma once
-#include "afximpl.h"
+//#include "afximpl.h"
 #include "afxpriv.h"    
 #include <afxtempl.h>
 #include <vector>

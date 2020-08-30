@@ -8,6 +8,7 @@
 #include "MMatrix.h"
 #include <float.h>
 #include <vector>
+#include <algorithm>
 
 using namespace std;
 
@@ -308,8 +309,8 @@ public:
 
 		for ( int i = 0; i<3; ++i )
 		{
-			andBBox.m[0][i] = max(bbox.m[0][i],this->m[0][i]);
-			andBBox.m[1][i] = min(bbox.m[1][i],this->m[1][i]);
+			andBBox.m[0][i] = std::max<float>(bbox.m[0][i],this->m[0][i]);
+			andBBox.m[1][i] = std::min<float>(bbox.m[1][i],this->m[1][i]);
 		}
 
 		return andBBox;
@@ -338,8 +339,8 @@ public:
 		return false;
 	}
 
-	static const MBox MBOX_INFINITY;
-	static const MBox MBOX_INVALID;
+	static const MBox BOX_INFINITY;
+	static const MBox BOX_INVALID;
 };
 
 inline MBox::MBox(const std::vector<MBox>* boxes) : minx(0.f), miny(0.f), minz(0.f), maxx(0.f), maxy(0.f), maxz(0.f), vmin(0.f), vmax(0.f), m()

@@ -1,8 +1,8 @@
 #include "stdafx.h"
 #include "MSphere.h"
 
-const MBox MBox::MBOX_INFINITY( -FLT_MAX, -FLT_MAX, -FLT_MAX, FLT_MAX, FLT_MAX, FLT_MAX );
-const MBox MBox::MBOX_INVALID( FLT_MAX, FLT_MAX, FLT_MAX, -FLT_MAX, -FLT_MAX, -FLT_MAX );
+const MBox MBox::BOX_INFINITY( -FLT_MAX, -FLT_MAX, -FLT_MAX, FLT_MAX, FLT_MAX, FLT_MAX );
+const MBox MBox::BOX_INVALID( FLT_MAX, FLT_MAX, FLT_MAX, -FLT_MAX, -FLT_MAX, -FLT_MAX );
 
 /**
  이 .cpp 를 하나의 네임스페이스로 사용합니다.

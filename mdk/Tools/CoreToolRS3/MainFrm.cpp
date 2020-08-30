@@ -308,14 +308,14 @@ MLogger* CMainFrame::CoreToolRS3MainLogger = NULL;
 
 void CMainFrame::InitLog()
 {
-	CoreToolRS3MainLogger = MInitLog(MLOG_LEVEL_DEBUG, MLOG_FILE | MLOG_DEBUG | MLOG_PROG, MLogOutputCallback, "mlog.txt");
+	CoreToolRS3MainLogger = MInitLog(MLogLevel::MLOG_LEVEL_DEBUG, MLOG_FILE | MLOG_DEBUG | MLOG_PROG, MLogOutputCallback, "mlog.txt");
 	MAddLogFilter("tool");
 }
 
 // mlog Callback
 void CMainFrame::MLogOutputCallback(const char* szText, MLogLevel nLevel)
 {
-	if ( nLevel == MLOG_LEVEL_ERROR)
+	if ( nLevel == MLogLevel::MLOG_LEVEL_ERROR)
 	{
 		m_errorString += szText;
 		m_errorString += '\n';
@@ -595,7 +595,7 @@ bool CMainFrame::OnDocViewCreated_()
 void CMainFrame::ChangeWorkSpace( const std::string& _rWorkSpaceKeyword )
 {
 	// 이전 웍스페이스에서 바뀐 메뉴가 있을수 있으므로 복구한다
- 	m_wndMenuBar.RestoreOriginalstate();
+	m_wndMenuBar.RestoreOriginalState();
 
 	m_pWorkSpaceManager->ChangeWorkSpace(m_arryWndRollupContainer_, _rWorkSpaceKeyword);
 }

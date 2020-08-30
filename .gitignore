@@ -78,6 +78,7 @@ mono_crash.*
 [Rr]elease_profile/
 [Rr]elease_publish/
 [Rr]eleaseDLL/
+[Rr]elease_Nvperfhud/
 x64/
 x86/
 [Ww][Ii][Nn]32/
@@ -154,6 +155,8 @@ StyleCopReport.xml
 *.svclog
 *.scc
 *.exp
+[Rr]esult_UnitTest.xml
+*.exe.index
 
 # Chutzpah Test files
 _Chutzpah*

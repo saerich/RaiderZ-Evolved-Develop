@@ -5,12 +5,6 @@
 #include "Test_UnitTestRunner.h"
 #include "UnitTest++.h"
 
-#ifdef _DEBUG
-	#pragma comment ( lib, "UnitTest++.vsnet2008MDd_NoException.lib" )
-#else
-	#pragma comment ( lib, "UnitTest++.vsnet2008MD.lib" )
-#endif
-
 int RunUnitTest()
 {
 	rs3::RUnitTestRunner::GetInstance().InitMockEngine();
@@ -21,7 +15,7 @@ int RunUnitTest()
 
 	std::ofstream f(TEST_XML_FILENAME);
 	RXmlAndStdTestReporter reporter(f);  
-	int failure_count = UnitTest::RunAllTests(reporter, UnitTest::Test::GetTestList(), NULL, 0); 
+	int failure_count = UnitTest::RunAllTests();
 
 	rs3::RUnitTestRunner::GetInstance().HaltMockEngine();
 

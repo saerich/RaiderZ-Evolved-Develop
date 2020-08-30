@@ -27,7 +27,7 @@ RSkyManager::RSkyManager() : RSceneNode(RRP_SKYBOX)
 	m_fVisibility = 1.0f;
 
 	// 무조건 렌더링 되도록
-	SetAABB( RBoundingBox::MBOX_INFINITY );
+	SetAABB( RBoundingBox::BOX_INFINITY );
 
 	SetAutoUpdate(true);
 }

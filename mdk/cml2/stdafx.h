@@ -28,7 +28,6 @@
 #include <memory.h>
 
 #define TIXML_USE_STL
-#define NOMINMAX
 
 #pragma comment(lib, "atls.lib")
 

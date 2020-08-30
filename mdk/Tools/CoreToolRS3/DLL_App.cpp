@@ -21,10 +21,8 @@
 static char THIS_FILE[] = __FILE__;
 #endif
 
-
-#include <hash_map>
 #include <algorithm>
-typedef stdext::hash_map<std::string,std::string> FILE2PATH;
+typedef std::unordered_map<std::string, std::string> FILE2PATH;
 
 class CCheckDuplicateFiles
 {

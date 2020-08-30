@@ -96,7 +96,7 @@ public:
 	RSubLightSceneNode(RRENDERPASS eRenderPass = RRP_SUBLIGHT) : RLightSceneNode(eRenderPass)
 	{
 		m_color =RVector3(0,0,0);
-		SetAABB( RBoundingBox::MBOX_INFINITY ); // 무조건 렌더링 되도록
+		SetAABB( RBoundingBox::BOX_INFINITY ); // 무조건 렌더링 되도록
 	}
 
 	virtual bool CreateFromXML(MXmlElement &element, bool bBackgroundCreation);

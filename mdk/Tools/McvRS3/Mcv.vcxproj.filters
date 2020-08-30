@@ -1,0 +1,246 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{d11d6177-a3ad-48fd-8c40-d63caf7448bc}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+    <Filter Include="Util">
+      <UniqueIdentifier>{e6e0d0ad-f476-4ee3-b63e-4bdc0579fb53}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dlg">
+      <UniqueIdentifier>{1695bc16-8e11-4f8f-bfba-a00de715884b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MfcFrame">
+      <UniqueIdentifier>{4c292bff-ff3a-4aa8-96c2-198f735f7aaa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GridControl">
+      <UniqueIdentifier>{b69b7a34-feab-41b6-a1ce-3bafaa8f4664}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="external">
+      <UniqueIdentifier>{ba716a69-d9e0-4617-bb8d-dc0536a4e414}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AnimationBlend">
+      <UniqueIdentifier>{88f93a03-fa36-46da-9043-4c8e199763d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UnitTest">
+      <UniqueIdentifier>{0269ea8a-c64c-48c2-8d5d-d098520aad17}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\Mcv.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Mcv.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\McvDoc.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Toolbar.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="RCFrameInfoDlg.htm">
+      <Filter>Dlg</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Manifest Include="res\Mcv.manifest">
+      <Filter>Resource Files</Filter>
+    </Manifest>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Mcv.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Resource.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="McvCamera.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="McvUtil.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="AddAnimationDlg.h">
+      <Filter>Dlg</Filter>
+    </ClInclude>
+    <ClInclude Include="AnimationSidebar.h">
+      <Filter>Dlg</Filter>
+    </ClInclude>
+    <ClInclude Include="ControlToolBar.h">
+      <Filter>Dlg</Filter>
+    </ClInclude>
+    <ClInclude Include="EditAnimationDlg.h">
+      <Filter>Dlg</Filter>
+    </ClInclude>
+    <ClInclude Include="EventDlg.h">
+      <Filter>Dlg</Filter>
+    </ClInclude>
+    <ClInclude Include="FrameControlBar.h">
+      <Filter>Dlg</Filter>
+    </ClInclude>
+    <ClInclude Include="LightSidebar.h">
+      <Filter>Dlg</Filter>
+    </ClInclude>
+    <ClInclude Include="ModelInfoDlg.h">
+      <Filter>Dlg</Filter>
+    </ClInclude>
+    <ClInclude Include="ModelInfoSidebar.h">
+      <Filter>Dlg</Filter>
+    </ClInclude>
+    <ClInclude Include="MtrlEditDlg.h">
+      <Filter>Dlg</Filter>
+    </ClInclude>
+    <ClInclude Include="RCFrameInfoDlg.h">
+      <Filter>Dlg</Filter>
+    </ClInclude>
+    <ClInclude Include="ScaleDlg.h">
+      <Filter>Dlg</Filter>
+    </ClInclude>
+    <ClInclude Include="ViewControlSidebar.h">
+      <Filter>Dlg</Filter>
+    </ClInclude>
+    <ClInclude Include="MainFrm.h">
+      <Filter>MfcFrame</Filter>
+    </ClInclude>
+    <ClInclude Include="McvDoc.h">
+      <Filter>MfcFrame</Filter>
+    </ClInclude>
+    <ClInclude Include="GridCtrl_src\CellRange.h">
+      <Filter>GridControl</Filter>
+    </ClInclude>
+    <ClInclude Include="GridCtrl_src\GridCell.h">
+      <Filter>GridControl</Filter>
+    </ClInclude>
+    <ClInclude Include="GridCtrl_src\GridCellBase.h">
+      <Filter>GridControl</Filter>
+    </ClInclude>
+    <ClInclude Include="GridCtrl_src\GridCtrl.h">
+      <Filter>GridControl</Filter>
+    </ClInclude>
+    <ClInclude Include="GridCtrl_src\GridDropTarget.h">
+      <Filter>GridControl</Filter>
+    </ClInclude>
+    <ClInclude Include="GridCtrl_src\InPlaceEdit.h">
+      <Filter>GridControl</Filter>
+    </ClInclude>
+    <ClInclude Include="GridCtrl_src\MemDC.h">
+      <Filter>GridControl</Filter>
+    </ClInclude>
+    <ClInclude Include="GridCtrl_src\TitleTip.h">
+      <Filter>GridControl</Filter>
+    </ClInclude>
+    <ClInclude Include="AniBlendDlg.h">
+      <Filter>AnimationBlend</Filter>
+    </ClInclude>
+    <ClInclude Include="AniBlendDurationDlg.h">
+      <Filter>AnimationBlend</Filter>
+    </ClInclude>
+    <ClInclude Include="AniBlendGridCell.h">
+      <Filter>AnimationBlend</Filter>
+    </ClInclude>
+    <ClInclude Include="Main.h" />
+    <ClInclude Include="MaterialDecalDlg.h" />
+    <ClInclude Include="Mcv.h" />
+    <ClInclude Include="McvConfig.h" />
+    <ClInclude Include="McvView.h" />
+    <ClInclude Include="ProjectType.h" />
+    <ClInclude Include="StdAfx.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="McvCamera.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+    <ClCompile Include="McvUtil.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+    <ClCompile Include="AddAnimationDlg.cpp">
+      <Filter>Dlg</Filter>
+    </ClCompile>
+    <ClCompile Include="AnimationSidebar.cpp">
+      <Filter>Dlg</Filter>
+    </ClCompile>
+    <ClCompile Include="ControlToolBar.cpp">
+      <Filter>Dlg</Filter>
+    </ClCompile>
+    <ClCompile Include="EditAnimationDlg.cpp">
+      <Filter>Dlg</Filter>
+    </ClCompile>
+    <ClCompile Include="EventDlg.cpp">
+      <Filter>Dlg</Filter>
+    </ClCompile>
+    <ClCompile Include="FrameControlBar.cpp">
+      <Filter>Dlg</Filter>
+    </ClCompile>
+    <ClCompile Include="LightSidebar.cpp">
+      <Filter>Dlg</Filter>
+    </ClCompile>
+    <ClCompile Include="ModelInfoDlg.cpp">
+      <Filter>Dlg</Filter>
+    </ClCompile>
+    <ClCompile Include="ModelInfoSidebar.cpp">
+      <Filter>Dlg</Filter>
+    </ClCompile>
+    <ClCompile Include="MtrlEditDlg.cpp">
+      <Filter>Dlg</Filter>
+    </ClCompile>
+    <ClCompile Include="RCFrameInfoDlg.cpp">
+      <Filter>Dlg</Filter>
+    </ClCompile>
+    <ClCompile Include="ScaleDlg.cpp">
+      <Filter>Dlg</Filter>
+    </ClCompile>
+    <ClCompile Include="ViewControlSidebar.cpp">
+      <Filter>Dlg</Filter>
+    </ClCompile>
+    <ClCompile Include="MainFrm.cpp">
+      <Filter>MfcFrame</Filter>
+    </ClCompile>
+    <ClCompile Include="McvDoc.cpp">
+      <Filter>MfcFrame</Filter>
+    </ClCompile>
+    <ClCompile Include="GridCtrl_src\GridCell.cpp">
+      <Filter>GridControl</Filter>
+    </ClCompile>
+    <ClCompile Include="GridCtrl_src\GridCellBase.cpp">
+      <Filter>GridControl</Filter>
+    </ClCompile>
+    <ClCompile Include="GridCtrl_src\GridCtrl.cpp">
+      <Filter>GridControl</Filter>
+    </ClCompile>
+    <ClCompile Include="GridCtrl_src\GridDropTarget.cpp">
+      <Filter>GridControl</Filter>
+    </ClCompile>
+    <ClCompile Include="GridCtrl_src\InPlaceEdit.cpp">
+      <Filter>GridControl</Filter>
+    </ClCompile>
+    <ClCompile Include="GridCtrl_src\TitleTip.cpp">
+      <Filter>GridControl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Composite\Composite.cpp">
+      <Filter>external</Filter>
+    </ClCompile>
+    <ClCompile Include="AniBlendDlg.cpp">
+      <Filter>AnimationBlend</Filter>
+    </ClCompile>
+    <ClCompile Include="AniBlendDurationDlg.cpp">
+      <Filter>AnimationBlend</Filter>
+    </ClCompile>
+    <ClCompile Include="AniBlendGridCell.cpp">
+      <Filter>AnimationBlend</Filter>
+    </ClCompile>
+    <ClCompile Include="TestAnimationBlendTable.cpp">
+      <Filter>UnitTest</Filter>
+    </ClCompile>
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="MaterialDecalDlg.cpp" />
+    <ClCompile Include="Mcv.cpp" />
+    <ClCompile Include="McvConfig.cpp" />
+    <ClCompile Include="McvView.cpp" />
+    <ClCompile Include="ProjectType.cpp" />
+    <ClCompile Include="StdAfx.cpp" />
+  </ItemGroup>
+</Project>

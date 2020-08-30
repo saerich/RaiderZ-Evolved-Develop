@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Map">
+      <UniqueIdentifier>{4dfc49fa-e86b-4a83-8eeb-730b3fc5aeab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Effect">
+      <UniqueIdentifier>{a8ebe86d-9564-451c-899b-c0bd2524c4ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Actor">
+      <UniqueIdentifier>{88b91f9a-fd0d-4c64-a973-baa10c4897c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Animation">
+      <UniqueIdentifier>{83fb0d3e-ae93-4a16-8464-ea5a8a8342c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shadow">
+      <UniqueIdentifier>{14c054af-0969-47cb-b73b-42b9133a1cfc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tree">
+      <UniqueIdentifier>{30369f07-0e40-4ac5-9b4e-f55eb16517f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Water">
+      <UniqueIdentifier>{48521c72-145b-4c42-a85d-fbbbce21f384}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ETC">
+      <UniqueIdentifier>{b2e98250-3ef6-4f12-9f14-1d7dd51d4def}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PostEffect">
+      <UniqueIdentifier>{6feb2316-ccee-4757-be5e-58ea3d025f01}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Terrain">
+      <UniqueIdentifier>{012125a1-975b-4043-a715-8eed429312a8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="TestEnvironment.cpp">
+      <Filter>Map</Filter>
+    </ClCompile>
+    <ClCompile Include="TestZone.cpp">
+      <Filter>Map</Filter>
+    </ClCompile>
+    <ClCompile Include="TestAttachEffect.cpp">
+      <Filter>Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="TestEffect.cpp">
+      <Filter>Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="TestLoadActor.cpp">
+      <Filter>Actor</Filter>
+    </ClCompile>
+    <ClCompile Include="TestShadow.cpp">
+      <Filter>Shadow</Filter>
+    </ClCompile>
+    <ClCompile Include="TestLoadTree.cpp">
+      <Filter>Tree</Filter>
+    </ClCompile>
+    <ClCompile Include="TestTree.cpp">
+      <Filter>Tree</Filter>
+    </ClCompile>
+    <ClCompile Include="TestWaterReflection.cpp">
+      <Filter>Water</Filter>
+    </ClCompile>
+    <ClCompile Include="TestAlphaSorting.cpp">
+      <Filter>ETC</Filter>
+    </ClCompile>
+    <ClCompile Include="TestDecal.cpp">
+      <Filter>ETC</Filter>
+    </ClCompile>
+    <ClCompile Include="TestEdge.cpp">
+      <Filter>ETC</Filter>
+    </ClCompile>
+    <ClCompile Include="TestFog.cpp">
+      <Filter>ETC</Filter>
+    </ClCompile>
+    <ClCompile Include="TestInstancing.cpp">
+      <Filter>ETC</Filter>
+    </ClCompile>
+    <ClCompile Include="TestLight.cpp">
+      <Filter>ETC</Filter>
+    </ClCompile>
+    <ClCompile Include="TestMaterialDecal.cpp">
+      <Filter>ETC</Filter>
+    </ClCompile>
+    <ClCompile Include="TestMultiLayer.cpp">
+      <Filter>ETC</Filter>
+    </ClCompile>
+    <ClCompile Include="TestReflect.cpp">
+      <Filter>ETC</Filter>
+    </ClCompile>
+    <ClCompile Include="TestPoseEffect.cpp">
+      <Filter>PostEffect</Filter>
+    </ClCompile>
+    <ClCompile Include="TestTerrain.cpp">
+      <Filter>Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="stdafx.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h" />
+  </ItemGroup>
+</Project>

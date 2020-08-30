@@ -65,7 +65,7 @@ void RToolSceneNodeInstance::UpdateAABB()
 	class RAABBUpdateVisitor : public RSceneNodeVisitor
 	{
 	public:
-		RAABBUpdateVisitor() : m_aabb(RBox::INVALID) {}
+		RAABBUpdateVisitor() : m_aabb(RBox::BOX_INVALID) {}
 		virtual ~RAABBUpdateVisitor() {}
 
 		virtual bool OnPreOrderVisit( RSceneNode* pSceneNode ) override
@@ -85,7 +85,7 @@ void RToolSceneNodeInstance::UpdateAABB()
 		RBox	m_aabb;
 	};
 
-	SetAABB( RBox::INVALID );
+	SetAABB( RBox::BOX_INVALID);
 	RAABBUpdateVisitor v;
 	Traverse( &v );
 	SetAABB( v.GetAABB() );
