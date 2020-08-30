@@ -1,6 +1,8 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 10.00
-# Visual Studio 2008
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30413.136
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SoulHunt", "..\SoulHuntLib\SoulHunt.csproj", "{D3275EE3-C7A9-4A31-82D4-D86D8721DB03}"
 	ProjectSection(ProjectDependencies) = postProject
 		{EC575684-2562-4917-B91F-3D64FD1CA942} = {EC575684-2562-4917-B91F-3D64FD1CA942}
@@ -34,5 +36,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2DDAADD0-5D22-43EF-82D1-568C8183EB5E}
 	EndGlobalSection
 EndGlobal
