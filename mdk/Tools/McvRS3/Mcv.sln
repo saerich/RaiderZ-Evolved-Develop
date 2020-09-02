@@ -10,8 +10,6 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "cml2", "..\..\cml2\cml2.vcx
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MCollision", "..\..\MCollision\MCollision.vcxproj", "{97861011-05BD-450A-A221-DB5F7A2F4B7B}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Composite", "..\Composite\Composite.vcxproj", "{FB37FAD8-0847-47F0-9C3C-4E22AB7E0866}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -34,10 +32,6 @@ Global
 		{97861011-05BD-450A-A221-DB5F7A2F4B7B}.Debug|Win32.Build.0 = Debug|Win32
 		{97861011-05BD-450A-A221-DB5F7A2F4B7B}.Release|Win32.ActiveCfg = Release|Win32
 		{97861011-05BD-450A-A221-DB5F7A2F4B7B}.Release|Win32.Build.0 = Release|Win32
-		{FB37FAD8-0847-47F0-9C3C-4E22AB7E0866}.Debug|Win32.ActiveCfg = Debug|Win32
-		{FB37FAD8-0847-47F0-9C3C-4E22AB7E0866}.Debug|Win32.Build.0 = Debug|Win32
-		{FB37FAD8-0847-47F0-9C3C-4E22AB7E0866}.Release|Win32.ActiveCfg = Release|Win32
-		{FB37FAD8-0847-47F0-9C3C-4E22AB7E0866}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
