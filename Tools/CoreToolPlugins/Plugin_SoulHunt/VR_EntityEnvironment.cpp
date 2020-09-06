@@ -313,7 +313,7 @@ void CRollupEntityEnvironment::ValidUpdateWeather_(int _sel, CWnd* _pWnd)
 	}
 	if(total > 100)
 	{
-		AfxMessageBox("날씨 퍼센트의 전체 합이 100보다 큽니다.");
+		AfxMessageBox("The total sum of the weather percentages is greater than 100.");
 		m_nWeather_[_sel] = 0;
 		pField->SetWeatherValue(_sel, 0);
 		UpdateData(FALSE);
@@ -465,16 +465,16 @@ void CRollupEntityEnvironment::CPropertyView::FreshProperty()
 	_ASSERT(m_pControlMediator_);
 	RemoveAll();
 
-	CMFCPropertyGridProperty* fieldProperty = new CMFCPropertyGridProperty( _T("필드정보") );
+	CMFCPropertyGridProperty* fieldProperty = new CMFCPropertyGridProperty( _T("Field information") );
 
 	// 타운
-	AddPropertyItem(fieldProperty, "타운", m_bTown, true);
+	AddPropertyItem(fieldProperty, "town", m_bTown, true);
 
 	// 귀환
-	AddPropertyItem(fieldProperty, "귀환", m_bReturnable, true);
+	AddPropertyItem(fieldProperty, "return", m_bReturnable, true);
 
 	// 튜토리얼
-	AddPropertyItem(fieldProperty, "튜토리얼", m_bTutorial, false);
+	AddPropertyItem(fieldProperty, "tutorial", m_bTutorial, false);
 
 	// QPVPNPC
 	AddPropertyItem( fieldProperty, "QPVPNPC1", m_nQPVPNPC1, true );
@@ -485,11 +485,11 @@ void CRollupEntityEnvironment::CPropertyView::FreshProperty()
 	AddPropertyItem( fieldProperty, "QPVPRebirth2", m_nQPVPRebirth2, true );
 
 	// 채집
-	CMFCPropertyGridProperty* gatherProperty = AddPropertyGroupItem( fieldProperty, "채집 객체수", true );
-	AddPropertyItem( gatherProperty, "광물", m_nMaxGatherMine, true );
-	AddPropertyItem( gatherProperty, "약초", m_nMaxGatherHerb, true );
-	AddPropertyItem( gatherProperty, "유물", m_nMaxGatherRelic, true );
-	AddPropertyItem( gatherProperty, "목재", m_nMaxGatherLumber, true );	
+	CMFCPropertyGridProperty* gatherProperty = AddPropertyGroupItem( fieldProperty, "Number of objects collected", true );
+	AddPropertyItem( gatherProperty, "Mineral", m_nMaxGatherMine, true );
+	AddPropertyItem( gatherProperty, "medicinal herbs", m_nMaxGatherHerb, true );
+	AddPropertyItem( gatherProperty, "relics", m_nMaxGatherRelic, true );
+	AddPropertyItem( gatherProperty, "wood", m_nMaxGatherLumber, true );	
 
 	// 배경음
 	CWorkSpaceField* pField = m_pControlMediator_->GetWorkSpacePtr<CWorkSpaceField>();
@@ -499,7 +499,7 @@ void CRollupEntityEnvironment::CPropertyView::FreshProperty()
 	V_CCoreToolPropertyGridCtrl::AddPropertyBGMItem( mapBgmList, fieldProperty, BGM_DESC[0], m_strBGM[0]);
 
 	//환경음
-	CMFCPropertyGridProperty* bgmProperty = AddPropertyGroupItem( fieldProperty, "환경음", true );
+	CMFCPropertyGridProperty* bgmProperty = AddPropertyGroupItem( fieldProperty, "Environmental sound", true );
 	for (int i=1; i<BGM_MAX; i++ )
 		V_CCoreToolPropertyGridCtrl::AddPropertyBGMItem( mapBgmList, bgmProperty, BGM_DESC[i], m_strBGM[i]);
 

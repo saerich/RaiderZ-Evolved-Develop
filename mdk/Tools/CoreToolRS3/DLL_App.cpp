@@ -376,8 +376,8 @@ void App::XDocument::OnPostCreate()
 		if ( m_pDoc_->EnterFileName.IsEmpty() )
 		{
 			nReturn = MessageBox( m_pMainFrame_->m_hWnd,
-						"Data폴더안에 중복된 파일이 있습니다. DuplicateFiles.txt 를 열어보시겠습니까?",
-						"파일 시스템 에러", MB_YESNO );
+						"There are duplicate files in the Data folder. Would you like to open DuplicateFiles.txt?",
+						"File system error", MB_YESNO );
 		}
 
 		HANDLE hFile = CreateFile( DUPLICATE_FILENAME,	GENERIC_WRITE, FILE_SHARE_READ,	NULL, CREATE_ALWAYS, FILE_ATTRIBUTE_NORMAL, NULL);

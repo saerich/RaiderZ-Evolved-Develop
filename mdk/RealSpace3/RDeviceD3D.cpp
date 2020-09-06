@@ -618,7 +618,7 @@ RResource::LOAD_RESULT RTextureD3D::Load()
 			|| fmod(MMath::Log2((float)imageInfo.Height), 1.0f)!= 0.0) // 2제곱 아니면서
 			&& bAutoMipmap)	// 밉맵을 사용하려고 한다면
 		{
-			const char *pWarningMessage = "Warning : 이 텍스쳐는 2 제곱이 아님에도, 밉맵을 생성하려고 합니다.\n";
+			const char *pWarningMessage = "Warning: This texture is not 2 power, but we are trying to generate a mipmap.\n";
 			mlog(pWarningMessage);
 		//	_ASSERT(pWarningMessage==NULL);
 		}

@@ -84,7 +84,7 @@ void CControlMediatorHelperEntityActionImpl::OnPasteCopiedObject(ENTITY_OBJECTLI
 		vecOffSetToViewCenter = vecViewCenter - vecObjectCenterToCopy;
 	else
 	{
-		AfxMessageBox("화면의 중심이 맵상에 있지 않습니다.");
+		AfxMessageBox("The center of the screen is not on the map.");
 		return;
 	}
 

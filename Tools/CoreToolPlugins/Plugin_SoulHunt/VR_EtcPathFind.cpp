@@ -519,7 +519,7 @@ void CRollupEtcPathFind::OnBnClickedButtonDelSelSeed()
 	int nSelected = m_ctlSeedList.GetCurSel();
 	if (nSelected < 0)
 	{
-		AfxMessageBox("선택된 씨드가 없습니다.");
+		AfxMessageBox("There is no seed selected.");
 		return;
 	}
 
@@ -603,7 +603,7 @@ void CRollupEtcPathFind::CreateNavigationFile(vector<MVector3> &seeds)
 
 			char pcBuffer[128];
 			pcBuffer[0] = 0;
-			sprintf(pcBuffer,"길찾기 파일 저장 완료(%d faces)", nFaceNumber);
+			sprintf(pcBuffer,"Complete saving directions file (%d faces)", nFaceNumber);
 			MessageBox(pcBuffer,"Success", MB_OK);
 		}
 		else
@@ -617,7 +617,7 @@ void CRollupEtcPathFind::CreateNavigationFile(vector<MVector3> &seeds)
 	}
 	else
 	{
-		AfxMessageBox("존 형식의 맵이 로드되어 있지 않습니다.");
+		AfxMessageBox("Zoned maps are not loaded.");
 	}
 }
 void CRollupEtcPathFind::OnBnClickedCheckPickingArea()

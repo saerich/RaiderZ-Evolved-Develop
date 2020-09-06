@@ -84,7 +84,7 @@ CEntityObject* CEntityObject::CreateEntityObject(TYPE _type)
 	}
 	else
 	{
-		_ASSERT(!"기본 타입이 아닙니다.");
+		_ASSERT(!"Not a basic type.");
 	}
 
 	return pNewEntityObject;
@@ -105,7 +105,7 @@ CEntityObject* CEntityObject::CloneAtWB(const rs3::RVector& _refPos)
 	CEntityObject* pEntityObject = CreateEntityObject(m_eEntityObjectType_);
 	if(m_pLogicObjectElement_ == NULL)
 	{
-		AfxMessageBox("치명적인 오류\n 팔레트가 잘못되어 있어서 새로운 Entity Object 를 심을수 없습니다.");
+		AfxMessageBox("Fatal Error\n New Entity Object cannot be planted because the palette is incorrect.");
 		pEntityObject->DestroyLogicObject();
 		delete pEntityObject;
 		return NULL;

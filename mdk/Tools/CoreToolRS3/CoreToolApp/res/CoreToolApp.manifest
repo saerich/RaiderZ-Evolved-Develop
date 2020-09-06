@@ -6,7 +6,7 @@
     name="Microsoft.Windows.CoreToolRS3App"
     type="win32" 
 /> 
-<description>여기에 응용 프로그램 설명을 추가합니다.</description> 
+<description>Add application description here.</description> 
 <dependency> 
     <dependentAssembly> 
         <assemblyIdentity 

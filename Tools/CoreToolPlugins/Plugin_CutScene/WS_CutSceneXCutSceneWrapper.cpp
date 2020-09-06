@@ -1114,24 +1114,24 @@ void CXCutSceneWrapper::AddLetterBoxController( CDlgCutSceneEditor* pEditor )
 	if (!m_pCurrentCutSceneObject)
 		return;
 
-	// 이미 존재 하는지 체크
+	// Check if it already exists
 	VEC_CUTSCENE_CONTROLLERS& vecCutScene =	m_pCurrentCutSceneObject->GetControllers();
 	for(VEC_CUTSCENE_CONTROLLERS::iterator itCutSceneControllers = vecCutScene.begin(); itCutSceneControllers != vecCutScene.end(); ++itCutSceneControllers)
 	{
 		if((*itCutSceneControllers)->GetType() == XCutSceneObjectController::E_LETTERBOX)
 		{
-			// 있다. 메세지창
-			AfxMessageBox( "레터박스가 이미 등록되어 있습니다.");
+			// Exists. Message window
+			AfxMessageBox( "The letterbox is already registered.");
 			return;
 		}
 	}
 
-	// 없다면 생성
+	// Create if doesn't exist
 	XCutSceneObjectControllerLetterBox* pLetterBoxCtrl = AddController<XCutSceneObjectControllerLetterBox>(pEditor);
 	if (!pLetterBoxCtrl)
 		return;
 
-	// 키 자동 입력
+	// Automatic key input
 	pLetterBoxCtrl->AddKey(XCutSceneObjectControllerLetterBox::LBT_START, 0.0f);
 	pLetterBoxCtrl->AddKey(XCutSceneObjectControllerLetterBox::LBT_END, m_pXCutSceneContent->GetClapper()->GetDuration());
 	pLetterBoxCtrl->SortKey();

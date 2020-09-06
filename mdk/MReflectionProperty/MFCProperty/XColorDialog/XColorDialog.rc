@@ -13,39 +13,11 @@
 #undef APSTUDIO_READONLY_SYMBOLS
 
 /////////////////////////////////////////////////////////////////////////////
-// 영어(미국) resources
+// English resources
 
 #if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
-#ifdef _WIN32
-LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+LANGUAGE LANG_ENGLISH, SUBLANG_NEUTRAL
 #pragma code_page(1252)
-#endif //_WIN32
-
-#ifdef APSTUDIO_INVOKED
-/////////////////////////////////////////////////////////////////////////////
-//
-// TEXTINCLUDE
-//
-
-1 TEXTINCLUDE 
-BEGIN
-    "XColorDialogRes.h\0"
-END
-
-2 TEXTINCLUDE 
-BEGIN
-    "#include ""afxres.h""\r\n"
-    "\0"
-END
-
-3 TEXTINCLUDE 
-BEGIN
-    "\r\n"
-    "\0"
-END
-
-#endif    // APSTUDIO_INVOKED
-
 
 /////////////////////////////////////////////////////////////////////////////
 //
@@ -97,7 +69,7 @@ END
 //
 
 #ifdef APSTUDIO_INVOKED
-GUIDELINES DESIGNINFO 
+GUIDELINES DESIGNINFO
 BEGIN
     "IDD_TAB_CUSTOM", DIALOG
     BEGIN
@@ -125,31 +97,31 @@ END
 // String Table
 //
 
-STRINGTABLE 
+STRINGTABLE
 BEGIN
     IDS_STANDARD            "Standard Colors"
     IDS_CUSTOM              "Custom Colors"
 END
 
-STRINGTABLE 
+STRINGTABLE
 BEGIN
     IDOK                    "Applies and saves any changes you have\nmade, and then closes this dialog box."
     IDCANCEL                "The Cancel button closes this dialog box without\nsaving any changes you have made."
 END
 
-STRINGTABLE 
+STRINGTABLE
 BEGIN
     IDC_HEXAGON             "Click the color you want, or click the Custom tab and\nmix your own color."
     IDC_SPECTRUM            "Click the color you want, or enter the values for the\ncolor in the Hue, Sat, Lum, Red, Green, and Blue\nboxes. You can drag the slider to adjust the\nluminosity of the currently selected color."
 END
 
-STRINGTABLE 
+STRINGTABLE
 BEGIN
     IDC_NEW_COLOR           "The New color is the one you selected in this dialog\nbox - click OK to apply the new color. The Current\ncolor is the existing color - click Cancel to retain\nthe current color."
     IDC_CURRENT_COLOR       "The Current color is the existing color - click Cancel\nto retain the current color. The New color is the one\nyou selected in this dialog box - click OK to apply\nthe new color. "
 END
 
-STRINGTABLE 
+STRINGTABLE
 BEGIN
     IDC_RED_EDIT            "Enter a number from 0 to 255 to adjust the amount of\nred in the color. The larger the number, the more red\nthe color contains."
     IDC_GREEN_EDIT          "Enter a number from 0 to 255 to adjust the amount of\ngreen in the color. The larger the number, the more\ngreen the color contains."
@@ -158,12 +130,48 @@ BEGIN
     IDC_SAT_EDIT            "Saturation is the intensity of the color. The higher the\nnumber, the more intense the color. Enter a number\nfrom 0 to 240 in the Sat box, or drag the cross-hair\nvertically in the Color box."
 END
 
-STRINGTABLE 
+STRINGTABLE
 BEGIN
     IDC_LUM_EDIT            "Luminosity is the brightness of the color, or the\namount of black or white added to the color. The\nlarger the number, the lighter the color. Enter a\nnumber from 0 to 240 in the Lum box, or drag the\nslider on the vertical color bar."
 END
 
-#endif    // 영어(미국) resources
+#endif    // English resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "XColorDialogRes.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (United States) resources
 /////////////////////////////////////////////////////////////////////////////
 
 

@@ -213,7 +213,7 @@ void CWorkSpacePhysX::LoadPxObject( const char* _pSzMeshName )
 		delete m_pCurrentPxObject;
 		m_pCurrentPxObject = NULL;
 
-		::MessageBox(NULL,"모델 로딩에 실패했습니다.","error",MB_OK);
+		::MessageBox(NULL,"Model loading failed.","error",MB_OK);
 	}
 }
 

@@ -132,6 +132,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLL|Win32'">
     <OutDir>Lib\</OutDir>
     <IntDir>$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)_d</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|Win32'">
     <OutDir>Lib\</OutDir>
@@ -282,9 +283,10 @@
     </ResourceCompile>
     <Link>
       <AdditionalDependencies>Ws2_32.lib;lua51.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <OutputFile>lib\$(ProjectName)_d.dll</OutputFile>
+      <OutputFile>$(OutDir)$(TargetFileName)</OutputFile>
       <AdditionalLibraryDirectories>lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)$(TargetName).pdb</ProgramDatabaseFile>
     </Link>
     <PostBuildEvent>
       <Command>cd $(SolutionDir)
@@ -318,9 +320,10 @@
     </ResourceCompile>
     <Link>
       <AdditionalDependencies>Ws2_32.lib;lua51.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <OutputFile>lib\$(ProjectName)_.dll</OutputFile>
+      <OutputFile>$(OutDir)$(TargetFileName)</OutputFile>
       <AdditionalLibraryDirectories>lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)$(TargetName).pdb</ProgramDatabaseFile>
     </Link>
     <PostBuildEvent>
       <Command>cd $(SolutionDir)

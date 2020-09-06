@@ -79,14 +79,14 @@ bool CRollupEnvFieldInfo::CheckValidation()
 		rtNew.top < rtOrg.top ||
 		rtNew.bottom > rtOrg.bottom)
 	{
-		AfxMessageBox("필드 크기가 너무 큽니다.");
+		AfxMessageBox("The field size is too large.");
 		return false;
 	}
 
 	if (rtNew.left > rtNew.right ||
 		rtNew.top > rtNew.bottom)
 	{
-		AfxMessageBox("필드 크기 설정이 잘못되었습니다.");
+		AfxMessageBox("The field size setting is incorrect.");
 		return false;
 	}
 
@@ -166,7 +166,7 @@ void CRollupEnvFieldInfo::OnBnClickedButtonAggrozApply()
 	UpdateData();
 	if (m_fAggroLimitZ < 0.0f)
 	{
-		AfxMessageBox("잘못된 범위입니다. (기본값은 0)");
+		AfxMessageBox("Invalid range. (Default is 0)");
 	}
 
 	CWorkSpaceField::FIELD_INFO& field_info = GetFieldInfo();
@@ -180,7 +180,7 @@ void CRollupEnvFieldInfo::UpdateFixedCombobox()
 	CWorkSpaceField::FIELD_INFO& field_info = GetFieldInfo();
 	int nCurType = field_info.m_TimeInfo.nFixedTime;
 
-	m_FixedTimeCombobox.AddString("선택 안함");
+	m_FixedTimeCombobox.AddString("Not selected");
 	for(int i = 0; i < MAX_TIME_TYPE; ++i)
 	{
 		m_FixedTimeCombobox.AddString(m_pControlMediator_->GetWorkSpacePtr<CWorkSpaceField>()->GameTime(i));

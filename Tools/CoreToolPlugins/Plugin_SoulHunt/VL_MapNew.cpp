@@ -356,7 +356,7 @@ bool CDlgMapNew::IsValidNewZone_()
 
 			if(m_mapWidth_ != m_mapHeight_)
 			{
-				AfxMessageBox("존의 크기는 정사각형 이어야 합니다.");
+				AfxMessageBox("The zone must be square.");
 				return false;
 			}
 		}
@@ -384,7 +384,7 @@ bool CDlgMapNew::IsValidNewZone_()
 
 			if(m_colFace_ != m_rowFace_)
 			{
-				AfxMessageBox("존의 디테일은 정사각형 이어야 합니다.");
+				AfxMessageBox("Zone details should be square.");
 				return false;
 			}
 
@@ -393,7 +393,7 @@ bool CDlgMapNew::IsValidNewZone_()
 			double fV2 = pow(2.0,fV1);
 			if ( fV2 != fWidth )
 			{
-				AfxMessageBox("존의 디테일은 2의 거듭제곱꼴이여야 합니다.");
+				AfxMessageBox("Zone details should be powers of 2.");
 				return false;
 			}
 		}
@@ -407,7 +407,7 @@ bool CDlgMapNew::IsValidNewZone_()
 		int test = baseTile.Find(validPath);
 		if(test < 0)
 		{
-			AfxMessageBox("베이스 타일이 잘못 되어 있습니다. \n베이스 타일 위치가 설정에 있는 타일 위치와 다를수 있습니다.");
+			AfxMessageBox("The base tile is wrong. \nThe base tile position may be different from the tile position in the settings.");
 			return false;
 		}
 		m_strMapBaseTile_ = (LPTSTR)(LPCTSTR)baseTile;
@@ -416,7 +416,7 @@ bool CDlgMapNew::IsValidNewZone_()
 	{
 		if( m_strImportSceneFile_.IsEmpty() )
 		{
-			AfxMessageBox("임포트할 씬을 선택하지 않았습니다.");
+			AfxMessageBox("You have not selected a scene to import.");
 			return false;
 		}
 	}
@@ -425,28 +425,28 @@ bool CDlgMapNew::IsValidNewZone_()
 	int a = m_zoneComboBox_.GetCurSel();
 	if(a < 0)
 	{
-		AfxMessageBox("존 아이디가 설정되지 않았습니다.");
+		AfxMessageBox("Zone ID has not been set.");
 		return false;
 	}
 	CString str_combo;
 	m_zoneComboBox_.GetLBText(a, str_combo);
 	if(str_combo.GetLength() == 0)
 	{
-		AfxMessageBox("존 아이디가 설정되지 않았습니다.");
+		AfxMessageBox("Zone ID has not been set.");
 		return false;
 	}
 	//테스트 지역파일일 경우
-	if(str_combo.Compare("테스트존")  == 0)
+	if(str_combo.Compare("test")  == 0)
 	{
 		CDlgInputMapName dlg;
-		dlg.m_strDlgCaption = "테스트 존파일 설정";
+		dlg.m_strDlgCaption = "Test zone file setting";
 		if (IDOK == dlg.DoModal())
 		{
 			m_strZonePath_ = (LPTSTR)(LPCTSTR)(dlg.m_cstrTestDirectory + "\\");
 			m_strZoneFile_ = (LPTSTR)(LPCTSTR)dlg.m_cstrTestFile;
 			if(GetFileAttributes((m_strZonePath_ + m_strZoneFile_).c_str()) != INVALID_FILE_ATTRIBUTES)
 			{
-				AfxMessageBox("이미 존재하는 존을 생성하려 하고 있습니다.");
+				AfxMessageBox("You are trying to create a zone that already exists.");
 				return false;
 			}
 			m_nZoneID_ = -1;
@@ -454,7 +454,7 @@ bool CDlgMapNew::IsValidNewZone_()
 		}
 		else
 		{
-			AfxMessageBox("테스트 존일 경우 해당 경로와 파일을 설정하셔야 합니다.");
+			AfxMessageBox("If it is a test zone, you need to set the path and file.");
 			return false;
 		}
 	}
@@ -475,7 +475,7 @@ bool CDlgMapNew::IsValidNewZone_()
 		fullPath = fullPath + newZoneId;
 		if(GetFileAttributes(fullPath) == INVALID_FILE_ATTRIBUTES)
 		{
-			AfxMessageBox("해당 존 ID의 폴더가 존재하지 않습니다. 생성후 다시 시도하세요.");
+			AfxMessageBox("The folder for the zone ID does not exist. Please try again after creation.");
 			return false;
 		}
 		m_strZonePath_ = (LPTSTR)(LPCTSTR)(fullPath + "\\");
@@ -483,7 +483,7 @@ bool CDlgMapNew::IsValidNewZone_()
 		m_strZoneFile_ = (LPTSTR)(LPCTSTR)(newZoneId);
 		if(GetFileAttributes((m_strZonePath_ + m_strZoneFile_).c_str()) != INVALID_FILE_ATTRIBUTES)
 		{
-			AfxMessageBox("이미 존재하는 존을 생성하려 하고 있습니다.");
+			AfxMessageBox("You are trying to create a zone that already exists.");
 			return false;
 		}
 		return true;
@@ -502,7 +502,7 @@ bool CDlgMapNew::IsValidNewMapInfo_()
 		int field_id = m_fieldComboBox_.GetCurSel();
 		if(field_id < 0)
 		{
-			AfxMessageBox("필드 아이디가 설정되지 않았습니다.");
+			AfxMessageBox("No field ID has been set.");
 			return false;
 		}
 
@@ -524,7 +524,7 @@ bool CDlgMapNew::IsValidNewMapInfo_()
 				return false;
 			if(m_nZoneID_ == -1)
 			{
-				AfxMessageBox("존의 아이디가 설정되어 있지 않습니다.");
+				AfxMessageBox("Zone ID is not set.");
 				return false;
 			}
 			std::string zone_name(m_strZonePath_ + m_strZoneFile_);
@@ -536,7 +536,7 @@ bool CDlgMapNew::IsValidNewMapInfo_()
 			int selected_list_index = m_ctlListBox_.GetCurSel();
 			if(selected_list_index < 0 )
 			{
-				AfxMessageBox("리스트가 잘못 선택되었습니다.");
+				AfxMessageBox("The list was selected incorrectly.");
 				return false;
 			}
 
@@ -569,7 +569,7 @@ bool CDlgMapNew::IsValidNewMapInfo_()
 		fullPath = fullPath + "field\\";
 		if(GetFileAttributes(fullPath) == INVALID_FILE_ATTRIBUTES)
 		{
-			AfxMessageBox("해당 필드의 폴더가 존재하지 않습니다. 생성후 다시 시도하세요.");
+			AfxMessageBox("The folder for that field does not exist. Please try again after creation.");
 			return false;
 		}
 		CString newFieldName;
@@ -577,7 +577,7 @@ bool CDlgMapNew::IsValidNewMapInfo_()
 		newFieldName = fullPath + newFieldName + ".field.xml";
 		if(GetFileAttributes(newFieldName) != INVALID_FILE_ATTRIBUTES)
 		{
-			AfxMessageBox("존재하는 필드를 다시 생성하려 하고 있습니다.");
+			AfxMessageBox("You are trying to recreate an existing field.");
 			return false;
 		}
 		m_strFieldName_ = newFieldName.GetString();
@@ -623,8 +623,8 @@ bool CDlgMapNew::IsCreateAtLoaded_()
 	}
 	else
 	{
-		iResult = MessageBox("로드된 맵이 존재합니다. 저장하시겠습니까?",
-									"경고 - 로드된 맵이 있습니다.",
+		iResult = MessageBox("The loaded map exists. Do you want to save it?",
+									"Warning - There are maps loaded.",
 									MB_YESNOCANCEL | MB_ICONASTERISK);
 	}
 	
@@ -675,7 +675,7 @@ bool CDlgMapNew::IsCreateAtLoaded_()
 		return true;
 	}
 
-	AfxMessageBox("로딩된후 맵 정책이 중간에 선택되지 않고 리턴되었습니다.");
+	AfxMessageBox("After loading, the map policy was returned without being selected in the middle.");
 	return false;
 }
 
@@ -742,7 +742,7 @@ void CDlgMapNew::OnBnClickedCancel()
 void CDlgMapNew::OnBnClickedNewZone()
 {
 	EnableZone_(TRUE);
-	GetDlgItem(IDC_STATIC_ZONE_GROUP)->SetWindowText("존 생성");
+	GetDlgItem(IDC_STATIC_ZONE_GROUP)->SetWindowText("Zone creation");
 	EnableImportSceneCtrl_(FALSE);
 	m_ctlListBox_.ShowWindow(SW_HIDE);
 	UpdateData(TRUE);
@@ -751,7 +751,7 @@ void CDlgMapNew::OnBnClickedNewZone()
 void CDlgMapNew::OnBnClickedFromZone()
 {
 	EnableZone_(FALSE);
-	GetDlgItem(IDC_STATIC_ZONE_GROUP)->SetWindowText("필드를 생성할 존");
+	GetDlgItem(IDC_STATIC_ZONE_GROUP)->SetWindowText("Zone to create field");
 	m_ctlListBox_.ShowWindow(SW_SHOW);
 	UpdateListBox_(0);
 	UpdateData(TRUE);
@@ -760,7 +760,7 @@ void CDlgMapNew::OnBnClickedFromZone()
 void CDlgMapNew::OnBnClickedFromField()
 {
 	EnableZone_(FALSE);
-	GetDlgItem(IDC_STATIC_ZONE_GROUP)->SetWindowText("복사할 필드");
+	GetDlgItem(IDC_STATIC_ZONE_GROUP)->SetWindowText("Field to copy");
 	m_ctlListBox_.ShowWindow(SW_SHOW);
 	UpdateListBox_(1);
 	UpdateData(TRUE);

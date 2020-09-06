@@ -16,13 +16,11 @@
 #undef APSTUDIO_READONLY_SYMBOLS
 
 /////////////////////////////////////////////////////////////////////////////
-// 한국어 resources
+// Korean (Korea) resources
 
 #if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
-#ifdef _WIN32
 LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
 #pragma code_page(949)
-#endif //_WIN32
 
 #ifdef APSTUDIO_INVOKED
 /////////////////////////////////////////////////////////////////////////////
@@ -54,14 +52,24 @@ BEGIN
     "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)\r\n"
     "LANGUAGE 18, 1\r\n"
     "#pragma code_page(949)\r\n"
-    "#include ""res\\Plugin_PhysX.rc2""  // Microsoft Visual C++ 이외의 다른 도구에서 편집한 리소스입니다.\r\n"
-    "#include ""l.KOR\\afxres.rc""      // 표준 구성 요소입니다.\r\n"
+    "#include ""res\\Plugin_PhysX.rc2""  // Microsoft Visual C++ AI¿UAC ´U¸￥ μμ±¸¿¡¼­ ÆiAyCN ¸®¼O½ºAO´I´U.\r\n"
+    "#include ""l.KOR\\afxres.rc""      // C￥AØ ±¸¼º ¿a¼OAO´I´U.\r\n"
     "#endif\r\n"
     "\0"
 END
 
 #endif    // APSTUDIO_INVOKED
 
+#endif    // Korean (Korea) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_NEUTRAL
+#pragma code_page(1252)
 
 /////////////////////////////////////////////////////////////////////////////
 //
@@ -83,21 +91,21 @@ VS_VERSION_INFO VERSIONINFO
 BEGIN
     BLOCK "StringFileInfo"
     BEGIN
-        BLOCK "041203b5"
+        BLOCK "000903b5"
         BEGIN
-            VALUE "CompanyName", "TODO: <회사 이름>"
-            VALUE "FileDescription", "TODO: <파일 설명>"
+            VALUE "CompanyName", "TODO: <company name>"
+            VALUE "FileDescription", "TODO: <file description>"
             VALUE "FileVersion", "1.0.0.1"
             VALUE "InternalName", "Plugin_PhysX.dll"
-            VALUE "LegalCopyright", "TODO: (c) <회사 이름>.  All rights reserved."
+            VALUE "LegalCopyright", "TODO: (c) <company name>. All rights reserved."
             VALUE "OriginalFilename", "Plugin_PhysX.dll"
-            VALUE "ProductName", "TODO: <제품 이름>"
+            VALUE "ProductName", "TODO: <product name>"
             VALUE "ProductVersion", "1.0.0.1"
         END
     END
     BLOCK "VarFileInfo"
     BEGIN
-        VALUE "Translation", 0x412, 949
+        VALUE "Translation", 0x9, 949
     END
 END
 
@@ -120,7 +128,22 @@ BEGIN
     PUSHBUTTON      "Reload",IDC_BUTTON_PX_RELOAD,142,392,30,17
 END
 
-#endif    // 한국어 resources
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_VR_PHYSX, DIALOG
+    BEGIN
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English resources
 /////////////////////////////////////////////////////////////////////////////
 
 
@@ -138,8 +161,8 @@ END
 #if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
 LANGUAGE 18, 1
 #pragma code_page(949)
-#include "res\Plugin_PhysX.rc2"  // Microsoft Visual C++ 이외의 다른 도구에서 편집한 리소스입니다.
-#include "l.KOR\afxres.rc"      // 표준 구성 요소입니다.
+#include "res\Plugin_PhysX.rc2"  // Microsoft Visual C++ ??? ?? ???? ??? ??????.
+#include "l.KOR\afxres.rc"      // ?? ?? ?????.
 #endif
 
 /////////////////////////////////////////////////////////////////////////////

@@ -1,83 +1,83 @@
-================================================================================
-              MFC 라이브러리 : CoreToolRS3 프로젝트 개요
-================================================================================
+================================================== ==============================
+              MFC Library: CoreToolRS3 project overview
+================================================== ==============================
 
-응용 프로그램 마법사를 사용하여 CoreToolRS3 응용 프로그램을 만듭니다. 이 응용 
-프로그램에서는 기본적인 MFC 사용 밥법과 응용 프로그램 작성 방법을 설명합니다.
+Create the CoreToolRS3 application using the application wizard. This application
+The program explains how to use MFC and how to write an application.
 
-이 파일에는 CoreToolRS3 응용 프로그램을 구성하는 각 파일에 대한 개요가 포함되어
-있습니다.
+This file contains an overview of each of the files that make up the CoreToolRS3 application.
+There is.
 
 CoreToolRS3.vcproj
-    응용 프로그램 마법사를 사용하여 생성된 VC++ 프로젝트의 주 프로젝트 파일입니다.
-    이 파일에는 파일을 생성한 Visual C++ 버전 정보 및 응용 프로그램 마법사에서 선택한 플랫폼,
-    구성, 프로젝트 기능 등의 정보가 포함됩니다.
+    This is the main project file for a VC++ project created using the application wizard.
+    This file contains information about the Visual C++ version that generated the file and the platform selected in the application wizard,
+    It includes information such as configuration, project features, and more.
 
 CoreToolRS3.h
-    응용 프로그램의 주 헤더 파일입니다. 이 파일에는 다른 프로젝트에 관련된 Resource.h와 같은
-    특정 헤더가 포함되며 CCoreToolRS3App 응용 프로그램 클래스가 선언됩니다.
+    This is the application's main header file. This file is related to other projects such as Resource.h
+    It contains specific headers and the CCoreToolRS3App application class is declared.
 
 CoreToolRS3.cpp
-    CCoreToolRS3App 응용 프로그램 클래스를 포함하는 주 응용 프로그램의 소스 파일입니다.
+    This is the source file for the main application that contains the CCoreToolRS3App application class.
 
 CoreToolRS3.rc
-    프로그램에서 사용하는 모든 Microsoft Windows 리소스가 나열된 파일입니다.
-    이 파일에는 RES 하위 디렉터리에 저장된 아이콘, 비트맵 및 커서가 포함되며
-    Microsoft Visual C++에서 직접 이 파일을 편집할 수도 있습니다. 사용자의 프로젝트
-    리소스는 1042에 들어 있습니다.
+    A file listing all the Microsoft Windows resources used by the program.
+    This file contains icons, bitmaps, and cursors stored in the RES subdirectory.
+    You can also edit this file directly in Microsoft Visual C++. User's project
+    Resources are contained in 1042.
 
 res\CoreToolRS3.ico
-    응용 프로그램의 아이콘으로 사용되는 아이콘 파일입니다.
-    이 아이콘은 주 리소스 파일인 CoreToolRS3.rc에 포함됩니다.
+    An icon file used as an icon for an application.
+    This icon is included in the main resource file, CoreToolRS3.rc.
 
 res\CoreToolRS3.rc2
-    Microsoft Visual C++에서 편집할 수 없는 리소스가 포함된 파일입니다.
-    리소스 편집기에서 편집할 수 없는 모든 리소스는 이 파일에 포함되어 있습니다.
-/////////////////////////////////////////////////////////////////////////////
+    A file that contains resources that cannot be edited in Microsoft Visual C++.
+    All resources that cannot be edited in the resource editor are contained in this file.
+////////////////////////////////////////////// //////////////////////////
 
-주 프레임 창에 해당되는 내용입니다.
-    프로젝트에 표준 MFC 인터페이스가 포함됩니다.
+This is for the main frame window.
+    The project includes standard MFC interfaces.
 MainFrm.h, MainFrm.cpp
-    CMainFrame 프레임 클래스를 포함하는 파일입니다.
-    프레임 클래스는 CFrameWnd에서 파생되며 모든 SDI 프레임 기능을 제어합니다.
+    The file containing the CMainFrame frame class.
+    The frame class is derived from CFrameWnd and controls all SDI frame functions.
 res\Toolbar.bmp
-    도구 모음에 바둑판식 이미지를 만들 때 사용되는 비트맵 파일입니다.
-    초기 도구 모음 및 상태 표시줄은 CMainFrame 클래스에 구성됩니다.
-    리소스 편집기를 사용하여 도구 모음 비트맵을 편집하고 CoreToolRS3.rc의
-    IDR_MAINFRAME TOOLBAR 배열을 업데이트하여 도구 모음 단추에 추가합니다.
-/////////////////////////////////////////////////////////////////////////////
+    A bitmap file used when creating tiled images on a toolbar.
+    The initial toolbar and status bar are organized in the CMainFrame class.
+    Edit the toolbar bitmap using the resource editor and open the CoreToolRS3.rc
+    Update the IDR_MAINFRAME TOOLBAR array to add it to the toolbar button.
+////////////////////////////////////////////// //////////////////////////
 
-/////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////// //////////////////////////
 
-기타 기능
+Other features
 
-ActiveX 컨트롤
-    응용 프로그램에서 ActiveX 컨트롤을 사용할 수 있습니다.
-/////////////////////////////////////////////////////////////////////////////
+ActiveX control
+    You can use ActiveX controls in your application.
+////////////////////////////////////////////// //////////////////////////
 
-기타 표준 파일
+Other standard files
 
 StdAfx.h, StdAfx.cpp
-    미리 컴파일된 헤더 파일(PCH) CoreToolRS3.pch 및 미리 컴파일된
-    형식 파일 StdAfx.obj를 빌드할 때 사용되는 파일입니다.
+    Precompiled header file (PCH) CoreToolRS3.pch and precompiled
+    This is the file used when building the format file StdAfx.obj.
 
 Resource.h
-    새로운 리소스 ID를 정의하는 표준 헤더 파일입니다.
-    Microsoft Visual C++에서 이 파일을 읽고 업데이트합니다.
+    Standard header file defining new resource IDs.
+    Microsoft Visual C++ reads and updates this file.
 
-/////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////// //////////////////////////
 
-기타 정보
+Other information
 
-응용 프로그램 마법사에서는 "TODO:"를 사용하여 추가하거나 사용자 지정해야 하는
-소스 코드를 나타냅니다.
+AppWizard should be added or customized using "TODO:"
+Represents the source code.
 
-응용 프로그램에서 공유 DLL에 MFC를 사용하고 응용 프로그램의 언어가 운영 체제의
-언어와 다른 경우 Microsoft Visual C++ CD-ROM의 Win\System 디렉터리에 있는 
-해당 지역의 리소스인 MFC70XXX.DLL을 컴퓨터의 system 또는 system32 디렉터리에 
-복사한 다음 MFCLOC.DLL로 이름을 바꾸어야 합니다. "XXX"는 해당 언어를 나타내는
-약어입니다. 예를 들어 MFC70DEU.DLL에는 독일어로 변환된 리소스가 포함됩니다.
-이런 작업을 하지 않으면 응용 프로그램의 일부 UI 요소가 운영 체제의 언어로
-남아 있게 됩니다.
+The application uses MFC for the shared DLL, and the application's language is the operating system's
+If the language is different, in the Win\System directory of the Microsoft Visual C++ CD-ROM
+MFC70XXX.DLL, a local resource, in the system or system32 directory of the computer.
+You need to copy it and then rename it to MFCLOC.DLL. "XXX" stands for that language
+It is an abbreviation. For example, MFC70DEU.DLL contains resources translated to German.
+If you don't do this, some UI elements in your application will be
+Will remain.
 
-/////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////// //////////////////////////

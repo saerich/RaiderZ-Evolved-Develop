@@ -310,7 +310,7 @@ void CRollupEntityObjectList::Listen(CoreMessage& _message)
 			SetEnableEntityUI_(false, true);
 
 			if(!LoadBaseEntityObject_())
-				AfxMessageBox("새로 생성할 엔티티 오브젝트의 템플릿이 없습니다. 메타 XML이 올바른지 확인해 보세요.");
+				AfxMessageBox("There is no template for the new entity object to be created. Make sure the meta XML is correct.");
 		}
 		break;
 		case VIEW_MESSAGE::BEFORE_SCENE_CLEAR:
@@ -1009,7 +1009,7 @@ void CRollupEntityObjectList::OnBnClickedButtonElementDel()
 	HTREEITEM hItem = m_ctlTreePreview_.GetSelectedItem();
 	if(hItem == NULL)
 	{
-		AfxMessageBox("엔티티에서 지울 엘레멘트를 선택해주세요");
+		AfxMessageBox("Select the element to be deleted from the entity");
 		return;
 	}
 
@@ -1086,9 +1086,9 @@ void CRollupEntityObjectList::OnBnClickedButtonElementDel()
 			if(bOnlyOneNpc)
 			{
 				if(bOnlyOneSelection)
-					AfxMessageBox("Spawn 에 하나이상의 NPC가 있어야 합니다.");
+					AfxMessageBox("Spawn must have at least one NPC.");
 				else
-					AfxMessageBox("NPC가 하나만 있는 Spawn에 대해서는 NPC삭제를 수행하지 않았습니다.");
+					AfxMessageBox("NPC deletion was not performed for Spawns with only one NPC.");
 
 			}
 
@@ -1196,7 +1196,7 @@ void CRollupEntityObjectList::OnBnClickedButtonElementDel()
 	}
 	else
 	{
-		AfxMessageBox("지울수 없는 엘레멘트를 선택했습니다.");
+		AfxMessageBox("You have selected an undeletable element.");
 	}
 }
 
@@ -1653,7 +1653,7 @@ void CRollupEntityObjectList::EditEntityAttributeValue_(
 					m_pControlMediator_->GetToolCmdMgr()->RecordCommand(pCmdBuffer);
 
 					if(bHasInvalidNpc)
-						AfxMessageBox("편집하려는 아이디와 같은 NPC로 설정되어 편집하지 못한 스폰이 있습니다.");
+						AfxMessageBox("There are spawns that could not be edited because they were set to the same NPC as the ID you want to edit.");
 				}
 			}
 			else
@@ -2125,7 +2125,7 @@ void CRollupEntityObjectList::OnNMRClickTreeEntityListPreview(NMHDR *pNMHDR, LRE
 		// 이팩트등이 설정되어 있지 않아 선택 바뀜이 안된 경우
 		if (!bChangeEntityEditingMode)
 		{
-			AfxMessageBox("Effect가 설정되어 있지 않습니다.");
+			AfxMessageBox("Effect is not set.");
 			return;
 		}
 	}
@@ -2146,7 +2146,7 @@ void CRollupEntityObjectList::OnNMRClickTreeEntityListPreview(NMHDR *pNMHDR, LRE
 	if (pEntity->GetUp(vUp))
 		pUp = &vUp;
 
-	CDlgInputTransform dlg((strSelectedNodeName+" 트랜스폼 설정").c_str(), pPos, pDir, pUp);
+	CDlgInputTransform dlg((strSelectedNodeName+" Transform settings").c_str(), pPos, pDir, pUp);
 	if (dlg.DoModal() == IDOK)
 	{
 		CGroupedCommandBuffer* pGroupCmdBuffer = new CGroupedCommandBuffer;
@@ -2366,7 +2366,7 @@ void CRollupEntityObjectList::OnEnChangeEditSectorHeight()
 
 	if (m_fSectorHeight < 0.0f)
 	{
-		AfxMessageBox("SectorHeight는 음수가 될 수 없습니다.");
+		AfxMessageBox("SectorHeight cannot be negative.");
 		m_fSectorHeight = fOldSectorHeight;
 		
 		UpdateData(FALSE);

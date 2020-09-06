@@ -13,13 +13,11 @@
 #undef APSTUDIO_READONLY_SYMBOLS
 
 /////////////////////////////////////////////////////////////////////////////
-// 한국어 resources
+// Korean (Korea) resources
 
 #if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
-#ifdef _WIN32
 LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
 #pragma code_page(949)
-#endif //_WIN32
 
 #ifdef APSTUDIO_INVOKED
 /////////////////////////////////////////////////////////////////////////////
@@ -48,238 +46,13 @@ BEGIN
     "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)\r\n"
     "LANGUAGE 18, 1\r\n"
     "#pragma code_page(949)\r\n"
-    "#include ""res\\CoreToolRS3.rc2""  // Microsoft Visual C++에서 편집되지 않은 리소스\r\n"
-    "#include ""afxres.rc""         // 표준 구성 요소\r\n"
+    "#include ""res\\CoreToolRS3.rc2""  // Microsoft Visual C++¿¡¼­ ÆiAyμCAo ¾EAº ¸®¼O½º\r\n"
+    "#include ""afxres.rc""         // C￥AØ ±¸¼º ¿a¼O\r\n"
     "#endif\r\n"
     "\0"
 END
 
 #endif    // APSTUDIO_INVOKED
-
-
-/////////////////////////////////////////////////////////////////////////////
-//
-// Icon
-//
-
-// Icon with lowest ID value placed first to ensure application icon
-// remains consistent on all systems.
-IDR_MAINFRAME           ICON                    "res\\CoreToolRS3.ico"
-
-/////////////////////////////////////////////////////////////////////////////
-//
-// Bitmap
-//
-
-IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
-IDB_TERRAIN_HEIGHT      BITMAP                  "res\\bitmap1.bmp"
-IDB_TERRAIN_AVER        BITMAP                  "res\\terrain_.bmp"
-IDB_TERRAIN_SPLIT       BITMAP                  "res\\bmp00002.bmp"
-IDB_OBJ_SELECT          BITMAP                  "res\\bmp00001.bmp"
-IDB_OBJ_MOVE            BITMAP                  "res\\bmp00003.bmp"
-IDB_OBJ_ROTATE          BITMAP                  "res\\bmp00004.bmp"
-IDB_OBJ_SCALE           BITMAP                  "res\\bmp00005.bmp"
-IDB_TERRAIN_FLAT        BITMAP                  "res\\bmp00006.bmp"
-IDB_ENV_WEATHER         BITMAP                  "res\\bmp00007.bmp"
-IDB_OBJ_NEW             BITMAP                  "res\\obj_move.bmp"
-IDB_ENV_LIGHTMAP        BITMAP                  "res\\env_weat.bmp"
-IDB_TERRAIN_RELAX       BITMAP                  "res\\bmp00008.bmp"
-IDB_CMD_UNDO            BITMAP                  "res\\bmp00009.bmp"
-IDB_OBJ_ON_TERRAIN      BITMAP                  "res\\bmp00010.bmp"
-IDB_OBJ_LOCK            BITMAP                  "res\\obj_lock.bmp"
-IDB_FILE_SAVE           BITMAP                  "res\\bmp00011.bmp"
-IDB_FILE_OPEN           BITMAP                  "res\\bmp00012.bmp"
-IDB_ETC_MAP_VIEW        BITMAP                  "res\\bmp00013.bmp"
-IDB_LIGHTBULB           BITMAP                  "res\\bmp00014.bmp"
-IDB_TERRAIN_GRASS       BITMAP                  "res\\bmp00015.bmp"
-IDB_ETC_DEV             BITMAP                  "res\\bmp00016.bmp"
-IDB_ETC_CAMERA          BITMAP                  "res\\bmp00017.bmp"
-IDB_ETC_PATH_FIND       BITMAP                  "res\\bmp00018.bmp"
-IDB_FILE_NEW            BITMAP                  "res\\file_new.bmp"
-IDB_OBJ_LIST            BITMAP                  "res\\obj_list.bmp"
-IDB_ETC_CLIPPING        BITMAP                  "res\\bmp00019.bmp"
-IDB_ICON_SOUND          BITMAP                  "res\\icon_sound.bmp"
-IDB_ETC_DECAL           BITMAP                  "res\\etc_dev1.bmp"
-IDB_LAYER_MANAGER       BITMAP                  "res\\toolbar_layer.bmp"
-
-/////////////////////////////////////////////////////////////////////////////
-//
-// Toolbar
-//
-
-IDR_MAINFRAME TOOLBAR  16, 15
-BEGIN
-    BUTTON      ID_EDIT_CUT
-    BUTTON      ID_EDIT_COPY
-    BUTTON      ID_EDIT_PASTE
-    SEPARATOR
-    BUTTON      ID_APP_ABOUT
-    SEPARATOR
-    BUTTON      ID_BUTTON_TERRAIN
-END
-
-
-/////////////////////////////////////////////////////////////////////////////
-//
-// Menu
-//
-
-IDR_MAINFRAME MENU 
-BEGIN
-    POPUP "파일(&F)"
-    BEGIN
-        MENUITEM "새 파일 만들기\tCtrl+N",            ID_FILE_NEW_0
-        MENUITEM "관련파일1",                       ID_FILE_NEW_1
-        MENUITEM SEPARATOR
-        MENUITEM "불러오기\tCtrl+O",                ID_FILE_OPENALL
-        MENUITEM "저장하기\tCtrl+S",                ID_FILE_SAVEALL
-        MENUITEM "다른이름으로 저장\tCtrl+Shift+S",     ID_FILE_SAVE_AS_ALL
-        MENUITEM SEPARATOR
-        MENUITEM "맵 Import(.obj 파일)\tShift+I",  ID_FILE_IMPORT
-        MENUITEM "맵 Export(.obj 파일)\tShift+E",  ID_FILE_EXPORT
-        MENUITEM SEPARATOR
-        MENUITEM "Import Scene ... \tCtrl+I",   ID_IMPORT_SCENE
-        MENUITEM "Export Scene ... \tCtrl+E",   ID_EXPORT_SCENE
-        MENUITEM SEPARATOR
-        MENUITEM "끝내기(&X)",                     ID_APP_EXIT
-        MENUITEM SEPARATOR
-        MENUITEM "최근 열어본 파일 없음",                ID_FILE_MRU_FILE1
-    END
-    POPUP "편집(&E)"
-    BEGIN
-        MENUITEM "선택 해제 \t Ctrl+D",             ID_SELECT_NONE
-        MENUITEM SEPARATOR
-        MENUITEM "카메라 리셋",                      ID_CAMERA_RESET
-        MENUITEM "물체로 화면이동\tAlt+Z",             ID_GO_TO_SELECT_CENTER
-        MENUITEM SEPARATOR
-        MENUITEM "리소스 새로고침\t(`)",               ID_RESOURCE_REFRESH
-        MENUITEM "편집 잠시멈춤(&T)\tF10",            ID_TOOLS_PAUSE
-        MENUITEM SEPARATOR
-        MENUITEM "Relax All",                   ID_RELAX_ALL
-        MENUITEM "전역광원 편집",                     32996
-        MENUITEM "수면 편집",                       ID_WATER_PLANE_EDIT
-        MENUITEM "자동 애니메이션 속성 설정",              ID_SETAUTOANIMATION
-        MENUITEM SEPARATOR
-        MENUITEM "레퍼런스 메쉬설정",                   ID_TOOLS_REF_MESH
-        MENUITEM SEPARATOR
-        MENUITEM "실행 취소\tCtrl+Z(&U)",           ID_EDIT_UNDO
-    END
-    POPUP "보기(&V)"
-    BEGIN
-        MENUITEM "도움화면\t(F1)",                  ID_VIEW_WB_INFO_PANEL
-        MENUITEM SEPARATOR
-        MENUITEM "프로파일 정보\t(&P)",               ID_VIEW_PROFILE
-        MENUITEM "지형 정보\t(&T)",                 ID_VIEW_TERRAIN
-        MENUITEM "알파소팅 정보 보기\t(&S)",            ID_VIEW_ALPHA_SORTING
-        MENUITEM "라이팅 보기\t(&L)",                ID_VIEW_LIGHTING
-        MENUITEM "스태틱 메시 셀, 포탈 보기\t(&C)",       ID_VIEW_STATIC_RENDER_CELL
-        MENUITEM "스태틱 메시 컬링 On/Off\t(&A)",      ID_VIEW_STATIC_RENDER_ALL
-        MENUITEM "HDR On/Off\t(&H)",            ID_VIEW_HDR
-        MENUITEM "HDR 렌더 타겟 On/Off",            ID_VIEW_HDR_RENDER_TARGET
-        MENUITEM "DOF On/Off\t(&D)",            ID_VIEW_DOF
-        MENUITEM "SSAO On/Off\t(&S)",           ID_VIEW_SSAO
-        MENUITEM "Motion Blur On/Off\t(&M)",    ID_VIEW_SCREEN_MOTION_BLUR
-        MENUITEM "비등방성 필터 On/Off",              33217
-        MENUITEM "왜곡 On/Off\t(&O)",             ID_VIEW_DISTORTION
-        MENUITEM "노말맵 On/Off\t(&N)",            ID_VIEW_NORMALMAP
-		MENUITEM "감마보정 On/Off\t(&G)",            ID_VIEW_GAMMA_CORRECT
-		MENUITEM "FXAA On/Off\t(&X)",				ID_VIEW_FXAA
-        MENUITEM "클리핑\t(&I)",                   ID_VIEW_CLIPPING
-        MENUITEM "실시간 그림자 On/Off\t(&W)",        ID_VIEW_SHADOW
-        MENUITEM "오클루더 기능 On/Off\t(&F)",        ID_VIEW_OCCLUDER
-        MENUITEM "기본광원",                        ID_VIEW_DEFAULT_LIGHT
-        MENUITEM "기본광원 카메라 따라가기",               ID_VIEW_DEFAULT_LIGHT_TO_CAMERA
-        MENUITEM SEPARATOR
-        POPUP "Snap To Grid"
-        BEGIN
-            MENUITEM "없음",                          ID_GRIDSIZE_NONE
-            MENUITEM "1",                           ID_GRIDSIZE_1
-            MENUITEM "5",                           ID_GRIDSIZE_5
-            MENUITEM "10",                          ID_GRIDSIZE_10
-            MENUITEM "25",                          ID_GRIDSIZE_25
-            MENUITEM "50",                          ID_GRIDSIZE_50
-        END
-        POPUP "Angle Snap"
-        BEGIN
-            MENUITEM "없음",                          ID_ANGLESNAP_NONE
-            MENUITEM "1도",                          ID_ANGLESNAP_1
-            MENUITEM "5도",                          ID_ANGLESNAP_5
-            MENUITEM "10도",                         ID_ANGLESNAP_10
-            MENUITEM "45도",                         ID_ANGLESNAP_45
-        END
-        MENUITEM SEPARATOR
-        POPUP "도구 모음"
-        BEGIN
-            MENUITEM "TOOLBARS",                    33204
-        END
-    END
-    POPUP "도구(&T)"
-    BEGIN
-        POPUP "리스트 XML 편집"
-        BEGIN
-            MENUITEM "Zone List XML",               ID_XML_ZONE
-            MENUITEM "Field List XML",              ID_XML_FIELD
-            MENUITEM "NPC List XML",                ID_XML_NPC
-            MENUITEM "Property XML",                ID_XML_PROPERTY
-        END
-        MENUITEM "리소스 뷰어",                      ID_TOOLS_MAP_RES_MGR
-        MENUITEM "맵 배치 스크립팅",                   ID_TOOLS_MAP_BATCH
-        MENUITEM "Data 폴더 열기",                  ID_TOOLS_OPEN_DATA
-        MENUITEM SEPARATOR
-        MENUITEM "기타도구1",                       ID_TOOL_ETC_1
-        MENUITEM SEPARATOR
-        MENUITEM "옵션(&O)...",                   ID_TOOLS_OPTION
-    END
-    POPUP "도움말(&H)"
-    BEGIN
-        MENUITEM "단축키 확인(&S)",                  ID_TOOLS_SHORTCUT, INACTIVE
-        MENUITEM "오늘의 팁",                       ID_TIPS_OF_DAY
-        MENUITEM SEPARATOR
-        MENUITEM "CoreToolRS3 정보(&A)...",       ID_APP_ABOUT
-    END
-END
-
-IDR_MENU_NEW_OBJECT MENU 
-BEGIN
-    POPUP "새 오브젝트"
-    BEGIN
-        MENUITEM "메쉬 액터",                       ID_NEW_MESH_ACTOR
-        MENUITEM "스피드 트리",                      ID_NEW_SPEED_TREE
-        MENUITEM "물 오브젝트",                      ID_NEW_WATER_OBJECT
-    END
-END
-
-IDR_MENU_LAYER_CONTEXT MENU 
-BEGIN
-    POPUP "Layer"
-    BEGIN
-        MENUITEM "Set As Default Layer",        ID_LAYER_SETASDEFAULTLAYER
-    END
-END
-
-
-/////////////////////////////////////////////////////////////////////////////
-//
-// Accelerator
-//
-
-IDR_MAINFRAME ACCELERATORS 
-BEGIN
-    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
-    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
-    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
-    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
-    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
-    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
-    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
-    "E",            ID_FILE_EXPORT,         VIRTKEY, SHIFT, NOINVERT
-    "I",            ID_FILE_IMPORT,         VIRTKEY, SHIFT, NOINVERT
-    "N",            ID_FILE_NEW_0,          VIRTKEY, CONTROL, NOINVERT
-    "O",            ID_FILE_OPENALL,        VIRTKEY, CONTROL, NOINVERT
-    "Z",            ID_GO_TO_SELECT_CENTER, VIRTKEY, ALT, NOINVERT
-    VK_F10,         ID_TOOLS_PAUSE,         VIRTKEY, NOINVERT
-    "D",            ID_SELECT_NONE,         VIRTKEY, CONTROL, NOINVERT
-END
 
 
 /////////////////////////////////////////////////////////////////////////////
@@ -315,7 +88,7 @@ BEGIN
     PUSHBUTTON      "온터",IDC_TOP_OBJ_ON_TERRAIN,386,3,15,15
     PUSHBUTTON      "락",IDC_TOP_LOCK,370,3,15,15
     PUSHBUTTON      "저장",IDC_TOP_FILE_SAVE,45,3,15,15
-    PUSHBUTTON      "열기",IDC_TOP_FILE_OPEN,22,3,21,15
+    PUSHBUTTON      "열기",IDC_TOP_FILE_OPEN,21,3,21,15
     PUSHBUTTON      "길",IDC_TOP_PATH_FIND,466,3,15,15
     PUSHBUTTON      "뷰",IDC_TOP_ETC_MAP_VIEW,498,3,15,15
     PUSHBUTTON      "데브",IDC_TOP_ETC_DEV,514,3,15,15
@@ -328,15 +101,314 @@ BEGIN
     PUSHBUTTON      "L",IDC_AXIS_LOCAL,356,4,13,12
 END
 
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_VL_TOOL_BAR, DIALOG
+    BEGIN
+        HORZGUIDE, 3
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_VL_TOOL_BAR AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+#endif    // Korean (Korea) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_NEUTRAL
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\CoreToolRS3.ico"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+
+IDB_TERRAIN_HEIGHT      BITMAP                  "res\\bitmap1.bmp"
+
+IDB_TERRAIN_AVER        BITMAP                  "res\\terrain_.bmp"
+
+IDB_TERRAIN_SPLIT       BITMAP                  "res\\bmp00002.bmp"
+
+IDB_OBJ_SELECT          BITMAP                  "res\\bmp00001.bmp"
+
+IDB_OBJ_MOVE            BITMAP                  "res\\bmp00003.bmp"
+
+IDB_OBJ_ROTATE          BITMAP                  "res\\bmp00004.bmp"
+
+IDB_OBJ_SCALE           BITMAP                  "res\\bmp00005.bmp"
+
+IDB_TERRAIN_FLAT        BITMAP                  "res\\bmp00006.bmp"
+
+IDB_ENV_WEATHER         BITMAP                  "res\\bmp00007.bmp"
+
+IDB_OBJ_NEW             BITMAP                  "res\\obj_move.bmp"
+
+IDB_ENV_LIGHTMAP        BITMAP                  "res\\env_weat.bmp"
+
+IDB_TERRAIN_RELAX       BITMAP                  "res\\bmp00008.bmp"
+
+IDB_CMD_UNDO            BITMAP                  "res\\bmp00009.bmp"
+
+IDB_OBJ_ON_TERRAIN      BITMAP                  "res\\bmp00010.bmp"
+
+IDB_OBJ_LOCK            BITMAP                  "res\\obj_lock.bmp"
+
+IDB_FILE_SAVE           BITMAP                  "res\\bmp00011.bmp"
+
+IDB_FILE_OPEN           BITMAP                  "res\\bmp00012.bmp"
+
+IDB_ETC_MAP_VIEW        BITMAP                  "res\\bmp00013.bmp"
+
+IDB_LIGHTBULB           BITMAP                  "res\\bmp00014.bmp"
+
+IDB_TERRAIN_GRASS       BITMAP                  "res\\bmp00015.bmp"
+
+IDB_ETC_DEV             BITMAP                  "res\\bmp00016.bmp"
+
+IDB_ETC_CAMERA          BITMAP                  "res\\bmp00017.bmp"
+
+IDB_ETC_PATH_FIND       BITMAP                  "res\\bmp00018.bmp"
+
+IDB_FILE_NEW            BITMAP                  "res\\file_new.bmp"
+
+IDB_OBJ_LIST            BITMAP                  "res\\obj_list.bmp"
+
+IDB_ETC_CLIPPING        BITMAP                  "res\\bmp00019.bmp"
+
+IDB_ICON_SOUND          BITMAP                  "res\\icon_sound.bmp"
+
+IDB_ETC_DECAL           BITMAP                  "res\\etc_dev1.bmp"
+
+IDB_LAYER_MANAGER       BITMAP                  "res\\toolbar_layer.bmp"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR 16, 15
+BEGIN
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_APP_ABOUT
+    SEPARATOR
+    BUTTON      ID_BUTTON_TERRAIN
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU
+BEGIN
+    POPUP "File(&F)"
+    BEGIN
+        MENUITEM "Create New File\tCtrl+N",     ID_FILE_NEW_0
+        MENUITEM "Related file 1",              ID_FILE_NEW_1
+        MENUITEM SEPARATOR
+        MENUITEM "Load\tCtrl+O",                ID_FILE_OPENALL
+        MENUITEM "Save\tCtrl+S",                ID_FILE_SAVEALL
+        MENUITEM "Save As\tCtrl+Shift+S",       ID_FILE_SAVE_AS_ALL
+        MENUITEM SEPARATOR
+        MENUITEM "Map Import (.obj file)\tShift+I", ID_FILE_IMPORT
+        MENUITEM "Map Export (.obj file)\tShift+E", ID_FILE_EXPORT
+        MENUITEM SEPARATOR
+        MENUITEM "Import Scene ... \tCtrl+I",   ID_IMPORT_SCENE
+        MENUITEM "Export Scene ... \tCtrl+E",   ID_EXPORT_SCENE
+        MENUITEM SEPARATOR
+        MENUITEM "Exit(&X)",                    ID_APP_EXIT
+        MENUITEM SEPARATOR
+        MENUITEM "No recently opened files",    ID_FILE_MRU_FILE1
+    END
+    POPUP "Edit(&E)"
+    BEGIN
+        MENUITEM "Deselect \t Ctrl+D",          ID_SELECT_NONE
+        MENUITEM SEPARATOR
+        MENUITEM "Reset Camera",                ID_CAMERA_RESET
+        MENUITEM "Scroll to object\tAlt+Z",     ID_GO_TO_SELECT_CENTER
+        MENUITEM SEPARATOR
+        MENUITEM "Resource Refresh\t(`)",       ID_RESOURCE_REFRESH
+        MENUITEM "Pause Editor(&T)\tF10",       ID_TOOLS_PAUSE
+        MENUITEM SEPARATOR
+        MENUITEM "Relax All",                   ID_RELAX_ALL
+        MENUITEM "Edit Global Light Source",    32996
+        MENUITEM "Edit Water",                  ID_WATER_PLANE_EDIT
+        MENUITEM "Automatic animation property setting", ID_SETAUTOANIMATION
+        MENUITEM SEPARATOR
+        MENUITEM "Reference mesh setup",        ID_TOOLS_REF_MESH
+        MENUITEM SEPARATOR
+        MENUITEM "Undo\tCtrl+Z(&U)",            ID_EDIT_UNDO
+    END
+    POPUP "View(&V)"
+    BEGIN
+        MENUITEM "Help screen\t(F1)",           ID_VIEW_WB_INFO_PANEL
+        MENUITEM SEPARATOR
+        MENUITEM "Profile Information\t(&P)",   ID_VIEW_PROFILE
+        MENUITEM "Terrain information\t(&T)",   ID_VIEW_TERRAIN
+        MENUITEM "Viewing Alpha Sorting Information\t(&S)", ID_VIEW_ALPHA_SORTING
+        MENUITEM "Lighting view\t(&L)",         ID_VIEW_LIGHTING
+        MENUITEM "Static mesh cell, portal view\t(&C)", ID_VIEW_STATIC_RENDER_CELL
+        MENUITEM "Static mesh culling On/Off\t(&A)", ID_VIEW_STATIC_RENDER_ALL
+        MENUITEM "HDR On/Off\t(&H)",            ID_VIEW_HDR
+        MENUITEM "HDR render target On/Off",    ID_VIEW_HDR_RENDER_TARGET
+        MENUITEM "DOF On/Off\t(&D)",            ID_VIEW_DOF
+        MENUITEM "SSAO On/Off\t(&S)",           ID_VIEW_SSAO
+        MENUITEM "Motion Blur On/Off\t(&M)",    ID_VIEW_SCREEN_MOTION_BLUR
+        MENUITEM "Anisotropic filter On/Off",   33217
+        MENUITEM "Distortion On/Off\t(&O)",     ID_VIEW_DISTORTION
+        MENUITEM "Normal MapOn/Off\t(&N)",      ID_VIEW_NORMALMAP
+        MENUITEM "Gamma correction On/Off\t(&G)", ID_VIEW_GAMMA_CORRECT
+        MENUITEM "FXAA On/Off\t(&X)",           ID_VIEW_FXAA
+        MENUITEM "Clip\t(&I)",                  ID_VIEW_CLIPPING
+        MENUITEM "Real-time shadow On/Off\t(&W)", ID_VIEW_SHADOW
+        MENUITEM "Occluder functionOn/Off\t(&F)", ID_VIEW_OCCLUDER
+        MENUITEM "Basic light source",          ID_VIEW_DEFAULT_LIGHT
+        MENUITEM "Follow the basic light source camera", ID_VIEW_DEFAULT_LIGHT_TO_CAMERA
+        MENUITEM SEPARATOR
+        POPUP "Snap To Grid"
+        BEGIN
+            MENUITEM "??",                          ID_GRIDSIZE_NONE
+            MENUITEM "1",                           ID_GRIDSIZE_1
+            MENUITEM "5",                           ID_GRIDSIZE_5
+            MENUITEM "10",                          ID_GRIDSIZE_10
+            MENUITEM "25",                          ID_GRIDSIZE_25
+            MENUITEM "50",                          ID_GRIDSIZE_50
+        END
+        POPUP "Angle Snap"
+        BEGIN
+            MENUITEM "??",                          ID_ANGLESNAP_NONE
+            MENUITEM "1?",                          ID_ANGLESNAP_1
+            MENUITEM "5?",                          ID_ANGLESNAP_5
+            MENUITEM "10?",                         ID_ANGLESNAP_10
+            MENUITEM "45?",                         ID_ANGLESNAP_45
+        END
+        MENUITEM SEPARATOR
+        POPUP "Toolbar"
+        BEGIN
+            MENUITEM "TOOLBARS",                    33204
+        END
+    END
+    POPUP "Tool(&T)"
+    BEGIN
+        POPUP "Edit list XML"
+        BEGIN
+            MENUITEM "Zone List XML",               ID_XML_ZONE
+            MENUITEM "Field List XML",              ID_XML_FIELD
+            MENUITEM "NPC List XML",                ID_XML_NPC
+            MENUITEM "Property XML",                ID_XML_PROPERTY
+        END
+        MENUITEM "Resource Viewer",             ID_TOOLS_MAP_RES_MGR
+        MENUITEM "Map layout scripting",        ID_TOOLS_MAP_BATCH
+        MENUITEM "Open the Data folder",        ID_TOOLS_OPEN_DATA
+        MENUITEM SEPARATOR
+        MENUITEM "Other Tools 1",               ID_TOOL_ETC_1
+        MENUITEM SEPARATOR
+        MENUITEM "Option(&O)...",               ID_TOOLS_OPTION
+    END
+    POPUP "Help(&H)"
+    BEGIN
+        MENUITEM "Check hotkey(&S)",            ID_TOOLS_SHORTCUT, INACTIVE
+        MENUITEM "Tip of the day",              ID_TIPS_OF_DAY
+        MENUITEM SEPARATOR
+        MENUITEM "CoreToolRS3 About(&A)...",    ID_APP_ABOUT
+    END
+END
+
+IDR_MENU_NEW_OBJECT MENU
+BEGIN
+    POPUP "New object"
+    BEGIN
+        MENUITEM "Mesh actor",                  ID_NEW_MESH_ACTOR
+        MENUITEM "Speed tree",                  ID_NEW_SPEED_TREE
+        MENUITEM "Water object",                ID_NEW_WATER_OBJECT
+    END
+END
+
+IDR_MENU_LAYER_CONTEXT MENU
+BEGIN
+    POPUP "Layer"
+    BEGIN
+        MENUITEM "Set As Default Layer",        ID_LAYER_SETASDEFAULTLAYER
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS
+BEGIN
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    "E",            ID_FILE_EXPORT,         VIRTKEY, SHIFT, NOINVERT
+    "I",            ID_FILE_IMPORT,         VIRTKEY, SHIFT, NOINVERT
+    "N",            ID_FILE_NEW_0,          VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPENALL,        VIRTKEY, CONTROL, NOINVERT
+    "Z",            ID_GO_TO_SELECT_CENTER, VIRTKEY, ALT, NOINVERT
+    VK_F10,         ID_TOOLS_PAUSE,         VIRTKEY, NOINVERT
+    "D",            ID_SELECT_NONE,         VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
 IDD_VR_ZONE_OBJECT_NEW DIALOGEX 0, 0, 178, 498
 STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
 FONT 8, "MS Shell Dlg", 400, 0, 0x1
 BEGIN
     CONTROL         "",IDC_TAB_FILE,"SysTabControl32",0x0,2,131,175,362
     CONTROL         "",IDC_TREE_NEW_LIST,"SysTreeView32",TVS_HASBUTTONS | TVS_HASLINES | TVS_LINESATROOT | TVS_SHOWSELALWAYS | WS_BORDER | WS_HSCROLL | WS_TABSTOP,3,145,171,346
-    PUSHBUTTON      "물 오브젝트 생성",IDC_BUTTON_ETC_WATER_PLANE_CREATE,14,175,108,15
+    PUSHBUTTON      "Create water object",IDC_BUTTON_ETC_WATER_PLANE_CREATE,14,175,108,15
     CONTROL         "",IDC_OBJECT_PREVIEW,"Static",SS_BLACKFRAME,20,5,138,96
-    GROUPBOX        "액터 생성타입",IDC_STATIC_CREATION_TYPE,25,103,126,22
+    GROUPBOX        "Actor creation type",IDC_STATIC_CREATION_TYPE,25,103,126,22
     CONTROL         "As Instance",IDC_RADIO_AS_INSTANCE,"Button",BS_AUTORADIOBUTTON | WS_GROUP,33,112,54,10
     CONTROL         "As Copy",IDC_RADIO_AS_COPY,"Button",BS_AUTORADIOBUTTON,95,112,43,10
 END
@@ -350,20 +422,20 @@ END
 
 IDD_VL_OBJECT_LIST DIALOGEX 0, 0, 429, 400
 STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
-CAPTION "씬 오브젝트 리스트"
+CAPTION "List of scene objects"
 FONT 8, "MS Shell Dlg", 400, 0, 0x1
 BEGIN
     CONTROL         "",IDC_TREE_OBJECT,"SysTreeView32",TVS_HASBUTTONS | TVS_HASLINES | TVS_LINESATROOT | TVS_SHOWSELALWAYS | TVS_NOTOOLTIPS | TVS_CHECKBOXES | WS_BORDER | WS_HSCROLL | WS_TABSTOP,5,16,207,365
-    CONTROL         "Hierarchy뷰",IDC_CHECK_HIERACHY_VIEW,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,4,5,49,10
+    CONTROL         "Hierarchy View",IDC_CHECK_HIERACHY_VIEW,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,4,5,77,10
     PUSHBUTTON      "*",IDC_BUTTON_EXPAND_TOGGLE,198,2,12,13
     EDITTEXT        IDC_EDIT_OBJECT_SELECT_COUNT,15,387,49,12,ES_RIGHT | ES_READONLY | NOT WS_BORDER
     LTEXT           "Object(s) selected",IDC_STATIC,67,387,60,8
-    PUSHBUTTON      "▶",IDC_BUTTON_PLAY_EFFECT,170,2,21,13
+    PUSHBUTTON      "?",IDC_BUTTON_PLAY_EFFECT,170,2,21,13
 END
 
 IDD_SIDE_PANEL DIALOGEX 0, 0, 165, 26
 STYLE DS_SETFONT | WS_CHILD
-FONT 9, "굴림", 0, 0, 0x0
+FONT 9, "??", 0, 0, 0x0
 BEGIN
 END
 
@@ -371,8 +443,8 @@ IDD_VR_TERRAIN_HEIGHT DIALOGEX 0, 0, 178, 81
 STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
 FONT 8, "MS Shell Dlg", 400, 0, 0x1
 BEGIN
-    GROUPBOX        "작업영역",IDC_HEIGHT_AREA,24,6,132,31
-    GROUPBOX        "세기",IDC_HEIGHT_STR,24,43,132,31
+    GROUPBOX        "Work Area",IDC_HEIGHT_AREA,24,6,132,31
+    GROUPBOX        "Percent",IDC_HEIGHT_STR,24,43,132,31
     EDITTEXT        IDC_EDIT_HEIGHT_AREA,31,17,25,13,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY | NOT WS_TABSTOP
     EDITTEXT        IDC_EDIT_HEIGHT_STR,31,54,25,13,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY | NOT WS_TABSTOP
     CONTROL         "",IDC_SLIDER_HEIGHT_AREA,"msctls_trackbar32",TBS_NOTICKS | WS_TABSTOP,57,16,97,14
@@ -383,8 +455,8 @@ IDD_VR_TERRAIN_AVER DIALOGEX 0, 0, 178, 81
 STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
 FONT 8, "MS Shell Dlg", 400, 0, 0x1
 BEGIN
-    GROUPBOX        "작업영역",IDC_AVER_AREA,24,6,132,31
-    GROUPBOX        "퍼센트",IDC_AVER_STR,24,43,132,31
+    GROUPBOX        "Work area",IDC_AVER_AREA,24,6,132,31
+    GROUPBOX        "Percent",IDC_AVER_STR,24,43,132,31
     EDITTEXT        IDC_EDIT_AVER_AREA,31,17,25,13,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY | NOT WS_TABSTOP
     EDITTEXT        IDC_EDIT_AVER_STR,31,54,25,13,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY | NOT WS_TABSTOP
     CONTROL         "",IDC_SLIDER_AVER_AREA,"msctls_trackbar32",TBS_NOTICKS | WS_TABSTOP,57,16,97,14
@@ -396,16 +468,16 @@ STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
 FONT 8, "MS Shell Dlg", 400, 0, 0x1
 BEGIN
     COMBOBOX        IDC_COMBO_ENVSET,19,7,141,88,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
-    PUSHBUTTON      "Add",IDC_BUTTON_ADDEDENVSET,88,22,30,14
-    PUSHBUTTON      "Delete",IDC_BUTTON_DELENVSET,121,22,30,14
-    CONTROL         "환경 보기",IDC_CHECK_VIEW_ENV,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,29,24,50,10
+    PUSHBUTTON      "Add",IDC_BUTTON_ADDEDENVSET,92,22,30,14
+    PUSHBUTTON      "Delete",IDC_BUTTON_DELENVSET,125,22,30,14
+    CONTROL         "View Environment",IDC_CHECK_VIEW_ENV,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,20,24,69,10
     COMBOBOX        IDC_COMBO_TIMES,22,43,55,82,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
-    COMBOBOX        IDC_COMBO_WEATHERS,80,43,74,82,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
-    CONTROL         "포그 보기",IDC_CHECK_VIEW_FOG,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,30,78,51,10
-    GROUPBOX        "하늘",IDC_STATIC,18,492,142,156
+    COMBOBOX        IDC_COMBO_WEATHERS,80,43,80,82,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "View Fog",IDC_CHECK_VIEW_FOG,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,22,78,59,10
+    GROUPBOX        "Sky",IDC_STATIC,18,492,142,156
     LISTBOX         IDC_LIST_ENV,27,500,124,45,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
-    PUSHBUTTON      "▲",IDC_BUTTON_UP,31,548,16,9
-    PUSHBUTTON      "▼",IDC_BUTTON_DOWN,49,548,16,9
+    PUSHBUTTON      "?",IDC_BUTTON_UP,31,548,16,9
+    PUSHBUTTON      "?",IDC_BUTTON_DOWN,49,548,16,9
     PUSHBUTTON      "Add",IDC_ADD_SKY,87,548,30,14
     PUSHBUTTON      "Delete",IDC_DEL_SKY,121,548,30,14
     LTEXT           "Color",IDC_STATIC,29,585,18,8
@@ -416,8 +488,8 @@ BEGIN
     LTEXT           "Alpha",IDC_STATIC,30,602,19,8
     CONTROL         "",IDC_SLIDER1,"msctls_trackbar32",TBS_BOTH | TBS_TOOLTIPS | WS_TABSTOP,50,594,100,23
     PUSHBUTTON      "Open All",IDC_BUTTON_ENV_IMPORT_DEFAULT,40,60,33,13
-    PUSHBUTTON      "Open",IDC_BUTTON_ENV_IMPORT,83,60,33,13
-    PUSHBUTTON      "Save",IDC_BUTTON_ENV_EXPORT,119,60,33,13
+    PUSHBUTTON      "Open",IDC_BUTTON_ENV_IMPORT,87,60,33,13
+    PUSHBUTTON      "Save",IDC_BUTTON_ENV_EXPORT,123,60,33,13
     CTEXT           "UV Animation Speed",IDC_STATIC,26,617,71,10
     CONTROL         "",IDC_SLIDER_UVSPEED,"msctls_trackbar32",TBS_AUTOTICKS | TBS_BOTH | TBS_TOOLTIPS | WS_TABSTOP,31,625,119,22
     LTEXT           "Fog",IDC_STATIC,29,567,13,8
@@ -431,16 +503,16 @@ IDD_VR_TERRAIN_SPLAT DIALOGEX 0, 0, 178, 557
 STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
 FONT 8, "MS Shell Dlg", 400, 0, 0x1
 BEGIN
-    GROUPBOX        "작업영역",IDC_SPLAT_AREA,22,7,132,31
-    GROUPBOX        "세기",IDC_SPLAT_STR,22,44,132,31
+    GROUPBOX        "Work Area",IDC_SPLAT_AREA,22,7,132,31
+    GROUPBOX        "Percent",IDC_SPLAT_STR,22,44,132,31
     EDITTEXT        IDC_EDIT_SPLAT_AREA,29,18,25,13,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY | NOT WS_TABSTOP
     EDITTEXT        IDC_EDIT_SPLAT_STR,29,55,25,13,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY | NOT WS_TABSTOP
     CONTROL         "",IDC_SLIDER_SPLAT_AREA,"msctls_trackbar32",TBS_NOTICKS | WS_TABSTOP,55,17,97,14
     CONTROL         "",IDC_SLIDER_SPLAT_STR,"msctls_trackbar32",TBS_NOTICKS | WS_TABSTOP,55,55,97,14
     LISTBOX         IDC_LIST_TILE,24,312,127,189,LBS_OWNERDRAWFIXED | LBS_HASSTRINGS | LBS_NOINTEGRALHEIGHT | NOT WS_BORDER | WS_VSCROLL | WS_TABSTOP,WS_EX_STATICEDGE
     PUSHBUTTON      "Delete",IDC_BUTTON_DEL,119,269,31,14
-    PUSHBUTTON      "▲",IDC_BUTTON_UP,121,504,14,11
-    PUSHBUTTON      "▼",IDC_BUTTON_DOWN,136,504,14,11
+    PUSHBUTTON      "?",IDC_BUTTON_UP,121,504,14,11
+    PUSHBUTTON      "?",IDC_BUTTON_DOWN,136,504,14,11
     LTEXT           "u",IDC_STATIC,30,233,9,8
     LTEXT           "v",IDC_STATIC,30,248,9,8
     EDITTEXT        IDC_EDIT_U,37,233,35,13,ES_AUTOHSCROLL
@@ -454,11 +526,11 @@ BEGIN
     LTEXT           "height",IDC_STATIC,89,246,21,8
     EDITTEXT        IDC_EDIT_SPLAT_WIDTH,111,233,25,12,ES_AUTOHSCROLL | ES_READONLY
     EDITTEXT        IDC_EDIT_SPLAT_HEIGHT,111,245,25,12,ES_AUTOHSCROLL | ES_READONLY
-    PUSHBUTTON      "↑",IDC_BUTTON_RESIZE_UP,137,233,10,12
-    PUSHBUTTON      "↓",IDC_BUTTON_RESIZE_DOWN,137,246,10,12
-    GROUPBOX        "해상도",IDC_STATIC_RESOLUTIN,86,222,66,42
-    GROUPBOX        "타일링",IDC_STATIC_TILING,23,222,60,42
-    LTEXT           "레이어 변경",IDC_STATIC,76,506,43,8
+    PUSHBUTTON      "?",IDC_BUTTON_RESIZE_UP,137,233,10,12
+    PUSHBUTTON      "?",IDC_BUTTON_RESIZE_DOWN,137,246,10,12
+    GROUPBOX        "Resolution",IDC_STATIC_RESOLUTIN,86,222,66,42
+    GROUPBOX        "Tiling",IDC_STATIC_TILING,23,222,60,42
+    LTEXT           "Layer change",IDC_STATIC,76,506,43,8
     LTEXT           "Check box on up : turn on Specular",IDC_STATIC_SPEC,21,289,128,8
     CONTROL         "Layer marking",IDC_CHECK_USE_MARKING,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,22,518,59,10
     PUSHBUTTON      "Layer Rebuild",IDC_LAYER_REBUILD,23,533,54,13
@@ -471,10 +543,10 @@ IDD_VR_TERRAIN_FLAT DIALOGEX 0, 0, 178, 81
 STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
 FONT 8, "MS Shell Dlg", 400, 0, 0x1
 BEGIN
-    GROUPBOX        "작업영역",IDC_FLAT_AREA,24,6,132,31
+    GROUPBOX        "Work area",IDC_FLAT_AREA,24,6,132,31
     EDITTEXT        IDC_EDIT_FLAT_AREA,31,17,25,13,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY | NOT WS_TABSTOP
     CONTROL         "",IDC_SLIDER_FLAT_AREA,"msctls_trackbar32",TBS_NOTICKS | WS_TABSTOP,57,16,97,14
-    GROUPBOX        "퍼센트",IDC_FLAT_STR,24,43,132,31
+    GROUPBOX        "Percent",IDC_FLAT_STR,24,43,132,31
     EDITTEXT        IDC_EDIT_FLAT_STR,31,54,25,13,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY | NOT WS_TABSTOP
     CONTROL         "",IDC_SLIDER_FLAT_STR,"msctls_trackbar32",TBS_NOTICKS | WS_TABSTOP,57,54,97,14
 END
@@ -484,125 +556,126 @@ STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTI
 CAPTION "Dialog"
 FONT 8, "MS Shell Dlg", 400, 0, 0x1
 BEGIN
-    DEFPUSHBUTTON   "확인",IDOK,79,200,50,14
-    PUSHBUTTON      "취소",IDCANCEL,258,200,50,14
+    DEFPUSHBUTTON   "Confirm",IDOK,79,200,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,258,200,50,14
 END
 
 IDD_OPTION_PAGE1 DIALOGEX 0, 0, 363, 268
 STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
-CAPTION "일반"
+CAPTION "Normal"
 FONT 8, "MS Shell Dlg", 400, 0, 0x1
 BEGIN
-    GROUPBOX        "일반",IDC_STATIC,7,7,348,63
-    LTEXT           "쉐도우맵 Size : ",IDC_STATIC,21,26,54,8
+    GROUPBOX        "Normal",IDC_STATIC,7,7,348,63
+    LTEXT           "Shadow Map Size:",IDC_STATIC,15,26,62,8
     EDITTEXT        IDC_EDIT_SHADOWSIZE,80,24,48,14,ES_AUTOHSCROLL | WS_DISABLED
-    GROUPBOX        "조작",IDC_STATIC,7,74,348,106
-    LTEXT           "최대Z값 : ",IDC_STATIC,53,93,36,8
-    LTEXT           "최소Z값 : ",IDC_STATIC,204,94,36,8
+    GROUPBOX        "Operation",IDC_STATIC,7,74,348,106
+    LTEXT           "Maximum Z value:",IDC_STATIC,29,93,60,8
+    LTEXT           "Minimum Z value:",IDC_STATIC,196,94,57,8
     EDITTEXT        IDC_EDIT2,104,91,53,14,ES_AUTOHSCROLL
-    EDITTEXT        IDC_EDIT4,249,91,53,14,ES_AUTOHSCROLL
-    LTEXT           "마우스 줌 속도 : ",IDC_STATIC,29,115,60,8
-    LTEXT           "키보드 줌 속도 : ",IDC_STATIC,180,116,60,8
-    EDITTEXT        IDC_EDIT3,249,113,53,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT4,263,91,53,14,ES_AUTOHSCROLL
+    LTEXT           "Mouse zoom speed:",IDC_STATIC,23,115,71,8
+    LTEXT           "Keyboard zoom speed:",IDC_STATIC,178,116,76,8
+    EDITTEXT        IDC_EDIT3,263,113,53,14,ES_AUTOHSCROLL
     EDITTEXT        IDC_EDIT5,104,112,53,14,ES_AUTOHSCROLL
-    LTEXT           "회전 속도 : ",IDC_STATIC,47,137,42,8
-    LTEXT           "팬 속도 : ",IDC_STATIC,206,138,34,8
+    LTEXT           "Rotation speed:",IDC_STATIC,34,137,57,8
+    LTEXT           "Fan speed:",IDC_STATIC,215,138,39,8
     EDITTEXT        IDC_EDIT7,104,133,53,14,ES_AUTOHSCROLL
-    EDITTEXT        IDC_EDIT6,249,135,53,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT6,263,135,53,14,ES_AUTOHSCROLL
     CONTROL         "Save to config.xml",IDC_CHECK_SAVE_CONFIG_XML,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,249,156,74,14
-    LTEXT           "텍스트 편집기 : ",IDC_STATIC_SCRPIT_EDITOR,18,46,57,8
+    LTEXT           "Text editor:",IDC_STATIC_SCRPIT_EDITOR,35,46,42,8
     EDITTEXT        IDC_EDIT_TEXT_EDITOR,79,44,195,14,ES_AUTOHSCROLL
     PUSHBUTTON      "...",IDC_BUTTON_TEXT_EDITOR,283,45,29,14
-    GROUPBOX        "서버",IDC_STATIC,7,186,348,41
-    LTEXT           "로그인ID : ",IDC_STATIC,41,201,39,8
+    GROUPBOX        "Server",IDC_STATIC,7,186,348,41
+    LTEXT           "Login ID:",IDC_STATIC,41,201,39,8
     LTEXT           "IP : ",IDC_STATIC,206,202,14,8
     EDITTEXT        IDC_EDIT_OPTION_LOGIN_ID,95,199,53,14,ES_AUTOHSCROLL
     EDITTEXT        IDC_EDIT_OPTION_LOGIN_IP,230,199,53,14,ES_AUTOHSCROLL
-    CONTROL         "마지막 작업상태 저장",IDC_CHECK_SAVE_LAST_WORK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,142,156,87,14
+    CONTROL         "Save last working state",IDC_CHECK_SAVE_LAST_WORK,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,142,156,87,14
 END
 
 IDD_OPTION_PAGE2 DIALOGEX 0, 0, 349, 270
 STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
-CAPTION "폴더"
+CAPTION "Folder"
 FONT 8, "MS Shell Dlg", 400, 0, 0x1
 BEGIN
-    GROUPBOX        "일반",IDC_STATIC,7,7,335,58
-    GROUPBOX        "세부",IDC_STATIC,7,74,335,166
-    LTEXT           "맵 작업폴더 : ",IDC_STATIC,24,23,48,8
-    EDITTEXT        IDC_EDIT_ROOTPATH,76,19,220,14,ES_AUTOHSCROLL | WS_DISABLED
+    GROUPBOX        "Normal",IDC_STATIC,7,7,335,58
+    GROUPBOX        "Details",IDC_STATIC,7,74,335,166
+    LTEXT           "Map working folder:",IDC_STATIC,21,23,66,8
+    EDITTEXT        IDC_EDIT_ROOTPATH,91,19,205,14,ES_AUTOHSCROLL | WS_DISABLED
     PUSHBUTTON      "...",IDC_BUTTON_ROOTPATH,305,18,29,14
-    LTEXT           "타일폴더 :",IDC_STATIC,30,91,38,8
-    LTEXT           "텍스처폴더 : ",IDC_STATIC,22,111,46,8
-    LTEXT           "트리 폴더 : ",IDC_STATIC,28,129,41,8
-    LTEXT           "elu폴더 : ",IDC_STATIC,36,146,32,8
-    LTEXT           "eft 폴더 : ",IDC_STATIC,34,161,33,8
-    LTEXT           "쉐이더폴더 : ",IDC_STATIC,21,177,46,8
+    LTEXT           "Tile Folder:",IDC_STATIC,30,91,38,8
+    LTEXT           "Texture folder:",IDC_STATIC,17,111,54,8
+    LTEXT           "Tree folder:",IDC_STATIC,28,129,41,8
+    LTEXT           "elu folder:",IDC_STATIC,36,146,34,8
+    LTEXT           "eft folder:",IDC_STATIC,35,161,33,8
+    LTEXT           "Shader folder:",IDC_STATIC,21,177,46,8
     EDITTEXT        IDC_EDIT2,76,89,239,14,ES_AUTOHSCROLL | WS_DISABLED
     EDITTEXT        IDC_EDIT3,76,107,239,14,ES_AUTOHSCROLL | WS_DISABLED
     EDITTEXT        IDC_EDIT5,76,140,239,14,ES_AUTOHSCROLL | WS_DISABLED
     EDITTEXT        IDC_EDIT7,76,124,239,14,ES_AUTOHSCROLL | WS_DISABLED
     EDITTEXT        IDC_EDIT6,76,158,239,14,ES_AUTOHSCROLL | WS_DISABLED
     EDITTEXT        IDC_EDIT8,76,175,239,14,ES_AUTOHSCROLL | WS_DISABLED
-    EDITTEXT        IDC_EDIT_SERVER_PATH,76,41,220,14,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_EDIT_SERVER_PATH,91,41,205,14,ES_AUTOHSCROLL | WS_DISABLED
     PUSHBUTTON      "...",IDC_BUTTON_FIELD_PATH,305,41,29,14
-    LTEXT           "서버 작업폴더 : ",IDC_STATIC_SERVER_PATH,15,43,56,8
+    LTEXT           "Server working folder:",IDC_STATIC_SERVER_PATH,14,43,75,8
 END
 
 IDD_VR_TERRAIN_GRASS DIALOGEX 0, 0, 178, 325
 STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
 FONT 8, "MS Shell Dlg", 400, 0, 0x1
 BEGIN
-    PUSHBUTTON      "리소스",IDC_BUTTON_GRASS_LIST_EDIT,26,291,28,13
+    PUSHBUTTON      "Res",IDC_BUTTON_GRASS_LIST_EDIT,26,291,28,13
     PUSHBUTTON      "On Terrain",IDC_BUTTON_GRASS_ON_TERRAIN,26,307,38,13
-    GROUPBOX        "작업영역",IDC_GRASS_AREA,23,7,132,31
+    GROUPBOX        "Work area",IDC_GRASS_AREA,23,7,132,31
     EDITTEXT        IDC_EDIT_GRASS_AREA,30,18,25,13,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY | NOT WS_TABSTOP
     CONTROL         "",IDC_SLIDER_GRASS_AREA,"msctls_trackbar32",TBS_NOTICKS | WS_TABSTOP,56,17,97,14
-    CONTROL         "풀 심기",IDC_RADIO_GRASS_ADD,"Button",BS_AUTORADIOBUTTON | NOT WS_VISIBLE | WS_GROUP,39,0,44,8
-    CONTROL         "풀 뽑기",IDC_RADIO_GRASS_DELETE,"Button",BS_AUTORADIOBUTTON | NOT WS_VISIBLE,96,0,44,8
-    GROUPBOX        "작업 속성",IDC_GRASS_WHAT_TO_DO,23,3,132,27,NOT WS_VISIBLE
+    CONTROL         "Planting grass",IDC_RADIO_GRASS_ADD,"Button",BS_AUTORADIOBUTTON | NOT WS_VISIBLE | WS_GROUP,23,0,60,8
+    CONTROL         "Draw grass",IDC_RADIO_GRASS_DELETE,"Button",BS_AUTORADIOBUTTON | NOT WS_VISIBLE,96,0,44,8
+    GROUPBOX        "Task attribute",IDC_GRASS_WHAT_TO_DO,23,3,132,27,NOT WS_VISIBLE
     CONTROL         "",IDC_TREE_GRASS_BRUSH,"SysTreeView32",TVS_HASBUTTONS | TVS_HASLINES | TVS_LINESATROOT | TVS_SHOWSELALWAYS | WS_BORDER | WS_HSCROLL | WS_TABSTOP,26,155,125,133
-    PUSHBUTTON      "B.추가",IDC_BUTTON_GRASS_ADD,58,291,28,13
-    PUSHBUTTON      "삭제",IDC_BUTTON_GRASS_DELETE,122,291,28,13
-    GROUPBOX        "조각 풀",IDC_STATIC_GROUP_PIECE_GRASS,23,92,132,59
+    PUSHBUTTON      "B.Add",IDC_BUTTON_GRASS_ADD,58,291,28,13
+    PUSHBUTTON      "Delete",IDC_BUTTON_GRASS_DELETE,122,291,28,13
+    GROUPBOX        "Sculpture pool",IDC_STATIC_GROUP_PIECE_GRASS,23,92,132,59
     CONTROL         "",IDC_PREVIEW_PIECE_GRASS,"Static",SS_BLACKFRAME,30,104,45,42
-    PUSHBUTTON      "P.추가",IDC_BUTTON_P_GRASS_ADD,90,291,28,13
+    PUSHBUTTON      "P.Add",IDC_BUTTON_P_GRASS_ADD,90,291,28,13
     EDITTEXT        IDC_EDIT_GRASS_SIZE,103,110,32,13,ES_CENTER | ES_AUTOHSCROLL
     EDITTEXT        IDC_EDIT_GRASS_NUM,103,130,32,13,ES_CENTER | ES_AUTOHSCROLL
     CTEXT           "Size",IDC_STATIC,83,113,14,8
     CTEXT           "Num",IDC_STATIC,83,131,14,8
     CONTROL         "",IDC_SPIN_GRASS_SIZE,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS,131,112,11,11
     CONTROL         "",IDC_SPIN_GRASS_NUM,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS,131,129,11,11
-    PUSHBUTTON      "동기화",IDC_BUTTON_GRASS_SYNC,67,307,33,13
-    CONTROL         "LOD 활성",IDC_CHECK_GRASS_LOD,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,106,309,44,10
-    GROUPBOX        "편집 옵션",IDC_GRASS_OPTION,23,40,132,48
-    EDITTEXT        IDC_EDIT_GRASS_SPACE,49,69,18,13,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY | NOT WS_TABSTOP
-    CONTROL         "",IDC_SLIDER_GRASS_SPACE,"msctls_trackbar32",TBS_NOTICKS | WS_TABSTOP,67,70,84,12
-    EDITTEXT        IDC_EDIT_GRASS_DENSITY,49,53,18,13,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY | NOT WS_TABSTOP
-    CONTROL         "",IDC_SLIDER_GRASS_DENSITY,"msctls_trackbar32",TBS_NOTICKS | WS_TABSTOP,67,54,84,12
-    LTEXT           "간격",IDC_STATIC_SPACE,29,72,18,9
-    LTEXT           "밀도",IDC_STATIC_DENSITY,29,55,18,9
+    PUSHBUTTON      "Sync",IDC_BUTTON_GRASS_SYNC,67,307,33,13
+    CONTROL         "LOD active",IDC_CHECK_GRASS_LOD,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,106,309,47,10
+    GROUPBOX        "Editing options",IDC_GRASS_OPTION,23,40,132,48
+    EDITTEXT        IDC_EDIT_GRASS_SPACE,56,69,18,13,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY | NOT WS_TABSTOP
+    CONTROL         "",IDC_SLIDER_GRASS_SPACE,"msctls_trackbar32",TBS_NOTICKS | WS_TABSTOP,77,70,74,12
+    EDITTEXT        IDC_EDIT_GRASS_DENSITY,56,53,18,13,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY | NOT WS_TABSTOP
+    CONTROL         "",IDC_SLIDER_GRASS_DENSITY,"msctls_trackbar32",TBS_NOTICKS | WS_TABSTOP,77,54,74,12
+    LTEXT           "Interval",IDC_STATIC_SPACE,28,72,26,9
+    LTEXT           "Density",IDC_STATIC_DENSITY,29,55,23,9
 END
 
 IDD_SHORTCUT DIALOGEX 0, 0, 359, 238
 STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
-CAPTION "단축키"
+CAPTION "Shortcut"
 FONT 8, "MS Shell Dlg", 400, 0, 0x1
 BEGIN
-    DEFPUSHBUTTON   "확인",IDOK,302,211,50,14
+    DEFPUSHBUTTON   "??",IDOK,302,211,50,14
     EDITTEXT        IDC_EDIT_SHORTCUT,7,7,345,196,ES_MULTILINE | ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_READONLY | WS_VSCROLL
 END
 
 IDD_DIALOG_XML_LIST_EDITOR DIALOGEX 0, 0, 449, 325
 STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
-CAPTION "XML 리스트"
+CAPTION "XML list"
 FONT 8, "MS Shell Dlg", 400, 0, 0x1
 BEGIN
-    DEFPUSHBUTTON   "모두 저장",IDOK,326,305,50,14
-    PUSHBUTTON      "닫기",IDCANCEL,382,305,50,14
+    DEFPUSHBUTTON   "Save All",IDOK,326,305,50,14
+    PUSHBUTTON      "Close",IDCANCEL,382,305,50,14
     CONTROL         "",IDC_TAB_MAP_EDIT,"SysTabControl32",0x0,0,0,449,301,WS_EX_CLIENTEDGE
     CONTROL         "ScntillaCtrl",IDC_SCINCTRL,"Scintilla",WS_TABSTOP,4,18,440,278
-    PUSHBUTTON      "필드 저장",ID_FIELDLIST_SAVE,259,305,50,14
-    PUSHBUTTON      "존 저장",ID_ZONELIST_SAVE,203,305,50,14
+    PUSHBUTTON      "Save Field",ID_FIELDLIST_SAVE,259,305,50,14
+    PUSHBUTTON      "Save Zone",ID_ZONELIST_SAVE,203,305,50,14
 END
 
 IDD_DIALOG_INPUT_MAP_NAME DIALOGEX 0, 0, 184, 76
@@ -611,12 +684,12 @@ CAPTION "Dialog"
 FONT 8, "MS Shell Dlg", 400, 0, 0x1
 BEGIN
     EDITTEXT        IDC_EDIT_DIRECTORY_PATH,51,11,99,14,ES_AUTOHSCROLL
-    PUSHBUTTON      "찾기",IDC_BUTTON_TEST_DIRECTORY,155,11,23,15
+    PUSHBUTTON      "Find",IDC_BUTTON_TEST_DIRECTORY,155,11,23,15
     EDITTEXT        IDC_EDIT_FILE_PATH,51,30,70,14,ES_AUTOHSCROLL
-    DEFPUSHBUTTON   "확인",IDOK,70,53,50,14
-    PUSHBUTTON      "취소",IDCANCEL,125,53,50,14
-    LTEXT           "폴더위치",IDC_STATIC_DRECTORY_PATH,13,14,34,10
-    LTEXT           "파일이름",IDC_STATIC_DRECTORY_PATH2,13,32,34,10
+    DEFPUSHBUTTON   "Confirm",IDOK,70,53,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,125,53,50,14
+    LTEXT           "Folder Path",IDC_STATIC_DRECTORY_PATH,5,14,42,10
+    LTEXT           "Filename",IDC_STATIC_DRECTORY_PATH2,13,32,34,10
     LTEXT           ".zone.xml",IDC_STATIC_ZONE_EXT,124,34,32,8
 END
 
@@ -625,8 +698,8 @@ STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSM
 CAPTION ".obj File Export"
 FONT 8, "MS Shell Dlg", 400, 0, 0x1
 BEGIN
-    DEFPUSHBUTTON   "확인",IDOK,33,76,50,14
-    PUSHBUTTON      "취소",IDCANCEL,87,76,45,14
+    DEFPUSHBUTTON   "Confirm",IDOK,33,76,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,87,76,45,14
     LTEXT           "Export Level",IDC_STATIC,15,15,41,8
     COMBOBOX        IDC_COMBO_NLEVEL,73,15,59,89,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
     LTEXT           "width partition",IDC_STATIC,15,33,47,8
@@ -640,39 +713,39 @@ STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSM
 CAPTION "Grass List File Dialog"
 FONT 8, "MS Shell Dlg", 400, 0, 0x1
 BEGIN
-    PUSHBUTTON      "확인",IDOK,190,174,50,14
-    PUSHBUTTON      "취소",IDCANCEL,248,174,50,14
+    PUSHBUTTON      "Confirm",IDOK,190,174,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,248,174,50,14
     LISTBOX         IDC_LIST_GRL_FILE,15,18,99,146,LBS_SORT | LBS_NOINTEGRALHEIGHT | LBS_EXTENDEDSEL | WS_VSCROLL | WS_TABSTOP
     LTEXT           "Grass List File",IDC_STATIC_GRLNAME,16,6,44,8
     CONTROL         "",IDC_GRL_PREVIEW,"Static",SS_BLACKFRAME,125,18,167,145
-    PUSHBUTTON      "추가",ID_GRL_ADD,16,174,50,14
-    PUSHBUTTON      "삭제",ID_GRL_DELETE,74,174,50,14
-    PUSHBUTTON      "교체",ID_GRL_CHANGE,132,174,50,14
+    PUSHBUTTON      "Add",ID_GRL_ADD,16,174,50,14
+    PUSHBUTTON      "Delete",ID_GRL_DELETE,74,174,50,14
+    PUSHBUTTON      "Substitute",ID_GRL_CHANGE,132,174,50,14
 END
 
 IDD_VL_RESOURCE_INFO DIALOGEX 0, 0, 520, 351
 STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
-CAPTION "맵 리소스 관리자"
+CAPTION "Map Resource Manager"
 FONT 8, "MS Shell Dlg", 400, 0, 0x1
 BEGIN
     CONTROL         "",IDC_STATIC_MINI_MAP_VIEW,"Static",SS_BLACKFRAME,172,7,338,313
-    DEFPUSHBUTTON   "확인",IDOK,398,330,54,14
-    PUSHBUTTON      "취소",IDCANCEL,456,330,54,14
-    PUSHBUTTON      "맵 실행",IDC_BUTTON_RUN_MAP,253,330,54,14
-    CONTROL         "",IDC_TREE_MAP_RES,"SysTreeView32",TVS_HASBUTTONS | TVS_HASLINES | TVS_LINESATROOT | WS_BORDER | WS_TABSTOP,10,7,155,314
-    PUSHBUTTON      "열기",IDC_BUTTON_OPEN_MAP,340,330,54,14
-    PUSHBUTTON      "퀘스트 편집",IDC_BUTTON_EDIT_QUEST,195,330,54,14
+    DEFPUSHBUTTON   "Confirm",IDOK,398,330,54,14
+    PUSHBUTTON      "Cancel",IDCANCEL,456,330,54,14
+    PUSHBUTTON      "Map run",IDC_BUTTON_RUN_MAP,253,330,54,14
+    CONTROL         "",IDC_TREE_MAP_RES,"SysTreeView32",TVS_HASBUTTONS | TVS_HASLINES | TVS_LINESATROOT | WS_BORDER | WS_HSCROLL | WS_TABSTOP,10,7,155,314
+    PUSHBUTTON      "Heat",IDC_BUTTON_OPEN_MAP,340,330,54,14
+    PUSHBUTTON      "Quest editing",IDC_BUTTON_EDIT_QUEST,195,330,54,14
 END
 
 IDD_DIALOG_INPUT_COMMON DIALOGEX 0, 0, 130, 47
 STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
-CAPTION "입력"
+CAPTION "Input"
 FONT 8, "MS Shell Dlg", 400, 0, 0x1
 BEGIN
-    EDITTEXT        IDC_EDIT_COMMON_VALUE,48,7,72,14,ES_AUTOHSCROLL
-    DEFPUSHBUTTON   "확인",IDOK,15,26,50,14
-    PUSHBUTTON      "취소",IDCANCEL,70,26,50,14
-    LTEXT           "입력 :",IDC_STATIC_NAME,21,9,22,8
+    EDITTEXT        IDC_EDIT_COMMON_VALUE,48,6,72,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "Confirm",IDOK,15,26,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,70,26,50,14
+    LTEXT           "Input:",IDC_STATIC_NAME,21,9,22,8
     COMBOBOX        IDC_EDIT_COMMON_COMBO,45,7,75,61,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
 END
 
@@ -680,8 +753,8 @@ IDD_VR_TERRAIN_RELAX DIALOGEX 0, 0, 178, 81
 STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
 FONT 8, "MS Shell Dlg", 400, 0, 0x1
 BEGIN
-    GROUPBOX        "작업영역",IDC_HEIGHT_AREA,24,6,132,31
-    GROUPBOX        "세기",IDC_HEIGHT_STR,24,43,132,31
+    GROUPBOX        "Work Area",IDC_HEIGHT_AREA,24,6,132,31
+    GROUPBOX        "Percent",IDC_HEIGHT_STR,24,43,132,31
     EDITTEXT        IDC_EDIT_RELAX_AREA,31,17,25,13,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY | NOT WS_TABSTOP
     EDITTEXT        IDC_EDIT_RELAX_STR,31,54,25,13,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY | NOT WS_TABSTOP
     CONTROL         "",IDC_SLIDER_RELAX_AREA,"msctls_trackbar32",TBS_NOTICKS | WS_TABSTOP,57,16,97,14
@@ -690,7 +763,7 @@ END
 
 IDD_OBJECT_EDIT_WATER DIALOGEX 0, 0, 276, 415
 STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
-CAPTION "수면 편집"
+CAPTION "Water Editor"
 FONT 8, "MS Shell Dlg", 400, 0, 0x1
 BEGIN
     CONTROL         "",IDC_SLIDER_UVSCALE_1,"msctls_trackbar32",TBS_NOTICKS | WS_TABSTOP,35,20,96,12
@@ -721,7 +794,7 @@ BEGIN
     EDITTEXT        IDC_EDIT_WATER_COLOR_R,37,308,22,12,ES_CENTER | ES_AUTOHSCROLL
     EDITTEXT        IDC_EDIT_WATER_COLOR_G,61,308,22,12,ES_CENTER | ES_AUTOHSCROLL
     EDITTEXT        IDC_EDIT_WATER_COLOR_B,85,308,22,12,ES_CENTER | ES_AUTOHSCROLL
-    CONTROL         "커스텀 포그 사용",IDC_CHECK_CUSTOM_FOG,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,51,325,72,9
+    CONTROL         "Use custom fog",IDC_CHECK_CUSTOM_FOG,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,51,325,72,9
     EDITTEXT        IDC_EDIT_BUMP_TEXTURE1,176,273,71,14,ES_AUTOHSCROLL
     PUSHBUTTON      "...",IDC_BUTTON_BUMP_TEXTURE1,250,273,16,14
     EDITTEXT        IDC_EDIT_BUMP_TEXTURE2,176,289,71,14,ES_AUTOHSCROLL
@@ -730,11 +803,11 @@ BEGIN
     EDITTEXT        IDC_EDIT_WATER_DIFFUSE_G,199,323,22,12,ES_CENTER | ES_AUTOHSCROLL
     EDITTEXT        IDC_EDIT_WATER_DIFFUSE_B,223,323,22,12,ES_CENTER | ES_AUTOHSCROLL
     CONTROL         "",IDC_WATER_DIFFUSE_PICK,"Static",SS_BLACKFRAME | SS_NOTIFY,249,323,15,12
-    PUSHBUTTON      "내보내기",IDC_BUTTON_WATER_EXPORT,7,396,50,13
-    PUSHBUTTON      "불러읽기",IDC_BUTTON_WATER_IMPORT,60,396,50,13
-    DEFPUSHBUTTON   "확인",IDOK,167,395,50,14
-    PUSHBUTTON      "취소",IDCANCEL,218,395,50,14
-    GROUPBOX        "반사값 조정",IDC_STATIC_REFLECT_ADJ,139,224,131,33
+    PUSHBUTTON      "Export",IDC_BUTTON_WATER_EXPORT,7,396,50,13
+    PUSHBUTTON      "Read",IDC_BUTTON_WATER_IMPORT,60,396,50,13
+    DEFPUSHBUTTON   "Confirm",IDOK,167,395,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,218,395,50,14
+    GROUPBOX        "Reflection value adjustment",IDC_STATIC_REFLECT_ADJ,139,224,131,33
     GROUPBOX        "Bumpmap UV Scale",IDC_STATIC_UVSACLE,3,7,131,67
     EDITTEXT        IDC_EDIT_UVSCALE_1,9,19,25,13,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY | NOT WS_TABSTOP
     EDITTEXT        IDC_EDIT_UVSCALE_2,9,32,25,13,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY | NOT WS_TABSTOP
@@ -759,19 +832,19 @@ BEGIN
     EDITTEXT        IDC_EDIT_ADJUST,10,163,19,13,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY | NOT WS_TABSTOP
     GROUPBOX        "Fresnel",IDC_STATIC_FRESNEL,4,187,131,33
     EDITTEXT        IDC_EDIT_FRESNEL,10,200,19,13,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY | NOT WS_TABSTOP
-    GROUPBOX        "블렌딩 깊이 제한",IDC_STATIC_DEPTH,4,224,131,33
+    GROUPBOX        "Limit blending depth",IDC_STATIC_DEPTH,4,224,131,33
     EDITTEXT        IDC_EDIT_DEPTH,9,236,25,13,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY | NOT WS_TABSTOP
-    GROUPBOX        "반감 흡수 거리",IDC_STATIC_HALFLIFE,140,151,131,67
+    GROUPBOX        "Half absorption distance",IDC_STATIC_HALFLIFE,140,151,131,67
     EDITTEXT        IDC_EDIT_R_HALF,146,165,25,13,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY | NOT WS_TABSTOP
     EDITTEXT        IDC_EDIT_G_HALF,146,182,25,13,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY | NOT WS_TABSTOP
     EDITTEXT        IDC_EDIT_B_HALF,146,199,25,13,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY | NOT WS_TABSTOP
     EDITTEXT        IDC_EDIT_REFL_ADJ,145,236,25,13,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY | NOT WS_TABSTOP
-    GROUPBOX        "워터 포그",IDC_STATIC_WATER_FOG,4,262,131,77
+    GROUPBOX        "Water fog",IDC_STATIC_WATER_FOG,4,262,131,77
     EDITTEXT        IDC_EDIT_WATER_FOG_NEAR,25,275,19,13,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY | NOT WS_TABSTOP
     EDITTEXT        IDC_EDIT_WATER_FOG_FAR,25,289,19,13,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY | NOT WS_TABSTOP
-    GROUPBOX        "범프맵 텍스쳐",IDC_STATIC_BUMP_TEXTURE,139,262,131,45
-    LTEXT           "범프맵1",IDC_STATIC_TEXTURE1,145,276,28,8
-    LTEXT           "범프맵2",IDC_STATIC_TEXTURE2,145,291,28,8
+    GROUPBOX        "Bump map texture",IDC_STATIC_BUMP_TEXTURE,139,262,131,45
+    LTEXT           "???1",IDC_STATIC_TEXTURE1,145,276,28,8
+    LTEXT           "???2",IDC_STATIC_TEXTURE2,145,291,28,8
     LTEXT           "Color",IDC_STATIC_WATER_FOG_COLOR,15,310,18,8
     CONTROL         "",IDC_WATER_COLOR_PICK,"Static",SS_BLACKFRAME | SS_NOTIFY,111,308,15,12
     LTEXT           "Diffuse",IDC_STATIC_DIFFUSE_COLOR,148,324,24,8
@@ -795,10 +868,10 @@ STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTI
 CAPTION "Relax All"
 FONT 8, "MS Shell Dlg", 400, 0, 0x1
 BEGIN
-    DEFPUSHBUTTON   "확인",IDOK,25,32,34,14
-    PUSHBUTTON      "취소",IDCANCEL,63,32,34,14
-    EDITTEXT        IDC_EDIT_RELAX_ALL,37,10,50,14,ES_AUTOHSCROLL
-    LTEXT           "입력값",IDC_STATIC_RELAX_ALL,6,13,27,8
+    DEFPUSHBUTTON   "Confirm",IDOK,25,32,34,14
+    PUSHBUTTON      "Cancel",IDCANCEL,63,32,34,14
+    EDITTEXT        IDC_EDIT_RELAX_ALL,46,10,50,14,ES_AUTOHSCROLL
+    LTEXT           "Input value",IDC_STATIC_RELAX_ALL,6,13,38,8
 END
 
 IDD_DIALOG_INPUT_BOOL DIALOGEX 0, 0, 121, 52
@@ -808,22 +881,22 @@ FONT 8, "MS Shell Dlg", 400, 0, 0x1
 BEGIN
     CONTROL         "False",IDC_RADIO_FALSE,"Button",BS_AUTORADIOBUTTON | WS_GROUP,21,13,32,13
     CONTROL         "True",IDC_RADIO_TRUE,"Button",BS_AUTORADIOBUTTON,68,13,32,13
-    DEFPUSHBUTTON   "확인",IDOK,13,31,43,14
-    PUSHBUTTON      "취소",IDCANCEL,64,31,43,14
+    DEFPUSHBUTTON   "Confirm",IDOK,13,31,43,14
+    PUSHBUTTON      "Cancel",IDCANCEL,64,31,43,14
 END
 
 IDD_MAP_BATCH DIALOGEX 0, 0, 394, 245
 STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
-CAPTION "맵 배치 스크립트 실행창"
+CAPTION "Map batch script execution window"
 FONT 8, "MS Shell Dlg", 400, 0, 0x1
 BEGIN
-    DEFPUSHBUTTON   "확인",IDOK,236,223,50,14
-    PUSHBUTTON      "취소",IDCANCEL,290,223,50,14
+    DEFPUSHBUTTON   "Confirm",IDOK,236,223,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,290,223,50,14
     CONTROL         "",IDC_TAB_MAP_TYPE,"SysTabControl32",0x0,7,7,140,213
     CONTROL         "",IDC_STATIC_MAP_PREVIEW,"Static",SS_BLACKFRAME,152,14,235,185
     COMBOBOX        IDC_COMBO_MAP_SCRPIT,224,204,147,98,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
-    LTEXT           "실행할 스크립트",IDC_STATIC_SCRIPT_NAME,161,206,60,9
-    PUSHBUTTON      "전체선택",IDC_BUTTON_SELECT_ALL,100,7,38,11
+    LTEXT           "Script to run",IDC_STATIC_SCRIPT_NAME,161,206,60,9
+    PUSHBUTTON      "Select All",IDC_BUTTON_SELECT_ALL,109,222,38,11
     CONTROL         "",IDC_LIST_MAP_FILES,"SysListView32",LVS_REPORT | LVS_SHOWSELALWAYS | LVS_NOCOLUMNHEADER | WS_BORDER | WS_TABSTOP,10,21,134,196
 END
 
@@ -832,19 +905,19 @@ STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSM
 CAPTION "Color Selection"
 FONT 8, "MS Shell Dlg", 400, 0, 0x1
 BEGIN
-    DEFPUSHBUTTON   "확인",IDOK,41,26,36,14
-    PUSHBUTTON      "취소",IDCANCEL,80,26,36,14
+    DEFPUSHBUTTON   "Confirm",IDOK,41,26,36,14
+    PUSHBUTTON      "Cancel",IDCANCEL,80,26,36,14
     COMBOBOX        IDC_COMBO_COLOR,25,7,89,77,CBS_DROPDOWNLIST | CBS_OWNERDRAWFIXED | CBS_HASSTRINGS | WS_VSCROLL | WS_TABSTOP
     LTEXT           "Color",IDC_STATIC_COLOR_NAME,4,9,16,8
 END
 
 IDD_DIALOG_INPUT_ENV_IMPORT DIALOGEX 0, 0, 145, 47
 STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
-CAPTION "불러올 환경세트"
+CAPTION "Environment set to load"
 FONT 8, "MS Shell Dlg", 400, 0, 0x1
 BEGIN
-    DEFPUSHBUTTON   "확인",IDOK,45,28,40,14
-    PUSHBUTTON      "취소",IDCANCEL,92,28,40,14
+    DEFPUSHBUTTON   "Confirm",IDOK,45,28,40,14
+    PUSHBUTTON      "Cancel",IDCANCEL,92,28,40,14
     COMBOBOX        IDC_COMBO_TIMES_IMPORT,7,4,51,82,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
     COMBOBOX        IDC_COMBO_WEATHERS_IMPORT,65,4,73,82,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
 END
@@ -857,23 +930,23 @@ BEGIN
     EDITTEXT        IDC_EDIT_COLOR_PICK_R,24,10,22,12,ES_CENTER | ES_AUTOHSCROLL
     EDITTEXT        IDC_EDIT_COLOR_PICK_G,48,10,22,12,ES_CENTER | ES_AUTOHSCROLL
     EDITTEXT        IDC_EDIT_COLOR_PICK_B,72,10,22,12,ES_CENTER | ES_AUTOHSCROLL
-    CONTROL         "자동 칼라 사용",IDC_CHECK_AUTO_COLOR,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,27,26,68,10
-    DEFPUSHBUTTON   "확인",IDOK,21,40,36,14
-    PUSHBUTTON      "취소",IDCANCEL,61,40,36,14
+    CONTROL         "Automatic color use",IDC_CHECK_AUTO_COLOR,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,27,26,80,10
+    DEFPUSHBUTTON   "Confirm",IDOK,21,40,36,14
+    PUSHBUTTON      "Cancel",IDCANCEL,61,40,36,14
     LTEXT           "Color",IDC_STATIC_COLOR,4,13,18,8
     CONTROL         "",IDC_COLOR_PICK_COLOR,"Static",SS_BLACKFRAME | SS_NOTIFY,97,10,15,12
 END
 
 IDD_TIP DIALOGEX 0, 0, 295, 137
 STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
-CAPTION "오늘의 팁"
+CAPTION "Tip of the day"
 FONT 8, "MS Shell Dlg", 400, 0, 0x1
 BEGIN
-    DEFPUSHBUTTON   "확인",IDOK,226,116,51,15
-    PUSHBUTTON      "다음 팁",IDC_NEXTTIP,170,116,51,15
+    DEFPUSHBUTTON   "Confirm",IDOK,226,116,51,15
+    PUSHBUTTON      "Next tip",IDC_NEXTTIP,170,116,51,15
     CONTROL         "",IDC_STATIC1,"Static",SS_GRAYFRAME,10,7,275,100
-    CONTROL         "다음 실행시에 팁 보여주기",IDC_STARTUP,"Button",BS_AUTOCHECKBOX | BS_TOP | WS_TABSTOP,13,118,107,10
-    ICON            "",IDB_LIGHTBULB,19,14,21,20,NOT WS_VISIBLE
+    CONTROL         "Show tips on next run",IDC_STARTUP,"Button",BS_AUTOCHECKBOX | BS_TOP | WS_TABSTOP,13,118,107,10
+    ICON            "",IDB_LIGHTBULB,19,14,20,20,NOT WS_VISIBLE
     LTEXT           "IDC_TIPSTRING",IDC_TIPSTRING,59,47,212,50,NOT WS_VISIBLE
 END
 
@@ -883,54 +956,54 @@ FONT 8, "MS Shell Dlg", 400, 0, 0x1
 BEGIN
 END
 
-IDD_VR_ETC_MAP_VIEW DIALOGEX 0, 0, 178, 438
+IDD_VR_ETC_MAP_VIEW DIALOGEX 0, 0, 178, 441
 STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
 FONT 8, "MS Shell Dlg", 400, 0, 0x1
 BEGIN
-    LISTBOX         IDC_LIST_CAM_POS,20,230,136,78,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
-    CTEXT           "WSAD (o,p)",IDC_STATIC_CAM_WSAD,22,344,20,16
-    CTEXT           "Wheel (<,>)",IDC_STATIC_CAM_WHEEL,88,344,29,16
-    EDITTEXT        IDC_EDIT_CAM_WSAD,43,346,40,13,ES_CENTER | ES_AUTOHSCROLL
-    EDITTEXT        IDC_EDIT_CAM_WHEEL,115,346,40,13,ES_CENTER | ES_AUTOHSCROLL
-    CONTROL         "",IDC_SPIN_CAM_WSAD,"msctls_updown32",UDS_ALIGNRIGHT | UDS_ARROWKEYS,79,346,11,11
-    CONTROL         "",IDC_SPIN_CAM_WHEEL,"msctls_updown32",UDS_ALIGNRIGHT | UDS_ARROWKEYS,148,346,11,11
-    GROUPBOX        "카메라",IDC_STATIC_CAM_SPEED,11,188,154,239
-    CONTROL         "화면 중심 회전",IDC_CHECK_CENTER_PIVOT,"Button",BS_AUTOCHECKBOX | BS_MULTILINE | WS_TABSTOP,24,313,66,10
-    PUSHBUTTON      "저장",IDC_BUTTON_CAM_SAVE,115,200,29,13
-    PUSHBUTTON      "삭제",IDC_BUTTON_CAM_DELETE,115,214,29,13
-    LTEXT           "단축키 : Shift + F1 ~ F8",IDC_STATIC_INFO_SAVE,28,203,81,8
-    LTEXT           "단축키 : Ctrl + F1 ~ F8",IDC_STATIC_INFO_LOAD,28,215,82,8
+    LISTBOX         IDC_LIST_CAM_POS,20,237,136,78,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    CTEXT           "WSAD (o,p)",IDC_STATIC_CAM_WSAD,22,351,20,16
+    CTEXT           "Wheel (<,>)",IDC_STATIC_CAM_WHEEL,88,351,29,16
+    EDITTEXT        IDC_EDIT_CAM_WSAD,43,353,40,13,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_CAM_WHEEL,115,353,40,13,ES_CENTER | ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN_CAM_WSAD,"msctls_updown32",UDS_ALIGNRIGHT | UDS_ARROWKEYS,79,353,11,11
+    CONTROL         "",IDC_SPIN_CAM_WHEEL,"msctls_updown32",UDS_ALIGNRIGHT | UDS_ARROWKEYS,148,353,11,11
+    GROUPBOX        "???",IDC_STATIC_CAM_SPEED,11,195,154,239
+    CONTROL         "?? ?? ??",IDC_CHECK_CENTER_PIVOT,"Button",BS_AUTOCHECKBOX | BS_MULTILINE | WS_TABSTOP,24,320,66,10
+    PUSHBUTTON      "??",IDC_BUTTON_CAM_SAVE,115,207,29,13
+    PUSHBUTTON      "??",IDC_BUTTON_CAM_DELETE,115,221,29,13
+    LTEXT           "??? : Shift + F1 ~ F8",IDC_STATIC_INFO_SAVE,28,210,81,8
+    LTEXT           "??? : Ctrl + F1 ~ F8",IDC_STATIC_INFO_LOAD,28,222,82,8
     CONTROL         "",IDC_STATIC_MINIMAP_VIEW,"Static",SS_ETCHEDFRAME,19,6,138,95
-    PUSHBUTTON      "썸네일 갱신",IDC_BUTTON_UPDATE_MINIMAP,63,105,47,14
-    GROUPBOX        "정보",IDC_STATIC_MAP_INFO_DETAIL,11,124,154,60
-    PUSHBUTTON      "리소스 뷰어",IDC_BUTTON_OPEN_RES_MGR,12,105,47,14
-    LTEXT           "맵 크기 :",IDC_STATIC_INFO_SIZE,25,135,101,8
-    LTEXT           "맵 디테일 :",IDC_STATIC_INFO_DETAIL,25,147,101,8
-    CONTROL         "지형 정보보기",IDC_CHECK_VIEW_TERRAIN_INFO,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,31,162,66,11
-    PUSHBUTTON      "프로파일 정보보기",IDC_BUTTON_PROFILE,109,157,40,22,BS_MULTILINE
-    CONTROL         "피봇 보기",IDC_CHECK_VIEW_PIVOT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,97,313,50,10
-    CTEXT           "FOV",IDC_STATIC_CAM_FOV,26,368,14,8
-    EDITTEXT        IDC_EDIT_CAM_FOV,43,367,40,13,ES_CENTER | ES_AUTOHSCROLL
-    CONTROL         "",IDC_SPIN_CAM_FOV,"msctls_updown32",UDS_ALIGNRIGHT | UDS_ARROWKEYS,79,367,11,11
-    CTEXT           "FarZ",IDC_STATIC_CAM_FARZ,24,389,16,8
-    EDITTEXT        IDC_EDIT_CAM_FARZ,43,388,40,13,ES_CENTER | ES_AUTOHSCROLL
-    CONTROL         "",IDC_SPIN_CAM_FARZ,"msctls_updown32",UDS_ALIGNRIGHT | UDS_ARROWKEYS,79,388,11,11
-    PUSHBUTTON      "툴기본",IDC_BUTTON_FOV_TOOLVALUE,87,367,32,14
-    PUSHBUTTON      "게임기본",IDC_BUTTON_FOV_GAMEVALUE,123,367,36,14
-    PUSHBUTTON      "툴기본",IDC_BUTTON_FARZ_TOOLVALUE,87,387,32,14
-    PUSHBUTTON      "게임기본",IDC_BUTTON_FARZ_GAMEVALUE,123,387,36,14
-    CONTROL         "카메라 유지",IDC_CHECK_THUMBNAME_CURRENT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,113,107,56,12
-    CONTROL         "1인칭/3인칭(New)",IDC_1ST_3RD_CAMERA,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,25,409,78,10
-    PUSHBUTTON      "탑뷰로 보기",IDC_BUTTON_TOPVIEW_NAVI,24,326,53,14
+    PUSHBUTTON      "Thumbnail update",IDC_BUTTON_UPDATE_MINIMAP,79,104,77,14
+    GROUPBOX        "??",IDC_STATIC_MAP_INFO_DETAIL,11,131,154,60
+    PUSHBUTTON      "Resource Viewer",IDC_BUTTON_OPEN_RES_MGR,19,104,59,14
+    LTEXT           "? ?? :",IDC_STATIC_INFO_SIZE,25,142,101,8
+    LTEXT           "? ??? :",IDC_STATIC_INFO_DETAIL,25,154,101,8
+    CONTROL         "?? ????",IDC_CHECK_VIEW_TERRAIN_INFO,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,31,169,66,11
+    PUSHBUTTON      "???? ????",IDC_BUTTON_PROFILE,109,164,40,22,BS_MULTILINE
+    CONTROL         "?? ??",IDC_CHECK_VIEW_PIVOT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,97,320,50,10
+    CTEXT           "FOV",IDC_STATIC_CAM_FOV,26,375,14,8
+    EDITTEXT        IDC_EDIT_CAM_FOV,43,374,40,13,ES_CENTER | ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN_CAM_FOV,"msctls_updown32",UDS_ALIGNRIGHT | UDS_ARROWKEYS,79,374,11,11
+    CTEXT           "FarZ",IDC_STATIC_CAM_FARZ,24,396,16,8
+    EDITTEXT        IDC_EDIT_CAM_FARZ,43,395,40,13,ES_CENTER | ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN_CAM_FARZ,"msctls_updown32",UDS_ALIGNRIGHT | UDS_ARROWKEYS,79,395,11,11
+    PUSHBUTTON      "???",IDC_BUTTON_FOV_TOOLVALUE,87,374,32,14
+    PUSHBUTTON      "????",IDC_BUTTON_FOV_GAMEVALUE,123,374,36,14
+    PUSHBUTTON      "???",IDC_BUTTON_FARZ_TOOLVALUE,87,394,32,14
+    PUSHBUTTON      "????",IDC_BUTTON_FARZ_GAMEVALUE,123,394,36,14
+    CONTROL         "Camera maintenance",IDC_CHECK_THUMBNAME_CURRENT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,80,120,78,12
+    CONTROL         "1??/3??(New)",IDC_1ST_3RD_CAMERA,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,25,416,78,10
+    PUSHBUTTON      "??? ??",IDC_BUTTON_TOPVIEW_NAVI,24,333,53,14
 END
 
 IDD_DIALOG_NEW_MAP_TYPE DIALOGEX 0, 0, 126, 73
 STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
-CAPTION "새로운 맵 만들기"
+CAPTION "Create a new map"
 FONT 8, "MS Shell Dlg", 400, 0, 0x1
 BEGIN
-    DEFPUSHBUTTON   "확인",IDOK,21,53,38,14
-    PUSHBUTTON      "취소",IDCANCEL,67,53,38,14
+    DEFPUSHBUTTON   "Confirm",IDOK,21,53,38,14
+    PUSHBUTTON      "Cancel",IDCANCEL,67,53,38,14
     GROUPBOX        "Map Type",IDC_STATIC_MAP_TYPE,8,5,108,40
     COMBOBOX        IDC_COMBO_MAP_TYPE,21,23,83,96,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
 END
@@ -939,17 +1012,18 @@ IDD_VR_ETC_CAMERA DIALOGEX 0, 0, 178, 257
 STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
 FONT 8, "MS Shell Dlg", 400, 0, 0x1
 BEGIN
-    PUSHBUTTON      "현재위치 등록",IDC_BUTTON_ADD_CAMERA,30,87,57,15
+    PUSHBUTTON      "Add current location",IDC_BUTTON_ADD_CAMERA,20,87,71,15
     LISTBOX         IDC_LIST_ADDED_CAMERA,24,27,129,56,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
-    GROUPBOX        "카메라 애니메이션",IDC_STATIC_CAMERA_OPERATION,12,114,154,66
-    GROUPBOX        "카메라 목록",IDC_STATIC_CAMERA_LIST,12,4,154,104
-    PUSHBUTTON      "애니메이션 파일 설정",IDC_BUTTON_OPEN_CAM_ANI,27,128,126,15
+    GROUPBOX        "Camera animation",IDC_STATIC_CAMERA_OPERATION,12,114,154,66
+    GROUPBOX        "Camera list",IDC_STATIC_CAMERA_LIST,12,4,154,104
+    PUSHBUTTON      "Animation file settings",IDC_BUTTON_OPEN_CAM_ANI,18,128,135,15
     PUSHBUTTON      "Play",IDC_BUTTON_PLAY_CAM_ANI,125,144,28,14
     PUSHBUTTON      "Stop",IDC_BUTTON_STOP_CAM_ANI,125,159,28,14
-    CONTROL         "화면에 카메라 표시",IDC_CHECK_VIEW_ADDED_CAM,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,19,16,84,10
-    PUSHBUTTON      "선택목록 삭제",IDC_BUTTON_ADDED_CAM_DELETE,90,87,57,15
-    CONTROL         "현재 카메라에 적용",IDC_CHECK_CAM_ANI_APPLY,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,35,147,78,10
-    CONTROL         "재생후 원래위치로",IDC_CHECK_CAM_ANI_TO_ORG,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,35,160,78,10
+    CONTROL         "Show camera on screen",IDC_CHECK_VIEW_ADDED_CAM,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,19,16,110,10
+    PUSHBUTTON      "Delete Selected",IDC_BUTTON_ADDED_CAM_DELETE,94,87,61,15
+    CONTROL         "Apply to current camera",IDC_CHECK_CAM_ANI_APPLY,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,18,147,92,10
+    CONTROL         "Return to origin after playing",IDC_CHECK_CAM_ANI_TO_ORG,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,18,160,105,10
     GROUPBOX        "DOF",IDC_STATIC_CAMERA_DOF,12,186,154,58
 END
 
@@ -965,8 +1039,8 @@ CAPTION "NPC"
 FONT 8, "MS Shell Dlg", 400, 0, 0x1
 BEGIN
     EDITTEXT        IDC_EDIT_NPC_ID,27,6,55,14,ES_AUTOHSCROLL
-    DEFPUSHBUTTON   "확인",IDOK,29,26,38,14
-    PUSHBUTTON      "취소",IDCANCEL,71,26,38,14
+    DEFPUSHBUTTON   "Confirm",IDOK,29,26,38,14
+    PUSHBUTTON      "Cancel",IDCANCEL,71,26,38,14
     LTEXT           "ID :",IDC_STATIC_NAME,7,8,13,8
     PUSHBUTTON      "...",IDC_BUTTON_OPEN_NPC_MGR,90,6,19,14
 END
@@ -993,7 +1067,7 @@ END
 
 IDD_CLIP_HEIGHT DIALOGEX 0, 0, 250, 78
 STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
-CAPTION "클리핑"
+CAPTION "Clip"
 FONT 8, "MS Shell Dlg", 400, 0, 0x1
 BEGIN
     EDITTEXT        IDC_EDIT_MINZ,59,19,50,14,ES_AUTOHSCROLL | ES_READONLY
@@ -1012,7 +1086,7 @@ END
 
 IDD_DIALOG_INPUT_TRANSFORM DIALOGEX 0, 0, 147, 66
 STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
-CAPTION "트랜스폼 설정"
+CAPTION "Transform settings"
 FONT 8, "MS Shell Dlg", 400, 0, 0x1
 BEGIN
     EDITTEXT        IDC_EDIT_TM_POS_X,34,2,35,12,ES_RIGHT | ES_AUTOHSCROLL
@@ -1024,30 +1098,30 @@ BEGIN
     EDITTEXT        IDC_EDIT_TM_UP_X,34,30,35,12,ES_RIGHT | ES_AUTOHSCROLL
     EDITTEXT        IDC_EDIT_TM_UP_Y,71,30,35,12,ES_RIGHT | ES_AUTOHSCROLL
     EDITTEXT        IDC_EDIT_TM_UP_Z,108,30,35,12,ES_RIGHT | ES_AUTOHSCROLL
-    DEFPUSHBUTTON   "확인",IDOK,22,48,50,14
-    PUSHBUTTON      "취소",IDCANCEL,76,48,50,14
+    DEFPUSHBUTTON   "Confirm",IDOK,22,48,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,76,48,50,14
     LTEXT           "Position",IDC_STATIC,3,4,26,8
     LTEXT           "Direction",IDC_STATIC,3,18,29,8
     LTEXT           "Up",IDC_STATIC,10,31,10,8
 END
 
-IDD_DIALOG_CUTSCENE_NEWMAP DIALOGEX 0, 0, 193, 84
+IDD_DIALOG_CUTSCENE_NEWMAP DIALOGEX 0, 0, 193, 101
 STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
-CAPTION "컷씬 만들기"
+CAPTION "Create a cutscene"
 FONT 8, "MS Shell Dlg", 400, 0, 0x1
 BEGIN
-    DEFPUSHBUTTON   "확인",IDOK,78,65,50,14
-    PUSHBUTTON      "취소",IDCANCEL,136,65,50,14
-    LTEXT           "배경필드",IDC_STATIC,5,45,33,8
-    LTEXT           "재생시간(초)",IDC_STATIC,101,45,46,8
-    LTEXT           "파일이름",IDC_STATIC,5,9,33,8
-    LTEXT           "컷씬설명",IDC_STATIC,5,26,33,8
+    DEFPUSHBUTTON   "Confirm",IDOK,39,81,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,97,81,50,14
+    LTEXT           "BG Field",IDC_STATIC,5,45,33,8
+    LTEXT           "Play time (seconds)",IDC_STATIC,5,62,73,8
+    LTEXT           "Filename",IDC_STATIC,6,9,33,8
+    LTEXT           "Description",IDC_STATIC,3,26,37,8
     EDITTEXT        IDC_EDIT_CUTSCENEFILENAME,40,6,128,14,ES_AUTOHSCROLL
     EDITTEXT        IDC_EDIT_CUTSCENE_NAME,40,24,148,14,ES_AUTOHSCROLL
-    EDITTEXT        IDC_EDIT_CUTSCENE_FIELD,40,42,36,14,ES_CENTER | ES_AUTOHSCROLL
-    EDITTEXT        IDC_EDIT_CUTSCENE_DURATION,149,42,38,14,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_CUTSCENE_FIELD,40,42,127,14,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_CUTSCENE_DURATION,71,60,116,14,ES_CENTER | ES_AUTOHSCROLL
     PUSHBUTTON      "...",IDC_BUTTON_CUTSCENE_FILENAMEOPEN,171,7,18,13
-    PUSHBUTTON      "...",IDC_BUTTON_CUTSCENE_FIELD_OPEN,78,43,17,13
+    PUSHBUTTON      "...",IDC_BUTTON_CUTSCENE_FIELD_OPEN,172,42,17,13
 END
 
 IDD_VR_ETC_DECAL DIALOGEX 0, 0, 128, 140
@@ -1080,19 +1154,20 @@ IDD_VR_ETC_COLLISION DIALOGEX 0, 0, 178, 36
 STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
 FONT 8, "MS Shell Dlg", 400, 0, 0x1
 BEGIN
-    CONTROL         ".cl2 view (저장된 파일 기준)",IDC_CHECK_CL2_RENDER,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,4,5,111,10
-    PUSHBUTTON      "다른이름으로 cl2 만들기",IDC_BUTTON_CREATE_CL2_AS,31,18,115,14
+    CONTROL         ".cl2 view (Based on saved files)",IDC_CHECK_CL2_RENDER,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,4,5,111,10
+    PUSHBUTTON      "Create cl2 with a different name",IDC_BUTTON_CREATE_CL2_AS,31,18,115,14
 END
 
 IDD_VL_LAYER_OBJECTS DIALOGEX 0, 0, 442, 319
 STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
-CAPTION "레이어/오브젝트"
+CAPTION "Layer/Object"
 FONT 8, "MS Shell Dlg", 400, 0, 0x1
 BEGIN
-    LTEXT           "프로퍼티창",IDC_STATIC_PROPERTY,248,2,189,311
+    LTEXT           "Property window",IDC_STATIC_PROPERTY,248,2,189,311
     CONTROL         "Custom1",IDC_LAYER_OBJECT,"MFCGridCtrl",WS_TABSTOP,4,26,236,287
-    PUSHBUTTON      "새",IDC_BUTTON_NEW_LAYER,36,3,19,17
-    PUSHBUTTON      "삭제",IDC_BUTTON_DELETE_LAYER,60,3,19,17
+    PUSHBUTTON      "Bird",IDC_BUTTON_NEW_LAYER,36,3,19,17
+    PUSHBUTTON      "Delete",IDC_BUTTON_DELETE_LAYER,60,3,30,17
 END
 
 
@@ -1116,9 +1191,9 @@ VS_VERSION_INFO VERSIONINFO
 BEGIN
     BLOCK "StringFileInfo"
     BEGIN
-        BLOCK "041203b5"
+        BLOCK "000903b5"
         BEGIN
-            VALUE "CompanyName", "(주)마이에트 엔터테인먼트"
+            VALUE "CompanyName", "Maiet Entertainment Co. Ltd."
             VALUE "FileVersion", "1, 7, 3, 20"
             VALUE "InternalName", "CoreToolRS3.exe"
             VALUE "LegalCopyright", "(c) MAIET Entertainment.  All rights reserved."
@@ -1129,7 +1204,7 @@ BEGIN
     END
     BLOCK "VarFileInfo"
     BEGIN
-        VALUE "Translation", 0x412, 949
+        VALUE "Translation", 0x9, 949
     END
 END
 
@@ -1173,11 +1248,14 @@ END
 //
 
 #ifdef APSTUDIO_INVOKED
-GUIDELINES DESIGNINFO 
+GUIDELINES DESIGNINFO
 BEGIN
-    IDD_VL_TOOL_BAR, DIALOG
+    IDD_VR_ZONE_OBJECT_NEW, DIALOG
     BEGIN
-        HORZGUIDE, 3
+    END
+
+    IDD_PROGRESS, DIALOG
+    BEGIN
     END
 
     IDD_VL_OBJECT_LIST, DIALOG
@@ -1188,14 +1266,167 @@ BEGIN
         HORZGUIDE, 381
     END
 
+    IDD_SIDE_PANEL, DIALOG
+    BEGIN
+    END
+
+    IDD_VR_TERRAIN_HEIGHT, DIALOG
+    BEGIN
+    END
+
+    IDD_VR_TERRAIN_AVER, DIALOG
+    BEGIN
+    END
+
     IDD_VR_ENV_WEATHER, DIALOG
     BEGIN
         BOTTOMMARGIN, 540
     END
 
+    IDD_VR_TERRAIN_SPLAT, DIALOG
+    BEGIN
+    END
+
+    IDD_VR_TERRAIN_FLAT, DIALOG
+    BEGIN
+    END
+
+    IDD_OPTION, DIALOG
+    BEGIN
+    END
+
+    IDD_OPTION_PAGE1, DIALOG
+    BEGIN
+    END
+
+    IDD_OPTION_PAGE2, DIALOG
+    BEGIN
+    END
+
+    IDD_VR_TERRAIN_GRASS, DIALOG
+    BEGIN
+    END
+
+    IDD_SHORTCUT, DIALOG
+    BEGIN
+    END
+
+    IDD_DIALOG_XML_LIST_EDITOR, DIALOG
+    BEGIN
+    END
+
+    IDD_DIALOG_INPUT_MAP_NAME, DIALOG
+    BEGIN
+    END
+
+    IDD_DIALOG_OBJ_EXPORT, DIALOG
+    BEGIN
+    END
+
+    IDD_TERRAIN_GRASS_OPEN, DIALOG
+    BEGIN
+    END
+
+    IDD_VL_RESOURCE_INFO, DIALOG
+    BEGIN
+    END
+
+    IDD_DIALOG_INPUT_COMMON, DIALOG
+    BEGIN
+    END
+
+    IDD_VR_TERRAIN_RELAX, DIALOG
+    BEGIN
+    END
+
+    IDD_OBJECT_EDIT_WATER, DIALOG
+    BEGIN
+    END
+
+    IDD_VL_TERRAIN_RELAX_ALL, DIALOG
+    BEGIN
+    END
+
+    IDD_DIALOG_INPUT_BOOL, DIALOG
+    BEGIN
+    END
+
+    IDD_MAP_BATCH, DIALOG
+    BEGIN
+    END
+
+    IDD_DIALOG_INPUT_COLOR_COMBOBOX, DIALOG
+    BEGIN
+    END
+
+    IDD_DIALOG_INPUT_ENV_IMPORT, DIALOG
+    BEGIN
+    END
+
+    IDD_DIALOG_INPUT_COLOR_PICKER, DIALOG
+    BEGIN
+    END
+
+    IDD_TIP, DIALOG
+    BEGIN
+    END
+
+    IDD_VR_ETC_DEV, DIALOG
+    BEGIN
+    END
+
+    IDD_VR_ETC_MAP_VIEW, DIALOG
+    BEGIN
+    END
+
+    IDD_DIALOG_NEW_MAP_TYPE, DIALOG
+    BEGIN
+    END
+
+    IDD_VR_ETC_CAMERA, DIALOG
+    BEGIN
+    END
+
+    IDD_VR_EMPTY, DIALOG
+    BEGIN
+    END
+
+    IDD_DIALOG_INPUT_NPC, DIALOG
+    BEGIN
+    END
+
+    IDD_DIALOG_OUTPUT, DIALOG
+    BEGIN
+    END
+
+    IDD_DIALOG_PROFILE, DIALOG
+    BEGIN
+    END
+
+    IDD_CLIP_HEIGHT, DIALOG
+    BEGIN
+    END
+
+    IDD_VR_CORE_TOOL, DIALOG
+    BEGIN
+    END
+
+    IDD_DIALOG_INPUT_TRANSFORM, DIALOG
+    BEGIN
+    END
+
+    IDD_DIALOG_CUTSCENE_NEWMAP, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 84
+    END
+
     IDD_VR_ETC_DECAL, DIALOG
     BEGIN
         BOTTOMMARGIN, 62
+    END
+
+    IDD_VR_ETC_COLLISION, DIALOG
+    BEGIN
     END
 
     IDD_VL_LAYER_OBJECTS, DIALOG
@@ -1213,31 +1444,217 @@ END
 
 /////////////////////////////////////////////////////////////////////////////
 //
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_CLIP_HEIGHT AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIALOG_CUTSCENE_NEWMAP AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIALOG_INPUT_BOOL AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIALOG_INPUT_COLOR_COMBOBOX AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIALOG_INPUT_COLOR_PICKER AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIALOG_INPUT_COMMON AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIALOG_INPUT_ENV_IMPORT AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIALOG_INPUT_MAP_NAME AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIALOG_INPUT_NPC AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIALOG_INPUT_TRANSFORM AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIALOG_NEW_MAP_TYPE AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIALOG_OBJ_EXPORT AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIALOG_XML_LIST_EDITOR AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_MAP_BATCH AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_OBJECT_EDIT_WATER AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_OPTION AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_OPTION_PAGE1 AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_OPTION_PAGE2 AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_SHORTCUT AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_TERRAIN_GRASS_OPEN AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_TIP AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_VL_LAYER_OBJECTS AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_VL_OBJECT_LIST AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_VL_RESOURCE_INFO AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_VL_TERRAIN_RELAX_ALL AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_VR_ENV_WEATHER AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_VR_ETC_CAMERA AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_VR_ETC_COLLISION AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_VR_ETC_MAP_VIEW AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_VR_TERRAIN_AVER AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_VR_TERRAIN_FLAT AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_VR_TERRAIN_GRASS AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_VR_TERRAIN_HEIGHT AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_VR_TERRAIN_RELAX AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_VR_TERRAIN_SPLAT AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_VR_ZONE_OBJECT_NEW AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
 // String Table
 //
 
-STRINGTABLE 
+STRINGTABLE
 BEGIN
     IDR_MAINFRAME           "CoreToolRS3"
-    IDS_BUTTON_TERRAIN      "지형"
-    IDS_BUTTON_OBJECT       "오브젝트"
-    IDS_BUTTON_PATH         "경로"
+    IDS_BUTTON_TERRAIN      "Terrain"
+    IDS_BUTTON_OBJECT       "Object"
+    IDS_BUTTON_PATH         "Route"
     IDS_STATUSBAR_X         "X"
     IDS_STATUSBAR_Y         "Y"
     IDS_STATUSBAR_Z         "Z"
     IDS_STATUSBAR_PANE      "Ready"
-    IDS_STATUSBAR_SCALE_TEXT "스케일"
-    IDS_STATUSBAR_POS_TEXT  "위치"
+    IDS_STATUSBAR_SCALE_TEXT "Scale"
+    IDS_STATUSBAR_POS_TEXT  "Location"
     IDS_STATUSBAR_SCALE     "1"
 END
 
-STRINGTABLE 
+STRINGTABLE
 BEGIN
     AFX_IDS_APP_TITLE       "CoreToolRS3"
-    AFX_IDS_IDLEMESSAGE     "준비"
+    AFX_IDS_IDLEMESSAGE     "Ready"
 END
 
-STRINGTABLE 
+STRINGTABLE
 BEGIN
     ID_INDICATOR_EXT        "EXT"
     ID_INDICATOR_CAPS       "CAP"
@@ -1247,67 +1664,67 @@ BEGIN
     ID_INDICATOR_REC        "REC"
 END
 
-STRINGTABLE 
+STRINGTABLE
 BEGIN
-    ID_APP_ABOUT            "프로그램 정보, 버전 번호, 저작권을 표시합니다.\n정보"
-    ID_APP_EXIT             "문서를 저장할지를 묻고 응용 프로그램을 끝냅니다.\n끝내기"
+    ID_APP_ABOUT            "Displays program information, version number, and copyright.\nInformation"
+    ID_APP_EXIT             "Asks if you want to save the document and quits the application.\nExit"
 END
 
-STRINGTABLE 
+STRINGTABLE
 BEGIN
-    ID_NEXT_PANE            "다음 창으로 전환합니다.\n다음 창"
+    ID_NEXT_PANE            "Switches to the next window.\nNext window"
 END
 
-STRINGTABLE 
+STRINGTABLE
 BEGIN
-    ID_EDIT_CLEAR           "선택 영역을 지웁니다.\n지우기"
-    ID_EDIT_CLEAR_ALL       "모든 것을 지웁니다.\n모두 지우기"
-    ID_EDIT_COPY            "선택 영역을 복사하여 클립보드에 넣습니다.\n복사"
-    ID_EDIT_CUT             "선택 영역을 잘라내어 클립보드에 넣습니다.\n잘라내기"
-    ID_EDIT_FIND            "지정한 텍스트를 찾습니다.\n찾기"
-    ID_EDIT_PASTE           "클립보드 내용을 삽입합니다.\n붙여넣기"
-    ID_EDIT_REPEAT          "마지막 작업을 반복합니다.\n반복"
-    ID_EDIT_REPLACE         "특정 텍스트를 다른 텍스트로 바꿉니다.\n바꾸기"
-    ID_EDIT_SELECT_ALL      "전체 문서를 선택합니다.\n모두 선택"
-    ID_EDIT_UNDO            "마지막 작업 실행을 취소합니다.\n실행 취소"
-    ID_EDIT_REDO            "이전에 실행 취소된 작업을 다시 실행합니다.\n다시 실행"
+    ID_EDIT_CLEAR           "Erase the selection.\nClear"
+    ID_EDIT_CLEAR_ALL       "Erase everything.\nErase all"
+    ID_EDIT_COPY            "Copy the selected area and put it on the clipboard.\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the clipboard.\nCut"
+    ID_EDIT_FIND            "Finds the specified text.\nFind"
+    ID_EDIT_PASTE           "Insert clipboard contents.\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last operation.\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with another text.\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document.\nSelect all"
+    ID_EDIT_UNDO            "Undo the last action.\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone operation.\nRedo"
 END
 
-STRINGTABLE 
+STRINGTABLE
 BEGIN
-    ID_VIEW_TOOLBAR         "도구 모음을 표시하거나 숨깁니다.\n도구 모음 설정/해제"
-    ID_VIEW_STATUS_BAR      "상태 표시줄을 표시하거나 숨깁니다.\n상태 표시줄 설정/해제"
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar.\nTurn the toolbar on/off"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar.\nTurn status bar on/off"
 END
 
-STRINGTABLE 
+STRINGTABLE
 BEGIN
-    AFX_IDS_SCSIZE          "창 크기를 변경합니다."
-    AFX_IDS_SCMOVE          "창 위치를 변경합니다."
-    AFX_IDS_SCMINIMIZE      "창을 아이콘으로 축소합니다."
-    AFX_IDS_SCMAXIMIZE      "창을 전체 화면 크기로 확대합니다."
-    AFX_IDS_SCNEXTWINDOW    "다음 문서 창으로 전환합니다."
-    AFX_IDS_SCPREVWINDOW    "이전 문서 창으로 전환합니다."
-    AFX_IDS_SCCLOSE         "문서를 저장할 것인지 확인하고 활성 창을 닫습니다."
+    AFX_IDS_SCSIZE          "Change the window size."
+    AFX_IDS_SCMOVE          "Change the window position."
+    AFX_IDS_SCMINIMIZE      "Collapse the window to an icon."
+    AFX_IDS_SCMAXIMIZE      "Enlarges the window to full screen size."
+    AFX_IDS_SCNEXTWINDOW    "Switches to the next document window."
+    AFX_IDS_SCPREVWINDOW    "Switches to the previous document window."
+    AFX_IDS_SCCLOSE         "Confirm that you want to save the document and close the active window."
 END
 
-STRINGTABLE 
+STRINGTABLE
 BEGIN
-    AFX_IDS_SCRESTORE       "창을 보통 크기로 복원합니다."
-    AFX_IDS_SCTASKLIST      "작업 목록 활성화"
+    AFX_IDS_SCRESTORE       "Restores the window to its normal size."
+    AFX_IDS_SCTASKLIST      "Activate the task list"
 END
 
-STRINGTABLE 
+STRINGTABLE
 BEGIN
-    ID_32789                "Light 속성을 설정합니다."
-    ID_LIGHT_SET            "라이트를 설정합니다."
+    ID_32789                "Set Light Properties"
+    ID_LIGHT_SET            "Set Light"
 END
 
-STRINGTABLE 
+STRINGTABLE
 BEGIN
-    ID_WINDOW_SPLIT         "활성 창을 여러 개의 창으로 분할합니다.\n분할"
+    ID_WINDOW_SPLIT         "Splits the active window into multiple windows.\nSplit"
 END
 
-STRINGTABLE 
+STRINGTABLE
 BEGIN
     ID_GRIDSIZE_NONE        "Snap To Grid : NONE"
     ID_GRIDSIZE_1           "Snap To Grid : 1"
@@ -1317,7 +1734,7 @@ BEGIN
     ID_GRIDSIZE_50          "Snap To Grid : 50"
 END
 
-#endif    // 한국어 resources
+#endif    // English resources
 /////////////////////////////////////////////////////////////////////////////
 
 
@@ -1335,8 +1752,8 @@ END
 #if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
 LANGUAGE 18, 1
 #pragma code_page(949)
-#include "res\CoreToolRS3.rc2"  // Microsoft Visual C++에서 편집되지 않은 리소스
-#include "afxres.rc"         // 표준 구성 요소
+#include "res\CoreToolRS3.rc2"  // Microsoft Visual C++?? ???? ?? ???
+#include "afxres.rc"         // ?? ?? ??
 #endif
 
 /////////////////////////////////////////////////////////////////////////////

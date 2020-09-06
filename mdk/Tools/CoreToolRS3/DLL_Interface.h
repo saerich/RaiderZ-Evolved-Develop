@@ -12,9 +12,9 @@
 #define C_DOC_2				0x101
 
 #ifdef _DEBUG
-#define CORETOOL_DLL_NAME	"CoreTool_d.dll"
+#define CORETOOL_DLL_NAME	"CoreToolRS3_d.dll"
 #else
-#define CORETOOL_DLL_NAME	"CoreTool.dll"
+#define CORETOOL_DLL_NAME	"CoreToolRS3.dll"
 #endif
 
 // instantiate an interface class object

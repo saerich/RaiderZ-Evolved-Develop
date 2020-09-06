@@ -210,20 +210,20 @@ void CPathFinderTest::FindPath(const RVector &vStart, const RVector &vEnd)
 
 	if ( PATH_SUCCESS!= m_PathFinder.IsValidPosition(NULL, 0, NULL, vStart))
 	{
-		MessageBox(NULL,"유효하지 않은 시작점!", "Error", MB_OK);
+		MessageBox(NULL,"Invalid starting point!", "Error", MB_OK);
 		return;
 	}
 
 	if ( PATH_SUCCESS!= m_PathFinder.IsValidPosition(NULL, 0, NULL, vEnd))
 	{
-		MessageBox(NULL,"유효하지 않은 끝!", "Error", MB_OK);
+		MessageBox(NULL,"Invalid end!", "Error", MB_OK);
 		return;
 	}
 
 	bool bResult = m_PathFinder.FindPath(0, st, en, m_currentPath, NULL);
 	if ( bResult == false )
 	{
-		MessageBox(NULL,"길찾기 실패!", "Error", MB_OK);
+		MessageBox(NULL,"Failed to find directions!", "Error", MB_OK);
 	}
 
 	mlog("* start pos(%f, %f, %f)\n* end pos(%f, %f, %f)\n", st.x, st.y, st.z, en.x, en.y, en.z);

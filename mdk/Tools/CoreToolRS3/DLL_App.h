@@ -1,9 +1,4 @@
-#if !defined(AFX_APP_H__97C618BF_BE51_4BCF_A5F8_2CE8A9231F89__INCLUDED_)
-#define AFX_APP_H__97C618BF_BE51_4BCF_A5F8_2CE8A9231F89__INCLUDED_
-
-#if _MSC_VER > 1000
 #pragma once
-#endif // _MSC_VER > 1000
 // App.h : header file
 //
 
@@ -81,5 +76,3 @@ public:
 
 //{{AFX_INSERT_LOCATION}}
 // Microsoft Visual C++ will insert additional declarations immediately before the previous line.
-
-#endif // !defined(AFX_APP_H__97C618BF_BE51_4BCF_A5F8_2CE8A9231F89__INCLUDED_)

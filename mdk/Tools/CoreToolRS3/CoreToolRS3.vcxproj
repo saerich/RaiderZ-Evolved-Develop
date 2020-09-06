@@ -45,13 +45,15 @@
     <_ProjectFileVersion>16.0.30028.132</_ProjectFileVersion>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <OutDir>$(SolutionDir)../Runtime/Dev/CoreToolRS3\</OutDir>
-    <IntDir>$(Configuration)\</IntDir>
+    <OutDir>../../../../../build/Dev/$(ProjectName)/</OutDir>
+    <IntDir>$(BaseIntermediateOutputPath)$(Configuration)\$(PlatformTarget)\</IntDir>
     <LinkIncremental>true</LinkIncremental>
+    <TargetName>$(ProjectName)_d</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <OutDir>$(SolutionDir)../Runtime/Dev/CoreToolRS3\</OutDir>
-    <IntDir>$(Configuration)\</IntDir>
+    <OutDir>../../../../../build/Dev/$(ProjectName)/</OutDir>
+    <IntDir>$(BaseIntermediateOutputPath)$(Configuration)\$(PlatformTarget)\</IntDir>
+    <TargetName>$(ProjectName)</TargetName>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <Midl>
@@ -85,7 +87,7 @@
     </ResourceCompile>
     <Link>
       <AdditionalDependencies>d3d9.lib;d3dx9.lib;zlib.lib;DevIL.lib;ILU.lib;ILUT.lib;lua5.1.lib;SpeedTreeRT_d.lib;uxtheme.lib;UnitTest++vs2019MDd.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <OutputFile>$(OutDir)CoreTool_d.dll</OutputFile>
+      <OutputFile>$(OutDir)$(TargetFileName)</OutputFile>
       <AdditionalLibraryDirectories>../../RealSpace3/Dependencies/speedtree;../../RealSpace3/Dependencies/dx9/lib;../../cml2/lib;ext_lib/DevIL/lib;../../../../sdk/UnitTest++/v2.0/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <ModuleDefinitionFile />
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -125,7 +127,7 @@
     </ResourceCompile>
     <Link>
       <AdditionalDependencies>d3d9.lib;d3dx9.lib;zlib.lib;DevIL.lib;ILU.lib;ILUT.lib;lua5.1.lib;SpeedTreeRT.lib;uxtheme.lib;UnitTest++vs2019MD_Lib_NoException.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <OutputFile>$(OutDir)CoreTool.dll</OutputFile>
+      <OutputFile>$(OutDir)$(TargetFileName)</OutputFile>
       <AdditionalLibraryDirectories>../../RealSpace3/Dependencies/speedtree;../../RealSpace3/Dependencies/dx9/lib;../../cml2/lib;ext_lib/DevIL/lib;../../../../sdk/UnitTest++/v2.0/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Windows</SubSystem>

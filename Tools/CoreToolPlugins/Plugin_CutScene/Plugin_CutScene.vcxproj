@@ -18,6 +18,7 @@
     <ProjectGuid>{CCEE827F-9252-44CE-AA1A-F5D76290056C}</ProjectGuid>
     <RootNamespace>Plugin_CutScene</RootNamespace>
     <Keyword>MFCDLLProj</Keyword>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_duck|Win32'" Label="Configuration">
@@ -56,19 +57,21 @@
     <_ProjectFileVersion>16.0.30028.132</_ProjectFileVersion>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <OutDir>$(SolutionDir)../Runtime/Dev/CoreToolRS3/plugins\</OutDir>
-    <IntDir>$(Configuration)\</IntDir>
+    <OutDir>../../../../../build/Dev/CoreToolRS3/plugins/</OutDir>
+    <IntDir>$(BaseIntermediateOutputPath)$(Configuration)\$(PlatformTarget)\</IntDir>
     <LinkIncremental>true</LinkIncremental>
+    <TargetName>$(ProjectName)_d</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <OutDir>$(SolutionDir)../Runtime/Dev/CoreToolRS3/plugins\</OutDir>
-    <IntDir>$(Configuration)\</IntDir>
+    <OutDir>../../../../../build/Dev/CoreToolRS3/plugins/</OutDir>
+    <IntDir>$(BaseIntermediateOutputPath)$(Configuration)\$(PlatformTarget)\</IntDir>
     <LinkIncremental>false</LinkIncremental>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_duck|Win32'">
-    <OutDir>$(SolutionDir)../../Runtime/Dev/CoreToolRS3/plugins\</OutDir>
-    <IntDir>$(Configuration)\</IntDir>
+    <OutDir>../../../../../build/Dev/CoreToolRS3/plugins/</OutDir>
+    <IntDir>$(BaseIntermediateOutputPath)$(Configuration)\$(PlatformTarget)\</IntDir>
     <LinkIncremental>true</LinkIncremental>
+    <TargetName>$(ProjectName)_d</TargetName>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <Midl>
@@ -93,7 +96,7 @@
       <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Link>
-      <OutputFile>$(OutDir)$(ProjectName)_d.dll</OutputFile>
+      <OutputFile>$(OutDir)$(ProjectName).dll</OutputFile>
       <ModuleDefinitionFile>.\Plugin_CutScene.def</ModuleDefinitionFile>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Windows</SubSystem>
@@ -154,7 +157,7 @@
       <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Link>
-      <OutputFile>$(OutDir)$(ProjectName)_d.dll</OutputFile>
+      <OutputFile>$(OutDir)$(ProjectName).dll</OutputFile>
       <ModuleDefinitionFile>.\Plugin_CutScene.def</ModuleDefinitionFile>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Windows</SubSystem>

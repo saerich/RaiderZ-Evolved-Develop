@@ -1,45 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="리소스 파일">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx</Extensions>
-    </Filter>
     <Filter Include="MFC">
       <UniqueIdentifier>{79273ce6-3491-47d8-9958-610390bdf876}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="MFC\외부 라이브러리">
-      <UniqueIdentifier>{b449ea83-ce07-48d8-a8bb-5602ebb28667}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="MFC\외부 라이브러리\CAutoEdit">
-      <UniqueIdentifier>{cad494d0-cac4-4691-9465-5e47336a6405}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="MFC\외부 라이브러리\CTipDlg">
-      <UniqueIdentifier>{49a8921f-549d-44c8-87c1-6726cc230e35}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="MFC\외부 라이브러리\CNumEdit">
-      <UniqueIdentifier>{905a0bb8-73f1-44e0-8a39-28873db3341c}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="MFC\외부 라이브러리\CChartCtrl">
-      <UniqueIdentifier>{7e174854-2985-4b28-8501-77123371ae20}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="MFC\외부 라이브러리\GridTree">
-      <UniqueIdentifier>{664064a9-e995-42ff-925f-c8203c084be6}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="MFC\외부 라이브러리\GridTree\GridBtnCell">
-      <UniqueIdentifier>{2c257c6d-6aee-4135-a91a-a16401ad5a26}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="MFC\외부 라이브러리\GridTree\GridCtrl">
-      <UniqueIdentifier>{720ee32b-8aa0-4fda-8493-fa34b9f52272}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="MFC\외부 라이브러리\GridTree\GridTreeBtnCell">
-      <UniqueIdentifier>{e521b4cb-f0d2-4bef-8441-1d7a8627ceb9}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="MFC\외부 라이브러리\GridTree\TreeColumn">
-      <UniqueIdentifier>{904d84db-0b3d-43c4-b3fe-6faf0f86c40f}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="MFC\외부 라이브러리\InstantReload">
-      <UniqueIdentifier>{3d3ba904-39ad-41c6-b899-23c9a0942314}</UniqueIdentifier>
     </Filter>
     <Filter Include="MFC\Main Frame">
       <UniqueIdentifier>{84e0a389-c783-4b3d-89be-7176ff9bab0e}</UniqueIdentifier>
@@ -125,304 +88,341 @@
     <Filter Include="DLLMain">
       <UniqueIdentifier>{8da84b1b-9c2f-4a56-86ad-d8957a237f61}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Resource">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx</Extensions>
+    </Filter>
+    <Filter Include="MFC\External Library">
+      <UniqueIdentifier>{b449ea83-ce07-48d8-a8bb-5602ebb28667}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MFC\External Library\CAutoEdit">
+      <UniqueIdentifier>{cad494d0-cac4-4691-9465-5e47336a6405}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MFC\External Library\CTipDlg">
+      <UniqueIdentifier>{49a8921f-549d-44c8-87c1-6726cc230e35}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MFC\External Library\CNumEdit">
+      <UniqueIdentifier>{905a0bb8-73f1-44e0-8a39-28873db3341c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MFC\External Library\CChartCtrl">
+      <UniqueIdentifier>{7e174854-2985-4b28-8501-77123371ae20}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MFC\External Library\GridTree">
+      <UniqueIdentifier>{664064a9-e995-42ff-925f-c8203c084be6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MFC\External Library\GridTree\GridBtnCell">
+      <UniqueIdentifier>{2c257c6d-6aee-4135-a91a-a16401ad5a26}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MFC\External Library\GridTree\GridCtrl">
+      <UniqueIdentifier>{720ee32b-8aa0-4fda-8493-fa34b9f52272}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MFC\External Library\GridTree\GridTreeBtnCell">
+      <UniqueIdentifier>{e521b4cb-f0d2-4bef-8441-1d7a8627ceb9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MFC\External Library\GridTree\TreeColumn">
+      <UniqueIdentifier>{904d84db-0b3d-43c4-b3fe-6faf0f86c40f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MFC\External Library\InstantReload">
+      <UniqueIdentifier>{3d3ba904-39ad-41c6-b899-23c9a0942314}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Image Include="res\bitmap1.bmp">
-      <Filter>리소스 파일</Filter>
+      <Filter>Resource</Filter>
     </Image>
     <Image Include="res\bitmap2.bmp">
-      <Filter>리소스 파일</Filter>
+      <Filter>Resource</Filter>
     </Image>
     <Image Include="res\bmp00001.bmp">
-      <Filter>리소스 파일</Filter>
+      <Filter>Resource</Filter>
     </Image>
     <Image Include="res\bmp00002.bmp">
-      <Filter>리소스 파일</Filter>
+      <Filter>Resource</Filter>
     </Image>
     <Image Include="res\bmp00003.bmp">
-      <Filter>리소스 파일</Filter>
+      <Filter>Resource</Filter>
     </Image>
     <Image Include="res\bmp00004.bmp">
-      <Filter>리소스 파일</Filter>
+      <Filter>Resource</Filter>
     </Image>
     <Image Include="res\bmp00005.bmp">
-      <Filter>리소스 파일</Filter>
+      <Filter>Resource</Filter>
     </Image>
     <Image Include="res\bmp00006.bmp">
-      <Filter>리소스 파일</Filter>
+      <Filter>Resource</Filter>
     </Image>
     <Image Include="res\bmp00007.bmp">
-      <Filter>리소스 파일</Filter>
+      <Filter>Resource</Filter>
     </Image>
     <Image Include="res\bmp00008.bmp">
-      <Filter>리소스 파일</Filter>
+      <Filter>Resource</Filter>
     </Image>
     <Image Include="res\bmp00009.bmp">
-      <Filter>리소스 파일</Filter>
+      <Filter>Resource</Filter>
     </Image>
     <Image Include="res\bmp00010.bmp">
-      <Filter>리소스 파일</Filter>
+      <Filter>Resource</Filter>
     </Image>
     <Image Include="res\bmp00011.bmp">
-      <Filter>리소스 파일</Filter>
+      <Filter>Resource</Filter>
     </Image>
     <Image Include="res\bmp00012.bmp">
-      <Filter>리소스 파일</Filter>
+      <Filter>Resource</Filter>
     </Image>
     <Image Include="res\bmp00013.bmp">
-      <Filter>리소스 파일</Filter>
+      <Filter>Resource</Filter>
     </Image>
     <Image Include="res\bmp00014.bmp">
-      <Filter>리소스 파일</Filter>
+      <Filter>Resource</Filter>
     </Image>
     <Image Include="res\bmp00015.bmp">
-      <Filter>리소스 파일</Filter>
+      <Filter>Resource</Filter>
     </Image>
     <Image Include="res\bmp00016.bmp">
-      <Filter>리소스 파일</Filter>
+      <Filter>Resource</Filter>
     </Image>
     <Image Include="res\bmp00017.bmp">
-      <Filter>리소스 파일</Filter>
+      <Filter>Resource</Filter>
     </Image>
     <Image Include="res\bmp00018.bmp">
-      <Filter>리소스 파일</Filter>
+      <Filter>Resource</Filter>
     </Image>
     <Image Include="res\bmp00019.bmp">
-      <Filter>리소스 파일</Filter>
+      <Filter>Resource</Filter>
     </Image>
     <Image Include="res\bmp00020.bmp">
-      <Filter>리소스 파일</Filter>
+      <Filter>Resource</Filter>
     </Image>
     <Image Include="res\CoreToolRS3.ico">
-      <Filter>리소스 파일</Filter>
+      <Filter>Resource</Filter>
     </Image>
     <Image Include="res\env_weat.bmp">
-      <Filter>리소스 파일</Filter>
+      <Filter>Resource</Filter>
     </Image>
     <Image Include="res\etc_dev1.bmp">
-      <Filter>리소스 파일</Filter>
+      <Filter>Resource</Filter>
     </Image>
     <Image Include="res\file_new.bmp">
-      <Filter>리소스 파일</Filter>
+      <Filter>Resource</Filter>
     </Image>
     <Image Include="res\file_sav.bmp">
-      <Filter>리소스 파일</Filter>
+      <Filter>Resource</Filter>
     </Image>
     <Image Include="res\folders.bmp">
-      <Filter>리소스 파일</Filter>
+      <Filter>Resource</Filter>
     </Image>
     <Image Include="res\icon_sound.bmp">
-      <Filter>리소스 파일</Filter>
+      <Filter>Resource</Filter>
     </Image>
     <Image Include="res\obj_list.bmp">
-      <Filter>리소스 파일</Filter>
+      <Filter>Resource</Filter>
     </Image>
     <Image Include="res\obj_lock.bmp">
-      <Filter>리소스 파일</Filter>
+      <Filter>Resource</Filter>
     </Image>
     <Image Include="res\obj_move.bmp">
-      <Filter>리소스 파일</Filter>
+      <Filter>Resource</Filter>
     </Image>
     <Image Include="res\objtree.bmp">
-      <Filter>리소스 파일</Filter>
+      <Filter>Resource</Filter>
     </Image>
     <Image Include="res\terrain_.bmp">
-      <Filter>리소스 파일</Filter>
+      <Filter>Resource</Filter>
     </Image>
     <Image Include="res\Toolbar.bmp">
-      <Filter>리소스 파일</Filter>
+      <Filter>Resource</Filter>
     </Image>
     <Image Include="res\toolbar_layer.bmp">
-      <Filter>리소스 파일</Filter>
+      <Filter>Resource</Filter>
     </Image>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="CoreToolRS3.rc">
-      <Filter>리소스 파일</Filter>
+      <Filter>Resource</Filter>
     </ResourceCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="res\CoreToolRS3.rc2">
-      <Filter>리소스 파일</Filter>
+      <Filter>Resource</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ext_lib\BHTabedReBar.cpp">
-      <Filter>MFC\외부 라이브러리</Filter>
+      <Filter>MFC\External Library</Filter>
     </ClCompile>
     <ClCompile Include="ext_lib\ColourPickerCB.cpp">
-      <Filter>MFC\외부 라이브러리</Filter>
+      <Filter>MFC\External Library</Filter>
     </ClCompile>
     <ClCompile Include="ext_lib\Dib.cpp">
-      <Filter>MFC\외부 라이브러리</Filter>
+      <Filter>MFC\External Library</Filter>
     </ClCompile>
     <ClCompile Include="ext_lib\FooButton.cpp">
-      <Filter>MFC\외부 라이브러리</Filter>
+      <Filter>MFC\External Library</Filter>
     </ClCompile>
     <ClCompile Include="ext_lib\InitDialogBar.cpp">
-      <Filter>MFC\외부 라이브러리</Filter>
+      <Filter>MFC\External Library</Filter>
     </ClCompile>
     <ClCompile Include="ext_lib\MultiSlider.cpp">
-      <Filter>MFC\외부 라이브러리</Filter>
+      <Filter>MFC\External Library</Filter>
     </ClCompile>
     <ClCompile Include="ext_lib\RollupCtrl.cpp">
-      <Filter>MFC\외부 라이브러리</Filter>
+      <Filter>MFC\External Library</Filter>
     </ClCompile>
     <ClCompile Include="ext_lib\ScintillaWnd.cpp">
-      <Filter>MFC\외부 라이브러리</Filter>
+      <Filter>MFC\External Library</Filter>
     </ClCompile>
     <ClCompile Include="ext_lib\Tokenizer.cpp">
-      <Filter>MFC\외부 라이브러리</Filter>
+      <Filter>MFC\External Library</Filter>
     </ClCompile>
     <ClCompile Include="ext_lib\TreeCtrlEx.cpp">
-      <Filter>MFC\외부 라이브러리</Filter>
+      <Filter>MFC\External Library</Filter>
     </ClCompile>
     <ClCompile Include="ext_lib\TreeCtrlExm.cpp">
-      <Filter>MFC\외부 라이브러리</Filter>
+      <Filter>MFC\External Library</Filter>
     </ClCompile>
     <ClCompile Include="ext_lib\WndResizer.cpp">
-      <Filter>MFC\외부 라이브러리</Filter>
+      <Filter>MFC\External Library</Filter>
     </ClCompile>
     <ClCompile Include="ext_lib\XInfoTip.cpp">
-      <Filter>MFC\외부 라이브러리</Filter>
+      <Filter>MFC\External Library</Filter>
     </ClCompile>
     <ClCompile Include="ext_lib\CAutoEdit\AutoEdit.cpp">
-      <Filter>MFC\외부 라이브러리\CAutoEdit</Filter>
+      <Filter>MFC\External Library\CAutoEdit</Filter>
     </ClCompile>
     <ClCompile Include="ext_lib\CAutoEdit\AutoEditValidator.cpp">
-      <Filter>MFC\외부 라이브러리\CAutoEdit</Filter>
+      <Filter>MFC\External Library\CAutoEdit</Filter>
     </ClCompile>
     <ClCompile Include="ext_lib\CAutoEdit\InfoWnd.cpp">
-      <Filter>MFC\외부 라이브러리\CAutoEdit</Filter>
+      <Filter>MFC\External Library\CAutoEdit</Filter>
     </ClCompile>
     <ClCompile Include="ext_lib\CTipDlg\SplitPath.cpp">
-      <Filter>MFC\외부 라이브러리\CTipDlg</Filter>
+      <Filter>MFC\External Library\CTipDlg</Filter>
     </ClCompile>
     <ClCompile Include="ext_lib\CTipDlg\TipDlg.cpp">
-      <Filter>MFC\외부 라이브러리\CTipDlg</Filter>
+      <Filter>MFC\External Library\CTipDlg</Filter>
     </ClCompile>
     <ClCompile Include="ext_lib\CNumEdit\NumEdit.cpp">
-      <Filter>MFC\외부 라이브러리\CNumEdit</Filter>
+      <Filter>MFC\External Library\CNumEdit</Filter>
     </ClCompile>
     <ClCompile Include="ext_lib\CNumEdit\NumSpinCtrl.cpp">
-      <Filter>MFC\외부 라이브러리\CNumEdit</Filter>
+      <Filter>MFC\External Library\CNumEdit</Filter>
     </ClCompile>
     <ClCompile Include="ext_lib\CChartCtrl\ChartAxis.cpp">
-      <Filter>MFC\외부 라이브러리\CChartCtrl</Filter>
+      <Filter>MFC\External Library\CChartCtrl</Filter>
     </ClCompile>
     <ClCompile Include="ext_lib\CChartCtrl\ChartAxisLabel.cpp">
-      <Filter>MFC\외부 라이브러리\CChartCtrl</Filter>
+      <Filter>MFC\External Library\CChartCtrl</Filter>
     </ClCompile>
     <ClCompile Include="ext_lib\CChartCtrl\ChartBalloonLabel.cpp">
-      <Filter>MFC\외부 라이브러리\CChartCtrl</Filter>
+      <Filter>MFC\External Library\CChartCtrl</Filter>
     </ClCompile>
     <ClCompile Include="ext_lib\CChartCtrl\ChartBarSerie.cpp">
-      <Filter>MFC\외부 라이브러리\CChartCtrl</Filter>
+      <Filter>MFC\External Library\CChartCtrl</Filter>
     </ClCompile>
     <ClCompile Include="ext_lib\CChartCtrl\ChartCrossHairCursor.cpp">
-      <Filter>MFC\외부 라이브러리\CChartCtrl</Filter>
+      <Filter>MFC\External Library\CChartCtrl</Filter>
     </ClCompile>
     <ClCompile Include="ext_lib\CChartCtrl\ChartCtrl.cpp">
-      <Filter>MFC\외부 라이브러리\CChartCtrl</Filter>
+      <Filter>MFC\External Library\CChartCtrl</Filter>
     </ClCompile>
     <ClCompile Include="ext_lib\CChartCtrl\ChartCursor.cpp">
-      <Filter>MFC\외부 라이브러리\CChartCtrl</Filter>
+      <Filter>MFC\External Library\CChartCtrl</Filter>
     </ClCompile>
     <ClCompile Include="ext_lib\CChartCtrl\ChartDateTimeAxis.cpp">
-      <Filter>MFC\외부 라이브러리\CChartCtrl</Filter>
+      <Filter>MFC\External Library\CChartCtrl</Filter>
     </ClCompile>
     <ClCompile Include="ext_lib\CChartCtrl\ChartDragLineCursor.cpp">
-      <Filter>MFC\외부 라이브러리\CChartCtrl</Filter>
+      <Filter>MFC\External Library\CChartCtrl</Filter>
     </ClCompile>
     <ClCompile Include="ext_lib\CChartCtrl\ChartFont.cpp">
-      <Filter>MFC\외부 라이브러리\CChartCtrl</Filter>
+      <Filter>MFC\External Library\CChartCtrl</Filter>
     </ClCompile>
     <ClCompile Include="ext_lib\CChartCtrl\ChartGradient.cpp">
-      <Filter>MFC\외부 라이브러리\CChartCtrl</Filter>
+      <Filter>MFC\External Library\CChartCtrl</Filter>
     </ClCompile>
     <ClCompile Include="ext_lib\CChartCtrl\ChartGrid.cpp">
-      <Filter>MFC\외부 라이브러리\CChartCtrl</Filter>
+      <Filter>MFC\External Library\CChartCtrl</Filter>
     </ClCompile>
     <ClCompile Include="ext_lib\CChartCtrl\ChartLabel.cpp">
-      <Filter>MFC\외부 라이브러리\CChartCtrl</Filter>
+      <Filter>MFC\External Library\CChartCtrl</Filter>
     </ClCompile>
     <ClCompile Include="ext_lib\CChartCtrl\ChartLegend.cpp">
-      <Filter>MFC\외부 라이브러리\CChartCtrl</Filter>
+      <Filter>MFC\External Library\CChartCtrl</Filter>
     </ClCompile>
     <ClCompile Include="ext_lib\CChartCtrl\ChartLineSerie.cpp">
-      <Filter>MFC\외부 라이브러리\CChartCtrl</Filter>
+      <Filter>MFC\External Library\CChartCtrl</Filter>
     </ClCompile>
     <ClCompile Include="ext_lib\CChartCtrl\ChartLogarithmicAxis.cpp">
-      <Filter>MFC\외부 라이브러리\CChartCtrl</Filter>
+      <Filter>MFC\External Library\CChartCtrl</Filter>
     </ClCompile>
     <ClCompile Include="ext_lib\CChartCtrl\ChartPointsArray.cpp">
-      <Filter>MFC\외부 라이브러리\CChartCtrl</Filter>
+      <Filter>MFC\External Library\CChartCtrl</Filter>
     </ClCompile>
     <ClCompile Include="ext_lib\CChartCtrl\ChartPointsSerie.cpp">
-      <Filter>MFC\외부 라이브러리\CChartCtrl</Filter>
+      <Filter>MFC\External Library\CChartCtrl</Filter>
     </ClCompile>
     <ClCompile Include="ext_lib\CChartCtrl\ChartScrollBar.cpp">
-      <Filter>MFC\외부 라이브러리\CChartCtrl</Filter>
+      <Filter>MFC\External Library\CChartCtrl</Filter>
     </ClCompile>
     <ClCompile Include="ext_lib\CChartCtrl\ChartSerie.cpp">
-      <Filter>MFC\외부 라이브러리\CChartCtrl</Filter>
+      <Filter>MFC\External Library\CChartCtrl</Filter>
     </ClCompile>
     <ClCompile Include="ext_lib\CChartCtrl\ChartStandardAxis.cpp">
-      <Filter>MFC\외부 라이브러리\CChartCtrl</Filter>
+      <Filter>MFC\External Library\CChartCtrl</Filter>
     </ClCompile>
     <ClCompile Include="ext_lib\CChartCtrl\ChartSurfaceSerie.cpp">
-      <Filter>MFC\외부 라이브러리\CChartCtrl</Filter>
+      <Filter>MFC\External Library\CChartCtrl</Filter>
     </ClCompile>
     <ClCompile Include="ext_lib\CChartCtrl\ChartTitle.cpp">
-      <Filter>MFC\외부 라이브러리\CChartCtrl</Filter>
+      <Filter>MFC\External Library\CChartCtrl</Filter>
     </ClCompile>
     <ClCompile Include="ext_lib\GridTree\GridBtnCell_src\BtnDataBase.cpp">
-      <Filter>MFC\외부 라이브러리\GridTree\GridBtnCell</Filter>
+      <Filter>MFC\External Library\GridTree\GridBtnCell</Filter>
     </ClCompile>
     <ClCompile Include="ext_lib\GridTree\GridBtnCell_src\GridBtnCell.cpp">
-      <Filter>MFC\외부 라이브러리\GridTree\GridBtnCell</Filter>
+      <Filter>MFC\External Library\GridTree\GridBtnCell</Filter>
     </ClCompile>
     <ClCompile Include="ext_lib\GridTree\GridBtnCell_src\GridBtnCellBase.cpp">
-      <Filter>MFC\외부 라이브러리\GridTree\GridBtnCell</Filter>
+      <Filter>MFC\External Library\GridTree\GridBtnCell</Filter>
     </ClCompile>
     <ClCompile Include="ext_lib\GridTree\GridBtnCell_src\GridBtnCellCombo.cpp">
-      <Filter>MFC\외부 라이브러리\GridTree\GridBtnCell</Filter>
+      <Filter>MFC\External Library\GridTree\GridBtnCell</Filter>
     </ClCompile>
     <ClCompile Include="ext_lib\GridTree\GridBtnCell_src\InPlaceList.cpp">
-      <Filter>MFC\외부 라이브러리\GridTree\GridBtnCell</Filter>
+      <Filter>MFC\External Library\GridTree\GridBtnCell</Filter>
     </ClCompile>
     <ClCompile Include="ext_lib\GridTree\GridCtrl_src\GridCell.cpp">
-      <Filter>MFC\외부 라이브러리\GridTree\GridCtrl</Filter>
+      <Filter>MFC\External Library\GridTree\GridCtrl</Filter>
     </ClCompile>
     <ClCompile Include="ext_lib\GridTree\GridCtrl_src\GridCellBase.cpp">
-      <Filter>MFC\외부 라이브러리\GridTree\GridCtrl</Filter>
+      <Filter>MFC\External Library\GridTree\GridCtrl</Filter>
     </ClCompile>
     <ClCompile Include="ext_lib\GridTree\GridCtrl_src\GridCtrl.cpp">
-      <Filter>MFC\외부 라이브러리\GridTree\GridCtrl</Filter>
+      <Filter>MFC\External Library\GridTree\GridCtrl</Filter>
     </ClCompile>
     <ClCompile Include="ext_lib\GridTree\GridCtrl_src\GridDropTarget.cpp">
-      <Filter>MFC\외부 라이브러리\GridTree\GridCtrl</Filter>
+      <Filter>MFC\External Library\GridTree\GridCtrl</Filter>
     </ClCompile>
     <ClCompile Include="ext_lib\GridTree\GridCtrl_src\InPlaceEdit.cpp">
-      <Filter>MFC\외부 라이브러리\GridTree\GridCtrl</Filter>
+      <Filter>MFC\External Library\GridTree\GridCtrl</Filter>
     </ClCompile>
     <ClCompile Include="ext_lib\GridTree\GridCtrl_src\TitleTip.cpp">
-      <Filter>MFC\외부 라이브러리\GridTree\GridCtrl</Filter>
+      <Filter>MFC\External Library\GridTree\GridCtrl</Filter>
     </ClCompile>
     <ClCompile Include="ext_lib\GridTree\GridTreeBtnCell_src\GridTreeBtnCell.cpp">
-      <Filter>MFC\외부 라이브러리\GridTree\GridTreeBtnCell</Filter>
+      <Filter>MFC\External Library\GridTree\GridTreeBtnCell</Filter>
     </ClCompile>
     <ClCompile Include="ext_lib\GridTree\TreeColumn_src\GridTreeCell.cpp">
-      <Filter>MFC\외부 라이브러리\GridTree\TreeColumn</Filter>
+      <Filter>MFC\External Library\GridTree\TreeColumn</Filter>
     </ClCompile>
     <ClCompile Include="ext_lib\GridTree\TreeColumn_src\GridTreeCellBase.cpp">
-      <Filter>MFC\외부 라이브러리\GridTree\TreeColumn</Filter>
+      <Filter>MFC\External Library\GridTree\TreeColumn</Filter>
     </ClCompile>
     <ClCompile Include="ext_lib\GridTree\TreeColumn_src\TreeColumn.cpp">
-      <Filter>MFC\외부 라이브러리\GridTree\TreeColumn</Filter>
+      <Filter>MFC\External Library\GridTree\TreeColumn</Filter>
     </ClCompile>
     <ClCompile Include="ext_lib\FileWatcher.cpp">
-      <Filter>MFC\외부 라이브러리\InstantReload</Filter>
+      <Filter>MFC\External Library\InstantReload</Filter>
     </ClCompile>
     <ClCompile Include="CoreToolRS3_Doc.cpp">
       <Filter>MFC\Main Frame</Filter>
@@ -751,196 +751,196 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ext_lib\BHTabedReBar.h">
-      <Filter>MFC\외부 라이브러리</Filter>
+      <Filter>MFC\External Library</Filter>
     </ClInclude>
     <ClInclude Include="ext_lib\ColourPickerCB.h">
-      <Filter>MFC\외부 라이브러리</Filter>
+      <Filter>MFC\External Library</Filter>
     </ClInclude>
     <ClInclude Include="ext_lib\Dib.h">
-      <Filter>MFC\외부 라이브러리</Filter>
+      <Filter>MFC\External Library</Filter>
     </ClInclude>
     <ClInclude Include="ext_lib\FooButton.h">
-      <Filter>MFC\외부 라이브러리</Filter>
+      <Filter>MFC\External Library</Filter>
     </ClInclude>
     <ClInclude Include="ext_lib\InitDialogBar.h">
-      <Filter>MFC\외부 라이브러리</Filter>
+      <Filter>MFC\External Library</Filter>
     </ClInclude>
     <ClInclude Include="ext_lib\MultiSlider.h">
-      <Filter>MFC\외부 라이브러리</Filter>
+      <Filter>MFC\External Library</Filter>
     </ClInclude>
     <ClInclude Include="ext_lib\RollupCtrl.h">
-      <Filter>MFC\외부 라이브러리</Filter>
+      <Filter>MFC\External Library</Filter>
     </ClInclude>
     <ClInclude Include="ext_lib\ScintillaWnd.h">
-      <Filter>MFC\외부 라이브러리</Filter>
+      <Filter>MFC\External Library</Filter>
     </ClInclude>
     <ClInclude Include="ext_lib\Tokenizer.h">
-      <Filter>MFC\외부 라이브러리</Filter>
+      <Filter>MFC\External Library</Filter>
     </ClInclude>
     <ClInclude Include="ext_lib\TreeCtrlEx.h">
-      <Filter>MFC\외부 라이브러리</Filter>
+      <Filter>MFC\External Library</Filter>
     </ClInclude>
     <ClInclude Include="ext_lib\TreeCtrlExm.h">
-      <Filter>MFC\외부 라이브러리</Filter>
+      <Filter>MFC\External Library</Filter>
     </ClInclude>
     <ClInclude Include="ext_lib\WM_USER.h">
-      <Filter>MFC\외부 라이브러리</Filter>
+      <Filter>MFC\External Library</Filter>
     </ClInclude>
     <ClInclude Include="ext_lib\WndResizer.h">
-      <Filter>MFC\외부 라이브러리</Filter>
+      <Filter>MFC\External Library</Filter>
     </ClInclude>
     <ClInclude Include="ext_lib\XInfoTip.h">
-      <Filter>MFC\외부 라이브러리</Filter>
+      <Filter>MFC\External Library</Filter>
     </ClInclude>
     <ClInclude Include="ext_lib\CAutoEdit\AutoEdit.h">
-      <Filter>MFC\외부 라이브러리\CAutoEdit</Filter>
+      <Filter>MFC\External Library\CAutoEdit</Filter>
     </ClInclude>
     <ClInclude Include="ext_lib\CAutoEdit\AutoEditValidator.h">
-      <Filter>MFC\외부 라이브러리\CAutoEdit</Filter>
+      <Filter>MFC\External Library\CAutoEdit</Filter>
     </ClInclude>
     <ClInclude Include="ext_lib\CAutoEdit\InfoWnd.h">
-      <Filter>MFC\외부 라이브러리\CAutoEdit</Filter>
+      <Filter>MFC\External Library\CAutoEdit</Filter>
     </ClInclude>
     <ClInclude Include="ext_lib\CTipDlg\SplitPath.h">
-      <Filter>MFC\외부 라이브러리\CTipDlg</Filter>
+      <Filter>MFC\External Library\CTipDlg</Filter>
     </ClInclude>
     <ClInclude Include="ext_lib\CTipDlg\TipDlg.h">
-      <Filter>MFC\외부 라이브러리\CTipDlg</Filter>
+      <Filter>MFC\External Library\CTipDlg</Filter>
     </ClInclude>
     <ClInclude Include="ext_lib\CNumEdit\NumEdit.h">
-      <Filter>MFC\외부 라이브러리\CNumEdit</Filter>
+      <Filter>MFC\External Library\CNumEdit</Filter>
     </ClInclude>
     <ClInclude Include="ext_lib\CNumEdit\NumSpinCtrl.h">
-      <Filter>MFC\외부 라이브러리\CNumEdit</Filter>
+      <Filter>MFC\External Library\CNumEdit</Filter>
     </ClInclude>
     <ClInclude Include="ext_lib\CChartCtrl\ChartAxis.h">
-      <Filter>MFC\외부 라이브러리\CChartCtrl</Filter>
+      <Filter>MFC\External Library\CChartCtrl</Filter>
     </ClInclude>
     <ClInclude Include="ext_lib\CChartCtrl\ChartAxisLabel.h">
-      <Filter>MFC\외부 라이브러리\CChartCtrl</Filter>
+      <Filter>MFC\External Library\CChartCtrl</Filter>
     </ClInclude>
     <ClInclude Include="ext_lib\CChartCtrl\ChartBalloonLabel.h">
-      <Filter>MFC\외부 라이브러리\CChartCtrl</Filter>
+      <Filter>MFC\External Library\CChartCtrl</Filter>
     </ClInclude>
     <ClInclude Include="ext_lib\CChartCtrl\ChartBarSerie.h">
-      <Filter>MFC\외부 라이브러리\CChartCtrl</Filter>
+      <Filter>MFC\External Library\CChartCtrl</Filter>
     </ClInclude>
     <ClInclude Include="ext_lib\CChartCtrl\ChartCrossHairCursor.h">
-      <Filter>MFC\외부 라이브러리\CChartCtrl</Filter>
+      <Filter>MFC\External Library\CChartCtrl</Filter>
     </ClInclude>
     <ClInclude Include="ext_lib\CChartCtrl\ChartCtrl.h">
-      <Filter>MFC\외부 라이브러리\CChartCtrl</Filter>
+      <Filter>MFC\External Library\CChartCtrl</Filter>
     </ClInclude>
     <ClInclude Include="ext_lib\CChartCtrl\ChartCursor.h">
-      <Filter>MFC\외부 라이브러리\CChartCtrl</Filter>
+      <Filter>MFC\External Library\CChartCtrl</Filter>
     </ClInclude>
     <ClInclude Include="ext_lib\CChartCtrl\ChartDateTimeAxis.h">
-      <Filter>MFC\외부 라이브러리\CChartCtrl</Filter>
+      <Filter>MFC\External Library\CChartCtrl</Filter>
     </ClInclude>
     <ClInclude Include="ext_lib\CChartCtrl\ChartDragLineCursor.h">
-      <Filter>MFC\외부 라이브러리\CChartCtrl</Filter>
+      <Filter>MFC\External Library\CChartCtrl</Filter>
     </ClInclude>
     <ClInclude Include="ext_lib\CChartCtrl\ChartFont.h">
-      <Filter>MFC\외부 라이브러리\CChartCtrl</Filter>
+      <Filter>MFC\External Library\CChartCtrl</Filter>
     </ClInclude>
     <ClInclude Include="ext_lib\CChartCtrl\ChartGradient.h">
-      <Filter>MFC\외부 라이브러리\CChartCtrl</Filter>
+      <Filter>MFC\External Library\CChartCtrl</Filter>
     </ClInclude>
     <ClInclude Include="ext_lib\CChartCtrl\ChartGrid.h">
-      <Filter>MFC\외부 라이브러리\CChartCtrl</Filter>
+      <Filter>MFC\External Library\CChartCtrl</Filter>
     </ClInclude>
     <ClInclude Include="ext_lib\CChartCtrl\ChartLabel.h">
-      <Filter>MFC\외부 라이브러리\CChartCtrl</Filter>
+      <Filter>MFC\External Library\CChartCtrl</Filter>
     </ClInclude>
     <ClInclude Include="ext_lib\CChartCtrl\ChartLegend.h">
-      <Filter>MFC\외부 라이브러리\CChartCtrl</Filter>
+      <Filter>MFC\External Library\CChartCtrl</Filter>
     </ClInclude>
     <ClInclude Include="ext_lib\CChartCtrl\ChartLineSerie.h">
-      <Filter>MFC\외부 라이브러리\CChartCtrl</Filter>
+      <Filter>MFC\External Library\CChartCtrl</Filter>
     </ClInclude>
     <ClInclude Include="ext_lib\CChartCtrl\ChartLogarithmicAxis.h">
-      <Filter>MFC\외부 라이브러리\CChartCtrl</Filter>
+      <Filter>MFC\External Library\CChartCtrl</Filter>
     </ClInclude>
     <ClInclude Include="ext_lib\CChartCtrl\ChartMouseListener.h">
-      <Filter>MFC\외부 라이브러리\CChartCtrl</Filter>
+      <Filter>MFC\External Library\CChartCtrl</Filter>
     </ClInclude>
     <ClInclude Include="ext_lib\CChartCtrl\ChartPointsArray.h">
-      <Filter>MFC\외부 라이브러리\CChartCtrl</Filter>
+      <Filter>MFC\External Library\CChartCtrl</Filter>
     </ClInclude>
     <ClInclude Include="ext_lib\CChartCtrl\ChartPointsSerie.h">
-      <Filter>MFC\외부 라이브러리\CChartCtrl</Filter>
+      <Filter>MFC\External Library\CChartCtrl</Filter>
     </ClInclude>
     <ClInclude Include="ext_lib\CChartCtrl\ChartScrollBar.h">
-      <Filter>MFC\외부 라이브러리\CChartCtrl</Filter>
+      <Filter>MFC\External Library\CChartCtrl</Filter>
     </ClInclude>
     <ClInclude Include="ext_lib\CChartCtrl\ChartSerie.h">
-      <Filter>MFC\외부 라이브러리\CChartCtrl</Filter>
+      <Filter>MFC\External Library\CChartCtrl</Filter>
     </ClInclude>
     <ClInclude Include="ext_lib\CChartCtrl\ChartStandardAxis.h">
-      <Filter>MFC\외부 라이브러리\CChartCtrl</Filter>
+      <Filter>MFC\External Library\CChartCtrl</Filter>
     </ClInclude>
     <ClInclude Include="ext_lib\CChartCtrl\ChartString.h">
-      <Filter>MFC\외부 라이브러리\CChartCtrl</Filter>
+      <Filter>MFC\External Library\CChartCtrl</Filter>
     </ClInclude>
     <ClInclude Include="ext_lib\CChartCtrl\ChartSurfaceSerie.h">
-      <Filter>MFC\외부 라이브러리\CChartCtrl</Filter>
+      <Filter>MFC\External Library\CChartCtrl</Filter>
     </ClInclude>
     <ClInclude Include="ext_lib\CChartCtrl\ChartTitle.h">
-      <Filter>MFC\외부 라이브러리\CChartCtrl</Filter>
+      <Filter>MFC\External Library\CChartCtrl</Filter>
     </ClInclude>
     <ClInclude Include="ext_lib\GridTree\GridBtnCell_src\BtnDataBase.h">
-      <Filter>MFC\외부 라이브러리\GridTree\GridBtnCell</Filter>
+      <Filter>MFC\External Library\GridTree\GridBtnCell</Filter>
     </ClInclude>
     <ClInclude Include="ext_lib\GridTree\GridBtnCell_src\GridBtnCell.h">
-      <Filter>MFC\외부 라이브러리\GridTree\GridBtnCell</Filter>
+      <Filter>MFC\External Library\GridTree\GridBtnCell</Filter>
     </ClInclude>
     <ClInclude Include="ext_lib\GridTree\GridBtnCell_src\GridBtnCellBase.h">
-      <Filter>MFC\외부 라이브러리\GridTree\GridBtnCell</Filter>
+      <Filter>MFC\External Library\GridTree\GridBtnCell</Filter>
     </ClInclude>
     <ClInclude Include="ext_lib\GridTree\GridBtnCell_src\GridBtnCellCombo.h">
-      <Filter>MFC\외부 라이브러리\GridTree\GridBtnCell</Filter>
+      <Filter>MFC\External Library\GridTree\GridBtnCell</Filter>
     </ClInclude>
     <ClInclude Include="ext_lib\GridTree\GridBtnCell_src\InPlaceList.h">
-      <Filter>MFC\외부 라이브러리\GridTree\GridBtnCell</Filter>
+      <Filter>MFC\External Library\GridTree\GridBtnCell</Filter>
     </ClInclude>
     <ClInclude Include="ext_lib\GridTree\GridCtrl_src\CellRange.h">
-      <Filter>MFC\외부 라이브러리\GridTree\GridCtrl</Filter>
+      <Filter>MFC\External Library\GridTree\GridCtrl</Filter>
     </ClInclude>
     <ClInclude Include="ext_lib\GridTree\GridCtrl_src\GridCell.h">
-      <Filter>MFC\외부 라이브러리\GridTree\GridCtrl</Filter>
+      <Filter>MFC\External Library\GridTree\GridCtrl</Filter>
     </ClInclude>
     <ClInclude Include="ext_lib\GridTree\GridCtrl_src\GridCellBase.h">
-      <Filter>MFC\외부 라이브러리\GridTree\GridCtrl</Filter>
+      <Filter>MFC\External Library\GridTree\GridCtrl</Filter>
     </ClInclude>
     <ClInclude Include="ext_lib\GridTree\GridCtrl_src\GridCtrl.h">
-      <Filter>MFC\외부 라이브러리\GridTree\GridCtrl</Filter>
+      <Filter>MFC\External Library\GridTree\GridCtrl</Filter>
     </ClInclude>
     <ClInclude Include="ext_lib\GridTree\GridCtrl_src\GridDropTarget.h">
-      <Filter>MFC\외부 라이브러리\GridTree\GridCtrl</Filter>
+      <Filter>MFC\External Library\GridTree\GridCtrl</Filter>
     </ClInclude>
     <ClInclude Include="ext_lib\GridTree\GridCtrl_src\InPlaceEdit.h">
-      <Filter>MFC\외부 라이브러리\GridTree\GridCtrl</Filter>
+      <Filter>MFC\External Library\GridTree\GridCtrl</Filter>
     </ClInclude>
     <ClInclude Include="ext_lib\GridTree\GridCtrl_src\MemDC.h">
-      <Filter>MFC\외부 라이브러리\GridTree\GridCtrl</Filter>
+      <Filter>MFC\External Library\GridTree\GridCtrl</Filter>
     </ClInclude>
     <ClInclude Include="ext_lib\GridTree\GridCtrl_src\TitleTip.h">
-      <Filter>MFC\외부 라이브러리\GridTree\GridCtrl</Filter>
+      <Filter>MFC\External Library\GridTree\GridCtrl</Filter>
     </ClInclude>
     <ClInclude Include="ext_lib\GridTree\GridTreeBtnCell_src\GridTreeBtnCell.h">
-      <Filter>MFC\외부 라이브러리\GridTree\GridTreeBtnCell</Filter>
+      <Filter>MFC\External Library\GridTree\GridTreeBtnCell</Filter>
     </ClInclude>
     <ClInclude Include="ext_lib\GridTree\TreeColumn_src\GridTreeCell.h">
-      <Filter>MFC\외부 라이브러리\GridTree\TreeColumn</Filter>
+      <Filter>MFC\External Library\GridTree\TreeColumn</Filter>
     </ClInclude>
     <ClInclude Include="ext_lib\GridTree\TreeColumn_src\GridTreeCellBase.h">
-      <Filter>MFC\외부 라이브러리\GridTree\TreeColumn</Filter>
+      <Filter>MFC\External Library\GridTree\TreeColumn</Filter>
     </ClInclude>
     <ClInclude Include="ext_lib\GridTree\TreeColumn_src\TreeColumn.h">
-      <Filter>MFC\외부 라이브러리\GridTree\TreeColumn</Filter>
+      <Filter>MFC\External Library\GridTree\TreeColumn</Filter>
     </ClInclude>
     <ClInclude Include="ext_lib\FileWatcher.h">
-      <Filter>MFC\외부 라이브러리\InstantReload</Filter>
+      <Filter>MFC\External Library\InstantReload</Filter>
     </ClInclude>
     <ClInclude Include="CorePrecompiledHeader.h">
       <Filter>MFC\Main Frame</Filter>

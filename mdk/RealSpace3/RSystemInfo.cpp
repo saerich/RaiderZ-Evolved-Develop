@@ -69,7 +69,7 @@ void RSystemInfo::CheckAndDeleteCache()
 
 	if( dwCurrentShaderCRC != dwCacheShaderCRC )
 	{
-		mlog("캐쉬된 쉐이더를 사용하지 못합니다. \n");
+		mlog("Cannot use cached shaders. \n");
 		for (size_t i = 0; i < cacheFiles.size(); i++)
 		{
 			const string& str = cacheFiles[i];
@@ -87,7 +87,7 @@ void RSystemInfo::CheckAndDeleteCache()
 	}
 	else
 	{
-		mlog("캐쉬된 쉐이더를 사용합니다. \n");
+		mlog("Use cached shaders. \n");
 	}
 }
 

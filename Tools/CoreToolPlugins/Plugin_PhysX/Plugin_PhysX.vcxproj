@@ -14,6 +14,7 @@
     <ProjectGuid>{321A91B8-7614-4AC6-90E1-A93ADD6D2C4A}</ProjectGuid>
     <RootNamespace>Plugin_PhysX</RootNamespace>
     <Keyword>MFCDLLProj</Keyword>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
@@ -43,13 +44,14 @@
     <_ProjectFileVersion>16.0.30028.132</_ProjectFileVersion>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <OutDir>$(SolutionDir)../Runtime/Dev/CoreToolRS3/plugins\</OutDir>
-    <IntDir>$(Configuration)\</IntDir>
+    <OutDir>../../../../../build/Dev/CoreToolRS3/plugins/</OutDir>
+    <IntDir>$(BaseIntermediateOutputPath)$(Configuration)\$(PlatformTarget)\</IntDir>
     <LinkIncremental>true</LinkIncremental>
+    <TargetName>$(ProjectName)_d</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <OutDir>$(SolutionDir)../Runtime/Dev/CoreToolRS3/plugins\</OutDir>
-    <IntDir>$(Configuration)\</IntDir>
+    <OutDir>../../../../../build/Dev/CoreToolRS3/plugins/</OutDir>
+    <IntDir>$(BaseIntermediateOutputPath)$(Configuration)\$(PlatformTarget)\</IntDir>
     <LinkIncremental>false</LinkIncremental>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -76,7 +78,7 @@
     </ResourceCompile>
     <Link>
       <AdditionalDependencies>PhysXLoader.lib;NxCharacter.lib;NxCooking.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <OutputFile>$(OutDir)$(ProjectName)_d.dll</OutputFile>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
       <AdditionalLibraryDirectories>../../../../sdk/PhysX/v2.8.1/SDKs/lib/win32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <ModuleDefinitionFile>.\Plugin_PhysX.def</ModuleDefinitionFile>
       <GenerateDebugInformation>true</GenerateDebugInformation>

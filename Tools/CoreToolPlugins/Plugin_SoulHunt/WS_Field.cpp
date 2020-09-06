@@ -309,9 +309,9 @@ void CWorkSpaceField::InitWorkSpace(CWorkSpaceUiSetter& _rUiSetter, CWorkSpaceHe
 			if (pDlg)
 			{
 				if ( pDlg->CreateMiniMap( m_pControlMediator_ ) )
-					AfxMessageBox("미니맵이 Runtime/Data/Interface/minimap 에 생성되었습니다.", MB_ICONINFORMATION | MB_OK);
+					AfxMessageBox("The minimap was created in Runtime/Data/Interface/minimap.", MB_ICONINFORMATION | MB_OK);
 				else
-					AfxMessageBox("미니맵이 생성에 실패했습니다.", MB_ICONWARNING | MB_OK);
+					AfxMessageBox("Minimap creation failed.", MB_ICONWARNING | MB_OK);
 
 				delete pDlg;
 			}
@@ -320,7 +320,7 @@ void CWorkSpaceField::InitWorkSpace(CWorkSpaceUiSetter& _rUiSetter, CWorkSpaceHe
 
 		virtual const char* GetFuncName()
 		{
-			return "필드 미니맵 생성";
+			return "Field minimap creation";
 		}
 
 	private:
@@ -365,7 +365,7 @@ MAP_EDIT_TYPE CWorkSpaceField::OnOpenFile( const char* _pSzFileName )
 
 std::string CWorkSpaceField::OnSaveFile(const char* _pSzFileName, bool bSaveAs)
 {
-	CStatusBarHandler::GetInstance()->ShowStatusBarMessage("필드 저장중");
+	CStatusBarHandler::GetInstance()->ShowStatusBarMessage("Saving field");
 
 	std::string strFileName = m_fieldInfo.m_strFieldPath + m_fieldInfo.m_strFieldFile;
 
@@ -400,20 +400,20 @@ bool CWorkSpaceField::LoadFieldXML_(const char* _pSzName, const char* _pSzLoadAs
 	MXml kXml;
 	if ( !kXml.LoadFile(_pSzName))
 	{
-		m_pControlMediator_->GetWorkSpaceMgr()->GetWorkSpaceErrorMessage().push_back("필드 XML 파일을 열수 없습니다.");
+		m_pControlMediator_->GetWorkSpaceMgr()->GetWorkSpaceErrorMessage().push_back("Could not open field XML file.");
 		return false;
 	}
 
 	MXmlElement *pRootElement = kXml.Doc()->FirstChildElement("maiet");
 	if(pRootElement == NULL)
 	{
-		m_pControlMediator_->GetWorkSpaceMgr()->GetWorkSpaceErrorMessage().push_back("잘못된 필드 XML 파일 - maiet 노드 없음");
+		m_pControlMediator_->GetWorkSpaceMgr()->GetWorkSpaceErrorMessage().push_back("Invalid field XML file-no maiet node");
 		return false;
 	}
 	MXmlElement *pFieldInfo = pRootElement->FirstChildElement("FIELDINFO");
 	if ( pFieldInfo == NULL )
 	{
-		m_pControlMediator_->GetWorkSpaceMgr()->GetWorkSpaceErrorMessage().push_back("잘못된 필드 XML 파일 - FIELDINFO 노드 없음");
+		m_pControlMediator_->GetWorkSpaceMgr()->GetWorkSpaceErrorMessage().push_back("Invalid Field XML File - No FIELDINFO Node");
 		return false;
 	}
 
@@ -561,7 +561,7 @@ bool CWorkSpaceField::LoadFieldXML_(const char* _pSzName, const char* _pSzLoadAs
 			MXmlElement* pWeatherElement = pChildElement->FirstChildElement("WEATHER");
 			if(pWeatherElement == NULL)
 			{
-				m_pControlMediator_->GetWorkSpaceMgr()->GetWorkSpaceErrorMessage().push_back("잘못된 필드 XML 파일 - Weather 정보 없음");
+				m_pControlMediator_->GetWorkSpaceMgr()->GetWorkSpaceErrorMessage().push_back("Invalid Field XML File - No Weather Information");
 			}
 			else
 			{
@@ -638,7 +638,7 @@ bool CWorkSpaceField::LoadFieldXML_(const char* _pSzName, const char* _pSzLoadAs
 			}
 			else
 			{
-				std::string strMessage("정의되지 않은 Element : ");
+				std::string strMessage("Undefined Element: ");
 				m_pControlMediator_->GetWorkSpaceMgr()->GetWorkSpaceErrorMessage().push_back(strMessage + pValue);
 			}
 		}
@@ -654,7 +654,7 @@ bool CWorkSpaceField::LoadFieldXML_(const char* _pSzName, const char* _pSzLoadAs
 	{
 		strFieldName.replace(nPos, 11, ".common.xml");
 		if(LoadCommonEntityXML(strFieldName.c_str(), false) == false)
-			mlog("common.xml 을 읽어오지 못했습니다.\n");
+			mlog("Could not read common.xml.\n");
 	}
 
 	return true;
@@ -663,8 +663,8 @@ bool CWorkSpaceField::LoadFieldXML_(const char* _pSzName, const char* _pSzLoadAs
 void CWorkSpaceField::SaveFieldXML_(const char* _pSzName)
 {
 	MXml kXml;
-	//MXmlDeclaration* pDecl = kXml.CreateDeclaration("1.0", "UTF-8", "");
-	MXmlDeclaration* pDecl = kXml.CreateDeclaration("1.0", "euc-kr", "");
+	MXmlDeclaration* pDecl = kXml.CreateDeclaration("1.0", "UTF-8", "");
+	//MXmlDeclaration* pDecl = kXml.CreateDeclaration("1.0", "euc-kr", "");
 	kXml.Doc()->LinkEndChild(pDecl);
 
 	MXmlElement *pRootElement = new MXmlElement("maiet");
@@ -892,19 +892,19 @@ void CWorkSpaceField::CreateField()
 	{
 		if (!CXMLResourceList::GetReference().MakeZoneIdFileNameMap())
 		{
-			AfxMessageBox("ZoneList.xml 파일이 잘못되어있습니다.");
+			AfxMessageBox("The ZoneList.xml file is incorrect.");
 			return;
 		}
 
 		if(CXMLResourceList::GetReference().GetZoneFileNameFromId(m_nFromZoneID_, m_strZoneName_) == false)
 		{
-			AfxMessageBox("존 ID 설정이 잘못되었습니다.");
+			AfxMessageBox("The zone ID setting is incorrect.");
 			return;
 		}
 
 		if(m_pControlMediator_->LoadZone(m_strZoneName_.c_str(), MAP_EDIT_TYPE_LOGIC, false) == MAP_EDIT_TYPE_ERROR)
 		{
-			AfxMessageBox("기존의 존 정보가 올바르지 않습니다.");
+			AfxMessageBox("Existing zone information is incorrect.");
 			return;
 		}
 
@@ -1222,7 +1222,7 @@ bool CWorkSpaceField::LoadCommonEntityXML(const char* _pSzName, bool bZoneMode)
 		}
 		else
 		{
-			mlog("정의되지 않은 Element : %s\n", pValue);
+			mlog("Undefined Element: %s\n", pValue);
 		}
 	}
 
@@ -1247,7 +1247,8 @@ bool CWorkSpaceField::LoadCommonEntityXML(const char* _pSzName, bool bZoneMode)
 void CWorkSpaceField::SaveCommonEntityXML(const char* _pSzName, bool bZoneMode)
 {
 	MXml kXml;
-	MXmlDeclaration* pDecl = kXml.CreateDeclaration("1.0", "euc-kr", "");
+	MXmlDeclaration* pDecl = kXml.CreateDeclaration("1.0", "UTF-8", "");
+	//MXmlDeclaration* pDecl = kXml.CreateDeclaration("1.0", "euc-kr", "");
 	kXml.Doc()->LinkEndChild(pDecl);
 
 	MXmlElement *pRootElement = new MXmlElement("maiet");

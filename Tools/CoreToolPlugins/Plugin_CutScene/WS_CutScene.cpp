@@ -122,16 +122,16 @@ MAP_EDIT_TYPE CWorkSpaceCutScene::OnOpenFile(const char* _pSzFileName)
 
 std::string CWorkSpaceCutScene::OnSaveFile(const char* _pSzFileName, bool bSaveAs)
 {
-	CStatusBarHandler::GetInstance()->ShowStatusBarMessage("ÄÆ¾À ÀúÀåÁß");
+	CStatusBarHandler::GetInstance()->ShowStatusBarMessage("Saving cutscene");
 
 	if (m_pControlMediator_->GetViewPtr<CRollupCutSceneObjectList>()->SaveToXMLCurrentContent(_pSzFileName) )
 	{
 		m_pControlMediator_->GetHelperResource()->ManageConfigFileRelatedMap(_pSzFileName, CControlMediatorHelperResource::MAP_CONFIG_SAVE, false);
-		CStatusBarHandler::GetInstance()->ShowStatusBarMessage("ÄÆ¾À ÀúÀå¿Ï·á");
+		CStatusBarHandler::GetInstance()->ShowStatusBarMessage("Cutscene saving complete");
 	}
 	else
 	{
-		AfxMessageBox("ÀúÀå ½ÇÆĞ");
+		AfxMessageBox("Save Failed");
 	}
 	return _pSzFileName;
 }
