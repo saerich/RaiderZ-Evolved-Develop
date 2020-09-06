@@ -65,6 +65,7 @@ mono_crash.*
 [Dd]ebugPublic/
 [Dd]ebug_profile/
 [Dd]ebug_publish/
+[Dd]ebugW_publish/
 [Dd]ebugDLL/
 [Rr]elease/
 [Rr]eleaseW/

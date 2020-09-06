@@ -103,7 +103,7 @@ bool InitLogNConst()
 	MLogOutput nLogOutput = MLOG_FILED;
 
 #ifdef _PUBLISH
-	nLogLevel = MLOG_LEVEL_INFORMATION;
+	nLogLevel = MLogLevel::MLOG_LEVEL_INFORMATION;
 	nLogOutput = MLOG_FILE;
 #else
 
@@ -138,7 +138,7 @@ bool InitLogForFileSystemError()
 	MLogOutput nLogOutput = MLOG_FILED;
 
 #ifdef _PUBLISH
-	nLogLevel = MLOG_LEVEL_INFORMATION;
+	nLogLevel = MLogLevel::MLOG_LEVEL_INFORMATION;
 	nLogOutput = MLOG_FILE;
 #endif
 
