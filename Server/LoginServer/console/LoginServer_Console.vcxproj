@@ -66,7 +66,7 @@
     <LinkIncremental>false</LinkIncremental>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugMD|Win32'">
-    <OutDir>../../../../DevKit/Dev/LoginServer/</OutDir>
+    <OutDir>../../../../assets/Dev/LoginServer/</OutDir>
     <IntDir>$(Configuration)\</IntDir>
     <LinkIncremental>true</LinkIncremental>
     <TargetName>$(ProjectName)_$(Configuration)</TargetName>
