@@ -2026,63 +2026,45 @@ copy ..\mdk\RealSpace3\lib\realspace3_.dll .\Runtime
   <ItemGroup>
     <ProjectReference Include="..\crl\crl.vcxproj">
       <Project>{2d063418-4e8d-4689-8394-a80baa738631}</Project>
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="..\CSCommon\CSCommon.vcxproj">
       <Project>{7dcc03b9-dd72-4803-aee2-1f2be6ce60c2}</Project>
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="..\mdk\cml2\cml2.vcxproj">
       <Project>{8d451493-65c2-49c3-adae-acb17e6b0650}</Project>
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="..\mdk\MCollision\MCollision.vcxproj">
       <Project>{97861011-05bd-450a-a221-db5f7a2f4b7b}</Project>
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="..\mdk\MiNet\MiNet.vcxproj">
       <Project>{595010c3-5427-4453-9f44-5adb4edddb28}</Project>
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="..\mdk\Mint3.2\Mint.vcxproj">
       <Project>{20b5465d-8790-43fa-a2a2-ee29f3f0f9bc}</Project>
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="..\mdk\MPathFinder\MPathFinder.vcxproj">
       <Project>{7ed97bba-e770-4144-b656-c837fb08d1e7}</Project>
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="..\mdk\MPhysX\MPhysX.vcxproj">
       <Project>{a1019d76-911a-4a80-b780-16f247e2f2ad}</Project>
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="..\mdk\MPhysX\MPhysX4R3\MPhysX4R3.vcxproj">
       <Project>{94a262d9-481e-423e-baa8-ac4d3cd8e527}</Project>
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="..\mdk\MTest\MTest.vcxproj">
       <Project>{249d9b5b-bc66-4d30-ab85-f936f737d3ca}</Project>
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="..\mdk\RealInput\RealInput.vcxproj">
       <Project>{8a4fbcec-ab89-49ef-aa18-d0712d6f4f55}</Project>
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="..\mdk\RealSound3\RealSound3.vcxproj">
       <Project>{c49a3dec-c70b-451e-8d7b-f30d93e4e9d2}</Project>
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="..\mdk\RealSpace3\RealSpace3.vcxproj">
       <Project>{7070fa22-c0d4-40f5-beb7-ec09f3a58a51}</Project>
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
-    </ProjectReference>
-    <ProjectReference Include="..\Server\ServerCommon\ServerCommon.vcxproj">
-      <Project>{7820a4c8-b56a-40ed-9b44-86e215a93681}</Project>
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="GameCommon\GameCommon.vcxproj">
       <Project>{7820a4c8-b56a-40ed-9b44-86e215a93681}</Project>
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
