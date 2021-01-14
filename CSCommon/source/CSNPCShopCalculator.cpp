@@ -22,13 +22,12 @@ int CSNPCShopCalculator::CalcRepairPrice(int nLostedDruability, int nRepairGrade
 	return nRepairPrice;
 }
 
-
 int CSNPCShopCalculator::CalcRepairPricePerDurability(int nRepairGrade)
 {
 	nRepairGrade = min(nRepairGrade, 100);
 	nRepairGrade = max(nRepairGrade, 0);
 
-	float fRepairPricePerDurability = (pow((float)nRepairGrade,2)/2 + (float)nRepairGrade+1) * 0.5f;
+	double fRepairPricePerDurability = (pow(static_cast<float>(nRepairGrade), 2) / 2 + nRepairGrade + 1) * 0.5f;
 
 	return static_cast<int>(fRepairPricePerDurability);
 }

@@ -97,7 +97,7 @@ public:
 
 	static float Pow( float x, int y ) 
 	{
-		return pow( x, y );
+		return powf( x, static_cast<float>(y) );
 	}
 
 	static double Pow64( float x, float y ) 
