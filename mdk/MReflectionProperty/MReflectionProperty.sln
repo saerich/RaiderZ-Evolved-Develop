@@ -1,17 +1,19 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 10.00
-# Visual Studio 2008
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "relib", "Reflection\relib.vcproj", "{3DE14F45-2931-4E41-8115-06687E36288F}"
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "relib", "Reflection\relib.vcxproj", "{3DE14F45-2931-4E41-8115-06687E36288F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomPropGrid", "CustomPropGrid\CustomPropGrid.csproj", "{FF87288F-15F5-423D-AD99-3B9FDCF6F953}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ReflectivePropertyForm", "ReflectivePropertyForm\ReflectivePropertyForm.vcproj", "{0E8A2B9A-C4D9-433F-9168-6D5D85EFA23F}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ReflectivePropertyForm", "ReflectivePropertyForm\ReflectivePropertyForm.vcxproj", "{0E8A2B9A-C4D9-433F-9168-6D5D85EFA23F}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DemoC++CLI", "Demo\Demo.vcproj", "{3A9397CD-CC5A-4192-B6AC-85F458A33027}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DemoC++CLI", "Demo\Demo.vcxproj", "{3A9397CD-CC5A-4192-B6AC-85F458A33027}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DemoMFC", "DemoMFC\DemoMFC.vcproj", "{4F585FC9-C124-4A43-888A-9342EFAD5A21}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DemoMFC", "DemoMFC\DemoMFC.vcxproj", "{4F585FC9-C124-4A43-888A-9342EFAD5A21}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MFCProperty", "MFCProperty\MFCProperty.vcproj", "{53F2D752-312F-4002-84D9-009145832CCA}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MFCProperty", "MFCProperty\MFCProperty.vcxproj", "{53F2D752-312F-4002-84D9-009145832CCA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -86,5 +88,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A05BC7A0-8A40-41AE-8EC6-1DA1FFF37E26}
 	EndGlobalSection
 EndGlobal
