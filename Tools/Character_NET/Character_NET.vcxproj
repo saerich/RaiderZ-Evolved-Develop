@@ -130,8 +130,8 @@ copy  ..\..\mdk\cml2\Lib\cml2_d.dll $(TargetDir)
       <TargetMachine>MachineX86</TargetMachine>
     </Link>
     <PostBuildEvent>
-      <Command>copy  ..\..\mdk\RealSpace3\Lib\RealSpace3_.dll $(TargetDir)
-copy  ..\..\mdk\cml2\Lib\cml2_.dll $(TargetDir)
+      <Command>copy  ..\..\mdk\RealSpace3\Lib\RealSpace3.dll $(TargetDir)
+copy  ..\..\mdk\cml2\Lib\cml2.dll $(TargetDir)
 </Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>

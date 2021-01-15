@@ -1,4 +1,6 @@
 IF "%1" == "" goto :END
-copy %1.dll ..\..\Game\Runtime\Dev\ResourceValidator\ClientResourceValidator
-copy %1.pdb ..\..\Game\Runtime\Dev\ResourceValidator\ClientResourceValidator
+set outPath=..\..\Game\Runtime\Dev\ResourceValidator\ClientResourceValidator\
+IF NOT exist %outPath% (mkdir %outPath%)
+copy %1.dll %outPath%
+copy %1.pdb %outPath%
 :END

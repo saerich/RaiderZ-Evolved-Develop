@@ -883,7 +883,6 @@
     </ProjectReference>
     <ProjectReference Include="..\mdk\MiNet\MiNet.vcxproj">
       <Project>{595010c3-5427-4453-9f44-5adb4edddb28}</Project>
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

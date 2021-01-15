@@ -1,4 +1,6 @@
 IF "%1" == "" goto :END
-copy %1.dll ..\..\RealSpace3\Runtime\Tools\EffectTool_NET
-copy %1.pdb ..\..\RealSpace3\Runtime\Tools\EffectTool_NET
+set outPath=..\..\RealSpace3\Runtime\Tools\EffectTool_NET\
+IF NOT exist %outPath% (mkdir %outPath%)
+copy %1.dll %outPath%
+copy %1.pdb %outPath%
 :END

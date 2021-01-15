@@ -1,4 +1,6 @@
 IF "%1" == "" goto :END
-copy %1.dll ..\..\Game\Runtime\Dev\CoreToolRS3
-copy %1.pdb ..\..\Game\Runtime\Dev\CoreToolRS3
+set outPath=..\..\Game\Runtime\Dev\CoreToolRS3\
+IF NOT exist %outPath% (mkdir %outPath%)
+copy %1.dll %outPath%
+copy %1.pdb %outPath%
 :END
