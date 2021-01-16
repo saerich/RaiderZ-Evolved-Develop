@@ -6,6 +6,8 @@
 #include "LzmaEnc.h"
 #include "LzmaDec.h"
 #include "KeyTable.h"
+#include <string>
+
 using namespace std;
 
 
@@ -236,7 +238,7 @@ SRes EncodingFile( const char* szDestFileName, const char* szIndexFileName, cons
 	_header.nSectorPos = 0;
 	_header.nSectorSize = _outsize;
 	_header.nMotherFileNameLen = 0;
-	_header.nFileNameLen = strlen( szAliasFileName);
+	_header.nFileNameLen = static_cast<unsigned short>(strlen(szAliasFileName));
 	_header.nCRC = _crc;
 
 
@@ -277,7 +279,7 @@ SRes EncodingFile( const char* szDestFileName, const char* szIndexFileName, cons
 	// Get mother file name
 	_splitpath_s( _motherfname, NULL, 0, NULL, 0, _fname, _MAX_FNAME, _ext, _MAX_EXT);
 	sprintf_s( _motherfname, "%s%s", _fname, _ext);
-	_header.nMotherFileNameLen = strlen( _motherfname);
+	_header.nMotherFileNameLen = static_cast<unsigned short>(strlen( _motherfname));
 
 
 	// Write header info
@@ -428,7 +430,6 @@ SRes DecodingDir( const char* szSrcFileName, const char* szDestPath)
 	if ( szSrcFileName == NULL   ||  szSrcFileName[ 0] == 0)
 		return SZ_ERROR_DATA;
 
-
 	// Get destination path
 	string strDestPath;
 	if ( szDestPath != NULL  &&  szDestPath[ 0] != 0)
@@ -444,10 +445,13 @@ SRes DecodingDir( const char* szSrcFileName, const char* szDestPath)
 		if ( n != string::npos)  strDestPath = strDestPath.substr( 0, n + 1);
 	}
 
-
 	// Decoding files
-	HANDLE hFile = ::CreateFile( szSrcFileName, GENERIC_READ, FILE_SHARE_READ, NULL, OPEN_EXISTING, FILE_ATTRIBUTE_NORMAL, NULL);
-	if ( hFile == INVALID_HANDLE_VALUE)		return SZ_ERROR_DATA;
+	HANDLE hFile = ::CreateFile(szSrcFileName, GENERIC_READ, FILE_SHARE_READ, NULL, OPEN_EXISTING, FILE_ATTRIBUTE_NORMAL, NULL);
+	if (hFile == INVALID_HANDLE_VALUE)
+	{
+		printf("Error (%lu): Failed to read file \"%s\" \n", GetLastError(), szSrcFileName);
+		return SZ_ERROR_DATA;
+	}
 
 	while ( true)
 	{
@@ -656,7 +660,7 @@ bool MergeIndex( const char* szDestFileName, const char* szSrcFileName)
 			memset( _motherfname, 0, _MAX_PATH);
 			sprintf_s( _motherfname, "%s%s%s%s", _drive, _dir, _fname, _ext);
 			memcpy( _motherfname, _motherfname + strPath.length(), strlen( _motherfname) - strPath.length() + 1);
-			_header.nMotherFileNameLen = strlen( _motherfname);
+			_header.nMotherFileNameLen = static_cast<unsigned short>(strlen( _motherfname));
 
 
 			DWORD _writenum;
