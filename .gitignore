@@ -81,6 +81,7 @@ mono_crash.*
 [Rr]eleaseDLL/
 [Rr]elease_Nvperfhud/
 Game/Runtime
+Tools/MFS Packer/Runtime
 x64/
 x86/
 [Ww][Ii][Nn]32/

@@ -114,8 +114,9 @@
     <_ProjectFileVersion>16.0.30028.132</_ProjectFileVersion>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <OutDir>Lib/$(Configuration)/</OutDir>
+    <OutDir>Lib\</OutDir>
     <IntDir>$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)_d</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <OutDir>Lib\</OutDir>
@@ -124,6 +125,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugMD|Win32'">
     <OutDir>Lib\</OutDir>
     <IntDir>$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)_d</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseMD|Win32'">
     <OutDir>Lib\</OutDir>
@@ -167,7 +169,6 @@
       <Culture>0x0412</Culture>
     </ResourceCompile>
     <Lib>
-      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
       <AdditionalLibraryDirectories>Lib;../../sdk/zlib/lib;../../sdk/tinyxml/lib;../../sdk/lua51/lib/vc8;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
     </Lib>
@@ -197,7 +198,6 @@
       <Culture>0x0412</Culture>
     </ResourceCompile>
     <Lib>
-      <OutputFile>Lib\cml2.lib</OutputFile>
       <AdditionalLibraryDirectories>Lib;../../sdk/zlib/lib;../../sdk/tinyxml/lib;../../sdk/lua50/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <SuppressStartupBanner>true</SuppressStartupBanner>
     </Lib>
@@ -225,7 +225,6 @@
       <Culture>0x0412</Culture>
     </ResourceCompile>
     <Lib>
-      <OutputFile>Lib\cml2MDd.lib</OutputFile>
       <AdditionalLibraryDirectories>Lib;../../sdk/zlib/lib;../../sdk/tinyxml/lib;../../../sdk/lua51/lib/vc8;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Lib>
   </ItemDefinitionGroup>
@@ -254,7 +253,6 @@
       <Culture>0x0412</Culture>
     </ResourceCompile>
     <Lib>
-      <OutputFile>Lib\cml2MD.lib</OutputFile>
       <AdditionalLibraryDirectories>Lib;../../sdk/zlib/lib;../../sdk/tinyxml/lib;../../../sdk/lua51/lib/vc8;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <SuppressStartupBanner>true</SuppressStartupBanner>
     </Lib>
@@ -283,7 +281,6 @@
     </ResourceCompile>
     <Link>
       <AdditionalDependencies>Ws2_32.lib;lua51.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <OutputFile>$(OutDir)$(TargetFileName)</OutputFile>
       <AdditionalLibraryDirectories>lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ProgramDatabaseFile>$(OutDir)$(TargetName).pdb</ProgramDatabaseFile>
@@ -320,7 +317,6 @@
     </ResourceCompile>
     <Link>
       <AdditionalDependencies>Ws2_32.lib;lua51.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <OutputFile>$(OutDir)$(TargetFileName)</OutputFile>
       <AdditionalLibraryDirectories>lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ProgramDatabaseFile>$(OutDir)$(TargetName).pdb</ProgramDatabaseFile>
@@ -356,7 +352,6 @@
       <Culture>0x0412</Culture>
     </ResourceCompile>
     <Lib>
-      <OutputFile>Lib\cml2MD.lib</OutputFile>
       <AdditionalLibraryDirectories>Lib;../../sdk/zlib/lib;../../sdk/tinyxml/lib;../../../sdk/lua51/lib/vc8;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <SuppressStartupBanner>true</SuppressStartupBanner>
     </Lib>

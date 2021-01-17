@@ -66,10 +66,10 @@
     <LinkIncremental>false</LinkIncremental>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugMD|Win32'">
-    <OutDir>../../../../assets/Dev/LoginServer/</OutDir>
+    <OutDir>../../../../../build/Dev/LoginServer/</OutDir>
     <IntDir>$(Configuration)\</IntDir>
     <LinkIncremental>true</LinkIncremental>
-    <TargetName>$(ProjectName)_$(Configuration)</TargetName>
+    <TargetName>$(ProjectName)_d</TargetName>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseMD|Win32'">
     <ClCompile>
@@ -84,12 +84,10 @@
     </ClCompile>
     <Link>
       <AdditionalDependencies>msvcrt.lib;lua5.1.lib;zlib.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <OutputFile>$(OutDir)LoginServerConsole_r.exe</OutputFile>
       <AdditionalLibraryDirectories>../../../../sdk/tinyxml/lib;../../../../sdk/lua51/lib/vc8;../../../../sdk/zlib/lib;../../../../sdk/vld/;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <UACExecutionLevel>AsInvoker</UACExecutionLevel>
       <IgnoreSpecificDefaultLibraries>libcmt;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <ProgramDatabaseFile>$(TargetDir)/LoginServerConsole_r.pdb</ProgramDatabaseFile>
       <SubSystem>Console</SubSystem>
       <OptimizeReferences>true</OptimizeReferences>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
@@ -111,11 +109,9 @@
     </ClCompile>
     <Link>
       <AdditionalDependencies>msvcrt.lib;lua5.1.lib;zlib.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <OutputFile>$(OutDir)LoginServerConsole.exe</OutputFile>
       <AdditionalLibraryDirectories>../../../../sdk/tinyxml/lib;../../../../sdk/lua51/lib/vc8;../../../../sdk/zlib/lib;../../../../sdk/vld/;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <IgnoreSpecificDefaultLibraries>libcmt;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <ProgramDatabaseFile>$(TargetDir)/LoginServerConsole.pdb</ProgramDatabaseFile>
       <SubSystem>Console</SubSystem>
       <OptimizeReferences>true</OptimizeReferences>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
@@ -139,11 +135,9 @@
     </ClCompile>
     <Link>
       <AdditionalDependencies>msvcrtd.lib;lua5.1.lib;zlib.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
       <AdditionalLibraryDirectories>../../../../sdk/tinyxml/lib;../../../../sdk/lua51/lib/vc8;../../../../sdk/zlib/lib;../../../../sdk/vld/;../../Pmang/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <IgnoreSpecificDefaultLibraries>libcmt.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <ProgramDatabaseFile>$(TargetDir)/LoginServerConsole_d.pdb</ProgramDatabaseFile>
       <SubSystem>Console</SubSystem>
       <RandomizedBaseAddress>false</RandomizedBaseAddress>
       <DataExecutionPrevention />

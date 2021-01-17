@@ -31,6 +31,7 @@
     <ProjectGuid>{583DE813-5968-4D18-9393-58D746C281EC}</ProjectGuid>
     <RootNamespace>GameServer</RootNamespace>
     <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_profile|Win32'" Label="Configuration">
@@ -107,17 +108,20 @@
     <OutDir>../../../Game/Runtime/Dev/GameServer\</OutDir>
     <IntDir>$(Configuration)\</IntDir>
     <LinkIncremental>true</LinkIncremental>
+    <TargetName>$(ProjectName)_d</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugMD|Win32'">
-    <OutDir>../../../Game/Runtime/Dev/GameServer\</OutDir>
+    <OutDir>../../../../../build/Dev/GameServer/</OutDir>
     <IntDir>$(Configuration)\</IntDir>
     <LinkIncremental>true</LinkIncremental>
     <PreBuildEventUseInBuild>false</PreBuildEventUseInBuild>
+    <TargetName>$(ProjectName)_d</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_duck|Win32'">
     <OutDir>../../../Runtime/Dev/GameServer\</OutDir>
     <IntDir>$(Configuration)\</IntDir>
     <LinkIncremental>true</LinkIncremental>
+    <TargetName>$(ProjectName)_d</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_duck|Win32'">
     <OutDir>../../../Runtime/Dev/GameServer\</OutDir>
@@ -149,11 +153,9 @@
     </ClCompile>
     <Link>
       <AdditionalDependencies>msvcrt.lib;lua5.1.lib;UnitTest++.vsnet2015MD.lib;tbb.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <OutputFile>$(OutDir)GameServerConsole_r.exe</OutputFile>
       <AdditionalLibraryDirectories>../../../../sdk/tinyxml/lib;../../../../sdk/lua51/lib/vc8;../../../../sdk/zlib/lib;../../../RCollision/lib;../../../../sdk/UnitTest++/v1.5/lib;../../../mdk/MCollision/lib;../../../../sdk/tbb/2.2/ia32/vc9/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <IgnoreSpecificDefaultLibraries>libcmt;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <ProgramDatabaseFile>$(OutDir)GameServerConsole_r.pdb</ProgramDatabaseFile>
       <SubSystem>Console</SubSystem>
       <LargeAddressAware />
       <OptimizeReferences>true</OptimizeReferences>
@@ -182,11 +184,9 @@
     <Link>
       <AdditionalDependencies>msvcrtd.lib;lua51.lib;zlib.lib;UnitTest++.vsnet2008MDd.lib;tbb_debug.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <ShowProgress>NotSet</ShowProgress>
-      <OutputFile>$(OutDir)GameServerConsole_D.exe</OutputFile>
       <AdditionalLibraryDirectories>../../../../sdk/tinyxml/lib;../../../../sdk/lua51/lib/vc8;../../../../sdk/zlib/lib;../../../../sdk/vld/;../../../../sdk/UnitTest++/v1.4/lib;../../../mdk/MCollision/lib;../../../../sdk/tbb/2.2/ia32/vc9/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <IgnoreSpecificDefaultLibraries>libcmtd;libcmt;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <ProgramDatabaseFile>$(OutDir)GameServerConsole_d.pdb</ProgramDatabaseFile>
       <SubSystem>Console</SubSystem>
       <RandomizedBaseAddress>false</RandomizedBaseAddress>
       <DataExecutionPrevention />
@@ -220,12 +220,9 @@ copy ..\framework\lib\GameServer_framework_d.dll ..\..\..\Game\Runtime\Dev\GameS
     </ClCompile>
     <Link>
       <AdditionalDependencies>msvcrtd.lib;lua51.lib;zlib.lib;UnitTest++.vsnet2015MDd.lib;tbb_debug.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <ShowProgress>NotSet</ShowProgress>
-      <OutputFile>$(OutDir)GameServerConsole_D.exe</OutputFile>
       <AdditionalLibraryDirectories>../../../../sdk/tinyxml/lib;../../../../sdk/lua51/lib/vc8;../../../../sdk/zlib/lib;../../../../sdk/vld/;../../../../sdk/UnitTest++/v1.5/lib;../../../mdk/MCollision/lib;../../../../sdk/tbb/2.2/ia32/vc9/lib;../../Pmang/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <IgnoreSpecificDefaultLibraries>libcmtd;libcmt;MSVCRT.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <ProgramDatabaseFile>$(OutDir)GameServerConsole_d.pdb</ProgramDatabaseFile>
       <SubSystem>Console</SubSystem>
       <RandomizedBaseAddress>false</RandomizedBaseAddress>
       <DataExecutionPrevention />
@@ -254,11 +251,9 @@ copy ..\framework\lib\GameServer_framework_d.dll ..\..\..\Game\Runtime\Dev\GameS
     <Link>
       <AdditionalDependencies>msvcrtd.lib;lua51.lib;zlib.lib;UnitTest++.vsnet2008MDd.lib;tbb_debug.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <ShowProgress>NotSet</ShowProgress>
-      <OutputFile>$(OutDir)GameServerConsole_D.exe</OutputFile>
       <AdditionalLibraryDirectories>../../../../sdk/tinyxml/lib;../../../../sdk/lua51/lib/vc8;../../../../sdk/zlib/lib;../../../../sdk/vld/;../../../../sdk/UnitTest++/v1.4/lib;../../../mdk/MCollision/lib;../../../../sdk/tbb/2.2/ia32/vc9/lib;../../Pmang/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <IgnoreSpecificDefaultLibraries>libcmtd;libcmt;MSVCRT.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <ProgramDatabaseFile>$(OutDir)GameServerConsole_d.pdb</ProgramDatabaseFile>
       <SubSystem>Console</SubSystem>
       <RandomizedBaseAddress>false</RandomizedBaseAddress>
       <DataExecutionPrevention />
@@ -285,11 +280,9 @@ copy ..\framework\lib\GameServer_framework_d.dll ..\..\..\Game\Runtime\Dev\GameS
     </ClCompile>
     <Link>
       <AdditionalDependencies>msvcrt.lib;lua5.1.lib;UnitTest++.vsnet2008MD.lib;tbb.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <OutputFile>$(OutDir)GameServerConsole_r.exe</OutputFile>
       <AdditionalLibraryDirectories>../../../../sdk/tinyxml/lib;../../../../sdk/lua51/lib/vc8;../../../../sdk/zlib/lib;../../../RCollision/lib;../../../../sdk/UnitTest++/v1.4/lib;../../../mdk/MCollision/lib;../../../../sdk/tbb/2.2/ia32/vc9/lib;../../Pmang/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <IgnoreSpecificDefaultLibraries>libcmt;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <ProgramDatabaseFile>$(OutDir)GameServerConsole_r.pdb</ProgramDatabaseFile>
       <SubSystem>Console</SubSystem>
       <OptimizeReferences>true</OptimizeReferences>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
@@ -315,11 +308,9 @@ copy ..\framework\lib\GameServer_framework_d.dll ..\..\..\Game\Runtime\Dev\GameS
     </ClCompile>
     <Link>
       <AdditionalDependencies>msvcrt.lib;lua5.1.lib;UnitTest++.vsnet2015MD.lib;tbb.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <OutputFile>$(OutDir)GameServerConsole_r.exe</OutputFile>
       <AdditionalLibraryDirectories>../../../../sdk/tinyxml/lib;../../../../sdk/lua51/lib/vc8;../../../../sdk/zlib/lib;../../../RCollision/lib;../../../../sdk/UnitTest++/v1.5/lib;../../../mdk/MCollision/lib;../../../../sdk/tbb/2.2/ia32/vc9/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <IgnoreSpecificDefaultLibraries>libcmt;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <ProgramDatabaseFile>$(OutDir)GameServerConsole_r.pdb</ProgramDatabaseFile>
       <SubSystem>Console</SubSystem>
       <OptimizeReferences>true</OptimizeReferences>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
