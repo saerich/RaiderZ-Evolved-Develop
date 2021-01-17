@@ -322,20 +322,19 @@ bool LServer::Update(float fDelta)
 	gmgr.pPlayerAcceptManager->Update();
 
 	// 캐릭터 선택 처리 관리자
-	m_pPlayerLoginGameServerProcManager->Update(fDelta);
+	if (m_pPlayerLoginGameServerProcManager)
+		m_pPlayerLoginGameServerProcManager->Update(fDelta);
 
 	// 게임서버 로그인 재시도 처리
-	m_pPlayerLoginGameServerRetryer->Update(fDelta);
-
+	if (m_pPlayerLoginGameServerRetryer)
+		m_pPlayerLoginGameServerRetryer->Update(fDelta);
 
 	UpdateForDebug(fDelta);
-	m_pServerStatusUpdater->Update(fDelta);
+	if (m_pServerStatusUpdater)
+		m_pServerStatusUpdater->Update(fDelta);
 	
 	if (m_pWorldLocatorServer)
-	{
 		m_pWorldLocatorServer->Update(fDelta);
-	}
-
 
 	if (m_pCommandProfileController)
 		m_pCommandProfileController->Update(fDelta);

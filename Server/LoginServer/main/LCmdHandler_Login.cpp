@@ -135,9 +135,9 @@ MCommandResult LCmdHandler_Login::OnRequestInsertCharacter(MCommand* pCommand, M
 {
 	MUID uidPlayer = pCommand->GetSenderUID();
 
-	TD_INSERT_CHARACTER_INFO* pInsertCharInfo;
+	TD_INSERT_CHARACTER_INFO* pInsertCharInfo = { 0 };
 
-	if (pCommand->GetSingleBlob(pInsertCharInfo,		0)==false) return CR_FALSE;
+	if (pCommand->GetSingleBlob(pInsertCharInfo, 0) == false) return CR_FALSE;
 
 	LPlayerLogic logic;
 	logic.InsertCharacter(uidPlayer, pInsertCharInfo);
