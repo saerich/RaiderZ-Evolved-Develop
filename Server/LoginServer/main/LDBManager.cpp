@@ -187,7 +187,7 @@ bool LDBManager::DeleteCharacter(const MUID& uidPlayer, const int64 nAID, const 
 	return Post(pTask);
 }
 
-wchar_t g_szDB_CHAR_INSERT[] = L"{CALL dbo.USP_RZ_CHAR_INSERT_20110603 (%d, %I64d, N'%s', %d, %d, %d, %d, %d, %d, %d, %d, %d, %d, %d, %d, %d, %d, %d, %d, %d, %d, %d, %d, %d, %d, %d, %d, %d, %d, %d)}";
+wchar_t g_szDB_CHAR_INSERT[] = L"{CALL dbo.USP_RZ_CHAR_INSERT (%d, %I64d, N'%s', %d, %d, %d, %d, %d, %d, %d, %d, %d, %d, %d, %d, %d, %d, %d, %d, %d, %d, %d, %d, %d, %d, %d, %d, %d, %d, %d)}";
 bool LDBManager::InsertCharacter(const DBP_CHAR_INSERT& rfParam)
 {
 	LDBTaskCharInsert* pTask = new LDBTaskCharInsert();

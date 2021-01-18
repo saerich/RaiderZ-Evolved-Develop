@@ -2385,7 +2385,7 @@ void XGlueGame::CreateNewCharacter( const char* szName, MWLua::table t)
 		int nStyle = t.get<int>("style");
 
 		XCHARACTER_CREATEINFO ci;
-		ci.nStyle = TALENT_STYLE( t.get<int>("style"));
+		ci.nStyle = __STYLE[nStyle];
 		ci.nSex = SEX( t.get<int>("sex"));
 		ci.nFace = int( t.get<int>("face"));
 		ci.nHair = int( t.get<int>("hair"));
