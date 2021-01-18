@@ -4,6 +4,7 @@
 #include <stdio.h>
 #include <imagehlp.h>
 #include <tlhelp32.h>
+#include <VersionHelpers.h>
 
 /*
 using namespace std;
@@ -413,7 +414,6 @@ BOOL CALLBACK EnumLoadedModulesCallback(PCSTR pModuleName, ULONG ulModuleBase,  
 
 void LoadModuleSymbols(DWORD dwProcessId, HANDLE hProcess)
 {
-	OSVERSIONINFO   osver;
 	HINSTANCE       hInstLib;
 	HANDLE          hSnapShot;
 	MODULEENTRY32   module;
@@ -423,28 +423,20 @@ void LoadModuleSymbols(DWORD dwProcessId, HANDLE hProcess)
 	BOOL (WINAPI *lpfModule32First)(HANDLE,LPMODULEENTRY32);
 	BOOL (WINAPI *lpfModule32Next)(HANDLE,LPMODULEENTRY32);
 
-	osver.dwOSVersionInfoSize = sizeof(osver);
-	if (!GetVersionEx(&osver))
+	if (IsWindowsXPOrGreater())
 	{
-//		::MessageBox(NULL,"GetVersionEx failed","error",MB_OK);
-		return;
-	}
-    
-	if (osver.dwPlatformId == VER_PLATFORM_WIN32_NT)
-	{
-//		mlog("LoadModuleSymbols,VER_PLATFORM_WIN32_NT\n");
+		//mlog("LoadModuleSymbols,VER_PLATFORM_WIN32_NT\n");
 		// vs 2008 에서 에러가 나면 LPSTR -> PCSTR 로 바꾸면 됩니다
 		if (!g_pfnEnumerateLoadedModules(hProcess, EnumLoadedModulesCallback, (PVOID)hProcess))
 		{
-//			::MessageBox(NULL,"EnumerateLoadedModules failed","error",MB_OK);
-//			mlog("LoadModuleSymbols,EnumerateLoadedModules failed\n");
+			//::MessageBox(NULL,"EnumerateLoadedModules failed","error",MB_OK);
+			//mlog("LoadModuleSymbols,EnumerateLoadedModules failed\n");
 		}
 		return;
 	}
-
-	if (osver.dwPlatformId == VER_PLATFORM_WIN32_WINDOWS)
+	else
 	{
-//		mlog("LoadModuleSymbols,VER_PLATFORM_WIN32_WINDOWS\n");
+		//mlog("LoadModuleSymbols,VER_PLATFORM_WIN32_WINDOWS\n");
 		hInstLib = LoadLibraryA("Kernel32.DLL");
 
 		if (hInstLib == NULL)          return;

@@ -353,16 +353,16 @@ inline MVector3 MQuat::ToEuler() const
 
 inline void MQuat::SetEuler(const float pitch, const float yaw, const float roll)
 {
-	const float halfPitch	= pitch * 0.5f;
-	const float halfYaw		= yaw   * 0.5f;
-	const float halfRoll	= roll  * 0.5f;
+	const float halfPitch = pitch * 0.5f;
+	const float halfYaw = yaw * 0.5f;
+	const float halfRoll = roll * 0.5f;
 
-	const float cY = cos( halfRoll );
-	const float sY = sin( halfRoll );
-	const float cP = cos( halfPitch );
-	const float sP = sin( halfPitch );
-	const float cR = cos( halfYaw );
-	const float sR = sin( halfYaw );
+	const float cY = cosf(halfRoll);
+	const float sY = sinf(halfRoll);
+	const float cP = cosf(halfPitch);
+	const float sP = sinf(halfPitch);
+	const float cR = cosf(halfYaw);
+	const float sR = sinf(halfYaw);
 
 	x = cY * sP * cR - sY * cP * sR;
 	y = cY * cP * sR - sY * sP * cR;

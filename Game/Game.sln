@@ -1000,8 +1000,8 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		AMDCaProjectFile = C:\Works\Project8\Develop\Game\CodeAnalyst\Game.caw
 		SolutionGuid = {A86F0873-7ED4-49D8-B329-42E8898D2161}
+		AMDCaProjectFile = C:\Works\Project8\Develop\Game\CodeAnalyst\Game.caw
 	EndGlobalSection
 	GlobalSection(SubversionScc) = preSolution
 		Svn-Managed = True

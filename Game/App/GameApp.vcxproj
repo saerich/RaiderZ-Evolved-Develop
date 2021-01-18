@@ -317,8 +317,6 @@
     </ClCompile>
     <Link>
       <AdditionalDependencies>lua5.1.lib;UnitTest++.vsnet2008MTd_NoException.lib;MPathFinderd.lib;MPhysXd.lib;PhysXLoader.lib;NxCharacter.lib;NxCooking.lib;MCollisiond.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <ShowProgress>NotSet</ShowProgress>
-      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
       <AdditionalLibraryDirectories>../lib;../../../sdk/dx9/lib;../../../sdk/vld/;../../../sdk/UnitTest++/v1.4/lib;../../mdk/MPathFinder/lib;../../mdk/MPhysX/lib;../../../sdk/PhysX/v2.8.1/SDKs/lib/win32;../../mdk/MCollision/lib;../../mdk/cml2/lib;../../mdk/RealSpace3/Dependencies/tbb/lib/ia32/vc9;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <IgnoreSpecificDefaultLibraries>libcmt;msvcrt;msvcrtd;msvcprtd;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
       <GenerateDebugInformation>true</GenerateDebugInformation>
