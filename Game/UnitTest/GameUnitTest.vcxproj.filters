@@ -1,0 +1,592 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Runner">
+      <UniqueIdentifier>{730166af-fa7e-48a6-8368-bafc5ac6ab13}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tests">
+      <UniqueIdentifier>{4cb78962-70d1-45d1-b1d1-698999d58c23}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tests\Class">
+      <UniqueIdentifier>{80b96ad1-bea0-4da0-ab35-8519f01a6093}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tests\Logic">
+      <UniqueIdentifier>{63374939-6539-4ca9-8271-641d9d735b8b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tests\Logic\MyAction">
+      <UniqueIdentifier>{08c199cb-8ce1-4791-a8cf-d67657d5d240}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tests\Logic\Chatting">
+      <UniqueIdentifier>{bd90687f-9869-48cb-a628-b424aab9f206}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tests\Logic\World">
+      <UniqueIdentifier>{0c0013d7-f1d8-4176-b794-6e966ced70f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tests\Logic\StringFilter">
+      <UniqueIdentifier>{c4010454-b44d-4dab-af1f-c7d7a434cc9a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tests\CmdParam">
+      <UniqueIdentifier>{0df38b32-4b6f-401d-9b24-ab55a60341e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tests\Mint3">
+      <UniqueIdentifier>{6cff0f87-e288-4297-b6ee-429c09820595}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tests\Strings">
+      <UniqueIdentifier>{37409395-aad1-4f59-9dcb-f5a782603d21}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tests\Glue">
+      <UniqueIdentifier>{bec16bf6-d214-4075-9f94-41f883eee91c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Mock">
+      <UniqueIdentifier>{b34ba40c-9ae7-4b1b-b062-a69629838acf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Helper">
+      <UniqueIdentifier>{3aa2764b-a075-4e0a-a6f3-e174b89b41d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fixture">
+      <UniqueIdentifier>{24da402a-de2c-49dd-9292-f6bc19046542}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="XUnitTestList.cpp">
+      <Filter>Runner</Filter>
+    </ClCompile>
+    <ClCompile Include="XUnitTestRunner.cpp">
+      <Filter>Runner</Filter>
+    </ClCompile>
+    <ClCompile Include="XUnitTestStage1.cpp">
+      <Filter>Runner</Filter>
+    </ClCompile>
+    <ClCompile Include="XUnitTestStage2.cpp">
+      <Filter>Runner</Filter>
+    </ClCompile>
+    <ClCompile Include="XUnitTestStage3.cpp">
+      <Filter>Runner</Filter>
+    </ClCompile>
+    <ClCompile Include="TestArgumentsParser.cpp">
+      <Filter>Tests\Class</Filter>
+    </ClCompile>
+    <ClCompile Include="TestCombo.cpp">
+      <Filter>Tests\Class</Filter>
+    </ClCompile>
+    <ClCompile Include="TestCursorSmartShower.cpp">
+      <Filter>Tests\Class</Filter>
+    </ClCompile>
+    <ClCompile Include="TestEntityDirectionInterpolator.cpp">
+      <Filter>Tests\Class</Filter>
+    </ClCompile>
+    <ClCompile Include="TestGuideMsg.cpp">
+      <Filter>Tests\Class</Filter>
+    </ClCompile>
+    <ClCompile Include="TestHeadIconPlacer.cpp">
+      <Filter>Tests\Class</Filter>
+    </ClCompile>
+    <ClCompile Include="TestHelp.cpp">
+      <Filter>Tests\Class</Filter>
+    </ClCompile>
+    <ClCompile Include="TestInteractionHelper.cpp">
+      <Filter>Tests\Class</Filter>
+    </ClCompile>
+    <ClCompile Include="TestInteractionInfo.cpp">
+      <Filter>Tests\Class</Filter>
+    </ClCompile>
+    <ClCompile Include="TestInterpolation.cpp">
+      <Filter>Tests\Class</Filter>
+    </ClCompile>
+    <ClCompile Include="TestMMCode.cpp">
+      <Filter>Tests\Class</Filter>
+    </ClCompile>
+    <ClCompile Include="TestMotionFactorHelper.cpp">
+      <Filter>Tests\Class</Filter>
+    </ClCompile>
+    <ClCompile Include="TestMotionHelper.cpp">
+      <Filter>Tests\Class</Filter>
+    </ClCompile>
+    <ClCompile Include="TestMyCharacterAlphaMgr.cpp">
+      <Filter>Tests\Class</Filter>
+    </ClCompile>
+    <ClCompile Include="TestNaming.cpp">
+      <Filter>Tests\Class</Filter>
+    </ClCompile>
+    <ClCompile Include="TestNPCAligner.cpp">
+      <Filter>Tests\Class</Filter>
+    </ClCompile>
+    <ClCompile Include="TestNPCInfo.cpp">
+      <Filter>Tests\Class</Filter>
+    </ClCompile>
+    <ClCompile Include="TestNPCInfoHelper.cpp">
+      <Filter>Tests\Class</Filter>
+    </ClCompile>
+    <ClCompile Include="TestQuestSensor.cpp">
+      <Filter>Tests\Class</Filter>
+    </ClCompile>
+    <ClCompile Include="TestResourceRefMgr.cpp">
+      <Filter>Tests\Class</Filter>
+    </ClCompile>
+    <ClCompile Include="TestSensor.cpp">
+      <Filter>Tests\Class</Filter>
+    </ClCompile>
+    <ClCompile Include="TestWhoIsRequester.cpp">
+      <Filter>Tests\Class</Filter>
+    </ClCompile>
+    <ClCompile Include="TestWorldChanger.cpp">
+      <Filter>Tests\Class</Filter>
+    </ClCompile>
+    <ClCompile Include="TestActionDie.cpp">
+      <Filter>Tests\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="TestBattleArena.cpp">
+      <Filter>Tests\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="TestBuffAttribute.cpp">
+      <Filter>Tests\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="TestCalcurator.cpp">
+      <Filter>Tests\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="TestCaptionEffect.cpp">
+      <Filter>Tests\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="TestChangeField.cpp">
+      <Filter>Tests\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="TestChangeNPCColor.cpp">
+      <Filter>Tests\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="TestCharacterParts.cpp">
+      <Filter>Tests\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="TestColorTable.cpp">
+      <Filter>Tests\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="TestConnectionManager.cpp">
+      <Filter>Tests\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="TestCursorSmartReleaser.cpp">
+      <Filter>Tests\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="TestCutSceneContents.cpp">
+      <Filter>Tests\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="TestCutSceneKeyUpdator.cpp">
+      <Filter>Tests\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="TestCutSceneObjects.cpp">
+      <Filter>Tests\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="TestDuel.cpp">
+      <Filter>Tests\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="TestDuelFightChecker.cpp">
+      <Filter>Tests\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="TestEffect.cpp">
+      <Filter>Tests\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="TestEnemyInfo.cpp">
+      <Filter>Tests\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="TestEntityFader.cpp">
+      <Filter>Tests\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="TestEquipOverlapped.cpp">
+      <Filter>Tests\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="TestFieldInfo.cpp">
+      <Filter>Tests\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="TestGameInput.cpp">
+      <Filter>Tests\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="TestGameState.cpp">
+      <Filter>Tests\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="TestGoIntoMap.cpp">
+      <Filter>Tests\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="TestGrappled.cpp">
+      <Filter>Tests\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="TestGuard.cpp">
+      <Filter>Tests\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="TestHitEffectSelecter.cpp">
+      <Filter>Tests\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="TestItem.cpp">
+      <Filter>Tests\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="TestLoadingMgr.cpp">
+      <Filter>Tests\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="TestLogin.cpp">
+      <Filter>Tests\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="TestMagicArea.cpp">
+      <Filter>Tests\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="TestMint.cpp">
+      <Filter>Tests\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="TestModuleEntity.cpp">
+      <Filter>Tests\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="TestModulePost.cpp">
+      <Filter>Tests\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="TestMotion.cpp">
+      <Filter>Tests\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="TestMotionLogic.cpp">
+      <Filter>Tests\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="TestMotionTimeModifier.cpp">
+      <Filter>Tests\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="TestMotionTrigger.cpp">
+      <Filter>Tests\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="TestMouseInteraction.cpp">
+      <Filter>Tests\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="TestMovable.cpp">
+      <Filter>Tests\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="TestMyPlayer.cpp">
+      <Filter>Tests\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="TestMyPlayerAction.cpp">
+      <Filter>Tests\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="TestNetPlayer.cpp">
+      <Filter>Tests\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="TestNetPlayerAction.cpp">
+      <Filter>Tests\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="TestNonPlayer.cpp">
+      <Filter>Tests\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="TestNPCIcon.cpp">
+      <Filter>Tests\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="TestObjectManager.cpp">
+      <Filter>Tests\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="TestPalette.cpp">
+      <Filter>Tests\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="TestParty.cpp">
+      <Filter>Tests\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="TestPartyDuel.cpp">
+      <Filter>Tests\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="TestPlayer.cpp">
+      <Filter>Tests\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="TestPlayerFaction.cpp">
+      <Filter>Tests\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="TestPlayerInOut.cpp">
+      <Filter>Tests\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="TestPlayerPVP.cpp">
+      <Filter>Tests\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="TestPositionSync.cpp">
+      <Filter>Tests\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="TestPvPAreaChecker.cpp">
+      <Filter>Tests\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="TestPvPAreaLogic.cpp">
+      <Filter>Tests\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="TestReplayAutoTest.cpp">
+      <Filter>Tests\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="TestRequestCommandFilter.cpp">
+      <Filter>Tests\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="TestRestrictedAreaChecker.cpp">
+      <Filter>Tests\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="TestRS3.cpp">
+      <Filter>Tests\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="TestSample.cpp">
+      <Filter>Tests\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="TestSoundFilter.cpp">
+      <Filter>Tests\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="TestSoundNameMaker.cpp">
+      <Filter>Tests\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="TestSoundNaming.cpp">
+      <Filter>Tests\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="TestSpecialAction.cpp">
+      <Filter>Tests\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="TestStorage.cpp">
+      <Filter>Tests\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="TestStuff.cpp">
+      <Filter>Tests\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="TestSwim.cpp">
+      <Filter>Tests\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="TestSync.cpp">
+      <Filter>Tests\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="TestTalent.cpp">
+      <Filter>Tests\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="TestTalentHelper.cpp">
+      <Filter>Tests\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="TestTalentHitParam.cpp">
+      <Filter>Tests\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="TestTalentTraining.cpp">
+      <Filter>Tests\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="TestVoiceSound.cpp">
+      <Filter>Tests\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="TestWorld.cpp">
+      <Filter>Tests\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="TestMyActionDieTransChecker.cpp">
+      <Filter>Tests\Logic\MyAction</Filter>
+    </ClCompile>
+    <ClCompile Include="TestMyActionIdle.cpp">
+      <Filter>Tests\Logic\MyAction</Filter>
+    </ClCompile>
+    <ClCompile Include="TestMyActionNormalAttack.cpp">
+      <Filter>Tests\Logic\MyAction</Filter>
+    </ClCompile>
+    <ClCompile Include="TestMyActionSwitchingWeapon.cpp">
+      <Filter>Tests\Logic\MyAction</Filter>
+    </ClCompile>
+    <ClCompile Include="TestChat.cpp">
+      <Filter>Tests\Logic\Chatting</Filter>
+    </ClCompile>
+    <ClCompile Include="TestChatChannel.cpp">
+      <Filter>Tests\Logic\Chatting</Filter>
+    </ClCompile>
+    <ClCompile Include="TestZone.cpp">
+      <Filter>Tests\Logic\World</Filter>
+    </ClCompile>
+    <ClCompile Include="TestStringFilter.cpp">
+      <Filter>Tests\Logic\StringFilter</Filter>
+    </ClCompile>
+    <ClCompile Include="TestCmdParam_LoginServer.cpp">
+      <Filter>Tests\CmdParam</Filter>
+    </ClCompile>
+    <ClCompile Include="Mint3\TestToolTipManager.cpp">
+      <Filter>Tests\Mint3</Filter>
+    </ClCompile>
+    <ClCompile Include="TestFormatString.cpp">
+      <Filter>Tests\Strings</Filter>
+    </ClCompile>
+    <ClCompile Include="TestStringResMgr.cpp">
+      <Filter>Tests\Strings</Filter>
+    </ClCompile>
+    <ClCompile Include="TestGlueGame.cpp">
+      <Filter>Tests\Glue</Filter>
+    </ClCompile>
+    <ClCompile Include="MockBuffInfoMgr.cpp">
+      <Filter>Mock</Filter>
+    </ClCompile>
+    <ClCompile Include="MockController.cpp">
+      <Filter>Mock</Filter>
+    </ClCompile>
+    <ClCompile Include="MockEffect.cpp">
+      <Filter>Mock</Filter>
+    </ClCompile>
+    <ClCompile Include="MockEngine.cpp">
+      <Filter>Mock</Filter>
+    </ClCompile>
+    <ClCompile Include="MockFactionInfoMgr.cpp">
+      <Filter>Mock</Filter>
+    </ClCompile>
+    <ClCompile Include="MockItemInfo.cpp">
+      <Filter>Mock</Filter>
+    </ClCompile>
+    <ClCompile Include="MockMeshInfo.cpp">
+      <Filter>Mock</Filter>
+    </ClCompile>
+    <ClCompile Include="MockModuleEntity.cpp">
+      <Filter>Mock</Filter>
+    </ClCompile>
+    <ClCompile Include="MockNPCInfo.cpp">
+      <Filter>Mock</Filter>
+    </ClCompile>
+    <ClCompile Include="MockPlayFrame.cpp">
+      <Filter>Mock</Filter>
+    </ClCompile>
+    <ClCompile Include="MockQuestInfo.cpp">
+      <Filter>Mock</Filter>
+    </ClCompile>
+    <ClCompile Include="MockSystem.cpp">
+      <Filter>Mock</Filter>
+    </ClCompile>
+    <ClCompile Include="MockTalentInfo.cpp">
+      <Filter>Mock</Filter>
+    </ClCompile>
+    <ClCompile Include="TestCommonFixture.cpp">
+      <Filter>Helper</Filter>
+    </ClCompile>
+    <ClCompile Include="TestGame.cpp">
+      <Filter>Helper</Filter>
+    </ClCompile>
+    <ClCompile Include="TestModule.cpp">
+      <Filter>Helper</Filter>
+    </ClCompile>
+    <ClCompile Include="XUnitTestHelper.cpp">
+      <Filter>Helper</Filter>
+    </ClCompile>
+    <ClCompile Include="FBaseMotion.cpp">
+      <Filter>Fixture</Filter>
+    </ClCompile>
+    <ClCompile Include="FBaseNetClient.cpp">
+      <Filter>Fixture</Filter>
+    </ClCompile>
+    <ClCompile Include="FMyActionState.cpp">
+      <Filter>Fixture</Filter>
+    </ClCompile>
+    <ClCompile Include="FTestGame.cpp">
+      <Filter>Fixture</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="MockModuleAction.cpp" />
+    <ClCompile Include="MockModuleCollision.cpp" />
+    <ClCompile Include="MockModuleMotion.cpp" />
+    <ClCompile Include="MockPlayer.cpp" />
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="TestCollision.cpp" />
+    <ClCompile Include="XGameApp.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="XUnitTestList.h">
+      <Filter>Runner</Filter>
+    </ClInclude>
+    <ClInclude Include="XUnitTestRunner.h">
+      <Filter>Runner</Filter>
+    </ClInclude>
+    <ClInclude Include="XUnitTestStage1.h">
+      <Filter>Runner</Filter>
+    </ClInclude>
+    <ClInclude Include="XUnitTestStage2.h">
+      <Filter>Runner</Filter>
+    </ClInclude>
+    <ClInclude Include="XUnitTestStage3.h">
+      <Filter>Runner</Filter>
+    </ClInclude>
+    <ClInclude Include="TestCutSceneCommon.h">
+      <Filter>Tests\Logic</Filter>
+    </ClInclude>
+    <ClInclude Include="MockBuffInfoMgr.h">
+      <Filter>Mock</Filter>
+    </ClInclude>
+    <ClInclude Include="MockController.h">
+      <Filter>Mock</Filter>
+    </ClInclude>
+    <ClInclude Include="MockEffect.h">
+      <Filter>Mock</Filter>
+    </ClInclude>
+    <ClInclude Include="MockEngine.h">
+      <Filter>Mock</Filter>
+    </ClInclude>
+    <ClInclude Include="MockFactionInfoMgr.h">
+      <Filter>Mock</Filter>
+    </ClInclude>
+    <ClInclude Include="MockGameApp.h">
+      <Filter>Mock</Filter>
+    </ClInclude>
+    <ClInclude Include="MockItemInfo.h">
+      <Filter>Mock</Filter>
+    </ClInclude>
+    <ClInclude Include="MockMeshInfo.h">
+      <Filter>Mock</Filter>
+    </ClInclude>
+    <ClInclude Include="MockModuleEntity.h">
+      <Filter>Mock</Filter>
+    </ClInclude>
+    <ClInclude Include="MockNPCInfo.h">
+      <Filter>Mock</Filter>
+    </ClInclude>
+    <ClInclude Include="MockPlayer.h">
+      <Filter>Mock</Filter>
+    </ClInclude>
+    <ClInclude Include="MockPlayFrame.h">
+      <Filter>Mock</Filter>
+    </ClInclude>
+    <ClInclude Include="MockQuestInfo.h">
+      <Filter>Mock</Filter>
+    </ClInclude>
+    <ClInclude Include="MockScript.h">
+      <Filter>Mock</Filter>
+    </ClInclude>
+    <ClInclude Include="MockSystem.h">
+      <Filter>Mock</Filter>
+    </ClInclude>
+    <ClInclude Include="MockTalentInfo.h">
+      <Filter>Mock</Filter>
+    </ClInclude>
+    <ClInclude Include="TestCommonFixture.h">
+      <Filter>Helper</Filter>
+    </ClInclude>
+    <ClInclude Include="TestGame.h">
+      <Filter>Helper</Filter>
+    </ClInclude>
+    <ClInclude Include="TestModule.h">
+      <Filter>Helper</Filter>
+    </ClInclude>
+    <ClInclude Include="XTestWrapper.h">
+      <Filter>Helper</Filter>
+    </ClInclude>
+    <ClInclude Include="XUnitTestHelper.h">
+      <Filter>Helper</Filter>
+    </ClInclude>
+    <ClInclude Include="FBaseMotion.h">
+      <Filter>Fixture</Filter>
+    </ClInclude>
+    <ClInclude Include="FBaseNetClient.h">
+      <Filter>Fixture</Filter>
+    </ClInclude>
+    <ClInclude Include="FBaseNPCInfo.h">
+      <Filter>Fixture</Filter>
+    </ClInclude>
+    <ClInclude Include="FBaseTalentInfo.h">
+      <Filter>Fixture</Filter>
+    </ClInclude>
+    <ClInclude Include="FCmdParam.h">
+      <Filter>Fixture</Filter>
+    </ClInclude>
+    <ClInclude Include="FMyActionState.h">
+      <Filter>Fixture</Filter>
+    </ClInclude>
+    <ClInclude Include="FTestGame.h">
+      <Filter>Fixture</Filter>
+    </ClInclude>
+    <ClInclude Include="MockModuleAction.h" />
+    <ClInclude Include="MockModuleCollision.h" />
+    <ClInclude Include="MockModuleMotion.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="SVNRevision.h" />
+    <ClInclude Include="version.h" />
+    <ClInclude Include="XGameApp.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Game.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Raiderz.ico" />
+  </ItemGroup>
+</Project>

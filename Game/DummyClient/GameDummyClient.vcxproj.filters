@@ -1,0 +1,392 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="core">
+      <UniqueIdentifier>{06eb49fe-b4fc-4026-a5a6-49842668e66d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\Net">
+      <UniqueIdentifier>{042bac9b-a82b-43ef-ab61-fcbd8fe95106}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DummyClient">
+      <UniqueIdentifier>{14ff180c-3b8f-4377-b06d-04bd3202c7f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DummyClient\NetListeners">
+      <UniqueIdentifier>{156fc1ba-eb40-4e05-ba2e-84d8f46759bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="bot">
+      <UniqueIdentifier>{1d1e939d-5481-4950-b6fb-c88510a10f30}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Handler">
+      <UniqueIdentifier>{620f778a-9a14-4066-9082-6cdd9a06d25c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Helper">
+      <UniqueIdentifier>{cf92465a-90c5-4fa8-b1ae-3eca0f5cf6dc}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="XDummyCollision.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="XDummyFileLoader.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="XDummyFrame.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="XDummyMaster.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="XDummyPattern.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="XDummyUI.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="XNet.cpp">
+      <Filter>core\Net</Filter>
+    </ClCompile>
+    <ClCompile Include="XBirdClient.cpp">
+      <Filter>DummyClient</Filter>
+    </ClCompile>
+    <ClCompile Include="XBirdDummyAgent.cpp">
+      <Filter>DummyClient</Filter>
+    </ClCompile>
+    <ClCompile Include="XDummyReporter.cpp">
+      <Filter>DummyClient</Filter>
+    </ClCompile>
+    <ClCompile Include="XDummyConnectListener.cpp">
+      <Filter>DummyClient\NetListeners</Filter>
+    </ClCompile>
+    <ClCompile Include="XDummyDisconnectListener.cpp">
+      <Filter>DummyClient\NetListeners</Filter>
+    </ClCompile>
+    <ClCompile Include="XDummyRecvListener.cpp">
+      <Filter>DummyClient\NetListeners</Filter>
+    </ClCompile>
+    <ClCompile Include="XDummySendListener.cpp">
+      <Filter>DummyClient\NetListeners</Filter>
+    </ClCompile>
+    <ClCompile Include="XDummyBot.cpp">
+      <Filter>bot</Filter>
+    </ClCompile>
+    <ClCompile Include="XDummyBot_AnnounceRefreshServer.cpp">
+      <Filter>bot</Filter>
+    </ClCompile>
+    <ClCompile Include="XDummyBot_AutoParty.cpp">
+      <Filter>bot</Filter>
+    </ClCompile>
+    <ClCompile Include="XDummyBot_Chat.cpp">
+      <Filter>bot</Filter>
+    </ClCompile>
+    <ClCompile Include="XDummyBot_Combat.cpp">
+      <Filter>bot</Filter>
+    </ClCompile>
+    <ClCompile Include="XDummyBot_Dye.cpp">
+      <Filter>bot</Filter>
+    </ClCompile>
+    <ClCompile Include="XDummyBot_Echo.cpp">
+      <Filter>bot</Filter>
+    </ClCompile>
+    <ClCompile Include="XDummyBot_Enchant.cpp">
+      <Filter>bot</Filter>
+    </ClCompile>
+    <ClCompile Include="XDummyBot_Equip.cpp">
+      <Filter>bot</Filter>
+    </ClCompile>
+    <ClCompile Include="XDummyBot_FillInventory.cpp">
+      <Filter>bot</Filter>
+    </ClCompile>
+    <ClCompile Include="XDummyBot_FirstCutscene.cpp">
+      <Filter>bot</Filter>
+    </ClCompile>
+    <ClCompile Include="XDummyBot_FullEquip.cpp">
+      <Filter>bot</Filter>
+    </ClCompile>
+    <ClCompile Include="XDummyBot_Gather.cpp">
+      <Filter>bot</Filter>
+    </ClCompile>
+    <ClCompile Include="XDummyBot_GetMaxQuest.cpp">
+      <Filter>bot</Filter>
+    </ClCompile>
+    <ClCompile Include="XDummyBot_Inven.cpp">
+      <Filter>bot</Filter>
+    </ClCompile>
+    <ClCompile Include="XDummyBot_LevelUp.cpp">
+      <Filter>bot</Filter>
+    </ClCompile>
+    <ClCompile Include="XDummyBot_Loot.cpp">
+      <Filter>bot</Filter>
+    </ClCompile>
+    <ClCompile Include="XDummyBot_Mail.cpp">
+      <Filter>bot</Filter>
+    </ClCompile>
+    <ClCompile Include="XDummyBot_MoveChannel.cpp">
+      <Filter>bot</Filter>
+    </ClCompile>
+    <ClCompile Include="XDummyBot_MultiLogin.cpp">
+      <Filter>bot</Filter>
+    </ClCompile>
+    <ClCompile Include="XDummyBot_Party.cpp">
+      <Filter>bot</Filter>
+    </ClCompile>
+    <ClCompile Include="XDummyBot_PositionSpreader.cpp">
+      <Filter>bot</Filter>
+    </ClCompile>
+    <ClCompile Include="XDummyBot_Quest.cpp">
+      <Filter>bot</Filter>
+    </ClCompile>
+    <ClCompile Include="XDummyBot_QuestPVP.cpp">
+      <Filter>bot</Filter>
+    </ClCompile>
+    <ClCompile Include="XDummyBot_Roam.cpp">
+      <Filter>bot</Filter>
+    </ClCompile>
+    <ClCompile Include="XDummyBot_SetBerserker.cpp">
+      <Filter>bot</Filter>
+    </ClCompile>
+    <ClCompile Include="XDummyBot_Shop.cpp">
+      <Filter>bot</Filter>
+    </ClCompile>
+    <ClCompile Include="XDummyBot_Spawn.cpp">
+      <Filter>bot</Filter>
+    </ClCompile>
+    <ClCompile Include="XDummyBot_Trade.cpp">
+      <Filter>bot</Filter>
+    </ClCompile>
+    <ClCompile Include="XDummyBot_Train.cpp">
+      <Filter>bot</Filter>
+    </ClCompile>
+    <ClCompile Include="XDummyBot_WarpField.cpp">
+      <Filter>bot</Filter>
+    </ClCompile>
+    <ClCompile Include="XDummyBot_Whisper.cpp">
+      <Filter>bot</Filter>
+    </ClCompile>
+    <ClCompile Include="XDummyHandler.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="XDummyHandler_ConnFlood.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="XDummyHandler_DeleteAllCharacter.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="XDummyHandler_FieldInsertChar.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="XDummyHandler_FieldJumper.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="XDummyHandler_FieldLogin.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="XDummyHandler_LoginFlood.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="XDummyHandler_TrialJumper.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="XDummyHelper.cpp">
+      <Filter>Helper</Filter>
+    </ClCompile>
+    <ClCompile Include="XDummyLazyCommandPoster.cpp">
+      <Filter>Helper</Filter>
+    </ClCompile>
+    <ClCompile Include="XDummyPlayerMgr.cpp">
+      <Filter>Helper</Filter>
+    </ClCompile>
+    <ClCompile Include="XDummySpawnMgr.cpp">
+      <Filter>Helper</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="XGameApp.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="XDummyCollision.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="XDummyFileLoader.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="XDummyFrame.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="XDummyMaster.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="XDummyPattern.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="XDummyUI.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="XNet.h">
+      <Filter>core\Net</Filter>
+    </ClInclude>
+    <ClInclude Include="XBirdClient.h">
+      <Filter>DummyClient</Filter>
+    </ClInclude>
+    <ClInclude Include="XBirdDummyAgent.h">
+      <Filter>DummyClient</Filter>
+    </ClInclude>
+    <ClInclude Include="XDummyReporter.h">
+      <Filter>DummyClient</Filter>
+    </ClInclude>
+    <ClInclude Include="XDummyConnectListener.h">
+      <Filter>DummyClient\NetListeners</Filter>
+    </ClInclude>
+    <ClInclude Include="XDummyDisconnectListener.h">
+      <Filter>DummyClient\NetListeners</Filter>
+    </ClInclude>
+    <ClInclude Include="XDummyRecvListener.h">
+      <Filter>DummyClient\NetListeners</Filter>
+    </ClInclude>
+    <ClInclude Include="XDummySendListener.h">
+      <Filter>DummyClient\NetListeners</Filter>
+    </ClInclude>
+    <ClInclude Include="XDummyBot.h">
+      <Filter>bot</Filter>
+    </ClInclude>
+    <ClInclude Include="XDummyBot_AnnounceRefreshServer.h">
+      <Filter>bot</Filter>
+    </ClInclude>
+    <ClInclude Include="XDummyBot_AutoParty.h">
+      <Filter>bot</Filter>
+    </ClInclude>
+    <ClInclude Include="XDummyBot_Chat.h">
+      <Filter>bot</Filter>
+    </ClInclude>
+    <ClInclude Include="XDummyBot_Combat.h">
+      <Filter>bot</Filter>
+    </ClInclude>
+    <ClInclude Include="XDummyBot_Dye.h">
+      <Filter>bot</Filter>
+    </ClInclude>
+    <ClInclude Include="XDummyBot_Echo.h">
+      <Filter>bot</Filter>
+    </ClInclude>
+    <ClInclude Include="XDummyBot_Enchant.h">
+      <Filter>bot</Filter>
+    </ClInclude>
+    <ClInclude Include="XDummyBot_Equip.h">
+      <Filter>bot</Filter>
+    </ClInclude>
+    <ClInclude Include="XDummyBot_FillInventory.h">
+      <Filter>bot</Filter>
+    </ClInclude>
+    <ClInclude Include="XDummyBot_FirstCutscene.h">
+      <Filter>bot</Filter>
+    </ClInclude>
+    <ClInclude Include="XDummyBot_FullEquip.h">
+      <Filter>bot</Filter>
+    </ClInclude>
+    <ClInclude Include="XDummyBot_Gather.h">
+      <Filter>bot</Filter>
+    </ClInclude>
+    <ClInclude Include="XDummyBot_GetMaxQuest.h">
+      <Filter>bot</Filter>
+    </ClInclude>
+    <ClInclude Include="XDummyBot_Inven.h">
+      <Filter>bot</Filter>
+    </ClInclude>
+    <ClInclude Include="XDummyBot_LevelUp.h">
+      <Filter>bot</Filter>
+    </ClInclude>
+    <ClInclude Include="XDummyBot_Loot.h">
+      <Filter>bot</Filter>
+    </ClInclude>
+    <ClInclude Include="XDummyBot_Mail.h">
+      <Filter>bot</Filter>
+    </ClInclude>
+    <ClInclude Include="XDummyBot_MoveChannel.h">
+      <Filter>bot</Filter>
+    </ClInclude>
+    <ClInclude Include="XDummyBot_MultiLogin.h">
+      <Filter>bot</Filter>
+    </ClInclude>
+    <ClInclude Include="XDummyBot_Party.h">
+      <Filter>bot</Filter>
+    </ClInclude>
+    <ClInclude Include="XDummyBot_PositionSpreader.h">
+      <Filter>bot</Filter>
+    </ClInclude>
+    <ClInclude Include="XDummyBot_Quest.h">
+      <Filter>bot</Filter>
+    </ClInclude>
+    <ClInclude Include="XDummyBot_QuestPVP.h">
+      <Filter>bot</Filter>
+    </ClInclude>
+    <ClInclude Include="XDummyBot_Roam.h">
+      <Filter>bot</Filter>
+    </ClInclude>
+    <ClInclude Include="XDummyBot_SetBerserker.h">
+      <Filter>bot</Filter>
+    </ClInclude>
+    <ClInclude Include="XDummyBot_Shop.h">
+      <Filter>bot</Filter>
+    </ClInclude>
+    <ClInclude Include="XDummyBot_Spawn.h">
+      <Filter>bot</Filter>
+    </ClInclude>
+    <ClInclude Include="XDummyBot_Trade.h">
+      <Filter>bot</Filter>
+    </ClInclude>
+    <ClInclude Include="XDummyBot_Train.h">
+      <Filter>bot</Filter>
+    </ClInclude>
+    <ClInclude Include="XDummyBot_WarpField.h">
+      <Filter>bot</Filter>
+    </ClInclude>
+    <ClInclude Include="XDummyBot_Whisper.h">
+      <Filter>bot</Filter>
+    </ClInclude>
+    <ClInclude Include="XDummyHandler.h">
+      <Filter>Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="XDummyHandler_ConnFlood.h">
+      <Filter>Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="XDummyHandler_DeleteAllCharacter.h">
+      <Filter>Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="XDummyHandler_FieldInsertChar.h">
+      <Filter>Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="XDummyHandler_FieldJumper.h">
+      <Filter>Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="XDummyHandler_FieldLogin.h">
+      <Filter>Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="XDummyHandler_LoginFlood.h">
+      <Filter>Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="XDummyHandler_TrialJumper.h">
+      <Filter>Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="XDummyHelper.h">
+      <Filter>Helper</Filter>
+    </ClInclude>
+    <ClInclude Include="XDummyLazyCommandPoster.h">
+      <Filter>Helper</Filter>
+    </ClInclude>
+    <ClInclude Include="XDummyPlayerMgr.h">
+      <Filter>Helper</Filter>
+    </ClInclude>
+    <ClInclude Include="XDummySpawnMgr.h">
+      <Filter>Helper</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="SVNRevision.h" />
+    <ClInclude Include="version.h" />
+    <ClInclude Include="XGameApp.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Game.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="SoulHunt.ico" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{89DBFF92-C477-4B7E-B175-56F3C71F180D}</ProjectGuid>
+    <RootNamespace>CoreToolApp</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>16.0.30804.86</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)../Runtime/Dev/CoreToolRS3\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)../Runtime/Dev/CoreToolRS3\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..;../../../mdk\Tools\CoreToolRS3;$(VCInstallDir)atlmfc\src\mfc;../../../../sdk/UnitTest++/v1.4/src;../../../../sdk/vld-2.0b/include;../../../mdk/MTest/include;../../../mdk/CML2;../../../mdk/CML2/lib;../../../../sdk/dx9/Include;../../../mdk/CML2/lua;../../../mdk/MPathFinder;../../../crl/include;../../../CSCommon/Include;../../../../sdk/tinyxml/include;../../../../sdk/lua51/include;../../../mdk/MiNet/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_USRDLL;_WINDOWS;IMPORT_CORETOOL;_UNITTEST;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <OutputFile>$(OutDir)CoreToolRS3D_Td.exe</OutputFile>
+      <AdditionalLibraryDirectories>../../../../sdk/vld-2.0b/lib/win32;../../../../sdk/lua51/lib/vc8;../../../../sdk/UnitTest++/v1.4/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <DelayLoadDLLs>CoreTool_d.dll;%(DelayLoadDLLs)</DelayLoadDLLs>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <SupportUnloadOfDelayLoadedDLL>true</SupportUnloadOfDelayLoadedDLL>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command />
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>..;../../../mdk\Tools\CoreToolRS3;$(VCInstallDir)atlmfc\src\mfc;../../../../sdk/UnitTest++/v1.4/src;../../../../sdk/vld-2.0b/include;../../../mdk/MTest/include;../../../mdk/CML2;../../../mdk/CML2/lib;../../../../sdk/dx9/Include;../../../mdk/CML2/lua;../../../mdk/MPathFinder;../../../crl/include;../../../CSCommon/Include;../../../../sdk/tinyxml/include;../../../../../sdk/lua51/include;../../../../mdk/MiNet/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;_UNITTEST;IMPORT_CORETOOL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <OutputFile>$(OutDir)CoreToolRS3_T.exe</OutputFile>
+      <AdditionalLibraryDirectories>../../../mdk/MTest/lib;../../../../sdk/vld-2.0b/lib/win32;../../../../sdk/lua51/lib/vc8;../../../../sdk/UnitTest++/v1.4/lib;../../../../sdk/dx9/lib;../../../mdk/MPathFinder/lib;../../../mdk/cml2/lib;../../../../sdk/tinyxml/lib;../../../../sdk/zlib/lib;../../../../sdk/vld/;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <DelayLoadDLLs>CoreTool.dll;%(DelayLoadDLLs)</DelayLoadDLLs>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <SupportUnloadOfDelayLoadedDLL>true</SupportUnloadOfDelayLoadedDLL>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command />
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Manifest Include="res\CoreToolApp.manifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="CoreToolApp.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\CoreToolRS3.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AboutDlg.cpp" />
+    <ClCompile Include="CoreToolApp.cpp" />
+    <ClCompile Include="CUnitTestRunner.cpp" />
+    <ClCompile Include="CUnitTestStage1.cpp" />
+    <ClCompile Include="MMaietTestResult.cpp" />
+    <ClCompile Include="MMaietXmlTestReporter.cpp" />
+    <ClCompile Include="MUnitTestConfig.cpp" />
+    <ClCompile Include="MUnitTestReporter.cpp" />
+    <ClCompile Include="MUnitTestRunner.cpp" />
+    <ClCompile Include="StdAfx.cpp" />
+    <ClCompile Include="TestSample.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AboutDlg.h" />
+    <ClInclude Include="CoreToolApp.h" />
+    <ClInclude Include="CUnitTestRunner.h" />
+    <ClInclude Include="CUnitTestStage1.h" />
+    <ClInclude Include="MBaseUnitTest.h" />
+    <ClInclude Include="MInstanceChanger.h" />
+    <ClInclude Include="MMaietTestResult.h" />
+    <ClInclude Include="MMaietXmlTestReporter.h" />
+    <ClInclude Include="MTest.h" />
+    <ClInclude Include="MUnitTestConfig.h" />
+    <ClInclude Include="MUnitTestReporter.h" />
+    <ClInclude Include="MUnitTestRunner.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="StdAfx.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="vld.ini" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\sdk\UnitTest++\v1.4\UnitTest++.vsnet2008.vcxproj">
+      <Project>{64a4fefe-0461-4e95-8cc1-91ef5f57dbc6}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\mdk\cml2\cml2.vcxproj">
+      <Project>{8d451493-65c2-49c3-adae-acb17e6b0650}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\mdk\Tools\CoreToolRS3\CoreToolRS3.vcxproj">
+      <Project>{ee126751-9d9b-4ed5-97cf-da0fb37d80db}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

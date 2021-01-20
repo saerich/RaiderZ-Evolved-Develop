@@ -199,68 +199,56 @@
     <_ProjectFileVersion>16.0.30028.132</_ProjectFileVersion>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <OutDir>Lib\</OutDir>
-    <IntDir>$(Configuration)\</IntDir>
-    <TargetName>$(ProjectName)_d</TargetName>
+    <OutDir>build\bin\$(Configuration)\</OutDir>
+    <IntDir>build\$(BaseIntermediateOutputPath)$(Configuration)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <OutDir>Lib\</OutDir>
-    <IntDir>$(Configuration)\</IntDir>
+    <OutDir>build\bin\$(Configuration)\</OutDir>
+    <IntDir>build\$(BaseIntermediateOutputPath)$(Configuration)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseMD_ImportCML2|Win32'">
-    <OutDir>Lib\</OutDir>
-    <IntDir>$(Configuration)\</IntDir>
-    <TargetName>$(ProjectName)_MD_cml2</TargetName>
+    <OutDir>build\bin\$(Configuration)\</OutDir>
+    <IntDir>build\$(BaseIntermediateOutputPath)$(Configuration)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLL|Win32'">
-    <OutDir>Lib\</OutDir>
-    <IntDir>$(Configuration)\</IntDir>
-    <TargetName>$(ProjectName)_d</TargetName>
+    <OutDir>build\bin\$(Configuration)\</OutDir>
+    <IntDir>build\$(BaseIntermediateOutputPath)$(Configuration)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugMD|Win32'">
-    <OutDir>Lib\</OutDir>
-    <IntDir>$(Configuration)\</IntDir>
-    <TargetName>$(ProjectName)_MDd</TargetName>
+    <OutDir>build\bin\$(Configuration)\</OutDir>
+    <IntDir>build\$(BaseIntermediateOutputPath)$(Configuration)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseMD|Win32'">
-    <OutDir>Lib\</OutDir>
-    <IntDir>$(Configuration)\</IntDir>
-    <TargetName>$(ProjectName)_MD</TargetName>
+    <OutDir>build\bin\$(Configuration)\</OutDir>
+    <IntDir>build\$(BaseIntermediateOutputPath)$(Configuration)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugMD_ImportCML2|Win32'">
-    <OutDir>Lib\</OutDir>
-    <IntDir>$(Configuration)\</IntDir>
-    <TargetName>$(ProjectName)_MDd_cml2</TargetName>
+    <OutDir>build\bin\$(Configuration)\</OutDir>
+    <IntDir>build\$(BaseIntermediateOutputPath)$(Configuration)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugMDW|Win32'">
-    <OutDir>Lib\</OutDir>
-    <IntDir>$(Configuration)\</IntDir>
-    <TargetName>$(ProjectName)_MDWd</TargetName>
+    <OutDir>build\bin\$(Configuration)\</OutDir>
+    <IntDir>build\$(BaseIntermediateOutputPath)$(Configuration)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseMDW|Win32'">
-    <OutDir>Lib\</OutDir>
-    <IntDir>$(Configuration)\</IntDir>
-    <TargetName>$(ProjectName)_MDW</TargetName>
+    <OutDir>build\bin\$(Configuration)\</OutDir>
+    <IntDir>build\$(BaseIntermediateOutputPath)$(Configuration)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugMD_ImportCML2W|Win32'">
-    <OutDir>Lib\</OutDir>
-    <IntDir>$(Configuration)\</IntDir>
-    <TargetName>$(ProjectName)_MDd_cml2_W</TargetName>
+    <OutDir>build\bin\$(Configuration)\</OutDir>
+    <IntDir>build\$(BaseIntermediateOutputPath)$(Configuration)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseMD_ImportCML2W|Win32'">
-    <OutDir>Lib\</OutDir>
-    <IntDir>$(Configuration)\</IntDir>
-    <TargetName>$(ProjectName)_MD_cml2_W</TargetName>
+    <OutDir>build\bin\$(Configuration)\</OutDir>
+    <IntDir>build\$(BaseIntermediateOutputPath)$(Configuration)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugW|Win32'">
-    <OutDir>Lib\</OutDir>
-    <IntDir>$(Configuration)\</IntDir>
-    <TargetName>$(ProjectName)_dW</TargetName>
+    <OutDir>build\bin\$(Configuration)\</OutDir>
+    <IntDir>build\$(BaseIntermediateOutputPath)$(Configuration)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseW|Win32'">
-    <OutDir>Lib\</OutDir>
-    <IntDir>$(Configuration)\</IntDir>
-    <TargetName>$(ProjectName)_W</TargetName>
+    <OutDir>build\bin\$(Configuration)\</OutDir>
+    <IntDir>build\$(BaseIntermediateOutputPath)$(Configuration)\</IntDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -276,9 +264,7 @@
       <TreatWarningAsError>true</TreatWarningAsError>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
     </ClCompile>
-    <Lib>
-      <OutputFile>Lib/crld.lib</OutputFile>
-    </Lib>
+    <Lib />
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
@@ -294,9 +280,7 @@
       <TreatWarningAsError>true</TreatWarningAsError>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
     </ClCompile>
-    <Lib>
-      <OutputFile>Lib/crl.lib</OutputFile>
-    </Lib>
+    <Lib />
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseMD_ImportCML2|Win32'">
     <ClCompile>
@@ -312,9 +296,7 @@
       <TreatWarningAsError>true</TreatWarningAsError>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
     </ClCompile>
-    <Lib>
-      <OutputFile>Lib/crlMD_import.lib</OutputFile>
-    </Lib>
+    <Lib />
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLL|Win32'">
     <ClCompile>
@@ -333,7 +315,6 @@
     </ClCompile>
     <Link>
       <AdditionalDependencies>cml2_d.lib;lua5.1.lib;zlib.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <OutputFile>lib\$(ProjectName)_d.dll</OutputFile>
       <AdditionalLibraryDirectories>../mdk/cml2/lib;../mdk/MiNet/lib;../../sdk/lua51/lib/vc8;../../sdk/zlib/lib;../../sdk/tinyxml/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
@@ -351,9 +332,7 @@
       <TreatWarningAsError>true</TreatWarningAsError>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
     </ClCompile>
-    <Lib>
-      <OutputFile>Lib/crlMDd.lib</OutputFile>
-    </Lib>
+    <Lib />
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseMD|Win32'">
     <ClCompile>
@@ -370,9 +349,7 @@
       <TreatWarningAsError>true</TreatWarningAsError>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
     </ClCompile>
-    <Lib>
-      <OutputFile>Lib/crlMD.lib</OutputFile>
-    </Lib>
+    <Lib />
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugMD_ImportCML2|Win32'">
     <ClCompile>
@@ -388,9 +365,7 @@
       <TreatWarningAsError>true</TreatWarningAsError>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
     </ClCompile>
-    <Lib>
-      <OutputFile>Lib/crlMDd_import.lib</OutputFile>
-    </Lib>
+    <Lib />
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugMDW|Win32'">
     <ClCompile>
@@ -406,9 +381,7 @@
       <TreatWarningAsError>true</TreatWarningAsError>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
     </ClCompile>
-    <Lib>
-      <OutputFile>Lib/crlMDWd.lib</OutputFile>
-    </Lib>
+    <Lib />
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseMDW|Win32'">
     <ClCompile>
@@ -425,9 +398,7 @@
       <TreatWarningAsError>true</TreatWarningAsError>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
     </ClCompile>
-    <Lib>
-      <OutputFile>Lib/crlMDW.lib</OutputFile>
-    </Lib>
+    <Lib />
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugMD_ImportCML2W|Win32'">
     <ClCompile>
@@ -443,9 +414,7 @@
       <TreatWarningAsError>true</TreatWarningAsError>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
     </ClCompile>
-    <Lib>
-      <OutputFile>Lib/crlMDd_import.lib</OutputFile>
-    </Lib>
+    <Lib />
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseMD_ImportCML2W|Win32'">
     <ClCompile>
@@ -461,9 +430,7 @@
       <TreatWarningAsError>true</TreatWarningAsError>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
     </ClCompile>
-    <Lib>
-      <OutputFile>Lib/crlMD_import.lib</OutputFile>
-    </Lib>
+    <Lib />
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugW|Win32'">
     <ClCompile>
@@ -479,9 +446,7 @@
       <TreatWarningAsError>true</TreatWarningAsError>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
     </ClCompile>
-    <Lib>
-      <OutputFile>Lib/crld.lib</OutputFile>
-    </Lib>
+    <Lib />
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseW|Win32'">
     <ClCompile>
@@ -497,9 +462,7 @@
       <TreatWarningAsError>true</TreatWarningAsError>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
     </ClCompile>
-    <Lib>
-      <OutputFile>Lib/crl.lib</OutputFile>
-    </Lib>
+    <Lib />
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="include\AMath.h" />

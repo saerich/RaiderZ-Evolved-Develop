@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Runner">
+      <UniqueIdentifier>{ee7249d9-f8fc-4108-b5e9-fc1ad7ed9149}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fixture">
+      <UniqueIdentifier>{2a869325-09e7-4f3a-bd3a-ba1b5da9b40a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tests">
+      <UniqueIdentifier>{81991f72-2e08-4020-b63f-3f7478238864}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="DummyClientTestRunner.cpp">
+      <Filter>Runner</Filter>
+    </ClCompile>
+    <ClCompile Include="DummyClientUnitTestStage1.cpp">
+      <Filter>Runner</Filter>
+    </ClCompile>
+    <ClCompile Include="TestXDummyBot_FillInventory.cpp">
+      <Filter>Runner</Filter>
+    </ClCompile>
+    <ClCompile Include="TestXDummyFrame.cpp">
+      <Filter>Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="stdafx.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DummyClientTestRunner.h">
+      <Filter>Runner</Filter>
+    </ClInclude>
+    <ClInclude Include="DummyClientUnitTestStage1.h">
+      <Filter>Runner</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+</Project>
