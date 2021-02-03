@@ -25,13 +25,27 @@ public:
 		float m[2][3];
 	};
 
-	MBox() : minx(0.f), miny(0.f), minz(0.f), maxx(0.f), maxy(0.f), maxz(0.f), vmin(0.f), vmax(0.f), m() { }
-	MBox(const MVector3& _vmin, const MVector3& _vmax) : minx(0.f), miny(0.f), minz(0.f), maxx(0.f), maxy(0.f), maxz(0.f), vmin(_vmin), vmax(_vmax), m() {}
-	MBox(float mx, float my, float mz,float Mx, float My, float Mz)
-		: minx(mx), miny(my), minz(mz), maxx(Mx), maxy(My), maxz(Mz), vmin(0.f), vmax(0.f), m() {}
+	MBox() { }
+
+	MBox(const MVector3& _vmin, const MVector3& _vmax)
+	{
+		vmin = _vmin;
+		vmax = _vmax;
+	}
+
+	MBox(float _minx, float _miny, float _minz, float _maxx, float _maxy, float _maxz)
+	{
+		minx = _minx;
+		miny = _miny;
+		minz = _minz;
+
+		maxx = _maxx;
+		maxy = _maxy;
+		maxz = _maxz;
+	}
 
 	explicit MBox(const std::vector<MBox>* boxes);
-	explicit MBox(const std::vector<MVector3>* points) : minx(0.f), miny(0.f), minz(0.f), maxx(0.f), maxy(0.f), maxz(0.f), vmin(1e33f, 1e33f, 1e33f), vmax(-1e33f, -1e33f, -1e33f), m()
+	explicit MBox(const std::vector<MVector3>* points) : vmin(1e33f, 1e33f, 1e33f), vmax(-1e33f, -1e33f, -1e33f)
 	{
 		for ( unsigned int i=0; i<points->size(); i++ )
 			Add( (*points)[i] );
@@ -39,20 +53,10 @@ public:
 	
 	MBox& operator=(const MBox& box)
 	{
-		minx = box.minx;
-		miny = box.miny;
-		minz = box.minz;
-		
-		maxx = box.maxx;
-		maxy = box.maxy;
-		maxz = box.maxz;
-
 		vmin = box.vmin;
 		vmax = box.vmax;
 
-		std::copy(&box.m[0][0], &box.m[0][0] + 2 * 3, &m[0][0]);
-
-		return (*this);
+		return *this;
 	}
 
 	void Initialize() {

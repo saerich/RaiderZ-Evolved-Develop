@@ -717,7 +717,7 @@ void REnvironmentSet::UpdateLoading()
 	else
 	{
 		m_fLifeTime = -0.001f;
-		//mlog("Failed to create sky.\n"); // MrFarbodD - Disabled due to log spam.
+		mlog("Failed to create sky.\n");
 	}
 }
 
