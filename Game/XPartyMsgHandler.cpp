@@ -25,7 +25,7 @@ bool XPartyMsgHandler::OnResponse(const minet::MCommand* pCmd)
 		{
 			wstringstream strStream;
 
-			strStream	<< L"[ÆÄÆ¼]"
+			strStream	<< L"[Party]"
 						<< L"[" << strSenderName << L"]"
 						<< strMsg;
 

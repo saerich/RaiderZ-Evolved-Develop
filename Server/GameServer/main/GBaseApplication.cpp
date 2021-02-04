@@ -6,7 +6,7 @@
 #include "GValidateLogger.h"
 #include "GSystem.h"
 //#include "GPMSSystem.h"
-//#include "PMServerInitLogger.h"
+#include "PMServerInitLogger.h"
 //#include "PMSCodes.h"
 #include "SRemoteProfiler.h"
 #include "GGameGuard.h"
@@ -52,13 +52,13 @@ bool GBaseApplication::OnCreate( )
 
 	InitCommandLine();
 
-	//if (GConfig::m_bGGEnable)
-	//{
-	//	if (!gsys.pGameGuard->Init())
-	//	{
-	//		SetServerInitResult(SERVERINIT_FAILED_INIT_GAMEGUARD);
-	//	}
-	//}
+	if (GConfig::m_bGGEnable)
+	{
+		if (!gsys.pGameGuard->Init())
+		{
+			SetServerInitResult(SERVERINIT_FAILED_INIT_GAMEGUARD);
+		}
+	}
 
 	_RunRuntimeValidator();
 
@@ -74,10 +74,10 @@ bool GBaseApplication::OnCreate( )
 
 	ValidateResouces();
 
-	//if (RunAutoTest() == false)
-	//{
-	//	SetServerInitResult(SERVERINIT_FAILED_DATAFILE_LOAD);
-	//}
+	if (RunAutoTest() == false)
+	{
+		SetServerInitResult(SERVERINIT_FAILED_DATAFILE_LOAD);
+	}
 
 	if (IsRunForTest())
 	{
@@ -108,12 +108,12 @@ bool GBaseApplication::OnCreate( )
 	//		gsys.pPMSSystem->SendWarningMsg();
 	//	}
 	//}
-	//
-	//if (::IsServerInitFailed())
-	//{
-	//	mlog3("Server Init Failed: %s\n", MLocale::ConvUTF16ToAnsi(::GetServerInitWarningMsg()).c_str());
-	//	return false;
-	//}
+	
+	if (::IsServerInitFailed())
+	{
+		mlog3("Server Init Failed: %s\n", MLocale::ConvUTF16ToAnsi(::GetServerInitWarningMsg()).c_str());
+		return false;
+	}
 
 	return true;
 }

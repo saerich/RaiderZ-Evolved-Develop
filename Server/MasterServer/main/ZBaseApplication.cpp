@@ -7,7 +7,7 @@
 #include "ZConst.h"
 #include "ZGlobal.h"
 //#include "ZPMSSystem.h"
-//#include "PMServerInitLogger.h"
+#include "PMServerInitLogger.h"
 //#include "PMSCodes.h"
 
 ZBaseApplication::ZBaseApplication()
@@ -53,12 +53,12 @@ bool ZBaseApplication::OnCreate()
 	//		gsys.pPMS->SendWarningMsg();
 	//	}
 	//}
-	//
-	//if (::IsServerInitFailed())
-	//{
-	//	mlog3("Server Init Failed: %s\n", W2A_EX(::GetServerInitWarningMsg(), 0));
-	//	return false;
-	//}
+	
+	if (::IsServerInitFailed())
+	{
+		mlog3("Server Init Failed: %s\n", W2A_EX(::GetServerInitWarningMsg(), 0));
+		return false;
+	}
 
 	return true;
 }

@@ -56,7 +56,7 @@
 #include "SNetworkCardMgr.h"
 #include "GEmblemInfoMgr.h"
 #include "GReserveCmdManager.h"
-//#include "PMServerInitLogger.h"
+#include "PMServerInitLogger.h"
 #include "SDsnFactory.h"
 #include "SBaseDsnFactory.h"
 #include "SDefaultDsnFactory.h"
@@ -173,7 +173,7 @@ bool GServer::InitRequisites(bool bConnectDB)
 	if (CreateNetwork() == false)
 	{
 		mlog3("Failed CreateNetwork.\n");
-		//SetServerInitResult(SERVERINIT_FAILED_NETWORK_INIT);
+		SetServerInitResult(SERVERINIT_FAILED_NETWORK_INIT);
 		return false;
 	}
 
@@ -185,7 +185,7 @@ bool GServer::InitRequisites(bool bConnectDB)
 		{
 			_ASSERT(0);
 			mlog3("Failed InitDB.\n");
-			//SetServerInitResult(SERVERINIT_FAILED_DB_CONNECT);
+			SetServerInitResult(SERVERINIT_FAILED_DB_CONNECT);
 			return false;
 		}
 	}
@@ -247,13 +247,13 @@ bool GServer::InitInfo()
 {
 	if (InitDependencyInfo() == false)
 	{
-		//SetServerInitResult(SERVERINIT_FAILED_DEPENDENCYFILE_LOAD);
+		SetServerInitResult(SERVERINIT_FAILED_DEPENDENCYFILE_LOAD);
 		return false;
 	}
 
 	if (LoadInfoFiles() == false)
 	{
-		//SetServerInitResult(SERVERINIT_FAILED_DATAFILE_LOAD);
+		SetServerInitResult(SERVERINIT_FAILED_DATAFILE_LOAD);
 		return false;
 	}
 
@@ -568,7 +568,7 @@ bool GServer::LoadInfoFiles()
 	// 이름 필터링 데이터 로드
 	if (!GetNameWordFilter()->LoadFromFile(FILENAME_NAME_ILLEGALWORDS, FILENAME_NAME_ALLOWEDCHARS))
 	{
-		//SetServerInitResult(SERVERINIT_FAILED_DATAFILE_LOAD);
+		SetServerInitResult(SERVERINIT_FAILED_DATAFILE_LOAD);
 		mlog3("Failed! Load name_illegalwords.txt, name_allowedchars.txt\n");
 		return false;
 	}

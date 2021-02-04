@@ -23,7 +23,7 @@
 #include "ZServableChecker.h"
 #include "SCommandProfileController.h"
 #include "ZChannelBeholder.h"
-//#include "PMServerInitLogger.h"
+#include "PMServerInitLogger.h"
 #include "MCommandProfiler.h"
 #include "SDsnFactory.h"
 #include "SBaseDsnFactory.h"
@@ -112,7 +112,7 @@ bool ZServer::InitRequisites()
 	if (CreateNetwork() == false)
 	{
 		mlog3("Failed CreateNetwork.\n");
-		//SetServerInitResult(SERVERINIT_FAILED_NETWORK_INIT);
+		SetServerInitResult(SERVERINIT_FAILED_NETWORK_INIT);
 		return false;
 	}
 
@@ -120,7 +120,7 @@ bool ZServer::InitRequisites()
 	{
 		_ASSERT(0);
 		mlog3("Failed InitDB\n");
-		//SetServerInitResult(SERVERINIT_FAILED_DB_CONNECT);
+		SetServerInitResult(SERVERINIT_FAILED_DB_CONNECT);
 		return false;
 	}
 	
@@ -212,19 +212,19 @@ bool ZServer::InitInfo()
 {
 	if (InitDependencyInfo() == false)
 	{
-		//SetServerInitResult(SERVERINIT_FAILED_DEPENDENCYFILE_LOAD);
+		SetServerInitResult(SERVERINIT_FAILED_DEPENDENCYFILE_LOAD);
 		return false;
 	}
 
 	if (LoadInfoFiles() == false)
 	{
-		//SetServerInitResult(SERVERINIT_FAILED_DATAFILE_LOAD);
+		SetServerInitResult(SERVERINIT_FAILED_DATAFILE_LOAD);
 		return false;
 	}
 
 	if (InitFixedParty() == false)
 	{
-		//SetServerInitResult(SERVERINIT_FAILED_INIT_FIXED_PARTY);
+		SetServerInitResult(SERVERINIT_FAILED_INIT_FIXED_PARTY);
 		return false;
 	}
 

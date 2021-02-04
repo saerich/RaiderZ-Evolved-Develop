@@ -25,7 +25,7 @@ bool XFieldMsgHandler::OnResponse(const minet::MCommand* pCmd)
 		{
 			wstringstream strStream;
 
-			strStream	<< L"[ÇÊµå]"
+			strStream	<< L"[Field]"
 						<< L"[" << strSenderName << L"]: "
 						<< strMsg;
 

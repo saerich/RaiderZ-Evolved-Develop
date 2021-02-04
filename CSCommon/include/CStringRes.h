@@ -164,7 +164,7 @@ public:
 		if( m_StringMap.end() == it )
 		{
 #ifndef _PUBLISH		
-			m_strError = CSFormatString::Format(_T("없는 문자열(key={0})"), FSParam(code));
+			m_strError = CSFormatString::Format(_T("Missing string (key={0})"), FSParam(code));
 			return m_strError.c_str();
 #else
 			return _T("");
@@ -182,7 +182,7 @@ public:
 		if (it == m_StringMap.end())
 		{
 #ifndef _PUBLISH
-			m_strError = CSFormatString::Format(_T("없는 문자열(key={0})"), FSParam(code));
+			m_strError = CSFormatString::Format(_T("Missing string (key={0})"), FSParam(code));
 			return m_strError.c_str();
 #else
 			return _T("");

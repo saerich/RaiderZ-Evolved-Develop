@@ -121,8 +121,8 @@ void XChatCmds::InitCmds()
 	_CC_ACX(CCMD_ID_SOCIAL_MOTION_TAUNT,	&ChatCmd_SocialMotion_Taunt,	0, 0, 0, true);
 	_CC_ACX(CCMD_ID_SOCIAL_MOTION_WAVE,		&ChatCmd_SocialMotion_Wave,	0, 0, 0, true);
 
-	// 콘솔 명령어 등록
-	// 명령어 이름, 실행 함수 포인터, 최소인자개수, 최대인자개수, 사용법, 도움말
+	// Register console command
+	// Command name, execution function pointer, minimum number of arguments, maximum number of arguments, usage, help
 }
 
 bool XChatCmds::ChatCmd_Help(const wchar_t* line, const int argc, wchar_t **const argv)
@@ -151,7 +151,7 @@ bool XChatCmds::ChatCmd_Help(const wchar_t* line, const int argc, wchar_t **cons
 		}
 		else
 		{
-			Output(L"해당 명령어는 존재하지 않습니다.");
+			Output(L"There is no such command.");
 		}
 	}
 
@@ -226,7 +226,7 @@ bool XChatCmds::ChatCmd_Party(const wchar_t* line, const int argc, wchar_t **con
 		}
 		else
 		{
-			Output(L"파티에 가입되어 있지 않습니다.");
+			Output(L"You are currently not in a party.");
 		}
 	}
 	return true;
@@ -243,7 +243,7 @@ bool XChatCmds::ChatCmd_Guild(const wchar_t* line, const int argc, wchar_t **con
 		}
 		else
 		{
-			Output(L"길드에 가입되어 있지 않습니다.");
+			Output(L"You are not a member of a guild.");
 		}
 	}
 	return true;
@@ -278,7 +278,7 @@ bool XChatCmds::ChatCmd_Channel(const wchar_t* line, const int argc, wchar_t **c
 			XChatChannel* pChannel = info.chat_channel->Find(argv[1]);
 			if (pChannel == NULL)
 			{
-				Output(L"입장하지 않은 채팅 채널입니다.");
+				Output(L"That channel does not exist.");
 				return true;
 			}
 			
@@ -376,7 +376,7 @@ bool XChatCmds::ChatCmd_ChannelLeave(const wchar_t* line, const int argc, wchar_
 			XChatChannel* pChannel = info.chat_channel->Find(argv[1]);
 			if (pChannel == NULL)
 			{
-				Output(L"입장하지 않은 채팅 채널입니다.");
+				Output(L"This chat channel does not exists.");
 				return true;
 			}
 			
@@ -396,13 +396,13 @@ bool XChatCmds::ChatCmd_ChannelKick(const wchar_t* line, const int argc, wchar_t
 			XChatChannel* pChannel = info.chat_channel->Find(argv[1]);
 			if (pChannel == NULL)
 			{
-				Output(L"입장하지 않은 채팅 채널입니다.");
+				Output(L"This chat channel does not exists.");
 				return true;
 			}
 
 			if (!pChannel->IsOwner())
 			{
-				Output(L"방장 전용 명령입니다.");
+				Output(L"You are not the channel owner.");
 				return true;
 			}
 			
@@ -422,13 +422,13 @@ bool XChatCmds::ChatCmd_ChannelBan(const wchar_t* line, const int argc, wchar_t 
 			XChatChannel* pChannel = info.chat_channel->Find(argv[1]);
 			if (pChannel == NULL)
 			{
-				Output(L"입장하지 않은 채팅 채널입니다.");
+				Output(L"This chat channel does not exists.");
 				return true;
 			}
 
 			if (!pChannel->IsOwner())
 			{
-				Output(L"방장 전용 명령입니다.");
+				Output(L"You are not the channel owner.");
 				return true;
 			}
 			
@@ -448,13 +448,13 @@ bool XChatCmds::ChatCmd_ChannelUnban(const wchar_t* line, const int argc, wchar_
 			XChatChannel* pChannel = info.chat_channel->Find(argv[1]);
 			if (pChannel == NULL)
 			{
-				Output(L"입장하지 않은 채팅 채널입니다.");
+				Output(L"This chat channel does not exists.");
 				return true;
 			}
 
 			if (!pChannel->IsOwner())
 			{
-				Output(L"방장 전용 명령입니다.");
+				Output(L"You are not the channel owner.");
 				return true;
 			}
 			
@@ -474,13 +474,13 @@ bool XChatCmds::ChatCmd_ChannelOwner(const wchar_t* line, const int argc, wchar_
 			XChatChannel* pChannel = info.chat_channel->Find(argv[1]);
 			if (pChannel == NULL)
 			{
-				Output(L"입장하지 않은 채팅 채널입니다.");
+				Output(L"This chat channel does not exists.");
 				return true;
 			}
 
 			if (!pChannel->IsOwner())
 			{
-				Output(L"방장 전용 명령입니다.");
+				Output(L"You are not the channel owner.");
 				return true;
 			}
 			

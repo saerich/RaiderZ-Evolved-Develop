@@ -6,7 +6,7 @@
 #include "PConfig.h"
 #include "MStatisticsProfiler.h"
 //#include "PPMSSystem.h"
-//#include "PMServerInitLogger.h"
+#include "PMServerInitLogger.h"
 //#include "PMSCodes.h"
 #include "MFileSystem.h"
 #include "MLocale.h"
@@ -52,12 +52,12 @@ bool PBaseApplication::OnCreate()
 	//		gsys.pPMS->SendWarningMsg();
 	//	}
 	//}
-	//
-	//if (::IsServerInitFailed())
-	//{
-	//	mlog3("Server Init Failed: %s\n", MLocale::ConvUTF16ToAnsi(::GetServerInitWarningMsg()).c_str());
-	//	return false;
-	//}
+	
+	if (::IsServerInitFailed())
+	{
+		mlog3("Server Init Failed: %s\n", MLocale::ConvUTF16ToAnsi(::GetServerInitWarningMsg()).c_str());
+		return false;
+	}
 
 	return true;
 }

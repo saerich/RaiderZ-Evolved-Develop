@@ -598,10 +598,10 @@ void GPickingZTable::RecordPickingData( vector<HEIGHT_TYPE> &vecPickData,
 	Cell* pNewCell = new Cell();
 	m_mapCells.insert(std::make_pair(nFlatPoint, pNewCell));
 
-	pNewCell->MakeHeightArray(static_cast<unsigned char>(vecPickData.size()));
+	pNewCell->MakeHeightArray(static_cast<uint8>(vecPickData.size()));
 	for (size_t i=0; i<vecPickData.size(); ++i)
 	{
-		pNewCell->SetHeight(static_cast<unsigned char>(i), static_cast<unsigned short>(vecPickData[i]));
+		pNewCell->SetHeight(static_cast<uint8>(i), static_cast<HEIGHT_TYPE>(vecPickData[i]));
 	}
 }
 

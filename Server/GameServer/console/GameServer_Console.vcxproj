@@ -118,10 +118,11 @@
     <TargetName>$(ProjectName)_d</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_duck|Win32'">
-    <OutDir>../../../Runtime/Dev/GameServer\</OutDir>
+    <OutDir>../../../../../build/Dev/GameServer/</OutDir>
     <IntDir>$(Configuration)\</IntDir>
     <LinkIncremental>true</LinkIncremental>
     <TargetName>$(ProjectName)_d</TargetName>
+    <PreBuildEventUseInBuild>false</PreBuildEventUseInBuild>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_duck|Win32'">
     <OutDir>../../../Runtime/Dev/GameServer\</OutDir>

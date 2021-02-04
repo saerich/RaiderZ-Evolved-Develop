@@ -25,7 +25,7 @@ bool XGlobalMsgHandler::OnResponse(const minet::MCommand* pCmd)
 		{
 			wstringstream strStream;
 
-			strStream	<< L"[ÀüÃ¼]"
+			strStream	<< L"[Global]"
 						<< L"[" << strSenderName << L"]: "
 						<< strMsg;
 

@@ -248,7 +248,7 @@ void GPlayerGameData::PackPaletteList(GEntityPlayer* pEntityPlayer)
 	{
 		TD_PLAYER_GAME_DATA_PALETTE PaletteData;
 
-		PaletteData.nOrderID = static_cast<unsigned char>(i);
+		PaletteData.nOrderID = static_cast<uint8>(i);
 		PaletteData.nType = vecPaletteItem[i].m_nType;
 		PaletteData.nID = vecPaletteItem[i].m_nItemIDorTalentID;
 

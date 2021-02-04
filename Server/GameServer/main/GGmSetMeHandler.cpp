@@ -31,6 +31,12 @@ bool GGmSetMeHandler::Handle(GEntityPlayer* pPlayer, wstring strType, wstring st
 {
 	if (NULL == pPlayer) return false;
 
+	// Server side check for GM level
+	if (pPlayer->GetPlayerGrade() == PLAYER_GRADE_NORMAL)
+	{
+		return false;
+	}
+
 	strType = GStrings::StringToLower(strType);
 
 	if (IsRunForTest())

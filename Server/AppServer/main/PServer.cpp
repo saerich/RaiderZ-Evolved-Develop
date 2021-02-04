@@ -19,7 +19,7 @@
 #include "PChatChannelManager.h"
 #include "SCommandProfileController.h"
 #include "SNetworkCardMgr.h"
-//#include "PMServerInitLogger.h"
+#include "PMServerInitLogger.h"
 #include "MCommandProfiler.h"
 #include "SDsnFactory.h"
 #include "SBaseDsnFactory.h"
@@ -92,7 +92,7 @@ bool PServer::InitRequisites()
 	if (CreateNetwork() == false)
 	{
 		mlog3("Failed! CreateNetwork.\n");
-		//SetServerInitResult(SERVERINIT_FAILED_NETWORK_INIT);
+		SetServerInitResult(SERVERINIT_FAILED_NETWORK_INIT);
 		return false;
 	}
 
@@ -100,7 +100,7 @@ bool PServer::InitRequisites()
 	{
 		_ASSERT(0);
 		mlog3("Failed! InitDB\n");
-		//SetServerInitResult(SERVERINIT_FAILED_DB_CONNECT);
+		SetServerInitResult(SERVERINIT_FAILED_DB_CONNECT);
 		return false;
 	}
 
@@ -217,7 +217,7 @@ bool PServer::InitInfo()
 	if (!LoadInfoFiles())
 	{
 		mlog3("Failed! Load Info Files.\n");
-		//SetServerInitResult(SERVERINIT_FAILED_DATAFILE_LOAD);
+		SetServerInitResult(SERVERINIT_FAILED_DATAFILE_LOAD);
 		return false;
 	}
 

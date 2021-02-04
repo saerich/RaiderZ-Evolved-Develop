@@ -25,11 +25,7 @@ float SafePercentage(_S sub, _T total)
 		return 0.f;
 	}
 
-//#pragma warning(suppress : 4723)
-//#pragma warning(push)
-//#pragma warning(disable: 4723)
 	return sub * 100.f / total;
-//#pragma warning(pop)
 }
 
 GAIProfilingTest::GAIProfilingTest()
@@ -162,11 +158,11 @@ void GAIProfilingTest::SaveTestResult(MMaietTestResult& outTestResult)
 		tableSet.AddColumn(L"Combat", 20, 2, 8);
 		tableSet.AddColumn(L"COLT", 8, 1, 8);
 
-		float fTotalModuleTime = 0.1f;
-		float fTotalJobTime = 0.1f;
-		float fTotalStateTime = 0.1f;
-		float fTotalCombatTime = 0.1f;
-		float fTotalCOLTTime = 0.1f;
+		float fTotalModuleTime = 1.0f;
+		float fTotalJobTime = 1.0f;
+		float fTotalStateTime = 1.0f;
+		float fTotalCombatTime = 1.0f;
+		float fTotalCOLTTime = 1.0f;
 
 		for(int i = 0; i <= (APT_ID_JOB_OFFSET + GJOB_MAX); i++)
 		{
@@ -299,7 +295,7 @@ void GAIProfilingTest::SaveTestResult(MMaietTestResult& outTestResult)
 		tableSet.AddRow(L"");
 		tableSet.SetFillItem(1, 5, L'=');
 
-		float fTotalTime = 0.1f;
+		float fTotalTime = 1.0f;
 		int nTotalCallCount = 0;
 
 		for(int i = 0; i < GTASK_TEST; i++)
@@ -360,7 +356,7 @@ void GAIProfilingTest::SaveTestResult(MMaietTestResult& outTestResult)
 		tableSet.AddRow(L"");
 		tableSet.SetFillItem(1, 5, L'=');
 
-		float fTotalTime = 0.1f;
+		float fTotalTime = 1.0f;
 		int nTotalCallCount = 0;
 
 		for(int i = 0; i < CAT_SIZE; i++)
@@ -419,7 +415,7 @@ void GAIProfilingTest::SaveTestResult(MMaietTestResult& outTestResult)
 		tableSet.SetItem(0, 5, 100, true);
 
 		// Total ±¸ÇÏ±â
-		float fTotalTime = 0.01f;
+		float fTotalTime = 1.0f;
 		int nTotalCallCount = 0;
 
 		for each(pair<int , CSTalentInfo*> pairTalent in *gmgr.pTalentInfoMgr)

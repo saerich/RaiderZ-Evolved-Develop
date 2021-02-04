@@ -21,7 +21,7 @@ bool XNoticeMsgHandler::OnResponse(const minet::MCommand* pCmd)
 
 		wstringstream strStream;
 
-		strStream	<< L"[공지]: "
+		strStream	<< L"[Notice]: "
 					<< strMsg;
 
 		// 문자열 테이블 키 전달 시 변환 - 나레이션, 노티피 등에 이용

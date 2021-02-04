@@ -18,7 +18,7 @@
 #include "SNetworkCardMgr.h"
 #include "LPlayerLoginGameServerProcManager.h"
 #include "LPlayerLoginGameServerRetryer.h"
-//#include "PMServerInitLogger.h"
+#include "PMServerInitLogger.h"
 #include "SDsnFactory.h"
 #include "SDefaultDsnFactory.h"
 //#include "PmDsnFactory.h"
@@ -140,7 +140,7 @@ bool LServer::Create()
 {
 	if (CreateNetwork() == false)
 	{
-		//SetServerInitResult(SERVERINIT_FAILED_NETWORK_INIT);
+		SetServerInitResult(SERVERINIT_FAILED_NETWORK_INIT);
 		return false;
 	}
 	
@@ -246,16 +246,15 @@ bool LServer::InitInfo()
 {
 	if (InitDB() == false)
 	{
-		_ASSERT(0);
+		SetServerInitResult(SERVERINIT_FAILED_DB_CONNECT);
 		mlog3("Failed InitDB\n");
-		//SetServerInitResult(SERVERINIT_FAILED_DB_CONNECT);
 		return false;
 	}
 
 	// 금칙어 목록 로드
 	if (!GetStringFilter()->LoadFromFile(FILENAME_ABUSE))
 	{
-		//SetServerInitResult(SERVERINIT_FAILED_DATAFILE_LOAD);
+		SetServerInitResult(SERVERINIT_FAILED_DATAFILE_LOAD);
 		mlog3("Failed! Load String Filter.\n");
 		return false;
 	}
@@ -263,14 +262,14 @@ bool LServer::InitInfo()
 	// 이름 필터링 데이터 로드
 	if (!GetNameWordFilter()->LoadFromFile(FILENAME_NAME_ILLEGALWORDS, FILENAME_NAME_ALLOWEDCHARS))
 	{
-		//SetServerInitResult(SERVERINIT_FAILED_DATAFILE_LOAD);
+		SetServerInitResult(SERVERINIT_FAILED_DATAFILE_LOAD);
 		mlog3("Failed! Load name_illegalwords.txt, name_allowedchars.txt\n");
 		return false;
 	}
 		 
 	if (!GetGameWordsFilter()->LoadFromFile(FILENAME_GAMEWORDS))	
 	{
-		//SetServerInitResult(SERVERINIT_FAILED_DATAFILE_LOAD);		
+		SetServerInitResult(SERVERINIT_FAILED_DATAFILE_LOAD);		
 		mlog3("Failed! Load GameWords.txt.\n");
 		return false;
 	}

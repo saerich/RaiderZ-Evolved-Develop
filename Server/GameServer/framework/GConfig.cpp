@@ -72,7 +72,7 @@ bool GConfig::m_bLimitRunTime = false;
 DWORD GConfig::m_dwRunTime = 0;
 
 // PMS
-bool GConfig::m_bPMSEnable = false;
+//bool GConfig::m_bPMSEnable = false;
 
 // GameGuard
 bool GConfig::m_bGGEnable = false;

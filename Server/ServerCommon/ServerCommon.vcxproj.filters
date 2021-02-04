@@ -46,6 +46,9 @@
     <Filter Include="RemoteProfiler">
       <UniqueIdentifier>{8392ad86-bb53-4026-b172-78d8f0d97c4b}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ServerInitLogger">
+      <UniqueIdentifier>{dd3bb6bf-c07a-427e-8a50-055b9626d425}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="SAppHelper.cpp">
@@ -176,6 +179,9 @@
     </ClCompile>
     <ClCompile Include="SConfig.cpp" />
     <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="PMServerInitLogger.cpp">
+      <Filter>ServerInitLogger</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="SAppHelper.h">
@@ -351,5 +357,8 @@
     <ClInclude Include="ServerCommonLib.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="STypes.h" />
+    <ClInclude Include="PMServerInitLogger.h">
+      <Filter>ServerInitLogger</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

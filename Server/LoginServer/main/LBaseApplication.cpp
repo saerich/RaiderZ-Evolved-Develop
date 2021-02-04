@@ -7,7 +7,7 @@
 #include "MStatisticsProfiler.h"
 //#include "LPMSSystem.h"
 //#include "PMSCodes.h"
-//#include "PMServerInitLogger.h"
+#include "PMServerInitLogger.h"
 #include "MLocale.h"
 
 LBaseApplication::LBaseApplication()
@@ -38,7 +38,6 @@ bool LBaseApplication::OnCreate()
 	StartServerMonitorEventListener(LConfig::m_strServerName.c_str());
 #endif
 
-	// MrFarbodD to do check this pmang shit
 	//if (LConfig::m_bPMSEnable)
 	//{
 	//	DWORD nRet = gsys.pPMS->Connect(strCmdLine);
@@ -55,11 +54,11 @@ bool LBaseApplication::OnCreate()
 	//	}
 	//}
 
-	//if (::IsServerInitFailed())
-	//{
-	//	mlog3("Server Init Failed: %s\n", MLocale::ConvUTF16ToAnsi(::GetServerInitWarningMsg()));
-	//	return false;
-	//}
+	if (::IsServerInitFailed())
+	{
+		mlog3("Server Init Failed: %s\n", MLocale::ConvUTF16ToAnsi(::GetServerInitWarningMsg()));
+		return false;
+	}
 
 	return true;
 }

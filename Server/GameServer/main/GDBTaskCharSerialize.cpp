@@ -133,10 +133,10 @@ bool GDBTaskCharSerialize::GetCharInfo(mdb::MDatabase& rfDB)
 	m_Data.CharInfo.nFeatureHairColor		= rs.FieldW(L"FEAT_HAIR_COLOR").AsByte();
 	m_Data.CharInfo.nFeatureSkinColor		= rs.FieldW(L"FEAT_SKIN_COLOR").AsByte();
 
-	m_Data.CharInfo.nTattooType				= rs.FieldW(L"TATOO").AsByte();
-	m_Data.CharInfo.nTattooPosX				= rs.FieldW(L"TATOO_POS_X").AsShort();
-	m_Data.CharInfo.nTattooPosY				= rs.FieldW(L"TATOO_POS_Y").AsShort();
-	m_Data.CharInfo.nTattooScale				= rs.FieldW(L"TATOO_SCALE").AsByte();
+	m_Data.CharInfo.nTattooType				= rs.FieldW(L"TATTOO_TYPE").AsByte();
+	m_Data.CharInfo.nTattooPosX				= rs.FieldW(L"TATTOO_POS_X").AsShort();
+	m_Data.CharInfo.nTattooPosY				= rs.FieldW(L"TATTOO_POS_Y").AsShort();
+	m_Data.CharInfo.nTattooScale			= rs.FieldW(L"TATTOO_SCALE").AsByte();
 	m_Data.CharInfo.nMakeUp					= rs.FieldW(L"MAKEUP").AsByte();
 
 	m_Data.CharInfo.nLevel					= rs.FieldW(L"LEV").AsInt();	

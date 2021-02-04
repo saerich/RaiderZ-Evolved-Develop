@@ -667,7 +667,7 @@ void GApplication::SetServerInfoView(GServerInfo& server_info)
 
 	uint32 globaltime = gsys.pSystem->GetNowTime();
 
-	swprintf_s(text, L"서버상태 = %s%s , GlobalTime = %u", t1, strStandAlone.c_str(), globaltime);
+	swprintf_s(text, L"Server Status: %s%s , GlobalTime = %u", t1, strStandAlone.c_str(), globaltime);
 	SetMonitorText(0, text);
 
 	GSharedFieldMaster* pSharedField = gmgr.pFieldMgr->GetSharedFieldMaster(g_nFieldSelectedID);
@@ -686,7 +686,7 @@ void GApplication::SetServerInfoView(GServerInfo& server_info)
 	// 접속자
 	SProxyPlayerManager* pProxyPlayerManager = gsys.pMasterServerFacade->GetProxyPlayerManager();
 	
-	swprintf_s(text, L"접속자 : %d / %d(Total=%d) (cap: %d, max: %d)", 
+	swprintf_s(text, L"Player Count: %d / %d(Total=%d) (cap: %d, max: %d)", 
 		nPlayerQtyInField, 
 		server_info.nNowPlayer, 
 		pProxyPlayerManager->GetPlayerCount(),
@@ -703,7 +703,7 @@ void GApplication::SetServerInfoView(GServerInfo& server_info)
 	nMasterServerTotalFieldCount = pProxyFieldManager->GetFieldCount();
 	nMasterServerSharedFieldCount = nMasterServerTotalFieldCount;
 
-	swprintf_s(text, L"공유필드: (%d:%d), 동적필드그룹: (%d:%d), 전체 필드 : (%d:%d)", 
+	swprintf_s(text, L"Shared Fields: (%d:%d), 동적필드그룹: (%d:%d), 전체 필드 : (%d:%d)", 
 		gmgr.pFieldMgr->GetSharedFieldQty(), nMasterServerSharedFieldCount,
 		gmgr.pFieldMgr->GetDynamicFieldGroupQty(), nMasterServerDynamicFieldCount,
 		gmgr.pFieldMgr->GetFieldQty(), nMasterServerTotalFieldCount);
@@ -712,7 +712,7 @@ void GApplication::SetServerInfoView(GServerInfo& server_info)
 	// 해당 필드 NPC 수
 	uint32 nAllNPCCount = GMonitorHelper::GetTotalNPCCount();
 
-	swprintf_s(text, L"전체 NPC 수 : %u", nAllNPCCount);
+	swprintf_s(text, L"NPC Count: %u", nAllNPCCount);
 	SetMonitorText(3, text);
 }
 

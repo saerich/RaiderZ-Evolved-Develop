@@ -20,7 +20,7 @@ bool XGuildMsgHandler::OnResponse(const minet::MCommand* pCmd)
 	{
 		wstringstream strStream;
 
-		strStream	<< L"[±æµå]"		
+		strStream	<< L"[Guild]"		
 					<< L"["	<< m_msgHelper.GetSenderName(pCmd) << L"]: "
 					<< m_strMsg;
 

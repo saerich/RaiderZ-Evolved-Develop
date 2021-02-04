@@ -218,6 +218,7 @@
     </Lib>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="PMServerInitLogger.cpp" />
     <ClCompile Include="SAppHelper.cpp" />
     <ClCompile Include="SApplicationHandles.cpp" />
     <ClCompile Include="SAsyncDB.cpp" />
@@ -271,6 +272,7 @@
     <ClCompile Include="STrayIcon.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="PMServerInitLogger.h" />
     <ClInclude Include="SAccountInfo.h" />
     <ClInclude Include="SAppHelper.h" />
     <ClInclude Include="SApplicationHandles.h" />

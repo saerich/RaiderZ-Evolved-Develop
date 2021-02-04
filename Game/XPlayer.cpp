@@ -235,7 +235,7 @@ const wstring XPlayer::GetCaptionName()
 	wstring strName = GetName();
 	if (IsAFK())
 	{
-		strName += L" (자리비움)";
+		strName += L" (AFK)";
 	}
 
 	return strName;
